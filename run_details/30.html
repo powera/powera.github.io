@@ -1,0 +1,2015 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Benchmark Run Details - llama3.2:3b:Q4_K_M on 0050_translation_en_kn</title>
+    <script>
+        function toggleQuestionInfo(toggleElement) {
+            const questionInfoContent = toggleElement.nextElementSibling;
+
+            if (questionInfoContent.classList.contains('hidden')) {
+                questionInfoContent.classList.remove('hidden');
+                toggleElement.textContent = '[X]';
+            } else {
+                questionInfoContent.classList.add('hidden');
+                toggleElement.textContent = '[+]';
+            }
+        }
+    </script>
+
+    <style>
+        /* Placeholder for future CSS */
+        body {
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 1rem;
+        }
+        .run-summary, .run-details {
+            margin-bottom: 2rem;
+        }
+        .summary-table, .details-table {
+            width: 100%;
+            border-collapse: collapse;
+        }
+        .summary-table th, .details-table th {
+            background-color: #f4f4f4;
+            text-align: left;
+            padding: 0.5rem;
+            border: 1px solid #ddd;
+        }
+        .summary-table td, .details-table td {
+            padding: 0.5rem;
+            border: 1px solid #ddd;
+        }
+        .details-table {
+            margin-top: 1rem;
+        }
+        .page-title {
+            color: #333;
+            border-bottom: 2px solid #333;
+            padding-bottom: 0.5rem;
+        }
+        .question-info {
+            background-color: #f9f9f9;
+            border: 1px solid #ddd;
+            padding: 1rem;
+            margin-top: 0.5rem;
+            position: relative;
+        }
+        .question-info-content {
+            max-height: 600px;
+            overflow-y: auto;
+            overflow-x: hidden;
+            padding-right: 15px; /* Add scrollbar space */
+        }
+        .question-info-toggle {
+            cursor: pointer;
+            user-select: none;
+            font-weight: bold;
+            color: #666;
+        }
+        .question-info-toggle:hover {
+            color: #333;
+        }
+        .question-info pre {
+            white-space: pre-wrap;
+            word-wrap: break-word;
+            background-color: #f4f4f4;
+            padding: 0.5rem;
+            border-radius: 4px;
+            margin: 0;
+        }
+        .hidden {
+            display: none;
+        }
+
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1 class="page-title">Benchmark Run Details</h1>
+        
+        <div class="run-summary">
+            <h2>Run Summary</h2>
+            <table class="summary-table">
+                <tr>
+                    <th>Model</th>
+                    <td>llama3.2:3b:Q4_K_M</td>
+                </tr>
+                <tr>
+                    <th>Benchmark</th>
+                    <td>0050_translation_en_kn</td>
+                </tr>
+                <tr>
+                    <th>Normed Score</th>
+                    <td>25</td>
+                </tr>
+                <tr>
+                    <th>Run Timestamp</th>
+                    <td>2024-12-15 18:56:00</td>
+                </tr>
+            </table>
+        </div>
+
+        <div class="run-details">
+            <h2>Question-Level Details</h2>
+            <table class="details-table">
+                <thead>
+                    <tr>
+                        <th>Question ID</th>
+                        <th>Score</th>
+                        <th>Evaluation Time (ms)</th>
+                        <th>Debug Info</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    
+                    <tr>
+                        <td>0050_translation_en_kn:0</td>
+                        <td>1</td>
+                        <td>1248.467624</td>
+                        <td>{}</td>
+                    </tr>
+                    
+                    <tr>
+                        <td colspan="4" class="question-info">
+                            <div class="question-info-toggle" onclick="toggleQuestionInfo(this)">
+                                [+]
+                            </div>
+                            <div class="question-info-content hidden">
+                              <strong>Question Information:</strong>
+                              <pre>{
+  "choices": [
+    "\u0c89\u0cb8\u0cbf\u0cb0\u0cbe\u0ca1\u0cc1",
+    "\u0c85\u0ca1\u0c97\u0cc1",
+    "\u0ca8\u0cc0\u0cb0\u0cc1",
+    "\u0cb9\u0cc2\u0cb5\u0cc1",
+    "\u0ca4\u0cbe\u0c9c\u0cbe",
+    "\u0cae\u0ccc\u0ca8\u0cb5\u0cbe\u0ca6",
+    "\u0cad\u0cbe\u0cb0\u0cb5\u0cbe\u0ca6",
+    "\u0c93\u0ca1\u0cc1"
+  ],
+  "kn": "\u0cb9\u0cc2\u0cb5\u0cc1",
+  "origin_lang": "en",
+  "target_lang": "kn",
+  "word": "flower"
+}</pre>
+                            </div>
+                        </td>
+                    </tr>
+                    
+                    
+                    <tr>
+                        <td>0050_translation_en_kn:1</td>
+                        <td>1</td>
+                        <td>1304.164084</td>
+                        <td>{}</td>
+                    </tr>
+                    
+                    <tr>
+                        <td colspan="4" class="question-info">
+                            <div class="question-info-toggle" onclick="toggleQuestionInfo(this)">
+                                [+]
+                            </div>
+                            <div class="question-info-content hidden">
+                              <strong>Question Information:</strong>
+                              <pre>{
+  "choices": [
+    "\u0cae\u0ccc\u0ca8\u0cb5\u0cbe\u0ca6",
+    "\u0c9a\u0cbe\u0cb2\u0cbf\u0cb8\u0cc1",
+    "\u0cb9\u0cbe\u0ca1\u0cc1",
+    "\u0cb8\u0cbf\u0cb9\u0cbf\u0caf\u0cbe\u0ca6",
+    "\u0c95\u0cb2\u0ccd\u0cb2\u0cc1",
+    "\u0ca4\u0cbf\u0ca8\u0ccd\u0ca8\u0cc1",
+    "\u0cb8\u0ccd\u0ca8\u0cc7\u0cb9\u0cbf\u0ca4",
+    "\u0cae\u0ccb\u0ca1"
+  ],
+  "kn": "\u0c9a\u0cbe\u0cb2\u0cbf\u0cb8\u0cc1",
+  "origin_details": "Specifically refers to operating a vehicle",
+  "origin_lang": "en",
+  "target_lang": "kn",
+  "word": "to drive"
+}</pre>
+                            </div>
+                        </td>
+                    </tr>
+                    
+                    
+                    <tr>
+                        <td>0050_translation_en_kn:10</td>
+                        <td>1</td>
+                        <td>1191.739</td>
+                        <td>{}</td>
+                    </tr>
+                    
+                    <tr>
+                        <td colspan="4" class="question-info">
+                            <div class="question-info-toggle" onclick="toggleQuestionInfo(this)">
+                                [+]
+                            </div>
+                            <div class="question-info-content hidden">
+                              <strong>Question Information:</strong>
+                              <pre>{
+  "choices": [
+    "\u0ca8\u0cc0\u0cb0\u0cc1",
+    "\u0cb9\u0cbe\u0ca1\u0cc1",
+    "\u0ca8\u0c97\u0cc1",
+    "\u0caa\u0cb0\u0ccd\u0cb5\u0ca4",
+    "\u0caa\u0c95\u0ccd\u0cb7\u0cbf",
+    "\u0cb9\u0cb0\u0cbf\u0ca4\u0cb5\u0cbe\u0ca6",
+    "\u0caa\u0ccd\u0cb0\u0c95\u0cbe\u0cb6\u0cae\u0cbe\u0ca8\u0cb5\u0cbe\u0ca6",
+    "\u0cb9\u0cc2\u0cb5\u0cc1"
+  ],
+  "kn": "\u0caa\u0cb0\u0ccd\u0cb5\u0ca4",
+  "origin_lang": "en",
+  "target_lang": "kn",
+  "word": "mountain"
+}</pre>
+                            </div>
+                        </td>
+                    </tr>
+                    
+                    
+                    <tr>
+                        <td>0050_translation_en_kn:11</td>
+                        <td>1</td>
+                        <td>1090.102125</td>
+                        <td>{}</td>
+                    </tr>
+                    
+                    <tr>
+                        <td colspan="4" class="question-info">
+                            <div class="question-info-toggle" onclick="toggleQuestionInfo(this)">
+                                [+]
+                            </div>
+                            <div class="question-info-content hidden">
+                              <strong>Question Information:</strong>
+                              <pre>{
+  "choices": [
+    "\u0cae\u0ccc\u0ca8\u0cb5\u0cbe\u0ca6",
+    "\u0cac\u0cc6\u0c82\u0c95\u0cbf",
+    "\u0c9a\u0cbe\u0cb2\u0cbf\u0cb8\u0cc1",
+    "\u0ca8\u0cc3\u0ca4\u0ccd\u0caf \u0cae\u0cbe\u0ca1\u0cc1",
+    "\u0cb9\u0cc2\u0cb5\u0cc1",
+    "\u0c88\u0c9c\u0cc1",
+    "\u0cb9\u0cbe\u0ca1\u0cc1",
+    "\u0cb8\u0cbf\u0cb9\u0cbf\u0caf\u0cbe\u0ca6"
+  ],
+  "kn": "\u0cb9\u0cbe\u0ca1\u0cc1",
+  "origin_lang": "en",
+  "target_lang": "kn",
+  "word": "to sing"
+}</pre>
+                            </div>
+                        </td>
+                    </tr>
+                    
+                    
+                    <tr>
+                        <td>0050_translation_en_kn:12</td>
+                        <td>0</td>
+                        <td>1186.026417</td>
+                        <td>{
+  "expected": "\u0cb9\u0cc3\u0ca6\u0caf",
+  "response": "\u0c89\u0caa\u0ccd\u0caa\u0cc1"
+}</td>
+                    </tr>
+                    
+                    <tr>
+                        <td colspan="4" class="question-info">
+                            <div class="question-info-toggle" onclick="toggleQuestionInfo(this)">
+                                [+]
+                            </div>
+                            <div class="question-info-content hidden">
+                              <strong>Question Information:</strong>
+                              <pre>{
+  "choices": [
+    "\u0cae\u0ccc\u0ca8\u0cb5\u0cbe\u0ca6",
+    "\u0ca8\u0c97\u0cc1",
+    "\u0cae\u0ccb\u0ca1",
+    "\u0c89\u0caa\u0ccd\u0caa\u0cc1",
+    "\u0cb9\u0cb0\u0cbf\u0ca4\u0cb5\u0cbe\u0ca6",
+    "\u0ca4\u0cbf\u0ca8\u0ccd\u0ca8\u0cc1",
+    "\u0cb9\u0cc3\u0ca6\u0caf",
+    "\u0c85\u0ca4\u0ccd\u0caf\u0c82\u0ca4 \u0cac\u0cb2\u0cb5\u0cbe\u0ca6"
+  ],
+  "kn": "\u0cb9\u0cc3\u0ca6\u0caf",
+  "origin_lang": "en",
+  "target_lang": "kn",
+  "word": "heart"
+}</pre>
+                            </div>
+                        </td>
+                    </tr>
+                    
+                    
+                    <tr>
+                        <td>0050_translation_en_kn:13</td>
+                        <td>0</td>
+                        <td>1001.034083</td>
+                        <td>{
+  "expected": "\u0caa\u0ccd\u0cb0\u0c95\u0cbe\u0cb6\u0cae\u0cbe\u0ca8\u0cb5\u0cbe\u0ca6",
+  "origin_word_details": "Can refer to intelligence or light",
+  "response": "\u0cae\u0ccb\u0ca1"
+}</td>
+                    </tr>
+                    
+                    <tr>
+                        <td colspan="4" class="question-info">
+                            <div class="question-info-toggle" onclick="toggleQuestionInfo(this)">
+                                [+]
+                            </div>
+                            <div class="question-info-content hidden">
+                              <strong>Question Information:</strong>
+                              <pre>{
+  "choices": [
+    "\u0caa\u0ccd\u0cb0\u0c95\u0cbe\u0cb6\u0cae\u0cbe\u0ca8\u0cb5\u0cbe\u0ca6",
+    "\u0cae\u0ccb\u0ca1",
+    "\u0ca8\u0cc0\u0cb0\u0cc1",
+    "\u0ca4\u0c82\u0caa\u0cbe\u0ca6",
+    "\u0c86\u0c95\u0cbe\u0cb6",
+    "\u0ca8\u0caf\u0cb5\u0cbe\u0ca6",
+    "\u0caa\u0c95\u0ccd\u0cb7\u0cbf",
+    "\u0cb8\u0cbf\u0cb9\u0cbf\u0caf\u0cbe\u0ca6"
+  ],
+  "kn": "\u0caa\u0ccd\u0cb0\u0c95\u0cbe\u0cb6\u0cae\u0cbe\u0ca8\u0cb5\u0cbe\u0ca6",
+  "origin_details": "Can refer to intelligence or light",
+  "origin_lang": "en",
+  "target_lang": "kn",
+  "word": "bright"
+}</pre>
+                            </div>
+                        </td>
+                    </tr>
+                    
+                    
+                    <tr>
+                        <td>0050_translation_en_kn:14</td>
+                        <td>1</td>
+                        <td>1540.848166</td>
+                        <td>{}</td>
+                    </tr>
+                    
+                    <tr>
+                        <td colspan="4" class="question-info">
+                            <div class="question-info-toggle" onclick="toggleQuestionInfo(this)">
+                                [+]
+                            </div>
+                            <div class="question-info-content hidden">
+                              <strong>Question Information:</strong>
+                              <pre>{
+  "choices": [
+    "\u0cb9\u0cbe\u0cb0\u0cc1",
+    "\u0cae\u0cb0",
+    "\u0c89\u0cb8\u0cbf\u0cb0\u0cbe\u0ca1\u0cc1",
+    "\u0ca8\u0cc3\u0ca4\u0ccd\u0caf \u0cae\u0cbe\u0ca1\u0cc1",
+    "\u0c85\u0ca1\u0c97\u0cc1",
+    "\u0ca6\u0cc1\u0c82\u0ca1\u0cbe\u0ca6",
+    "\u0c89\u0caa\u0ccd\u0caa\u0cc1",
+    "\u0ca4\u0cbe\u0c9c\u0cbe"
+  ],
+  "kn": "\u0ca8\u0cc3\u0ca4\u0ccd\u0caf \u0cae\u0cbe\u0ca1\u0cc1",
+  "origin_lang": "en",
+  "target_lang": "kn",
+  "word": "to dance"
+}</pre>
+                            </div>
+                        </td>
+                    </tr>
+                    
+                    
+                    <tr>
+                        <td>0050_translation_en_kn:15</td>
+                        <td>0</td>
+                        <td>1087.866625</td>
+                        <td>{
+  "expected": "\u0cae\u0ccc\u0ca8\u0cb5\u0cbe\u0ca6",
+  "origin_word_details": "Can refer to sound level or personality trait",
+  "response": "\u0c85\u0ca1\u0c97\u0cc1"
+}</td>
+                    </tr>
+                    
+                    <tr>
+                        <td colspan="4" class="question-info">
+                            <div class="question-info-toggle" onclick="toggleQuestionInfo(this)">
+                                [+]
+                            </div>
+                            <div class="question-info-content hidden">
+                              <strong>Question Information:</strong>
+                              <pre>{
+  "choices": [
+    "\u0caa\u0ccd\u0cb0\u0c95\u0cbe\u0cb6\u0cae\u0cbe\u0ca8\u0cb5\u0cbe\u0ca6",
+    "\u0c85\u0ca1\u0c97\u0cc1",
+    "\u0cb8\u0ccd\u0ca8\u0cc7\u0cb9\u0cbf\u0ca4",
+    "\u0cae\u0cb0",
+    "\u0cac\u0cc6\u0c9a\u0ccd\u0c9a\u0c97\u0cbf\u0ca8",
+    "\u0cae\u0ccc\u0ca8\u0cb5\u0cbe\u0ca6",
+    "\u0c85\u0ca4\u0ccd\u0caf\u0c82\u0ca4 \u0cac\u0cb2\u0cb5\u0cbe\u0ca6",
+    "\u0ca8\u0c97\u0cc1"
+  ],
+  "kn": "\u0cae\u0ccc\u0ca8\u0cb5\u0cbe\u0ca6",
+  "origin_details": "Can refer to sound level or personality trait",
+  "origin_lang": "en",
+  "target_lang": "kn",
+  "word": "quiet"
+}</pre>
+                            </div>
+                        </td>
+                    </tr>
+                    
+                    
+                    <tr>
+                        <td>0050_translation_en_kn:16</td>
+                        <td>1</td>
+                        <td>805.3558760000001</td>
+                        <td>{}</td>
+                    </tr>
+                    
+                    <tr>
+                        <td colspan="4" class="question-info">
+                            <div class="question-info-toggle" onclick="toggleQuestionInfo(this)">
+                                [+]
+                            </div>
+                            <div class="question-info-content hidden">
+                              <strong>Question Information:</strong>
+                              <pre>{
+  "choices": [
+    "\u0cb9\u0cc3\u0ca6\u0caf",
+    "\u0cb9\u0cc2\u0cb5\u0cc1",
+    "\u0cae\u0cb0",
+    "\u0ca8\u0c97\u0cc1",
+    "\u0c9a\u0c82\u0ca6\u0ccd\u0cb0",
+    "\u0cae\u0cb3\u0cc6",
+    "\u0cad\u0cbe\u0cb0\u0cb5\u0cbe\u0ca6",
+    "\u0ca8\u0cc3\u0ca4\u0ccd\u0caf \u0cae\u0cbe\u0ca1\u0cc1"
+  ],
+  "kn": "\u0cae\u0cb0",
+  "origin_lang": "en",
+  "target_lang": "kn",
+  "word": "tree"
+}</pre>
+                            </div>
+                        </td>
+                    </tr>
+                    
+                    
+                    <tr>
+                        <td>0050_translation_en_kn:17</td>
+                        <td>1</td>
+                        <td>1006.2982930000001</td>
+                        <td>{}</td>
+                    </tr>
+                    
+                    <tr>
+                        <td colspan="4" class="question-info">
+                            <div class="question-info-toggle" onclick="toggleQuestionInfo(this)">
+                                [+]
+                            </div>
+                            <div class="question-info-content hidden">
+                              <strong>Question Information:</strong>
+                              <pre>{
+  "choices": [
+    "\u0c88\u0c9c\u0cc1",
+    "\u0ca8\u0c95\u0ccd\u0cb7\u0ca4\u0ccd\u0cb0",
+    "\u0c89\u0caa\u0ccd\u0caa\u0cc1",
+    "\u0cb8\u0cbf\u0cb9\u0cbf\u0caf\u0cbe\u0ca6",
+    "\u0cac\u0cc6\u0c82\u0c95\u0cbf",
+    "\u0cac\u0cb0\u0cc6",
+    "\u0ca8\u0cc3\u0ca4\u0ccd\u0caf \u0cae\u0cbe\u0ca1\u0cc1",
+    "\u0cac\u0cc6\u0c9a\u0ccd\u0c9a\u0c97\u0cbf\u0ca8"
+  ],
+  "kn": "\u0cac\u0cb0\u0cc6",
+  "origin_lang": "en",
+  "target_lang": "kn",
+  "word": "to write"
+}</pre>
+                            </div>
+                        </td>
+                    </tr>
+                    
+                    
+                    <tr>
+                        <td>0050_translation_en_kn:18</td>
+                        <td>0</td>
+                        <td>1003.080291</td>
+                        <td>{
+  "expected": "\u0c86\u0c95\u0cbe\u0cb6",
+  "response": "\u0cac\u0cc6\u0cb3\u0cc6"
+}</td>
+                    </tr>
+                    
+                    <tr>
+                        <td colspan="4" class="question-info">
+                            <div class="question-info-toggle" onclick="toggleQuestionInfo(this)">
+                                [+]
+                            </div>
+                            <div class="question-info-content hidden">
+                              <strong>Question Information:</strong>
+                              <pre>{
+  "choices": [
+    "\u0cae\u0ccc\u0ca8\u0cb5\u0cbe\u0ca6",
+    "\u0cac\u0cc6\u0cb3\u0cc6",
+    "\u0cb9\u0cbe\u0cb0\u0cc1",
+    "\u0c88\u0c9c\u0cc1",
+    "\u0cb9\u0cbe\u0ca1\u0cc1",
+    "\u0c93\u0ca1\u0cc1",
+    "\u0cb8\u0cc1\u0c82\u0ca6\u0cb0\u0cb5\u0cbe\u0ca6",
+    "\u0c86\u0c95\u0cbe\u0cb6"
+  ],
+  "kn": "\u0c86\u0c95\u0cbe\u0cb6",
+  "origin_lang": "en",
+  "target_lang": "kn",
+  "word": "sky"
+}</pre>
+                            </div>
+                        </td>
+                    </tr>
+                    
+                    
+                    <tr>
+                        <td>0050_translation_en_kn:19</td>
+                        <td>0</td>
+                        <td>924.824417</td>
+                        <td>{
+  "expected": "\u0ca4\u0cbe\u0c9c\u0cbe",
+  "response": "\u0ca8\u0c97\u0cc1"
+}</td>
+                    </tr>
+                    
+                    <tr>
+                        <td colspan="4" class="question-info">
+                            <div class="question-info-toggle" onclick="toggleQuestionInfo(this)">
+                                [+]
+                            </div>
+                            <div class="question-info-content hidden">
+                              <strong>Question Information:</strong>
+                              <pre>{
+  "choices": [
+    "\u0ca8\u0c97\u0cc1",
+    "\u0ca4\u0cbf\u0ca8\u0ccd\u0ca8\u0cc1",
+    "\u0cac\u0cc0\u0cb3\u0cc1",
+    "\u0c86\u0cb3\u0cb5\u0cbe\u0ca6",
+    "\u0cb9\u0cbe\u0cb0\u0cc1",
+    "\u0caa\u0cb0\u0ccd\u0cb5\u0ca4",
+    "\u0cb9\u0cc2\u0cb5\u0cc1",
+    "\u0ca4\u0cbe\u0c9c\u0cbe"
+  ],
+  "kn": "\u0ca4\u0cbe\u0c9c\u0cbe",
+  "origin_lang": "en",
+  "target_lang": "kn",
+  "word": "fresh"
+}</pre>
+                            </div>
+                        </td>
+                    </tr>
+                    
+                    
+                    <tr>
+                        <td>0050_translation_en_kn:2</td>
+                        <td>0</td>
+                        <td>1537.396041</td>
+                        <td>{
+  "expected": "\u0c85\u0ca4\u0ccd\u0caf\u0c82\u0ca4 \u0cac\u0cb2\u0cb5\u0cbe\u0ca6",
+  "response": "\u0cb8\u0cbe\u0cae\u0cb0\u0ccd\u0ca5\u0ccd\u0caf"
+}</td>
+                    </tr>
+                    
+                    <tr>
+                        <td colspan="4" class="question-info">
+                            <div class="question-info-toggle" onclick="toggleQuestionInfo(this)">
+                                [+]
+                            </div>
+                            <div class="question-info-content hidden">
+                              <strong>Question Information:</strong>
+                              <pre>{
+  "choices": [
+    "\u0cac\u0cc6\u0cb3\u0cc6",
+    "\u0ca8\u0caf\u0cb5\u0cbe\u0ca6",
+    "\u0ca8\u0c97\u0cc1",
+    "\u0cac\u0cc6\u0c9a\u0ccd\u0c9a\u0c97\u0cbf\u0ca8",
+    "\u0cb9\u0cc1\u0cb2\u0ccd\u0cb2\u0cc1",
+    "\u0caa\u0c95\u0ccd\u0cb7\u0cbf",
+    "\u0c85\u0ca4\u0ccd\u0caf\u0c82\u0ca4 \u0cac\u0cb2\u0cb5\u0cbe\u0ca6",
+    "\u0cac\u0cb0\u0cc6"
+  ],
+  "kn": "\u0c85\u0ca4\u0ccd\u0caf\u0c82\u0ca4 \u0cac\u0cb2\u0cb5\u0cbe\u0ca6",
+  "origin_lang": "en",
+  "target_lang": "kn",
+  "word": "strongest"
+}</pre>
+                            </div>
+                        </td>
+                    </tr>
+                    
+                    
+                    <tr>
+                        <td>0050_translation_en_kn:20</td>
+                        <td>1</td>
+                        <td>1406.359042</td>
+                        <td>{}</td>
+                    </tr>
+                    
+                    <tr>
+                        <td colspan="4" class="question-info">
+                            <div class="question-info-toggle" onclick="toggleQuestionInfo(this)">
+                                [+]
+                            </div>
+                            <div class="question-info-content hidden">
+                              <strong>Question Information:</strong>
+                              <pre>{
+  "choices": [
+    "\u0ca8\u0cc3\u0ca4\u0ccd\u0caf \u0cae\u0cbe\u0ca1\u0cc1",
+    "\u0ca4\u0cbf\u0ca8\u0ccd\u0ca8\u0cc1",
+    "\u0cae\u0cb3\u0cc6",
+    "\u0cb8\u0cbf\u0cb9\u0cbf\u0caf\u0cbe\u0ca6",
+    "\u0c86\u0c95\u0cbe\u0cb6",
+    "\u0cae\u0ccb\u0ca1",
+    "\u0cb8\u0ccd\u0ca8\u0cc7\u0cb9\u0cbf\u0ca4",
+    "\u0cb9\u0cb0\u0cbf\u0ca4\u0cb5\u0cbe\u0ca6"
+  ],
+  "kn": "\u0cb8\u0ccd\u0ca8\u0cc7\u0cb9\u0cbf\u0ca4",
+  "origin_lang": "en",
+  "target_lang": "kn",
+  "word": "friend"
+}</pre>
+                            </div>
+                        </td>
+                    </tr>
+                    
+                    
+                    <tr>
+                        <td>0050_translation_en_kn:21</td>
+                        <td>1</td>
+                        <td>978.137416</td>
+                        <td>{}</td>
+                    </tr>
+                    
+                    <tr>
+                        <td colspan="4" class="question-info">
+                            <div class="question-info-toggle" onclick="toggleQuestionInfo(this)">
+                                [+]
+                            </div>
+                            <div class="question-info-content hidden">
+                              <strong>Question Information:</strong>
+                              <pre>{
+  "choices": [
+    "\u0cae\u0cb0\u0cb3\u0cc1",
+    "\u0c93\u0ca1\u0cc1",
+    "\u0ca8\u0c95\u0ccd\u0cb7\u0ca4\u0ccd\u0cb0",
+    "\u0ca8\u0cbf\u0ca6\u0ccd\u0cb0\u0cbf\u0cb8\u0cc1",
+    "\u0cae\u0cc3\u0ca6\u0cc1\u0cb5\u0cbe\u0ca6",
+    "\u0cb9\u0cbe\u0ca1\u0cc1",
+    "\u0cac\u0cc6\u0c82\u0c95\u0cbf",
+    "\u0c88\u0c9c\u0cc1"
+  ],
+  "kn": "\u0c93\u0ca1\u0cc1",
+  "origin_lang": "en",
+  "target_lang": "kn",
+  "word": "to run"
+}</pre>
+                            </div>
+                        </td>
+                    </tr>
+                    
+                    
+                    <tr>
+                        <td>0050_translation_en_kn:22</td>
+                        <td>0</td>
+                        <td>972.0913330000001</td>
+                        <td>{
+  "expected": "\u0ca6\u0cc1\u0c82\u0ca1\u0cbe\u0ca6",
+  "response": "\u0cac\u0cb0\u0cc6"
+}</td>
+                    </tr>
+                    
+                    <tr>
+                        <td colspan="4" class="question-info">
+                            <div class="question-info-toggle" onclick="toggleQuestionInfo(this)">
+                                [+]
+                            </div>
+                            <div class="question-info-content hidden">
+                              <strong>Question Information:</strong>
+                              <pre>{
+  "choices": [
+    "\u0cb9\u0cb0\u0cbf\u0ca4\u0cb5\u0cbe\u0ca6",
+    "\u0cac\u0cb0\u0cc6",
+    "\u0cb9\u0c97\u0cc1\u0cb0\u0cb5\u0cbe\u0ca6",
+    "\u0c93\u0ca1\u0cc1",
+    "\u0c89\u0cb8\u0cbf\u0cb0\u0cbe\u0ca1\u0cc1",
+    "\u0ca6\u0cc1\u0c82\u0ca1\u0cbe\u0ca6",
+    "\u0cae\u0cb0\u0cb3\u0cc1",
+    "\u0ca8\u0c97\u0cc1"
+  ],
+  "kn": "\u0ca6\u0cc1\u0c82\u0ca1\u0cbe\u0ca6",
+  "origin_lang": "en",
+  "target_lang": "kn",
+  "word": "round"
+}</pre>
+                            </div>
+                        </td>
+                    </tr>
+                    
+                    
+                    <tr>
+                        <td>0050_translation_en_kn:23</td>
+                        <td>0</td>
+                        <td>1212.0369999999998</td>
+                        <td>{
+  "expected": "\u0c97\u0cbe\u0cb3\u0cbf",
+  "origin_word_details": "Can be noun (moving air) or verb (to twist)",
+  "response": "\u0cb9\u0cc1\u0cb2\u0ccd\u0cb2\u0cc1"
+}</td>
+                    </tr>
+                    
+                    <tr>
+                        <td colspan="4" class="question-info">
+                            <div class="question-info-toggle" onclick="toggleQuestionInfo(this)">
+                                [+]
+                            </div>
+                            <div class="question-info-content hidden">
+                              <strong>Question Information:</strong>
+                              <pre>{
+  "choices": [
+    "\u0ca8\u0c95\u0ccd\u0cb7\u0ca4\u0ccd\u0cb0",
+    "\u0cb9\u0cc1\u0cb2\u0ccd\u0cb2\u0cc1",
+    "\u0c97\u0cbe\u0cb3\u0cbf",
+    "\u0cb8\u0cbf\u0cb9\u0cbf\u0caf\u0cbe\u0ca6",
+    "\u0cac\u0cc6\u0c82\u0c95\u0cbf",
+    "\u0cac\u0cc0\u0cb3\u0cc1",
+    "\u0cb9\u0c97\u0cc1\u0cb0\u0cb5\u0cbe\u0ca6",
+    "\u0cb9\u0cbe\u0ca1\u0cc1"
+  ],
+  "kn": "\u0c97\u0cbe\u0cb3\u0cbf",
+  "origin_details": "Can be noun (moving air) or verb (to twist)",
+  "origin_lang": "en",
+  "target_lang": "kn",
+  "word": "wind"
+}</pre>
+                            </div>
+                        </td>
+                    </tr>
+                    
+                    
+                    <tr>
+                        <td>0050_translation_en_kn:24</td>
+                        <td>1</td>
+                        <td>1533.764124</td>
+                        <td>{}</td>
+                    </tr>
+                    
+                    <tr>
+                        <td colspan="4" class="question-info">
+                            <div class="question-info-toggle" onclick="toggleQuestionInfo(this)">
+                                [+]
+                            </div>
+                            <div class="question-info-content hidden">
+                              <strong>Question Information:</strong>
+                              <pre>{
+  "choices": [
+    "\u0c86\u0c95\u0cbe\u0cb6",
+    "\u0cb5\u0cc7\u0c97\u0cb5\u0cbe\u0ca6",
+    "\u0cae\u0cb0\u0cb3\u0cc1",
+    "\u0cac\u0cc6\u0c9a\u0ccd\u0c9a\u0c97\u0cbf\u0ca8",
+    "\u0c95\u0cb2\u0ccd\u0cb2\u0cc1",
+    "\u0ca6\u0cc1\u0c82\u0ca1\u0cbe\u0ca6",
+    "\u0cb8\u0ccd\u0ca8\u0cc7\u0cb9\u0cbf\u0ca4",
+    "\u0ca8\u0cc3\u0ca4\u0ccd\u0caf \u0cae\u0cbe\u0ca1\u0cc1"
+  ],
+  "kn": "\u0cac\u0cc6\u0c9a\u0ccd\u0c9a\u0c97\u0cbf\u0ca8",
+  "origin_lang": "en",
+  "target_lang": "kn",
+  "word": "warm"
+}</pre>
+                            </div>
+                        </td>
+                    </tr>
+                    
+                    
+                    <tr>
+                        <td>0050_translation_en_kn:25</td>
+                        <td>1</td>
+                        <td>1134.271416</td>
+                        <td>{}</td>
+                    </tr>
+                    
+                    <tr>
+                        <td colspan="4" class="question-info">
+                            <div class="question-info-toggle" onclick="toggleQuestionInfo(this)">
+                                [+]
+                            </div>
+                            <div class="question-info-content hidden">
+                              <strong>Question Information:</strong>
+                              <pre>{
+  "choices": [
+    "\u0cb9\u0cbe\u0ca1\u0cc1",
+    "\u0c95\u0cb2\u0ccd\u0cb2\u0cc1",
+    "\u0c9a\u0c82\u0ca6\u0ccd\u0cb0",
+    "\u0ca8\u0c97\u0cc1",
+    "\u0c86\u0c95\u0cbe\u0cb6",
+    "\u0cb8\u0ccd\u0ca8\u0cc7\u0cb9\u0cbf\u0ca4",
+    "\u0ca8\u0caf\u0cb5\u0cbe\u0ca6",
+    "\u0ca4\u0cbe\u0c9c\u0cbe"
+  ],
+  "kn": "\u0c95\u0cb2\u0ccd\u0cb2\u0cc1",
+  "origin_lang": "en",
+  "target_lang": "kn",
+  "word": "stone"
+}</pre>
+                            </div>
+                        </td>
+                    </tr>
+                    
+                    
+                    <tr>
+                        <td>0050_translation_en_kn:26</td>
+                        <td>0</td>
+                        <td>1427.088334</td>
+                        <td>{
+  "expected": "\u0c86\u0cb3\u0cb5\u0cbe\u0ca6",
+  "origin_word_details": "Can refer to physical depth or emotional/intellectual depth",
+  "response": "\u0cb8\u0cbf\u0cb9\u0cbf\u0caf\u0cbe\u0ca6"
+}</td>
+                    </tr>
+                    
+                    <tr>
+                        <td colspan="4" class="question-info">
+                            <div class="question-info-toggle" onclick="toggleQuestionInfo(this)">
+                                [+]
+                            </div>
+                            <div class="question-info-content hidden">
+                              <strong>Question Information:</strong>
+                              <pre>{
+  "choices": [
+    "\u0c89\u0cb8\u0cbf\u0cb0\u0cbe\u0ca1\u0cc1",
+    "\u0cb8\u0cbf\u0cb9\u0cbf\u0caf\u0cbe\u0ca6",
+    "\u0c95\u0cb2\u0ccd\u0cb2\u0cc1",
+    "\u0cac\u0cb0\u0cc6",
+    "\u0c86\u0cb3\u0cb5\u0cbe\u0ca6",
+    "\u0cae\u0cb0",
+    "\u0ca8\u0c95\u0ccd\u0cb7\u0ca4\u0ccd\u0cb0",
+    "\u0ca4\u0cbf\u0ca8\u0ccd\u0ca8\u0cc1"
+  ],
+  "kn": "\u0c86\u0cb3\u0cb5\u0cbe\u0ca6",
+  "origin_details": "Can refer to physical depth or emotional/intellectual depth",
+  "origin_lang": "en",
+  "target_lang": "kn",
+  "word": "deep"
+}</pre>
+                            </div>
+                        </td>
+                    </tr>
+                    
+                    
+                    <tr>
+                        <td>0050_translation_en_kn:27</td>
+                        <td>0</td>
+                        <td>1113.519042</td>
+                        <td>{
+  "expected": "\u0c88\u0c9c\u0cc1",
+  "response": "\u0cac\u0cc0\u0cb3\u0cc1"
+}</td>
+                    </tr>
+                    
+                    <tr>
+                        <td colspan="4" class="question-info">
+                            <div class="question-info-toggle" onclick="toggleQuestionInfo(this)">
+                                [+]
+                            </div>
+                            <div class="question-info-content hidden">
+                              <strong>Question Information:</strong>
+                              <pre>{
+  "choices": [
+    "\u0c88\u0c9c\u0cc1",
+    "\u0c9a\u0c82\u0ca6\u0ccd\u0cb0",
+    "\u0ca8\u0c95\u0ccd\u0cb7\u0ca4\u0ccd\u0cb0",
+    "\u0cac\u0cc0\u0cb3\u0cc1",
+    "\u0cae\u0ccb\u0ca1",
+    "\u0cae\u0ccc\u0ca8\u0cb5\u0cbe\u0ca6",
+    "\u0cb8\u0ccd\u0ca8\u0cc7\u0cb9\u0cbf\u0ca4",
+    "\u0ca8\u0cc0\u0cb0\u0cc1"
+  ],
+  "kn": "\u0c88\u0c9c\u0cc1",
+  "origin_lang": "en",
+  "target_lang": "kn",
+  "word": "to swim"
+}</pre>
+                            </div>
+                        </td>
+                    </tr>
+                    
+                    
+                    <tr>
+                        <td>0050_translation_en_kn:28</td>
+                        <td>1</td>
+                        <td>1195.2685000000001</td>
+                        <td>{}</td>
+                    </tr>
+                    
+                    <tr>
+                        <td colspan="4" class="question-info">
+                            <div class="question-info-toggle" onclick="toggleQuestionInfo(this)">
+                                [+]
+                            </div>
+                            <div class="question-info-content hidden">
+                              <strong>Question Information:</strong>
+                              <pre>{
+  "choices": [
+    "\u0cae\u0ccc\u0ca8\u0cb5\u0cbe\u0ca6",
+    "\u0ca8\u0cbf\u0ca6\u0ccd\u0cb0\u0cbf\u0cb8\u0cc1",
+    "\u0cae\u0cb0\u0cb3\u0cc1",
+    "\u0c9a\u0cbe\u0cb2\u0cbf\u0cb8\u0cc1",
+    "\u0c85\u0ca1\u0c97\u0cc1",
+    "\u0caa\u0c95\u0ccd\u0cb7\u0cbf",
+    "\u0cae\u0cb3\u0cc6",
+    "\u0cad\u0cbe\u0cb0\u0cb5\u0cbe\u0ca6"
+  ],
+  "kn": "\u0caa\u0c95\u0ccd\u0cb7\u0cbf",
+  "origin_lang": "en",
+  "target_lang": "kn",
+  "word": "bird"
+}</pre>
+                            </div>
+                        </td>
+                    </tr>
+                    
+                    
+                    <tr>
+                        <td>0050_translation_en_kn:29</td>
+                        <td>0</td>
+                        <td>1683.045083</td>
+                        <td>{
+  "expected": "\u0cb8\u0cbf\u0cb9\u0cbf\u0caf\u0cbe\u0ca6",
+  "origin_word_details": "Can refer to taste or personality",
+  "response": "\u0cae\u0ccc\u0ca8\u0cb5\u0cbe\u0ca6"
+}</td>
+                    </tr>
+                    
+                    <tr>
+                        <td colspan="4" class="question-info">
+                            <div class="question-info-toggle" onclick="toggleQuestionInfo(this)">
+                                [+]
+                            </div>
+                            <div class="question-info-content hidden">
+                              <strong>Question Information:</strong>
+                              <pre>{
+  "choices": [
+    "\u0cae\u0ccc\u0ca8\u0cb5\u0cbe\u0ca6",
+    "\u0c93\u0ca1\u0cc1",
+    "\u0cb9\u0cc3\u0ca6\u0caf",
+    "\u0ca8\u0c97\u0cc1",
+    "\u0c95\u0cb2\u0ccd\u0cb2\u0cc1",
+    "\u0cb8\u0cbf\u0cb9\u0cbf\u0caf\u0cbe\u0ca6",
+    "\u0caa\u0cc1\u0cb8\u0ccd\u0ca4\u0c95",
+    "\u0c85\u0ca1\u0c97\u0cc1"
+  ],
+  "kn": "\u0cb8\u0cbf\u0cb9\u0cbf\u0caf\u0cbe\u0ca6",
+  "origin_details": "Can refer to taste or personality",
+  "origin_lang": "en",
+  "target_lang": "kn",
+  "word": "sweet"
+}</pre>
+                            </div>
+                        </td>
+                    </tr>
+                    
+                    
+                    <tr>
+                        <td>0050_translation_en_kn:3</td>
+                        <td>1</td>
+                        <td>1304.9164999999998</td>
+                        <td>{}</td>
+                    </tr>
+                    
+                    <tr>
+                        <td colspan="4" class="question-info">
+                            <div class="question-info-toggle" onclick="toggleQuestionInfo(this)">
+                                [+]
+                            </div>
+                            <div class="question-info-content hidden">
+                              <strong>Question Information:</strong>
+                              <pre>{
+  "choices": [
+    "\u0ca8\u0cc0\u0cb0\u0cc1",
+    "\u0cb9\u0cbe\u0cb0\u0cc1",
+    "\u0cae\u0cb3\u0cc6",
+    "\u0ca8\u0cc3\u0ca4\u0ccd\u0caf \u0cae\u0cbe\u0ca1\u0cc1",
+    "\u0ca8\u0cbf\u0ca6\u0ccd\u0cb0\u0cbf\u0cb8\u0cc1",
+    "\u0caa\u0cc1\u0cb8\u0ccd\u0ca4\u0c95",
+    "\u0c97\u0cbe\u0cb3\u0cbf",
+    "\u0ca4\u0cbf\u0ca8\u0ccd\u0ca8\u0cc1"
+  ],
+  "kn": "\u0caa\u0cc1\u0cb8\u0ccd\u0ca4\u0c95",
+  "origin_lang": "en",
+  "target_lang": "kn",
+  "word": "book"
+}</pre>
+                            </div>
+                        </td>
+                    </tr>
+                    
+                    
+                    <tr>
+                        <td>0050_translation_en_kn:30</td>
+                        <td>0</td>
+                        <td>1321.352709</td>
+                        <td>{
+  "expected": "\u0cae\u0ccb\u0ca1",
+  "response": "\u0ca6\u0cc1\u0c82\u0ca1\u0cbe\u0ca6"
+}</td>
+                    </tr>
+                    
+                    <tr>
+                        <td colspan="4" class="question-info">
+                            <div class="question-info-toggle" onclick="toggleQuestionInfo(this)">
+                                [+]
+                            </div>
+                            <div class="question-info-content hidden">
+                              <strong>Question Information:</strong>
+                              <pre>{
+  "choices": [
+    "\u0c85\u0ca4\u0ccd\u0caf\u0c82\u0ca4 \u0cac\u0cb2\u0cb5\u0cbe\u0ca6",
+    "\u0c9a\u0cbe\u0cb2\u0cbf\u0cb8\u0cc1",
+    "\u0cb5\u0cc7\u0c97\u0cb5\u0cbe\u0ca6",
+    "\u0cb9\u0cc3\u0ca6\u0caf",
+    "\u0cb8\u0ccd\u0ca8\u0cc7\u0cb9\u0cbf\u0ca4",
+    "\u0ca6\u0cc1\u0c82\u0ca1\u0cbe\u0ca6",
+    "\u0cae\u0ccb\u0ca1",
+    "\u0ca8\u0cc3\u0ca4\u0ccd\u0caf \u0cae\u0cbe\u0ca1\u0cc1"
+  ],
+  "kn": "\u0cae\u0ccb\u0ca1",
+  "origin_lang": "en",
+  "target_lang": "kn",
+  "word": "cloud"
+}</pre>
+                            </div>
+                        </td>
+                    </tr>
+                    
+                    
+                    <tr>
+                        <td>0050_translation_en_kn:31</td>
+                        <td>0</td>
+                        <td>1020.430666</td>
+                        <td>{
+  "expected": "\u0ca8\u0c97\u0cc1",
+  "response": "\u0cae\u0cb0\u0cb3\u0cc1"
+}</td>
+                    </tr>
+                    
+                    <tr>
+                        <td colspan="4" class="question-info">
+                            <div class="question-info-toggle" onclick="toggleQuestionInfo(this)">
+                                [+]
+                            </div>
+                            <div class="question-info-content hidden">
+                              <strong>Question Information:</strong>
+                              <pre>{
+  "choices": [
+    "\u0cb9\u0cc1\u0cb2\u0ccd\u0cb2\u0cc1",
+    "\u0cae\u0cb0\u0cb3\u0cc1",
+    "\u0cb9\u0cc2\u0cb5\u0cc1",
+    "\u0caa\u0c95\u0ccd\u0cb7\u0cbf",
+    "\u0cae\u0cb0",
+    "\u0ca8\u0c97\u0cc1",
+    "\u0c86\u0cb3\u0cb5\u0cbe\u0ca6",
+    "\u0ca8\u0caf\u0cb5\u0cbe\u0ca6"
+  ],
+  "kn": "\u0ca8\u0c97\u0cc1",
+  "origin_lang": "en",
+  "target_lang": "kn",
+  "word": "to smile"
+}</pre>
+                            </div>
+                        </td>
+                    </tr>
+                    
+                    
+                    <tr>
+                        <td>0050_translation_en_kn:32</td>
+                        <td>0</td>
+                        <td>1722.635917</td>
+                        <td>{
+  "expected": "\u0cae\u0cc3\u0ca6\u0cc1\u0cb5\u0cbe\u0ca6",
+  "response": "\u0c9a\u0cbe\u0cb2\u0cbf\u0cb8\u0cc1"
+}</td>
+                    </tr>
+                    
+                    <tr>
+                        <td colspan="4" class="question-info">
+                            <div class="question-info-toggle" onclick="toggleQuestionInfo(this)">
+                                [+]
+                            </div>
+                            <div class="question-info-content hidden">
+                              <strong>Question Information:</strong>
+                              <pre>{
+  "choices": [
+    "\u0cb8\u0ccd\u0ca8\u0cc7\u0cb9\u0cbf\u0ca4",
+    "\u0c9a\u0cbe\u0cb2\u0cbf\u0cb8\u0cc1",
+    "\u0c86\u0c95\u0cbe\u0cb6",
+    "\u0caa\u0cb0\u0ccd\u0cb5\u0ca4",
+    "\u0ca8\u0c97\u0cc1",
+    "\u0ca8\u0cc0\u0cb0\u0cc1",
+    "\u0c86\u0cb3\u0cb5\u0cbe\u0ca6",
+    "\u0cae\u0cc3\u0ca6\u0cc1\u0cb5\u0cbe\u0ca6"
+  ],
+  "kn": "\u0cae\u0cc3\u0ca6\u0cc1\u0cb5\u0cbe\u0ca6",
+  "origin_lang": "en",
+  "target_lang": "kn",
+  "word": "soft"
+}</pre>
+                            </div>
+                        </td>
+                    </tr>
+                    
+                    
+                    <tr>
+                        <td>0050_translation_en_kn:33</td>
+                        <td>1</td>
+                        <td>917.1158330000001</td>
+                        <td>{}</td>
+                    </tr>
+                    
+                    <tr>
+                        <td colspan="4" class="question-info">
+                            <div class="question-info-toggle" onclick="toggleQuestionInfo(this)">
+                                [+]
+                            </div>
+                            <div class="question-info-content hidden">
+                              <strong>Question Information:</strong>
+                              <pre>{
+  "choices": [
+    "\u0cae\u0ccb\u0ca1",
+    "\u0cae\u0cb0\u0cb3\u0cc1",
+    "\u0cae\u0cb3\u0cc6",
+    "\u0cac\u0cc6\u0c9a\u0ccd\u0c9a\u0c97\u0cbf\u0ca8",
+    "\u0c89\u0cb8\u0cbf\u0cb0\u0cbe\u0ca1\u0cc1",
+    "\u0c93\u0ca1\u0cc1",
+    "\u0cb8\u0ccd\u0ca8\u0cc7\u0cb9\u0cbf\u0ca4",
+    "\u0cae\u0cb0"
+  ],
+  "kn": "\u0cae\u0cb3\u0cc6",
+  "origin_lang": "en",
+  "target_lang": "kn",
+  "word": "rain"
+}</pre>
+                            </div>
+                        </td>
+                    </tr>
+                    
+                    
+                    <tr>
+                        <td>0050_translation_en_kn:34</td>
+                        <td>0</td>
+                        <td>896.493209</td>
+                        <td>{
+  "expected": "\u0cac\u0cc6\u0cb3\u0cc6",
+  "response": "\u0c88\u0c9c\u0cc1"
+}</td>
+                    </tr>
+                    
+                    <tr>
+                        <td colspan="4" class="question-info">
+                            <div class="question-info-toggle" onclick="toggleQuestionInfo(this)">
+                                [+]
+                            </div>
+                            <div class="question-info-content hidden">
+                              <strong>Question Information:</strong>
+                              <pre>{
+  "choices": [
+    "\u0c86\u0cb3\u0cb5\u0cbe\u0ca6",
+    "\u0c88\u0c9c\u0cc1",
+    "\u0ca4\u0cbe\u0c9c\u0cbe",
+    "\u0ca8\u0cc0\u0cb0\u0cc1",
+    "\u0caa\u0c95\u0ccd\u0cb7\u0cbf",
+    "\u0cac\u0cc6\u0c82\u0c95\u0cbf",
+    "\u0cac\u0cc6\u0cb3\u0cc6",
+    "\u0ca8\u0caf\u0cb5\u0cbe\u0ca6"
+  ],
+  "kn": "\u0cac\u0cc6\u0cb3\u0cc6",
+  "origin_lang": "en",
+  "target_lang": "kn",
+  "word": "to grow"
+}</pre>
+                            </div>
+                        </td>
+                    </tr>
+                    
+                    
+                    <tr>
+                        <td>0050_translation_en_kn:35</td>
+                        <td>0</td>
+                        <td>987.729249</td>
+                        <td>{
+  "expected": "\u0cb5\u0cc7\u0c97\u0cb5\u0cbe\u0ca6",
+  "response": "\u0cac\u0cb0\u0cc6"
+}</td>
+                    </tr>
+                    
+                    <tr>
+                        <td colspan="4" class="question-info">
+                            <div class="question-info-toggle" onclick="toggleQuestionInfo(this)">
+                                [+]
+                            </div>
+                            <div class="question-info-content hidden">
+                              <strong>Question Information:</strong>
+                              <pre>{
+  "choices": [
+    "\u0cb5\u0cc7\u0c97\u0cb5\u0cbe\u0ca6",
+    "\u0cac\u0cb0\u0cc6",
+    "\u0c89\u0cb8\u0cbf\u0cb0\u0cbe\u0ca1\u0cc1",
+    "\u0ca8\u0cc0\u0cb0\u0cc1",
+    "\u0cae\u0cc3\u0ca6\u0cc1\u0cb5\u0cbe\u0ca6",
+    "\u0cac\u0cc6\u0c82\u0c95\u0cbf",
+    "\u0c9a\u0cbe\u0cb2\u0cbf\u0cb8\u0cc1",
+    "\u0ca4\u0cbe\u0c9c\u0cbe"
+  ],
+  "kn": "\u0cb5\u0cc7\u0c97\u0cb5\u0cbe\u0ca6",
+  "origin_lang": "en",
+  "target_lang": "kn",
+  "word": "quick"
+}</pre>
+                            </div>
+                        </td>
+                    </tr>
+                    
+                    
+                    <tr>
+                        <td>0050_translation_en_kn:36</td>
+                        <td>1</td>
+                        <td>1359.2556260000001</td>
+                        <td>{}</td>
+                    </tr>
+                    
+                    <tr>
+                        <td colspan="4" class="question-info">
+                            <div class="question-info-toggle" onclick="toggleQuestionInfo(this)">
+                                [+]
+                            </div>
+                            <div class="question-info-content hidden">
+                              <strong>Question Information:</strong>
+                              <pre>{
+  "choices": [
+    "\u0ca8\u0cbf\u0ca6\u0ccd\u0cb0\u0cbf\u0cb8\u0cc1",
+    "\u0c89\u0caa\u0ccd\u0caa\u0cc1",
+    "\u0cae\u0cc3\u0ca6\u0cc1\u0cb5\u0cbe\u0ca6",
+    "\u0cb9\u0cc3\u0ca6\u0caf",
+    "\u0c9a\u0cbe\u0cb2\u0cbf\u0cb8\u0cc1",
+    "\u0cac\u0cc6\u0cb3\u0cc6",
+    "\u0ca8\u0c95\u0ccd\u0cb7\u0ca4\u0ccd\u0cb0",
+    "\u0cae\u0cb0"
+  ],
+  "kn": "\u0ca8\u0c95\u0ccd\u0cb7\u0ca4\u0ccd\u0cb0",
+  "origin_lang": "en",
+  "target_lang": "kn",
+  "word": "star"
+}</pre>
+                            </div>
+                        </td>
+                    </tr>
+                    
+                    
+                    <tr>
+                        <td>0050_translation_en_kn:37</td>
+                        <td>0</td>
+                        <td>988.4942080000001</td>
+                        <td>{
+  "expected": "\u0ca8\u0cc3\u0ca4\u0ccd\u0caf \u0cae\u0cbe\u0ca1\u0cc1",
+  "response": "\u0cae\u0ccb\u0ca1"
+}</td>
+                    </tr>
+                    
+                    <tr>
+                        <td colspan="4" class="question-info">
+                            <div class="question-info-toggle" onclick="toggleQuestionInfo(this)">
+                                [+]
+                            </div>
+                            <div class="question-info-content hidden">
+                              <strong>Question Information:</strong>
+                              <pre>{
+  "choices": [
+    "\u0ca6\u0cc1\u0c82\u0ca1\u0cbe\u0ca6",
+    "\u0ca8\u0cc3\u0ca4\u0ccd\u0caf \u0cae\u0cbe\u0ca1\u0cc1",
+    "\u0ca4\u0c82\u0caa\u0cbe\u0ca6",
+    "\u0c85\u0ca1\u0c97\u0cc1",
+    "\u0cae\u0ccb\u0ca1",
+    "\u0ca8\u0c95\u0ccd\u0cb7\u0ca4\u0ccd\u0cb0",
+    "\u0c9a\u0c82\u0ca6\u0ccd\u0cb0",
+    "\u0cb5\u0cc7\u0c97\u0cb5\u0cbe\u0ca6"
+  ],
+  "kn": "\u0ca8\u0cc3\u0ca4\u0ccd\u0caf \u0cae\u0cbe\u0ca1\u0cc1",
+  "origin_lang": "en",
+  "target_lang": "kn",
+  "word": "to dance"
+}</pre>
+                            </div>
+                        </td>
+                    </tr>
+                    
+                    
+                    <tr>
+                        <td>0050_translation_en_kn:38</td>
+                        <td>1</td>
+                        <td>1360.2331669999999</td>
+                        <td>{}</td>
+                    </tr>
+                    
+                    <tr>
+                        <td colspan="4" class="question-info">
+                            <div class="question-info-toggle" onclick="toggleQuestionInfo(this)">
+                                [+]
+                            </div>
+                            <div class="question-info-content hidden">
+                              <strong>Question Information:</strong>
+                              <pre>{
+  "choices": [
+    "\u0cad\u0cbe\u0cb0\u0cb5\u0cbe\u0ca6",
+    "\u0c89\u0cb8\u0cbf\u0cb0\u0cbe\u0ca1\u0cc1",
+    "\u0cb9\u0cc1\u0cb2\u0ccd\u0cb2\u0cc1",
+    "\u0cac\u0cc0\u0cb3\u0cc1",
+    "\u0cb8\u0cc1\u0c82\u0ca6\u0cb0\u0cb5\u0cbe\u0ca6",
+    "\u0ca8\u0c95\u0ccd\u0cb7\u0ca4\u0ccd\u0cb0",
+    "\u0c9a\u0cbe\u0cb2\u0cbf\u0cb8\u0cc1",
+    "\u0cb9\u0c97\u0cc1\u0cb0\u0cb5\u0cbe\u0ca6"
+  ],
+  "kn": "\u0cad\u0cbe\u0cb0\u0cb5\u0cbe\u0ca6",
+  "origin_lang": "en",
+  "target_lang": "kn",
+  "word": "heavy"
+}</pre>
+                            </div>
+                        </td>
+                    </tr>
+                    
+                    
+                    <tr>
+                        <td>0050_translation_en_kn:39</td>
+                        <td>1</td>
+                        <td>1211.599667</td>
+                        <td>{}</td>
+                    </tr>
+                    
+                    <tr>
+                        <td colspan="4" class="question-info">
+                            <div class="question-info-toggle" onclick="toggleQuestionInfo(this)">
+                                [+]
+                            </div>
+                            <div class="question-info-content hidden">
+                              <strong>Question Information:</strong>
+                              <pre>{
+  "choices": [
+    "\u0cac\u0cc6\u0c82\u0c95\u0cbf",
+    "\u0cae\u0cb0\u0cb3\u0cc1",
+    "\u0c85\u0ca1\u0c97\u0cc1",
+    "\u0ca4\u0c82\u0caa\u0cbe\u0ca6",
+    "\u0cae\u0ccb\u0ca1",
+    "\u0ca8\u0cc3\u0ca4\u0ccd\u0caf \u0cae\u0cbe\u0ca1\u0cc1",
+    "\u0cae\u0cc3\u0ca6\u0cc1\u0cb5\u0cbe\u0ca6",
+    "\u0c9a\u0cbe\u0cb2\u0cbf\u0cb8\u0cc1"
+  ],
+  "kn": "\u0cac\u0cc6\u0c82\u0c95\u0cbf",
+  "origin_lang": "en",
+  "target_lang": "kn",
+  "word": "fire"
+}</pre>
+                            </div>
+                        </td>
+                    </tr>
+                    
+                    
+                    <tr>
+                        <td>0050_translation_en_kn:4</td>
+                        <td>0</td>
+                        <td>914.74775</td>
+                        <td>{
+  "expected": "\u0ca4\u0cbf\u0ca8\u0ccd\u0ca8\u0cc1",
+  "response": "\u0ca8\u0c97\u0cc1"
+}</td>
+                    </tr>
+                    
+                    <tr>
+                        <td colspan="4" class="question-info">
+                            <div class="question-info-toggle" onclick="toggleQuestionInfo(this)">
+                                [+]
+                            </div>
+                            <div class="question-info-content hidden">
+                              <strong>Question Information:</strong>
+                              <pre>{
+  "choices": [
+    "\u0cb9\u0cc1\u0cb2\u0ccd\u0cb2\u0cc1",
+    "\u0c86\u0c95\u0cbe\u0cb6",
+    "\u0ca4\u0cbf\u0ca8\u0ccd\u0ca8\u0cc1",
+    "\u0ca8\u0c97\u0cc1",
+    "\u0cae\u0cb3\u0cc6",
+    "\u0cb9\u0cbe\u0ca1\u0cc1",
+    "\u0ca4\u0cbe\u0c9c\u0cbe",
+    "\u0cb8\u0cbf\u0cb9\u0cbf\u0caf\u0cbe\u0ca6"
+  ],
+  "kn": "\u0ca4\u0cbf\u0ca8\u0ccd\u0ca8\u0cc1",
+  "origin_lang": "en",
+  "target_lang": "kn",
+  "word": "to eat"
+}</pre>
+                            </div>
+                        </td>
+                    </tr>
+                    
+                    
+                    <tr>
+                        <td>0050_translation_en_kn:40</td>
+                        <td>1</td>
+                        <td>1432.655083</td>
+                        <td>{}</td>
+                    </tr>
+                    
+                    <tr>
+                        <td colspan="4" class="question-info">
+                            <div class="question-info-toggle" onclick="toggleQuestionInfo(this)">
+                                [+]
+                            </div>
+                            <div class="question-info-content hidden">
+                              <strong>Question Information:</strong>
+                              <pre>{
+  "choices": [
+    "\u0cb8\u0cbf\u0cb9\u0cbf\u0caf\u0cbe\u0ca6",
+    "\u0cae\u0cb0",
+    "\u0ca8\u0c95\u0ccd\u0cb7\u0ca4\u0ccd\u0cb0",
+    "\u0c89\u0cb8\u0cbf\u0cb0\u0cbe\u0ca1\u0cc1",
+    "\u0cb9\u0c97\u0cc1\u0cb0\u0cb5\u0cbe\u0ca6",
+    "\u0c86\u0cb3\u0cb5\u0cbe\u0ca6",
+    "\u0cb9\u0cbe\u0cb0\u0cc1",
+    "\u0cac\u0cc0\u0cb3\u0cc1"
+  ],
+  "kn": "\u0c89\u0cb8\u0cbf\u0cb0\u0cbe\u0ca1\u0cc1",
+  "origin_lang": "en",
+  "target_lang": "kn",
+  "word": "to breathe"
+}</pre>
+                            </div>
+                        </td>
+                    </tr>
+                    
+                    
+                    <tr>
+                        <td>0050_translation_en_kn:41</td>
+                        <td>0</td>
+                        <td>1157.877</td>
+                        <td>{
+  "expected": "\u0cb9\u0cb0\u0cbf\u0ca4\u0cb5\u0cbe\u0ca6",
+  "origin_word_details": "Can refer to physical edge or intelligence",
+  "response": "\u0ca4\u0c82\u0caa\u0cbe\u0ca6"
+}</td>
+                    </tr>
+                    
+                    <tr>
+                        <td colspan="4" class="question-info">
+                            <div class="question-info-toggle" onclick="toggleQuestionInfo(this)">
+                                [+]
+                            </div>
+                            <div class="question-info-content hidden">
+                              <strong>Question Information:</strong>
+                              <pre>{
+  "choices": [
+    "\u0ca4\u0c82\u0caa\u0cbe\u0ca6",
+    "\u0ca8\u0cc0\u0cb0\u0cc1",
+    "\u0cb9\u0cb0\u0cbf\u0ca4\u0cb5\u0cbe\u0ca6",
+    "\u0ca4\u0cbf\u0ca8\u0ccd\u0ca8\u0cc1",
+    "\u0cb9\u0cbe\u0ca1\u0cc1",
+    "\u0cb9\u0cc2\u0cb5\u0cc1",
+    "\u0ca8\u0c97\u0cc1",
+    "\u0cae\u0ccb\u0ca1"
+  ],
+  "kn": "\u0cb9\u0cb0\u0cbf\u0ca4\u0cb5\u0cbe\u0ca6",
+  "origin_details": "Can refer to physical edge or intelligence",
+  "origin_lang": "en",
+  "target_lang": "kn",
+  "word": "sharp"
+}</pre>
+                            </div>
+                        </td>
+                    </tr>
+                    
+                    
+                    <tr>
+                        <td>0050_translation_en_kn:42</td>
+                        <td>1</td>
+                        <td>1229.637416</td>
+                        <td>{}</td>
+                    </tr>
+                    
+                    <tr>
+                        <td colspan="4" class="question-info">
+                            <div class="question-info-toggle" onclick="toggleQuestionInfo(this)">
+                                [+]
+                            </div>
+                            <div class="question-info-content hidden">
+                              <strong>Question Information:</strong>
+                              <pre>{
+  "choices": [
+    "\u0c89\u0caa\u0ccd\u0caa\u0cc1",
+    "\u0cb8\u0cbf\u0cb9\u0cbf\u0caf\u0cbe\u0ca6",
+    "\u0ca4\u0cbe\u0c9c\u0cbe",
+    "\u0c9a\u0cbe\u0cb2\u0cbf\u0cb8\u0cc1",
+    "\u0caa\u0cc1\u0cb8\u0ccd\u0ca4\u0c95",
+    "\u0caa\u0c95\u0ccd\u0cb7\u0cbf",
+    "\u0cae\u0ccb\u0ca1",
+    "\u0cb9\u0cc3\u0ca6\u0caf"
+  ],
+  "kn": "\u0c89\u0caa\u0ccd\u0caa\u0cc1",
+  "origin_lang": "en",
+  "target_lang": "kn",
+  "word": "salt"
+}</pre>
+                            </div>
+                        </td>
+                    </tr>
+                    
+                    
+                    <tr>
+                        <td>0050_translation_en_kn:43</td>
+                        <td>0</td>
+                        <td>1216.5459580000002</td>
+                        <td>{
+  "expected": "\u0c85\u0ca1\u0c97\u0cc1",
+  "response": "\u0c95\u0cb2\u0ccd\u0cb2\u0cc1"
+}</td>
+                    </tr>
+                    
+                    <tr>
+                        <td colspan="4" class="question-info">
+                            <div class="question-info-toggle" onclick="toggleQuestionInfo(this)">
+                                [+]
+                            </div>
+                            <div class="question-info-content hidden">
+                              <strong>Question Information:</strong>
+                              <pre>{
+  "choices": [
+    "\u0ca8\u0caf\u0cb5\u0cbe\u0ca6",
+    "\u0c95\u0cb2\u0ccd\u0cb2\u0cc1",
+    "\u0ca4\u0cbf\u0ca8\u0ccd\u0ca8\u0cc1",
+    "\u0cae\u0cc3\u0ca6\u0cc1\u0cb5\u0cbe\u0ca6",
+    "\u0c97\u0cbe\u0cb3\u0cbf",
+    "\u0c93\u0ca1\u0cc1",
+    "\u0c85\u0ca1\u0c97\u0cc1",
+    "\u0ca4\u0c82\u0caa\u0cbe\u0ca6"
+  ],
+  "kn": "\u0c85\u0ca1\u0c97\u0cc1",
+  "origin_lang": "en",
+  "target_lang": "kn",
+  "word": "to hide"
+}</pre>
+                            </div>
+                        </td>
+                    </tr>
+                    
+                    
+                    <tr>
+                        <td>0050_translation_en_kn:44</td>
+                        <td>1</td>
+                        <td>1233.8635</td>
+                        <td>{}</td>
+                    </tr>
+                    
+                    <tr>
+                        <td colspan="4" class="question-info">
+                            <div class="question-info-toggle" onclick="toggleQuestionInfo(this)">
+                                [+]
+                            </div>
+                            <div class="question-info-content hidden">
+                              <strong>Question Information:</strong>
+                              <pre>{
+  "choices": [
+    "\u0c86\u0cb3\u0cb5\u0cbe\u0ca6",
+    "\u0ca8\u0caf\u0cb5\u0cbe\u0ca6",
+    "\u0cb9\u0c97\u0cc1\u0cb0\u0cb5\u0cbe\u0ca6",
+    "\u0cae\u0cb3\u0cc6",
+    "\u0c97\u0cbe\u0cb3\u0cbf",
+    "\u0ca4\u0c82\u0caa\u0cbe\u0ca6",
+    "\u0c89\u0cb8\u0cbf\u0cb0\u0cbe\u0ca1\u0cc1",
+    "\u0cb9\u0cc3\u0ca6\u0caf"
+  ],
+  "kn": "\u0ca8\u0caf\u0cb5\u0cbe\u0ca6",
+  "origin_lang": "en",
+  "target_lang": "kn",
+  "word": "smooth"
+}</pre>
+                            </div>
+                        </td>
+                    </tr>
+                    
+                    
+                    <tr>
+                        <td>0050_translation_en_kn:45</td>
+                        <td>1</td>
+                        <td>1336.6472079999999</td>
+                        <td>{}</td>
+                    </tr>
+                    
+                    <tr>
+                        <td colspan="4" class="question-info">
+                            <div class="question-info-toggle" onclick="toggleQuestionInfo(this)">
+                                [+]
+                            </div>
+                            <div class="question-info-content hidden">
+                              <strong>Question Information:</strong>
+                              <pre>{
+  "choices": [
+    "\u0ca4\u0cbe\u0c9c\u0cbe",
+    "\u0caa\u0c95\u0ccd\u0cb7\u0cbf",
+    "\u0c89\u0cb8\u0cbf\u0cb0\u0cbe\u0ca1\u0cc1",
+    "\u0cb8\u0cc1\u0c82\u0ca6\u0cb0\u0cb5\u0cbe\u0ca6",
+    "\u0caa\u0cb0\u0ccd\u0cb5\u0ca4",
+    "\u0cb9\u0cc1\u0cb2\u0ccd\u0cb2\u0cc1",
+    "\u0c93\u0ca1\u0cc1",
+    "\u0c89\u0caa\u0ccd\u0caa\u0cc1"
+  ],
+  "kn": "\u0cb9\u0cc1\u0cb2\u0ccd\u0cb2\u0cc1",
+  "origin_lang": "en",
+  "target_lang": "kn",
+  "word": "grass"
+}</pre>
+                            </div>
+                        </td>
+                    </tr>
+                    
+                    
+                    <tr>
+                        <td>0050_translation_en_kn:46</td>
+                        <td>0</td>
+                        <td>1112.288959</td>
+                        <td>{
+  "expected": "\u0cb9\u0cbe\u0cb0\u0cc1",
+  "response": "\u0c89\u0ca1\u0cc1"
+}</td>
+                    </tr>
+                    
+                    <tr>
+                        <td colspan="4" class="question-info">
+                            <div class="question-info-toggle" onclick="toggleQuestionInfo(this)">
+                                [+]
+                            </div>
+                            <div class="question-info-content hidden">
+                              <strong>Question Information:</strong>
+                              <pre>{
+  "choices": [
+    "\u0caa\u0ccd\u0cb0\u0c95\u0cbe\u0cb6\u0cae\u0cbe\u0ca8\u0cb5\u0cbe\u0ca6",
+    "\u0cae\u0cb3\u0cc6",
+    "\u0ca8\u0c97\u0cc1",
+    "\u0ca8\u0cc3\u0ca4\u0ccd\u0caf \u0cae\u0cbe\u0ca1\u0cc1",
+    "\u0caa\u0cb0\u0ccd\u0cb5\u0ca4",
+    "\u0caa\u0c95\u0ccd\u0cb7\u0cbf",
+    "\u0cb9\u0cbe\u0cb0\u0cc1",
+    "\u0cac\u0cc6\u0c9a\u0ccd\u0c9a\u0c97\u0cbf\u0ca8"
+  ],
+  "kn": "\u0cb9\u0cbe\u0cb0\u0cc1",
+  "origin_lang": "en",
+  "target_lang": "kn",
+  "word": "to fly"
+}</pre>
+                            </div>
+                        </td>
+                    </tr>
+                    
+                    
+                    <tr>
+                        <td>0050_translation_en_kn:47</td>
+                        <td>0</td>
+                        <td>1112.5120000000002</td>
+                        <td>{
+  "expected": "\u0ca4\u0c82\u0caa\u0cbe\u0ca6",
+  "response": "\u0c97\u0cbe\u0cb3\u0cbf"
+}</td>
+                    </tr>
+                    
+                    <tr>
+                        <td colspan="4" class="question-info">
+                            <div class="question-info-toggle" onclick="toggleQuestionInfo(this)">
+                                [+]
+                            </div>
+                            <div class="question-info-content hidden">
+                              <strong>Question Information:</strong>
+                              <pre>{
+  "choices": [
+    "\u0cb8\u0ccd\u0ca8\u0cc7\u0cb9\u0cbf\u0ca4",
+    "\u0ca4\u0c82\u0caa\u0cbe\u0ca6",
+    "\u0c97\u0cbe\u0cb3\u0cbf",
+    "\u0c95\u0cb2\u0ccd\u0cb2\u0cc1",
+    "\u0ca8\u0cbf\u0ca6\u0ccd\u0cb0\u0cbf\u0cb8\u0cc1",
+    "\u0c86\u0cb3\u0cb5\u0cbe\u0ca6",
+    "\u0ca6\u0cc1\u0c82\u0ca1\u0cbe\u0ca6",
+    "\u0ca8\u0cc3\u0ca4\u0ccd\u0caf \u0cae\u0cbe\u0ca1\u0cc1"
+  ],
+  "kn": "\u0ca4\u0c82\u0caa\u0cbe\u0ca6",
+  "origin_lang": "en",
+  "target_lang": "kn",
+  "word": "cold"
+}</pre>
+                            </div>
+                        </td>
+                    </tr>
+                    
+                    
+                    <tr>
+                        <td>0050_translation_en_kn:48</td>
+                        <td>0</td>
+                        <td>1194.0106660000001</td>
+                        <td>{
+  "expected": "\u0cae\u0cb0\u0cb3\u0cc1",
+  "response": "\u0c9a\u0c82\u0ca6\u0ccd\u0cb0"
+}</td>
+                    </tr>
+                    
+                    <tr>
+                        <td colspan="4" class="question-info">
+                            <div class="question-info-toggle" onclick="toggleQuestionInfo(this)">
+                                [+]
+                            </div>
+                            <div class="question-info-content hidden">
+                              <strong>Question Information:</strong>
+                              <pre>{
+  "choices": [
+    "\u0c9a\u0c82\u0ca6\u0ccd\u0cb0",
+    "\u0ca8\u0c95\u0ccd\u0cb7\u0ca4\u0ccd\u0cb0",
+    "\u0ca8\u0cbf\u0ca6\u0ccd\u0cb0\u0cbf\u0cb8\u0cc1",
+    "\u0cac\u0cc0\u0cb3\u0cc1",
+    "\u0c86\u0cb3\u0cb5\u0cbe\u0ca6",
+    "\u0cb5\u0cc7\u0c97\u0cb5\u0cbe\u0ca6",
+    "\u0cae\u0cb0\u0cb3\u0cc1",
+    "\u0cb9\u0cc3\u0ca6\u0caf"
+  ],
+  "kn": "\u0cae\u0cb0\u0cb3\u0cc1",
+  "origin_lang": "en",
+  "target_lang": "kn",
+  "word": "sand"
+}</pre>
+                            </div>
+                        </td>
+                    </tr>
+                    
+                    
+                    <tr>
+                        <td>0050_translation_en_kn:49</td>
+                        <td>1</td>
+                        <td>1115.102208</td>
+                        <td>{}</td>
+                    </tr>
+                    
+                    <tr>
+                        <td colspan="4" class="question-info">
+                            <div class="question-info-toggle" onclick="toggleQuestionInfo(this)">
+                                [+]
+                            </div>
+                            <div class="question-info-content hidden">
+                              <strong>Question Information:</strong>
+                              <pre>{
+  "choices": [
+    "\u0cb9\u0cc2\u0cb5\u0cc1",
+    "\u0ca8\u0caf\u0cb5\u0cbe\u0ca6",
+    "\u0cac\u0cc6\u0c9a\u0ccd\u0c9a\u0c97\u0cbf\u0ca8",
+    "\u0cb9\u0cb0\u0cbf\u0ca4\u0cb5\u0cbe\u0ca6",
+    "\u0cac\u0cb0\u0cc6",
+    "\u0cb9\u0cc1\u0cb2\u0ccd\u0cb2\u0cc1",
+    "\u0c86\u0cb3\u0cb5\u0cbe\u0ca6",
+    "\u0cac\u0cc0\u0cb3\u0cc1"
+  ],
+  "kn": "\u0cac\u0cc0\u0cb3\u0cc1",
+  "origin_lang": "en",
+  "target_lang": "kn",
+  "word": "to fall"
+}</pre>
+                            </div>
+                        </td>
+                    </tr>
+                    
+                    
+                    <tr>
+                        <td>0050_translation_en_kn:5</td>
+                        <td>1</td>
+                        <td>1520.54275</td>
+                        <td>{}</td>
+                    </tr>
+                    
+                    <tr>
+                        <td colspan="4" class="question-info">
+                            <div class="question-info-toggle" onclick="toggleQuestionInfo(this)">
+                                [+]
+                            </div>
+                            <div class="question-info-content hidden">
+                              <strong>Question Information:</strong>
+                              <pre>{
+  "choices": [
+    "\u0cb8\u0cc1\u0c82\u0ca6\u0cb0\u0cb5\u0cbe\u0ca6",
+    "\u0caa\u0cc1\u0cb8\u0ccd\u0ca4\u0c95",
+    "\u0cb9\u0cb0\u0cbf\u0ca4\u0cb5\u0cbe\u0ca6",
+    "\u0c93\u0ca1\u0cc1",
+    "\u0ca4\u0cbf\u0ca8\u0ccd\u0ca8\u0cc1",
+    "\u0c86\u0c95\u0cbe\u0cb6",
+    "\u0ca8\u0cc0\u0cb0\u0cc1",
+    "\u0cae\u0cb3\u0cc6"
+  ],
+  "kn": "\u0cb8\u0cc1\u0c82\u0ca6\u0cb0\u0cb5\u0cbe\u0ca6",
+  "origin_lang": "en",
+  "target_lang": "kn",
+  "word": "beautiful"
+}</pre>
+                            </div>
+                        </td>
+                    </tr>
+                    
+                    
+                    <tr>
+                        <td>0050_translation_en_kn:50</td>
+                        <td>0</td>
+                        <td>1107.37325</td>
+                        <td>{
+  "expected": "\u0cb9\u0c97\u0cc1\u0cb0\u0cb5\u0cbe\u0ca6",
+  "origin_word_details": "Using meaning \u0027not heavy\u0027 (vs. illumination)",
+  "response": "\u0cac\u0cc6\u0cb3\u0cc6"
+}</td>
+                    </tr>
+                    
+                    <tr>
+                        <td colspan="4" class="question-info">
+                            <div class="question-info-toggle" onclick="toggleQuestionInfo(this)">
+                                [+]
+                            </div>
+                            <div class="question-info-content hidden">
+                              <strong>Question Information:</strong>
+                              <pre>{
+  "choices": [
+    "\u0cb9\u0cc3\u0ca6\u0caf",
+    "\u0cb9\u0c97\u0cc1\u0cb0\u0cb5\u0cbe\u0ca6",
+    "\u0cac\u0cc6\u0cb3\u0cc6",
+    "\u0cae\u0cc3\u0ca6\u0cc1\u0cb5\u0cbe\u0ca6",
+    "\u0c95\u0cb2\u0ccd\u0cb2\u0cc1",
+    "\u0caa\u0cb0\u0ccd\u0cb5\u0ca4",
+    "\u0ca4\u0c82\u0caa\u0cbe\u0ca6",
+    "\u0ca8\u0cc3\u0ca4\u0ccd\u0caf \u0cae\u0cbe\u0ca1\u0cc1"
+  ],
+  "kn": "\u0cb9\u0c97\u0cc1\u0cb0\u0cb5\u0cbe\u0ca6",
+  "origin_details": "Using meaning \u0027not heavy\u0027 (vs. illumination)",
+  "origin_lang": "en",
+  "target_lang": "kn",
+  "word": "light"
+}</pre>
+                            </div>
+                        </td>
+                    </tr>
+                    
+                    
+                    <tr>
+                        <td>0050_translation_en_kn:6</td>
+                        <td>1</td>
+                        <td>1077.2207079999998</td>
+                        <td>{}</td>
+                    </tr>
+                    
+                    <tr>
+                        <td colspan="4" class="question-info">
+                            <div class="question-info-toggle" onclick="toggleQuestionInfo(this)">
+                                [+]
+                            </div>
+                            <div class="question-info-content hidden">
+                              <strong>Question Information:</strong>
+                              <pre>{
+  "choices": [
+    "\u0ca8\u0cc3\u0ca4\u0ccd\u0caf \u0cae\u0cbe\u0ca1\u0cc1",
+    "\u0cb9\u0c97\u0cc1\u0cb0\u0cb5\u0cbe\u0ca6",
+    "\u0cb5\u0cc7\u0c97\u0cb5\u0cbe\u0ca6",
+    "\u0cae\u0cb0",
+    "\u0c9a\u0cbe\u0cb2\u0cbf\u0cb8\u0cc1",
+    "\u0cad\u0cbe\u0cb0\u0cb5\u0cbe\u0ca6",
+    "\u0ca8\u0cc0\u0cb0\u0cc1",
+    "\u0c97\u0cbe\u0cb3\u0cbf"
+  ],
+  "kn": "\u0ca8\u0cc0\u0cb0\u0cc1",
+  "origin_lang": "en",
+  "target_lang": "kn",
+  "word": "water"
+}</pre>
+                            </div>
+                        </td>
+                    </tr>
+                    
+                    
+                    <tr>
+                        <td>0050_translation_en_kn:7</td>
+                        <td>0</td>
+                        <td>1112.825375</td>
+                        <td>{
+  "expected": "\u0ca8\u0cbf\u0ca6\u0ccd\u0cb0\u0cbf\u0cb8\u0cc1",
+  "response": "\u0cb8\u0ccd\u0ca8\u0cbe\u0ca8"
+}</td>
+                    </tr>
+                    
+                    <tr>
+                        <td colspan="4" class="question-info">
+                            <div class="question-info-toggle" onclick="toggleQuestionInfo(this)">
+                                [+]
+                            </div>
+                            <div class="question-info-content hidden">
+                              <strong>Question Information:</strong>
+                              <pre>{
+  "choices": [
+    "\u0ca8\u0c97\u0cc1",
+    "\u0ca8\u0cbf\u0ca6\u0ccd\u0cb0\u0cbf\u0cb8\u0cc1",
+    "\u0c88\u0c9c\u0cc1",
+    "\u0cae\u0cb0\u0cb3\u0cc1",
+    "\u0c95\u0cb2\u0ccd\u0cb2\u0cc1",
+    "\u0cb9\u0cbe\u0cb0\u0cc1",
+    "\u0ca8\u0cc3\u0ca4\u0ccd\u0caf \u0cae\u0cbe\u0ca1\u0cc1",
+    "\u0cac\u0cb0\u0cc6"
+  ],
+  "kn": "\u0ca8\u0cbf\u0ca6\u0ccd\u0cb0\u0cbf\u0cb8\u0cc1",
+  "origin_lang": "en",
+  "target_lang": "kn",
+  "word": "to sleep"
+}</pre>
+                            </div>
+                        </td>
+                    </tr>
+                    
+                    
+                    <tr>
+                        <td>0050_translation_en_kn:8</td>
+                        <td>1</td>
+                        <td>1052.2773339999999</td>
+                        <td>{}</td>
+                    </tr>
+                    
+                    <tr>
+                        <td colspan="4" class="question-info">
+                            <div class="question-info-toggle" onclick="toggleQuestionInfo(this)">
+                                [+]
+                            </div>
+                            <div class="question-info-content hidden">
+                              <strong>Question Information:</strong>
+                              <pre>{
+  "choices": [
+    "\u0c97\u0cbe\u0cb3\u0cbf",
+    "\u0cad\u0cbe\u0cb0\u0cb5\u0cbe\u0ca6",
+    "\u0c86\u0c95\u0cbe\u0cb6",
+    "\u0c85\u0ca1\u0c97\u0cc1",
+    "\u0c9a\u0c82\u0ca6\u0ccd\u0cb0",
+    "\u0cae\u0cb0\u0cb3\u0cc1",
+    "\u0cac\u0cc6\u0c9a\u0ccd\u0c9a\u0c97\u0cbf\u0ca8",
+    "\u0cac\u0cc0\u0cb3\u0cc1"
+  ],
+  "kn": "\u0c9a\u0c82\u0ca6\u0ccd\u0cb0",
+  "origin_lang": "en",
+  "target_lang": "kn",
+  "word": "moon"
+}</pre>
+                            </div>
+                        </td>
+                    </tr>
+                    
+                    
+                    <tr>
+                        <td>0050_translation_en_kn:9</td>
+                        <td>0</td>
+                        <td>896.131416</td>
+                        <td>{
+  "expected": "\u0ca8\u0c97\u0cc1",
+  "response": "\u0c88\u0c9c\u0cc1"
+}</td>
+                    </tr>
+                    
+                    <tr>
+                        <td colspan="4" class="question-info">
+                            <div class="question-info-toggle" onclick="toggleQuestionInfo(this)">
+                                [+]
+                            </div>
+                            <div class="question-info-content hidden">
+                              <strong>Question Information:</strong>
+                              <pre>{
+  "choices": [
+    "\u0ca8\u0cc3\u0ca4\u0ccd\u0caf \u0cae\u0cbe\u0ca1\u0cc1",
+    "\u0ca8\u0c95\u0ccd\u0cb7\u0ca4\u0ccd\u0cb0",
+    "\u0c88\u0c9c\u0cc1",
+    "\u0ca8\u0c97\u0cc1",
+    "\u0ca4\u0cbe\u0c9c\u0cbe",
+    "\u0ca8\u0cbf\u0ca6\u0ccd\u0cb0\u0cbf\u0cb8\u0cc1",
+    "\u0c89\u0cb8\u0cbf\u0cb0\u0cbe\u0ca1\u0cc1",
+    "\u0c95\u0cb2\u0ccd\u0cb2\u0cc1"
+  ],
+  "kn": "\u0ca8\u0c97\u0cc1",
+  "origin_lang": "en",
+  "target_lang": "kn",
+  "word": "to laugh"
+}</pre>
+                            </div>
+                        </td>
+                    </tr>
+                    
+                    
+                </tbody>
+            </table>
+        </div>
+
+        
+    </div>
+</body>
+</html>

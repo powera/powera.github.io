@@ -1,0 +1,1958 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Benchmark Run Details - llama3.2:3b:Q4_K_M on 0050_translation_en_zh</title>
+    <script>
+        function toggleQuestionInfo(toggleElement) {
+            const questionInfoContent = toggleElement.nextElementSibling;
+
+            if (questionInfoContent.classList.contains('hidden')) {
+                questionInfoContent.classList.remove('hidden');
+                toggleElement.textContent = '[X]';
+            } else {
+                questionInfoContent.classList.add('hidden');
+                toggleElement.textContent = '[+]';
+            }
+        }
+    </script>
+
+    <style>
+        /* Placeholder for future CSS */
+        body {
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 1rem;
+        }
+        .run-summary, .run-details {
+            margin-bottom: 2rem;
+        }
+        .summary-table, .details-table {
+            width: 100%;
+            border-collapse: collapse;
+        }
+        .summary-table th, .details-table th {
+            background-color: #f4f4f4;
+            text-align: left;
+            padding: 0.5rem;
+            border: 1px solid #ddd;
+        }
+        .summary-table td, .details-table td {
+            padding: 0.5rem;
+            border: 1px solid #ddd;
+        }
+        .details-table {
+            margin-top: 1rem;
+        }
+        .page-title {
+            color: #333;
+            border-bottom: 2px solid #333;
+            padding-bottom: 0.5rem;
+        }
+        .question-info {
+            background-color: #f9f9f9;
+            border: 1px solid #ddd;
+            padding: 1rem;
+            margin-top: 0.5rem;
+            position: relative;
+        }
+        .question-info-content {
+            max-height: 600px;
+            overflow-y: auto;
+            overflow-x: hidden;
+            padding-right: 15px; /* Add scrollbar space */
+        }
+        .question-info-toggle {
+            cursor: pointer;
+            user-select: none;
+            font-weight: bold;
+            color: #666;
+        }
+        .question-info-toggle:hover {
+            color: #333;
+        }
+        .question-info pre {
+            white-space: pre-wrap;
+            word-wrap: break-word;
+            background-color: #f4f4f4;
+            padding: 0.5rem;
+            border-radius: 4px;
+            margin: 0;
+        }
+        .hidden {
+            display: none;
+        }
+
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1 class="page-title">Benchmark Run Details</h1>
+        
+        <div class="run-summary">
+            <h2>Run Summary</h2>
+            <table class="summary-table">
+                <tr>
+                    <th>Model</th>
+                    <td>llama3.2:3b:Q4_K_M</td>
+                </tr>
+                <tr>
+                    <th>Benchmark</th>
+                    <td>0050_translation_en_zh</td>
+                </tr>
+                <tr>
+                    <th>Normed Score</th>
+                    <td>45</td>
+                </tr>
+                <tr>
+                    <th>Run Timestamp</th>
+                    <td>2024-12-15 18:52:46</td>
+                </tr>
+            </table>
+        </div>
+
+        <div class="run-details">
+            <h2>Question-Level Details</h2>
+            <table class="details-table">
+                <thead>
+                    <tr>
+                        <th>Question ID</th>
+                        <th>Score</th>
+                        <th>Evaluation Time (ms)</th>
+                        <th>Debug Info</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    
+                    <tr>
+                        <td>0050_translation_en_zh:0</td>
+                        <td>1</td>
+                        <td>728.052624</td>
+                        <td>{}</td>
+                    </tr>
+                    
+                    <tr>
+                        <td colspan="4" class="question-info">
+                            <div class="question-info-toggle" onclick="toggleQuestionInfo(this)">
+                                [+]
+                            </div>
+                            <div class="question-info-content hidden">
+                              <strong>Question Information:</strong>
+                              <pre>{
+  "choices": [
+    "\u9e1f",
+    "\u82b1",
+    "\u8eb2\u85cf",
+    "\u4e91",
+    "\u6811",
+    "\u7f8e\u4e3d",
+    "\u751c",
+    "\u8df3\u821e"
+  ],
+  "origin_lang": "en",
+  "target_details": "Can also mean \u0027to spend (money)\u0027 in different context",
+  "target_lang": "zh",
+  "word": "flower",
+  "zh": "\u82b1"
+}</pre>
+                            </div>
+                        </td>
+                    </tr>
+                    
+                    
+                    <tr>
+                        <td>0050_translation_en_zh:1</td>
+                        <td>1</td>
+                        <td>611.415917</td>
+                        <td>{}</td>
+                    </tr>
+                    
+                    <tr>
+                        <td colspan="4" class="question-info">
+                            <div class="question-info-toggle" onclick="toggleQuestionInfo(this)">
+                                [+]
+                            </div>
+                            <div class="question-info-content hidden">
+                              <strong>Question Information:</strong>
+                              <pre>{
+  "choices": [
+    "\u660e\u4eae",
+    "\u547c\u5438",
+    "\u51b7",
+    "\u5f00\u8f66",
+    "\u950b\u5229",
+    "\u7b11",
+    "\u6e29\u6696",
+    "\u96e8"
+  ],
+  "origin_details": "Specifically refers to operating a vehicle",
+  "origin_lang": "en",
+  "target_lang": "zh",
+  "word": "to drive",
+  "zh": "\u5f00\u8f66"
+}</pre>
+                            </div>
+                        </td>
+                    </tr>
+                    
+                    
+                    <tr>
+                        <td>0050_translation_en_zh:10</td>
+                        <td>1</td>
+                        <td>472.180749</td>
+                        <td>{}</td>
+                    </tr>
+                    
+                    <tr>
+                        <td colspan="4" class="question-info">
+                            <div class="question-info-toggle" onclick="toggleQuestionInfo(this)">
+                                [+]
+                            </div>
+                            <div class="question-info-content hidden">
+                              <strong>Question Information:</strong>
+                              <pre>{
+  "choices": [
+    "\u661f\u661f",
+    "\u7761\u89c9",
+    "\u6df1",
+    "\u547c\u5438",
+    "\u660e\u4eae",
+    "\u5c71",
+    "\u65b0\u9c9c",
+    "\u5b89\u9759"
+  ],
+  "origin_lang": "en",
+  "target_lang": "zh",
+  "word": "mountain",
+  "zh": "\u5c71"
+}</pre>
+                            </div>
+                        </td>
+                    </tr>
+                    
+                    
+                    <tr>
+                        <td>0050_translation_en_zh:11</td>
+                        <td>1</td>
+                        <td>612.206834</td>
+                        <td>{}</td>
+                    </tr>
+                    
+                    <tr>
+                        <td colspan="4" class="question-info">
+                            <div class="question-info-toggle" onclick="toggleQuestionInfo(this)">
+                                [+]
+                            </div>
+                            <div class="question-info-content hidden">
+                              <strong>Question Information:</strong>
+                              <pre>{
+  "choices": [
+    "\u8df3\u821e",
+    "\u8f7b",
+    "\u4e91",
+    "\u65b0\u9c9c",
+    "\u5531\u6b4c",
+    "\u5f00\u8f66",
+    "\u8f6f",
+    "\u5c71"
+  ],
+  "origin_lang": "en",
+  "target_lang": "zh",
+  "word": "to sing",
+  "zh": "\u5531\u6b4c"
+}</pre>
+                            </div>
+                        </td>
+                    </tr>
+                    
+                    
+                    <tr>
+                        <td>0050_translation_en_zh:12</td>
+                        <td>1</td>
+                        <td>560.858834</td>
+                        <td>{}</td>
+                    </tr>
+                    
+                    <tr>
+                        <td colspan="4" class="question-info">
+                            <div class="question-info-toggle" onclick="toggleQuestionInfo(this)">
+                                [+]
+                            </div>
+                            <div class="question-info-content hidden">
+                              <strong>Question Information:</strong>
+                              <pre>{
+  "choices": [
+    "\u5fc3",
+    "\u8f6f",
+    "\u5b89\u9759",
+    "\u7761\u89c9",
+    "\u6708\u4eae",
+    "\u6e29\u6696",
+    "\u6c34",
+    "\u6811"
+  ],
+  "origin_lang": "en",
+  "target_details": "Also used in many compounds for emotional/mental states",
+  "target_lang": "zh",
+  "word": "heart",
+  "zh": "\u5fc3"
+}</pre>
+                            </div>
+                        </td>
+                    </tr>
+                    
+                    
+                    <tr>
+                        <td>0050_translation_en_zh:13</td>
+                        <td>1</td>
+                        <td>602.5192910000001</td>
+                        <td>{}</td>
+                    </tr>
+                    
+                    <tr>
+                        <td colspan="4" class="question-info">
+                            <div class="question-info-toggle" onclick="toggleQuestionInfo(this)">
+                                [+]
+                            </div>
+                            <div class="question-info-content hidden">
+                              <strong>Question Information:</strong>
+                              <pre>{
+  "choices": [
+    "\u5403",
+    "\u96e8",
+    "\u661f\u661f",
+    "\u660e\u4eae",
+    "\u6210\u957f",
+    "\u5149\u6ed1",
+    "\u5929\u7a7a",
+    "\u6700\u5f3a"
+  ],
+  "origin_details": "Can refer to intelligence or light",
+  "origin_lang": "en",
+  "target_details": "Can refer to intelligence or light",
+  "target_lang": "zh",
+  "word": "bright",
+  "zh": "\u660e\u4eae"
+}</pre>
+                            </div>
+                        </td>
+                    </tr>
+                    
+                    
+                    <tr>
+                        <td>0050_translation_en_zh:14</td>
+                        <td>1</td>
+                        <td>615.428125</td>
+                        <td>{}</td>
+                    </tr>
+                    
+                    <tr>
+                        <td colspan="4" class="question-info">
+                            <div class="question-info-toggle" onclick="toggleQuestionInfo(this)">
+                                [+]
+                            </div>
+                            <div class="question-info-content hidden">
+                              <strong>Question Information:</strong>
+                              <pre>{
+  "choices": [
+    "\u5531\u6b4c",
+    "\u7761\u89c9",
+    "\u8f7b",
+    "\u5fc3",
+    "\u8df3\u821e",
+    "\u5feb",
+    "\u5929\u7a7a",
+    "\u8dd1"
+  ],
+  "origin_lang": "en",
+  "target_lang": "zh",
+  "word": "to dance",
+  "zh": "\u8df3\u821e"
+}</pre>
+                            </div>
+                        </td>
+                    </tr>
+                    
+                    
+                    <tr>
+                        <td>0050_translation_en_zh:15</td>
+                        <td>1</td>
+                        <td>602.716832</td>
+                        <td>{}</td>
+                    </tr>
+                    
+                    <tr>
+                        <td colspan="4" class="question-info">
+                            <div class="question-info-toggle" onclick="toggleQuestionInfo(this)">
+                                [+]
+                            </div>
+                            <div class="question-info-content hidden">
+                              <strong>Question Information:</strong>
+                              <pre>{
+  "choices": [
+    "\u6811",
+    "\u5531\u6b4c",
+    "\u6e38\u6cf3",
+    "\u5b89\u9759",
+    "\u5706",
+    "\u98de",
+    "\u5929\u7a7a",
+    "\u8eb2\u85cf"
+  ],
+  "origin_details": "Can refer to sound level or personality trait",
+  "origin_lang": "en",
+  "target_lang": "zh",
+  "word": "quiet",
+  "zh": "\u5b89\u9759"
+}</pre>
+                            </div>
+                        </td>
+                    </tr>
+                    
+                    
+                    <tr>
+                        <td>0050_translation_en_zh:16</td>
+                        <td>1</td>
+                        <td>554.071917</td>
+                        <td>{}</td>
+                    </tr>
+                    
+                    <tr>
+                        <td colspan="4" class="question-info">
+                            <div class="question-info-toggle" onclick="toggleQuestionInfo(this)">
+                                [+]
+                            </div>
+                            <div class="question-info-content hidden">
+                              <strong>Question Information:</strong>
+                              <pre>{
+  "choices": [
+    "\u77f3\u5934",
+    "\u8eb2\u85cf",
+    "\u51b7",
+    "\u6c34",
+    "\u950b\u5229",
+    "\u6811",
+    "\u5b89\u9759",
+    "\u5403"
+  ],
+  "origin_lang": "en",
+  "target_lang": "zh",
+  "word": "tree",
+  "zh": "\u6811"
+}</pre>
+                            </div>
+                        </td>
+                    </tr>
+                    
+                    
+                    <tr>
+                        <td>0050_translation_en_zh:17</td>
+                        <td>1</td>
+                        <td>568.077041</td>
+                        <td>{}</td>
+                    </tr>
+                    
+                    <tr>
+                        <td colspan="4" class="question-info">
+                            <div class="question-info-toggle" onclick="toggleQuestionInfo(this)">
+                                [+]
+                            </div>
+                            <div class="question-info-content hidden">
+                              <strong>Question Information:</strong>
+                              <pre>{
+  "choices": [
+    "\u8349",
+    "\u8f7b",
+    "\u5b89\u9759",
+    "\u6c99",
+    "\u5199",
+    "\u670b\u53cb",
+    "\u6c34",
+    "\u751c"
+  ],
+  "origin_lang": "en",
+  "target_lang": "zh",
+  "word": "to write",
+  "zh": "\u5199"
+}</pre>
+                            </div>
+                        </td>
+                    </tr>
+                    
+                    
+                    <tr>
+                        <td>0050_translation_en_zh:18</td>
+                        <td>1</td>
+                        <td>608.542084</td>
+                        <td>{}</td>
+                    </tr>
+                    
+                    <tr>
+                        <td colspan="4" class="question-info">
+                            <div class="question-info-toggle" onclick="toggleQuestionInfo(this)">
+                                [+]
+                            </div>
+                            <div class="question-info-content hidden">
+                              <strong>Question Information:</strong>
+                              <pre>{
+  "choices": [
+    "\u6700\u5f3a",
+    "\u6e38\u6cf3",
+    "\u8349",
+    "\u5531\u6b4c",
+    "\u8eb2\u85cf",
+    "\u5149\u6ed1",
+    "\u5feb",
+    "\u5929\u7a7a"
+  ],
+  "origin_lang": "en",
+  "target_lang": "zh",
+  "word": "sky",
+  "zh": "\u5929\u7a7a"
+}</pre>
+                            </div>
+                        </td>
+                    </tr>
+                    
+                    
+                    <tr>
+                        <td>0050_translation_en_zh:19</td>
+                        <td>0</td>
+                        <td>562.357333</td>
+                        <td>{
+  "expected": "\u65b0\u9c9c",
+  "response": "\u65b0"
+}</td>
+                    </tr>
+                    
+                    <tr>
+                        <td colspan="4" class="question-info">
+                            <div class="question-info-toggle" onclick="toggleQuestionInfo(this)">
+                                [+]
+                            </div>
+                            <div class="question-info-content hidden">
+                              <strong>Question Information:</strong>
+                              <pre>{
+  "choices": [
+    "\u98ce",
+    "\u8dd1",
+    "\u8df3\u821e",
+    "\u8f6f",
+    "\u65b0\u9c9c",
+    "\u91cd",
+    "\u8f7b",
+    "\u7761\u89c9"
+  ],
+  "origin_lang": "en",
+  "target_lang": "zh",
+  "word": "fresh",
+  "zh": "\u65b0\u9c9c"
+}</pre>
+                            </div>
+                        </td>
+                    </tr>
+                    
+                    
+                    <tr>
+                        <td>0050_translation_en_zh:2</td>
+                        <td>1</td>
+                        <td>600.5045419999999</td>
+                        <td>{}</td>
+                    </tr>
+                    
+                    <tr>
+                        <td colspan="4" class="question-info">
+                            <div class="question-info-toggle" onclick="toggleQuestionInfo(this)">
+                                [+]
+                            </div>
+                            <div class="question-info-content hidden">
+                              <strong>Question Information:</strong>
+                              <pre>{
+  "choices": [
+    "\u5b89\u9759",
+    "\u8f7b",
+    "\u6df1",
+    "\u7f8e\u4e3d",
+    "\u65b0\u9c9c",
+    "\u6e29\u6696",
+    "\u8349",
+    "\u6700\u5f3a"
+  ],
+  "origin_lang": "en",
+  "target_lang": "zh",
+  "word": "strongest",
+  "zh": "\u6700\u5f3a"
+}</pre>
+                            </div>
+                        </td>
+                    </tr>
+                    
+                    
+                    <tr>
+                        <td>0050_translation_en_zh:20</td>
+                        <td>1</td>
+                        <td>466.34416699999997</td>
+                        <td>{}</td>
+                    </tr>
+                    
+                    <tr>
+                        <td colspan="4" class="question-info">
+                            <div class="question-info-toggle" onclick="toggleQuestionInfo(this)">
+                                [+]
+                            </div>
+                            <div class="question-info-content hidden">
+                              <strong>Question Information:</strong>
+                              <pre>{
+  "choices": [
+    "\u670b\u53cb",
+    "\u9e1f",
+    "\u8f6f",
+    "\u51b7",
+    "\u96e8",
+    "\u751c",
+    "\u77f3\u5934",
+    "\u5f00\u8f66"
+  ],
+  "origin_lang": "en",
+  "target_lang": "zh",
+  "word": "friend",
+  "zh": "\u670b\u53cb"
+}</pre>
+                            </div>
+                        </td>
+                    </tr>
+                    
+                    
+                    <tr>
+                        <td>0050_translation_en_zh:21</td>
+                        <td>1</td>
+                        <td>555.660417</td>
+                        <td>{}</td>
+                    </tr>
+                    
+                    <tr>
+                        <td colspan="4" class="question-info">
+                            <div class="question-info-toggle" onclick="toggleQuestionInfo(this)">
+                                [+]
+                            </div>
+                            <div class="question-info-content hidden">
+                              <strong>Question Information:</strong>
+                              <pre>{
+  "choices": [
+    "\u8dd1",
+    "\u5b89\u9759",
+    "\u98de",
+    "\u98ce",
+    "\u96e8",
+    "\u5fc3",
+    "\u7761\u89c9",
+    "\u6811"
+  ],
+  "origin_lang": "en",
+  "target_lang": "zh",
+  "word": "to run",
+  "zh": "\u8dd1"
+}</pre>
+                            </div>
+                        </td>
+                    </tr>
+                    
+                    
+                    <tr>
+                        <td>0050_translation_en_zh:22</td>
+                        <td>1</td>
+                        <td>479.2695</td>
+                        <td>{}</td>
+                    </tr>
+                    
+                    <tr>
+                        <td colspan="4" class="question-info">
+                            <div class="question-info-toggle" onclick="toggleQuestionInfo(this)">
+                                [+]
+                            </div>
+                            <div class="question-info-content hidden">
+                              <strong>Question Information:</strong>
+                              <pre>{
+  "choices": [
+    "\u82b1",
+    "\u5706",
+    "\u660e\u4eae",
+    "\u98ce",
+    "\u706b",
+    "\u8f7b",
+    "\u661f\u661f",
+    "\u5403"
+  ],
+  "origin_lang": "en",
+  "target_lang": "zh",
+  "word": "round",
+  "zh": "\u5706"
+}</pre>
+                            </div>
+                        </td>
+                    </tr>
+                    
+                    
+                    <tr>
+                        <td>0050_translation_en_zh:23</td>
+                        <td>1</td>
+                        <td>546.283</td>
+                        <td>{}</td>
+                    </tr>
+                    
+                    <tr>
+                        <td colspan="4" class="question-info">
+                            <div class="question-info-toggle" onclick="toggleQuestionInfo(this)">
+                                [+]
+                            </div>
+                            <div class="question-info-content hidden">
+                              <strong>Question Information:</strong>
+                              <pre>{
+  "choices": [
+    "\u77f3\u5934",
+    "\u8df3\u821e",
+    "\u5f00\u8f66",
+    "\u4e91",
+    "\u6e29\u6696",
+    "\u98ce",
+    "\u8eb2\u85cf",
+    "\u670b\u53cb"
+  ],
+  "origin_details": "Can be noun (moving air) or verb (to twist)",
+  "origin_lang": "en",
+  "target_lang": "zh",
+  "word": "wind",
+  "zh": "\u98ce"
+}</pre>
+                            </div>
+                        </td>
+                    </tr>
+                    
+                    
+                    <tr>
+                        <td>0050_translation_en_zh:24</td>
+                        <td>0</td>
+                        <td>544.6158330000001</td>
+                        <td>{
+  "expected": "\u6e29\u6696",
+  "response": "\u6e29"
+}</td>
+                    </tr>
+                    
+                    <tr>
+                        <td colspan="4" class="question-info">
+                            <div class="question-info-toggle" onclick="toggleQuestionInfo(this)">
+                                [+]
+                            </div>
+                            <div class="question-info-content hidden">
+                              <strong>Question Information:</strong>
+                              <pre>{
+  "choices": [
+    "\u843d\u4e0b",
+    "\u77f3\u5934",
+    "\u4e66",
+    "\u91cd",
+    "\u76d0",
+    "\u6e29\u6696",
+    "\u5fc3",
+    "\u661f\u661f"
+  ],
+  "origin_lang": "en",
+  "target_lang": "zh",
+  "word": "warm",
+  "zh": "\u6e29\u6696"
+}</pre>
+                            </div>
+                        </td>
+                    </tr>
+                    
+                    
+                    <tr>
+                        <td>0050_translation_en_zh:25</td>
+                        <td>0</td>
+                        <td>545.047999</td>
+                        <td>{
+  "expected": "\u77f3\u5934",
+  "response": "\u77f3"
+}</td>
+                    </tr>
+                    
+                    <tr>
+                        <td colspan="4" class="question-info">
+                            <div class="question-info-toggle" onclick="toggleQuestionInfo(this)">
+                                [+]
+                            </div>
+                            <div class="question-info-content hidden">
+                              <strong>Question Information:</strong>
+                              <pre>{
+  "choices": [
+    "\u77f3\u5934",
+    "\u98de",
+    "\u96e8",
+    "\u8df3\u821e",
+    "\u661f\u661f",
+    "\u8dd1",
+    "\u8349",
+    "\u7b11"
+  ],
+  "origin_lang": "en",
+  "target_lang": "zh",
+  "word": "stone",
+  "zh": "\u77f3\u5934"
+}</pre>
+                            </div>
+                        </td>
+                    </tr>
+                    
+                    
+                    <tr>
+                        <td>0050_translation_en_zh:26</td>
+                        <td>1</td>
+                        <td>558.813958</td>
+                        <td>{}</td>
+                    </tr>
+                    
+                    <tr>
+                        <td colspan="4" class="question-info">
+                            <div class="question-info-toggle" onclick="toggleQuestionInfo(this)">
+                                [+]
+                            </div>
+                            <div class="question-info-content hidden">
+                              <strong>Question Information:</strong>
+                              <pre>{
+  "choices": [
+    "\u661f\u661f",
+    "\u5706",
+    "\u670b\u53cb",
+    "\u7f8e\u4e3d",
+    "\u6df1",
+    "\u96e8",
+    "\u6e29\u6696",
+    "\u6708\u4eae"
+  ],
+  "origin_details": "Can refer to physical depth or emotional/intellectual depth",
+  "origin_lang": "en",
+  "target_details": "Can refer to physical depth or emotional/intellectual depth",
+  "target_lang": "zh",
+  "word": "deep",
+  "zh": "\u6df1"
+}</pre>
+                            </div>
+                        </td>
+                    </tr>
+                    
+                    
+                    <tr>
+                        <td>0050_translation_en_zh:27</td>
+                        <td>1</td>
+                        <td>609.045668</td>
+                        <td>{}</td>
+                    </tr>
+                    
+                    <tr>
+                        <td colspan="4" class="question-info">
+                            <div class="question-info-toggle" onclick="toggleQuestionInfo(this)">
+                                [+]
+                            </div>
+                            <div class="question-info-content hidden">
+                              <strong>Question Information:</strong>
+                              <pre>{
+  "choices": [
+    "\u6811",
+    "\u6c34",
+    "\u706b",
+    "\u660e\u4eae",
+    "\u98de",
+    "\u6210\u957f",
+    "\u6e38\u6cf3",
+    "\u7f8e\u4e3d"
+  ],
+  "origin_lang": "en",
+  "target_lang": "zh",
+  "word": "to swim",
+  "zh": "\u6e38\u6cf3"
+}</pre>
+                            </div>
+                        </td>
+                    </tr>
+                    
+                    
+                    <tr>
+                        <td>0050_translation_en_zh:28</td>
+                        <td>1</td>
+                        <td>464.68162399999994</td>
+                        <td>{}</td>
+                    </tr>
+                    
+                    <tr>
+                        <td colspan="4" class="question-info">
+                            <div class="question-info-toggle" onclick="toggleQuestionInfo(this)">
+                                [+]
+                            </div>
+                            <div class="question-info-content hidden">
+                              <strong>Question Information:</strong>
+                              <pre>{
+  "choices": [
+    "\u8f7b",
+    "\u9e1f",
+    "\u76d0",
+    "\u5feb",
+    "\u660e\u4eae",
+    "\u8eb2\u85cf",
+    "\u6210\u957f",
+    "\u6df1"
+  ],
+  "origin_lang": "en",
+  "target_lang": "zh",
+  "word": "bird",
+  "zh": "\u9e1f"
+}</pre>
+                            </div>
+                        </td>
+                    </tr>
+                    
+                    
+                    <tr>
+                        <td>0050_translation_en_zh:29</td>
+                        <td>1</td>
+                        <td>554.402291</td>
+                        <td>{}</td>
+                    </tr>
+                    
+                    <tr>
+                        <td colspan="4" class="question-info">
+                            <div class="question-info-toggle" onclick="toggleQuestionInfo(this)">
+                                [+]
+                            </div>
+                            <div class="question-info-content hidden">
+                              <strong>Question Information:</strong>
+                              <pre>{
+  "choices": [
+    "\u7b11",
+    "\u8f6f",
+    "\u8dd1",
+    "\u6700\u5f3a",
+    "\u98ce",
+    "\u5fae\u7b11",
+    "\u5feb",
+    "\u751c"
+  ],
+  "origin_details": "Can refer to taste or personality",
+  "origin_lang": "en",
+  "target_lang": "zh",
+  "word": "sweet",
+  "zh": "\u751c"
+}</pre>
+                            </div>
+                        </td>
+                    </tr>
+                    
+                    
+                    <tr>
+                        <td>0050_translation_en_zh:3</td>
+                        <td>1</td>
+                        <td>555.6957500000001</td>
+                        <td>{}</td>
+                    </tr>
+                    
+                    <tr>
+                        <td colspan="4" class="question-info">
+                            <div class="question-info-toggle" onclick="toggleQuestionInfo(this)">
+                                [+]
+                            </div>
+                            <div class="question-info-content hidden">
+                              <strong>Question Information:</strong>
+                              <pre>{
+  "choices": [
+    "\u660e\u4eae",
+    "\u5b89\u9759",
+    "\u4e66",
+    "\u8df3\u821e",
+    "\u6210\u957f",
+    "\u5f00\u8f66",
+    "\u950b\u5229",
+    "\u6811"
+  ],
+  "origin_lang": "en",
+  "target_lang": "zh",
+  "word": "book",
+  "zh": "\u4e66"
+}</pre>
+                            </div>
+                        </td>
+                    </tr>
+                    
+                    
+                    <tr>
+                        <td>0050_translation_en_zh:30</td>
+                        <td>1</td>
+                        <td>544.681208</td>
+                        <td>{}</td>
+                    </tr>
+                    
+                    <tr>
+                        <td colspan="4" class="question-info">
+                            <div class="question-info-toggle" onclick="toggleQuestionInfo(this)">
+                                [+]
+                            </div>
+                            <div class="question-info-content hidden">
+                              <strong>Question Information:</strong>
+                              <pre>{
+  "choices": [
+    "\u6df1",
+    "\u5706",
+    "\u9e1f",
+    "\u4e91",
+    "\u6811",
+    "\u6708\u4eae",
+    "\u98de",
+    "\u6c99"
+  ],
+  "origin_lang": "en",
+  "target_lang": "zh",
+  "word": "cloud",
+  "zh": "\u4e91"
+}</pre>
+                            </div>
+                        </td>
+                    </tr>
+                    
+                    
+                    <tr>
+                        <td>0050_translation_en_zh:31</td>
+                        <td>1</td>
+                        <td>503.788501</td>
+                        <td>{}</td>
+                    </tr>
+                    
+                    <tr>
+                        <td colspan="4" class="question-info">
+                            <div class="question-info-toggle" onclick="toggleQuestionInfo(this)">
+                                [+]
+                            </div>
+                            <div class="question-info-content hidden">
+                              <strong>Question Information:</strong>
+                              <pre>{
+  "choices": [
+    "\u5fae\u7b11",
+    "\u5c71",
+    "\u4e91",
+    "\u82b1",
+    "\u5feb",
+    "\u6c34",
+    "\u661f\u661f",
+    "\u6700\u5f3a"
+  ],
+  "origin_lang": "en",
+  "target_lang": "zh",
+  "word": "to smile",
+  "zh": "\u5fae\u7b11"
+}</pre>
+                            </div>
+                        </td>
+                    </tr>
+                    
+                    
+                    <tr>
+                        <td>0050_translation_en_zh:32</td>
+                        <td>1</td>
+                        <td>464.849417</td>
+                        <td>{}</td>
+                    </tr>
+                    
+                    <tr>
+                        <td colspan="4" class="question-info">
+                            <div class="question-info-toggle" onclick="toggleQuestionInfo(this)">
+                                [+]
+                            </div>
+                            <div class="question-info-content hidden">
+                              <strong>Question Information:</strong>
+                              <pre>{
+  "choices": [
+    "\u751c",
+    "\u6210\u957f",
+    "\u5706",
+    "\u660e\u4eae",
+    "\u8f6f",
+    "\u8349",
+    "\u51b7",
+    "\u547c\u5438"
+  ],
+  "origin_lang": "en",
+  "target_lang": "zh",
+  "word": "soft",
+  "zh": "\u8f6f"
+}</pre>
+                            </div>
+                        </td>
+                    </tr>
+                    
+                    
+                    <tr>
+                        <td>0050_translation_en_zh:33</td>
+                        <td>1</td>
+                        <td>555.880126</td>
+                        <td>{}</td>
+                    </tr>
+                    
+                    <tr>
+                        <td colspan="4" class="question-info">
+                            <div class="question-info-toggle" onclick="toggleQuestionInfo(this)">
+                                [+]
+                            </div>
+                            <div class="question-info-content hidden">
+                              <strong>Question Information:</strong>
+                              <pre>{
+  "choices": [
+    "\u8eb2\u85cf",
+    "\u5b89\u9759",
+    "\u7f8e\u4e3d",
+    "\u96e8",
+    "\u8f7b",
+    "\u5149\u6ed1",
+    "\u950b\u5229",
+    "\u6c34"
+  ],
+  "origin_lang": "en",
+  "target_lang": "zh",
+  "word": "rain",
+  "zh": "\u96e8"
+}</pre>
+                            </div>
+                        </td>
+                    </tr>
+                    
+                    
+                    <tr>
+                        <td>0050_translation_en_zh:34</td>
+                        <td>1</td>
+                        <td>598.5526669999999</td>
+                        <td>{}</td>
+                    </tr>
+                    
+                    <tr>
+                        <td colspan="4" class="question-info">
+                            <div class="question-info-toggle" onclick="toggleQuestionInfo(this)">
+                                [+]
+                            </div>
+                            <div class="question-info-content hidden">
+                              <strong>Question Information:</strong>
+                              <pre>{
+  "choices": [
+    "\u8eb2\u85cf",
+    "\u77f3\u5934",
+    "\u5fae\u7b11",
+    "\u4e91",
+    "\u6e38\u6cf3",
+    "\u706b",
+    "\u6210\u957f",
+    "\u661f\u661f"
+  ],
+  "origin_lang": "en",
+  "target_lang": "zh",
+  "word": "to grow",
+  "zh": "\u6210\u957f"
+}</pre>
+                            </div>
+                        </td>
+                    </tr>
+                    
+                    
+                    <tr>
+                        <td>0050_translation_en_zh:35</td>
+                        <td>1</td>
+                        <td>474.44050000000004</td>
+                        <td>{}</td>
+                    </tr>
+                    
+                    <tr>
+                        <td colspan="4" class="question-info">
+                            <div class="question-info-toggle" onclick="toggleQuestionInfo(this)">
+                                [+]
+                            </div>
+                            <div class="question-info-content hidden">
+                              <strong>Question Information:</strong>
+                              <pre>{
+  "choices": [
+    "\u660e\u4eae",
+    "\u76d0",
+    "\u8f7b",
+    "\u6708\u4eae",
+    "\u7b11",
+    "\u6210\u957f",
+    "\u6df1",
+    "\u5feb"
+  ],
+  "origin_lang": "en",
+  "target_lang": "zh",
+  "word": "quick",
+  "zh": "\u5feb"
+}</pre>
+                            </div>
+                        </td>
+                    </tr>
+                    
+                    
+                    <tr>
+                        <td>0050_translation_en_zh:36</td>
+                        <td>0</td>
+                        <td>544.905708</td>
+                        <td>{
+  "expected": "\u661f\u661f",
+  "response": "\u661f"
+}</td>
+                    </tr>
+                    
+                    <tr>
+                        <td colspan="4" class="question-info">
+                            <div class="question-info-toggle" onclick="toggleQuestionInfo(this)">
+                                [+]
+                            </div>
+                            <div class="question-info-content hidden">
+                              <strong>Question Information:</strong>
+                              <pre>{
+  "choices": [
+    "\u5fc3",
+    "\u96e8",
+    "\u7f8e\u4e3d",
+    "\u8349",
+    "\u77f3\u5934",
+    "\u751c",
+    "\u661f\u661f",
+    "\u5531\u6b4c"
+  ],
+  "origin_lang": "en",
+  "target_lang": "zh",
+  "word": "star",
+  "zh": "\u661f\u661f"
+}</pre>
+                            </div>
+                        </td>
+                    </tr>
+                    
+                    
+                    <tr>
+                        <td>0050_translation_en_zh:37</td>
+                        <td>1</td>
+                        <td>526.0470829999999</td>
+                        <td>{}</td>
+                    </tr>
+                    
+                    <tr>
+                        <td colspan="4" class="question-info">
+                            <div class="question-info-toggle" onclick="toggleQuestionInfo(this)">
+                                [+]
+                            </div>
+                            <div class="question-info-content hidden">
+                              <strong>Question Information:</strong>
+                              <pre>{
+  "choices": [
+    "\u96e8",
+    "\u6e29\u6696",
+    "\u8349",
+    "\u4e91",
+    "\u8df3\u821e",
+    "\u6c34",
+    "\u8f6f",
+    "\u5403"
+  ],
+  "origin_lang": "en",
+  "target_lang": "zh",
+  "word": "to dance",
+  "zh": "\u8df3\u821e"
+}</pre>
+                            </div>
+                        </td>
+                    </tr>
+                    
+                    
+                    <tr>
+                        <td>0050_translation_en_zh:38</td>
+                        <td>1</td>
+                        <td>484.98458300000004</td>
+                        <td>{}</td>
+                    </tr>
+                    
+                    <tr>
+                        <td colspan="4" class="question-info">
+                            <div class="question-info-toggle" onclick="toggleQuestionInfo(this)">
+                                [+]
+                            </div>
+                            <div class="question-info-content hidden">
+                              <strong>Question Information:</strong>
+                              <pre>{
+  "choices": [
+    "\u8f7b",
+    "\u5149\u6ed1",
+    "\u5c71",
+    "\u91cd",
+    "\u7b11",
+    "\u7761\u89c9",
+    "\u4e91",
+    "\u5fc3"
+  ],
+  "origin_lang": "en",
+  "target_details": "Can also mean \u0027important\u0027",
+  "target_lang": "zh",
+  "word": "heavy",
+  "zh": "\u91cd"
+}</pre>
+                            </div>
+                        </td>
+                    </tr>
+                    
+                    
+                    <tr>
+                        <td>0050_translation_en_zh:39</td>
+                        <td>1</td>
+                        <td>548.40425</td>
+                        <td>{}</td>
+                    </tr>
+                    
+                    <tr>
+                        <td colspan="4" class="question-info">
+                            <div class="question-info-toggle" onclick="toggleQuestionInfo(this)">
+                                [+]
+                            </div>
+                            <div class="question-info-content hidden">
+                              <strong>Question Information:</strong>
+                              <pre>{
+  "choices": [
+    "\u661f\u661f",
+    "\u6700\u5f3a",
+    "\u5929\u7a7a",
+    "\u706b",
+    "\u6e38\u6cf3",
+    "\u5199",
+    "\u98de",
+    "\u91cd"
+  ],
+  "origin_lang": "en",
+  "target_lang": "zh",
+  "word": "fire",
+  "zh": "\u706b"
+}</pre>
+                            </div>
+                        </td>
+                    </tr>
+                    
+                    
+                    <tr>
+                        <td>0050_translation_en_zh:4</td>
+                        <td>1</td>
+                        <td>554.105917</td>
+                        <td>{}</td>
+                    </tr>
+                    
+                    <tr>
+                        <td colspan="4" class="question-info">
+                            <div class="question-info-toggle" onclick="toggleQuestionInfo(this)">
+                                [+]
+                            </div>
+                            <div class="question-info-content hidden">
+                              <strong>Question Information:</strong>
+                              <pre>{
+  "choices": [
+    "\u5403",
+    "\u5199",
+    "\u8f6f",
+    "\u7f8e\u4e3d",
+    "\u547c\u5438",
+    "\u5706",
+    "\u76d0",
+    "\u843d\u4e0b"
+  ],
+  "origin_lang": "en",
+  "target_lang": "zh",
+  "word": "to eat",
+  "zh": "\u5403"
+}</pre>
+                            </div>
+                        </td>
+                    </tr>
+                    
+                    
+                    <tr>
+                        <td>0050_translation_en_zh:40</td>
+                        <td>1</td>
+                        <td>613.126333</td>
+                        <td>{}</td>
+                    </tr>
+                    
+                    <tr>
+                        <td colspan="4" class="question-info">
+                            <div class="question-info-toggle" onclick="toggleQuestionInfo(this)">
+                                [+]
+                            </div>
+                            <div class="question-info-content hidden">
+                              <strong>Question Information:</strong>
+                              <pre>{
+  "choices": [
+    "\u5149\u6ed1",
+    "\u6df1",
+    "\u51b7",
+    "\u5531\u6b4c",
+    "\u5199",
+    "\u5403",
+    "\u8df3\u821e",
+    "\u547c\u5438"
+  ],
+  "origin_lang": "en",
+  "target_lang": "zh",
+  "word": "to breathe",
+  "zh": "\u547c\u5438"
+}</pre>
+                            </div>
+                        </td>
+                    </tr>
+                    
+                    
+                    <tr>
+                        <td>0050_translation_en_zh:41</td>
+                        <td>1</td>
+                        <td>644.121084</td>
+                        <td>{}</td>
+                    </tr>
+                    
+                    <tr>
+                        <td colspan="4" class="question-info">
+                            <div class="question-info-toggle" onclick="toggleQuestionInfo(this)">
+                                [+]
+                            </div>
+                            <div class="question-info-content hidden">
+                              <strong>Question Information:</strong>
+                              <pre>{
+  "choices": [
+    "\u65b0\u9c9c",
+    "\u8df3\u821e",
+    "\u5403",
+    "\u751c",
+    "\u950b\u5229",
+    "\u8eb2\u85cf",
+    "\u8f6f",
+    "\u5fc3"
+  ],
+  "origin_details": "Can refer to physical edge or intelligence",
+  "origin_lang": "en",
+  "target_details": "Can refer to physical edge or intelligence",
+  "target_lang": "zh",
+  "word": "sharp",
+  "zh": "\u950b\u5229"
+}</pre>
+                            </div>
+                        </td>
+                    </tr>
+                    
+                    
+                    <tr>
+                        <td>0050_translation_en_zh:42</td>
+                        <td>1</td>
+                        <td>548.96775</td>
+                        <td>{}</td>
+                    </tr>
+                    
+                    <tr>
+                        <td colspan="4" class="question-info">
+                            <div class="question-info-toggle" onclick="toggleQuestionInfo(this)">
+                                [+]
+                            </div>
+                            <div class="question-info-content hidden">
+                              <strong>Question Information:</strong>
+                              <pre>{
+  "choices": [
+    "\u76d0",
+    "\u8349",
+    "\u6c34",
+    "\u6210\u957f",
+    "\u8f7b",
+    "\u5fc3",
+    "\u5929\u7a7a",
+    "\u5feb"
+  ],
+  "origin_lang": "en",
+  "target_lang": "zh",
+  "word": "salt",
+  "zh": "\u76d0"
+}</pre>
+                            </div>
+                        </td>
+                    </tr>
+                    
+                    
+                    <tr>
+                        <td>0050_translation_en_zh:43</td>
+                        <td>1</td>
+                        <td>599.8953750000001</td>
+                        <td>{}</td>
+                    </tr>
+                    
+                    <tr>
+                        <td colspan="4" class="question-info">
+                            <div class="question-info-toggle" onclick="toggleQuestionInfo(this)">
+                                [+]
+                            </div>
+                            <div class="question-info-content hidden">
+                              <strong>Question Information:</strong>
+                              <pre>{
+  "choices": [
+    "\u77f3\u5934",
+    "\u96e8",
+    "\u65b0\u9c9c",
+    "\u6700\u5f3a",
+    "\u8eb2\u85cf",
+    "\u5929\u7a7a",
+    "\u9e1f",
+    "\u751c"
+  ],
+  "origin_lang": "en",
+  "target_lang": "zh",
+  "word": "to hide",
+  "zh": "\u8eb2\u85cf"
+}</pre>
+                            </div>
+                        </td>
+                    </tr>
+                    
+                    
+                    <tr>
+                        <td>0050_translation_en_zh:44</td>
+                        <td>1</td>
+                        <td>612.1058330000001</td>
+                        <td>{}</td>
+                    </tr>
+                    
+                    <tr>
+                        <td colspan="4" class="question-info">
+                            <div class="question-info-toggle" onclick="toggleQuestionInfo(this)">
+                                [+]
+                            </div>
+                            <div class="question-info-content hidden">
+                              <strong>Question Information:</strong>
+                              <pre>{
+  "choices": [
+    "\u6c34",
+    "\u670b\u53cb",
+    "\u5149\u6ed1",
+    "\u5c71",
+    "\u8df3\u821e",
+    "\u9e1f",
+    "\u5531\u6b4c",
+    "\u5f00\u8f66"
+  ],
+  "origin_lang": "en",
+  "target_lang": "zh",
+  "word": "smooth",
+  "zh": "\u5149\u6ed1"
+}</pre>
+                            </div>
+                        </td>
+                    </tr>
+                    
+                    
+                    <tr>
+                        <td>0050_translation_en_zh:45</td>
+                        <td>1</td>
+                        <td>499.702125</td>
+                        <td>{}</td>
+                    </tr>
+                    
+                    <tr>
+                        <td colspan="4" class="question-info">
+                            <div class="question-info-toggle" onclick="toggleQuestionInfo(this)">
+                                [+]
+                            </div>
+                            <div class="question-info-content hidden">
+                              <strong>Question Information:</strong>
+                              <pre>{
+  "choices": [
+    "\u4e91",
+    "\u77f3\u5934",
+    "\u98de",
+    "\u950b\u5229",
+    "\u82b1",
+    "\u8df3\u821e",
+    "\u6700\u5f3a",
+    "\u8349"
+  ],
+  "origin_lang": "en",
+  "target_lang": "zh",
+  "word": "grass",
+  "zh": "\u8349"
+}</pre>
+                            </div>
+                        </td>
+                    </tr>
+                    
+                    
+                    <tr>
+                        <td>0050_translation_en_zh:46</td>
+                        <td>1</td>
+                        <td>482.02637400000003</td>
+                        <td>{}</td>
+                    </tr>
+                    
+                    <tr>
+                        <td colspan="4" class="question-info">
+                            <div class="question-info-toggle" onclick="toggleQuestionInfo(this)">
+                                [+]
+                            </div>
+                            <div class="question-info-content hidden">
+                              <strong>Question Information:</strong>
+                              <pre>{
+  "choices": [
+    "\u6708\u4eae",
+    "\u96e8",
+    "\u98de",
+    "\u98ce",
+    "\u6c99",
+    "\u6e38\u6cf3",
+    "\u950b\u5229",
+    "\u8eb2\u85cf"
+  ],
+  "origin_lang": "en",
+  "target_lang": "zh",
+  "word": "to fly",
+  "zh": "\u98de"
+}</pre>
+                            </div>
+                        </td>
+                    </tr>
+                    
+                    
+                    <tr>
+                        <td>0050_translation_en_zh:47</td>
+                        <td>1</td>
+                        <td>510.24075</td>
+                        <td>{}</td>
+                    </tr>
+                    
+                    <tr>
+                        <td colspan="4" class="question-info">
+                            <div class="question-info-toggle" onclick="toggleQuestionInfo(this)">
+                                [+]
+                            </div>
+                            <div class="question-info-content hidden">
+                              <strong>Question Information:</strong>
+                              <pre>{
+  "choices": [
+    "\u5feb",
+    "\u82b1",
+    "\u98de",
+    "\u8349",
+    "\u51b7",
+    "\u7f8e\u4e3d",
+    "\u96e8",
+    "\u5c71"
+  ],
+  "origin_lang": "en",
+  "target_lang": "zh",
+  "word": "cold",
+  "zh": "\u51b7"
+}</pre>
+                            </div>
+                        </td>
+                    </tr>
+                    
+                    
+                    <tr>
+                        <td>0050_translation_en_zh:48</td>
+                        <td>1</td>
+                        <td>564.368916</td>
+                        <td>{}</td>
+                    </tr>
+                    
+                    <tr>
+                        <td colspan="4" class="question-info">
+                            <div class="question-info-toggle" onclick="toggleQuestionInfo(this)">
+                                [+]
+                            </div>
+                            <div class="question-info-content hidden">
+                              <strong>Question Information:</strong>
+                              <pre>{
+  "choices": [
+    "\u6c99",
+    "\u8f7b",
+    "\u98de",
+    "\u5b89\u9759",
+    "\u5199",
+    "\u6e38\u6cf3",
+    "\u6708\u4eae",
+    "\u5c71"
+  ],
+  "origin_lang": "en",
+  "target_lang": "zh",
+  "word": "sand",
+  "zh": "\u6c99"
+}</pre>
+                            </div>
+                        </td>
+                    </tr>
+                    
+                    
+                    <tr>
+                        <td>0050_translation_en_zh:49</td>
+                        <td>1</td>
+                        <td>620.029542</td>
+                        <td>{}</td>
+                    </tr>
+                    
+                    <tr>
+                        <td colspan="4" class="question-info">
+                            <div class="question-info-toggle" onclick="toggleQuestionInfo(this)">
+                                [+]
+                            </div>
+                            <div class="question-info-content hidden">
+                              <strong>Question Information:</strong>
+                              <pre>{
+  "choices": [
+    "\u670b\u53cb",
+    "\u547c\u5438",
+    "\u5149\u6ed1",
+    "\u5c71",
+    "\u843d\u4e0b",
+    "\u51b7",
+    "\u5f00\u8f66",
+    "\u661f\u661f"
+  ],
+  "origin_lang": "en",
+  "target_lang": "zh",
+  "word": "to fall",
+  "zh": "\u843d\u4e0b"
+}</pre>
+                            </div>
+                        </td>
+                    </tr>
+                    
+                    
+                    <tr>
+                        <td>0050_translation_en_zh:5</td>
+                        <td>1</td>
+                        <td>610.3595419999999</td>
+                        <td>{}</td>
+                    </tr>
+                    
+                    <tr>
+                        <td colspan="4" class="question-info">
+                            <div class="question-info-toggle" onclick="toggleQuestionInfo(this)">
+                                [+]
+                            </div>
+                            <div class="question-info-content hidden">
+                              <strong>Question Information:</strong>
+                              <pre>{
+  "choices": [
+    "\u5403",
+    "\u7f8e\u4e3d",
+    "\u5149\u6ed1",
+    "\u6c99",
+    "\u5feb",
+    "\u8f6f",
+    "\u6700\u5f3a",
+    "\u5199"
+  ],
+  "origin_lang": "en",
+  "target_lang": "zh",
+  "word": "beautiful",
+  "zh": "\u7f8e\u4e3d"
+}</pre>
+                            </div>
+                        </td>
+                    </tr>
+                    
+                    
+                    <tr>
+                        <td>0050_translation_en_zh:50</td>
+                        <td>0</td>
+                        <td>570.54975</td>
+                        <td>{
+  "expected": "\u8f7b",
+  "origin_word_details": "Using meaning \u0027not heavy\u0027 (vs. illumination)",
+  "response": "\u4eae",
+  "target_word_details": "Can also mean \u0027trivial\u0027 or \u0027casual\u0027"
+}</td>
+                    </tr>
+                    
+                    <tr>
+                        <td colspan="4" class="question-info">
+                            <div class="question-info-toggle" onclick="toggleQuestionInfo(this)">
+                                [+]
+                            </div>
+                            <div class="question-info-content hidden">
+                              <strong>Question Information:</strong>
+                              <pre>{
+  "choices": [
+    "\u91cd",
+    "\u950b\u5229",
+    "\u5403",
+    "\u5531\u6b4c",
+    "\u5c71",
+    "\u8f7b",
+    "\u6811",
+    "\u8f6f"
+  ],
+  "origin_details": "Using meaning \u0027not heavy\u0027 (vs. illumination)",
+  "origin_lang": "en",
+  "target_details": "Can also mean \u0027trivial\u0027 or \u0027casual\u0027",
+  "target_lang": "zh",
+  "word": "light",
+  "zh": "\u8f7b"
+}</pre>
+                            </div>
+                        </td>
+                    </tr>
+                    
+                    
+                    <tr>
+                        <td>0050_translation_en_zh:6</td>
+                        <td>1</td>
+                        <td>464.804166</td>
+                        <td>{}</td>
+                    </tr>
+                    
+                    <tr>
+                        <td colspan="4" class="question-info">
+                            <div class="question-info-toggle" onclick="toggleQuestionInfo(this)">
+                                [+]
+                            </div>
+                            <div class="question-info-content hidden">
+                              <strong>Question Information:</strong>
+                              <pre>{
+  "choices": [
+    "\u5199",
+    "\u6e38\u6cf3",
+    "\u98ce",
+    "\u82b1",
+    "\u706b",
+    "\u5531\u6b4c",
+    "\u6c34",
+    "\u5929\u7a7a"
+  ],
+  "origin_lang": "en",
+  "target_lang": "zh",
+  "word": "water",
+  "zh": "\u6c34"
+}</pre>
+                            </div>
+                        </td>
+                    </tr>
+                    
+                    
+                    <tr>
+                        <td>0050_translation_en_zh:7</td>
+                        <td>0</td>
+                        <td>478.925667</td>
+                        <td>{
+  "expected": "\u7761\u89c9",
+  "response": "\u7761"
+}</td>
+                    </tr>
+                    
+                    <tr>
+                        <td colspan="4" class="question-info">
+                            <div class="question-info-toggle" onclick="toggleQuestionInfo(this)">
+                                [+]
+                            </div>
+                            <div class="question-info-content hidden">
+                              <strong>Question Information:</strong>
+                              <pre>{
+  "choices": [
+    "\u843d\u4e0b",
+    "\u5b89\u9759",
+    "\u8f6f",
+    "\u5706",
+    "\u706b",
+    "\u7761\u89c9",
+    "\u8349",
+    "\u8f7b"
+  ],
+  "origin_lang": "en",
+  "target_lang": "zh",
+  "word": "to sleep",
+  "zh": "\u7761\u89c9"
+}</pre>
+                            </div>
+                        </td>
+                    </tr>
+                    
+                    
+                    <tr>
+                        <td>0050_translation_en_zh:8</td>
+                        <td>1</td>
+                        <td>625.304</td>
+                        <td>{}</td>
+                    </tr>
+                    
+                    <tr>
+                        <td colspan="4" class="question-info">
+                            <div class="question-info-toggle" onclick="toggleQuestionInfo(this)">
+                                [+]
+                            </div>
+                            <div class="question-info-content hidden">
+                              <strong>Question Information:</strong>
+                              <pre>{
+  "choices": [
+    "\u8eb2\u85cf",
+    "\u6700\u5f3a",
+    "\u5706",
+    "\u7761\u89c9",
+    "\u6811",
+    "\u65b0\u9c9c",
+    "\u6708\u4eae",
+    "\u706b"
+  ],
+  "origin_lang": "en",
+  "target_details": "\u6708 alone can mean \u0027month\u0027",
+  "target_lang": "zh",
+  "word": "moon",
+  "zh": "\u6708\u4eae"
+}</pre>
+                            </div>
+                        </td>
+                    </tr>
+                    
+                    
+                    <tr>
+                        <td>0050_translation_en_zh:9</td>
+                        <td>1</td>
+                        <td>483.611374</td>
+                        <td>{}</td>
+                    </tr>
+                    
+                    <tr>
+                        <td colspan="4" class="question-info">
+                            <div class="question-info-toggle" onclick="toggleQuestionInfo(this)">
+                                [+]
+                            </div>
+                            <div class="question-info-content hidden">
+                              <strong>Question Information:</strong>
+                              <pre>{
+  "choices": [
+    "\u8f7b",
+    "\u661f\u661f",
+    "\u950b\u5229",
+    "\u7b11",
+    "\u65b0\u9c9c",
+    "\u7761\u89c9",
+    "\u5149\u6ed1",
+    "\u76d0"
+  ],
+  "origin_lang": "en",
+  "target_lang": "zh",
+  "word": "to laugh",
+  "zh": "\u7b11"
+}</pre>
+                            </div>
+                        </td>
+                    </tr>
+                    
+                    
+                </tbody>
+            </table>
+        </div>
+
+        
+    </div>
+</body>
+</html>

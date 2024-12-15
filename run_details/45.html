@@ -1,0 +1,2024 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Benchmark Run Details - granite3-dense:8b:Q4_K_M on 0050_translation_en_sw</title>
+    <script>
+        function toggleQuestionInfo(toggleElement) {
+            const questionInfoContent = toggleElement.nextElementSibling;
+
+            if (questionInfoContent.classList.contains('hidden')) {
+                questionInfoContent.classList.remove('hidden');
+                toggleElement.textContent = '[X]';
+            } else {
+                questionInfoContent.classList.add('hidden');
+                toggleElement.textContent = '[+]';
+            }
+        }
+    </script>
+
+    <style>
+        /* Placeholder for future CSS */
+        body {
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 1rem;
+        }
+        .run-summary, .run-details {
+            margin-bottom: 2rem;
+        }
+        .summary-table, .details-table {
+            width: 100%;
+            border-collapse: collapse;
+        }
+        .summary-table th, .details-table th {
+            background-color: #f4f4f4;
+            text-align: left;
+            padding: 0.5rem;
+            border: 1px solid #ddd;
+        }
+        .summary-table td, .details-table td {
+            padding: 0.5rem;
+            border: 1px solid #ddd;
+        }
+        .details-table {
+            margin-top: 1rem;
+        }
+        .page-title {
+            color: #333;
+            border-bottom: 2px solid #333;
+            padding-bottom: 0.5rem;
+        }
+        .question-info {
+            background-color: #f9f9f9;
+            border: 1px solid #ddd;
+            padding: 1rem;
+            margin-top: 0.5rem;
+            position: relative;
+        }
+        .question-info-content {
+            max-height: 600px;
+            overflow-y: auto;
+            overflow-x: hidden;
+            padding-right: 15px; /* Add scrollbar space */
+        }
+        .question-info-toggle {
+            cursor: pointer;
+            user-select: none;
+            font-weight: bold;
+            color: #666;
+        }
+        .question-info-toggle:hover {
+            color: #333;
+        }
+        .question-info pre {
+            white-space: pre-wrap;
+            word-wrap: break-word;
+            background-color: #f4f4f4;
+            padding: 0.5rem;
+            border-radius: 4px;
+            margin: 0;
+        }
+        .hidden {
+            display: none;
+        }
+
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1 class="page-title">Benchmark Run Details</h1>
+        
+        <div class="run-summary">
+            <h2>Run Summary</h2>
+            <table class="summary-table">
+                <tr>
+                    <th>Model</th>
+                    <td>granite3-dense:8b:Q4_K_M</td>
+                </tr>
+                <tr>
+                    <th>Benchmark</th>
+                    <td>0050_translation_en_sw</td>
+                </tr>
+                <tr>
+                    <th>Normed Score</th>
+                    <td>22</td>
+                </tr>
+                <tr>
+                    <th>Run Timestamp</th>
+                    <td>2024-12-15 21:09:15</td>
+                </tr>
+            </table>
+        </div>
+
+        <div class="run-details">
+            <h2>Question-Level Details</h2>
+            <table class="details-table">
+                <thead>
+                    <tr>
+                        <th>Question ID</th>
+                        <th>Score</th>
+                        <th>Evaluation Time (ms)</th>
+                        <th>Debug Info</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    
+                    <tr>
+                        <td>0050_translation_en_sw:0</td>
+                        <td>0</td>
+                        <td>2236.486458</td>
+                        <td>{
+  "response": "mchanga",
+  "expected": "ua"
+}</td>
+                    </tr>
+                    
+                    <tr>
+                        <td colspan="4" class="question-info">
+                            <div class="question-info-toggle" onclick="toggleQuestionInfo(this)">
+                                [+]
+                            </div>
+                            <div class="question-info-content hidden">
+                              <strong>Question Information:</strong>
+                              <pre>{
+  "word": "flower",
+  "sw": "ua",
+  "origin_lang": "en",
+  "target_lang": "sw",
+  "choices": [
+    "mchanga",
+    "anga",
+    "mti",
+    "kukua",
+    "ua",
+    "jiwe",
+    "upepo",
+    "kuanguka"
+  ]
+}</pre>
+                            </div>
+                        </td>
+                    </tr>
+                    
+                    
+                    <tr>
+                        <td>0050_translation_en_sw:1</td>
+                        <td>1</td>
+                        <td>3434.0458340000005</td>
+                        <td>{}</td>
+                    </tr>
+                    
+                    <tr>
+                        <td colspan="4" class="question-info">
+                            <div class="question-info-toggle" onclick="toggleQuestionInfo(this)">
+                                [+]
+                            </div>
+                            <div class="question-info-content hidden">
+                              <strong>Question Information:</strong>
+                              <pre>{
+  "word": "to drive",
+  "sw": "kuendesha",
+  "origin_lang": "en",
+  "target_lang": "sw",
+  "origin_details": "Specifically refers to operating a vehicle",
+  "choices": [
+    "anga",
+    "duara",
+    "mlima",
+    "laini",
+    "imara zaidi",
+    "mzuri",
+    "mvua",
+    "kuendesha"
+  ]
+}</pre>
+                            </div>
+                        </td>
+                    </tr>
+                    
+                    
+                    <tr>
+                        <td>0050_translation_en_sw:10</td>
+                        <td>1</td>
+                        <td>2626.291917</td>
+                        <td>{}</td>
+                    </tr>
+                    
+                    <tr>
+                        <td colspan="4" class="question-info">
+                            <div class="question-info-toggle" onclick="toggleQuestionInfo(this)">
+                                [+]
+                            </div>
+                            <div class="question-info-content hidden">
+                              <strong>Question Information:</strong>
+                              <pre>{
+  "word": "mountain",
+  "sw": "mlima",
+  "origin_lang": "en",
+  "target_lang": "sw",
+  "choices": [
+    "imara zaidi",
+    "kuandika",
+    "mlima",
+    "tabasamu",
+    "moyo",
+    "duara",
+    "ua",
+    "kucheka"
+  ]
+}</pre>
+                            </div>
+                        </td>
+                    </tr>
+                    
+                    
+                    <tr>
+                        <td>0050_translation_en_sw:11</td>
+                        <td>1</td>
+                        <td>1969.4329160000002</td>
+                        <td>{}</td>
+                    </tr>
+                    
+                    <tr>
+                        <td colspan="4" class="question-info">
+                            <div class="question-info-toggle" onclick="toggleQuestionInfo(this)">
+                                [+]
+                            </div>
+                            <div class="question-info-content hidden">
+                              <strong>Question Information:</strong>
+                              <pre>{
+  "word": "to sing",
+  "sw": "kuimba",
+  "origin_lang": "en",
+  "target_lang": "sw",
+  "choices": [
+    "kuruka",
+    "kuendesha",
+    "kuogelea",
+    "anga",
+    "kuanguka",
+    "kitabu",
+    "kuimba",
+    "laini"
+  ]
+}</pre>
+                            </div>
+                        </td>
+                    </tr>
+                    
+                    
+                    <tr>
+                        <td>0050_translation_en_sw:12</td>
+                        <td>1</td>
+                        <td>1741.849167</td>
+                        <td>{}</td>
+                    </tr>
+                    
+                    <tr>
+                        <td colspan="4" class="question-info">
+                            <div class="question-info-toggle" onclick="toggleQuestionInfo(this)">
+                                [+]
+                            </div>
+                            <div class="question-info-content hidden">
+                              <strong>Question Information:</strong>
+                              <pre>{
+  "word": "heart",
+  "sw": "moyo",
+  "origin_lang": "en",
+  "target_lang": "sw",
+  "choices": [
+    "kina",
+    "kuogelea",
+    "kimya",
+    "rafiki",
+    "joto",
+    "mchanga",
+    "moyo",
+    "kucheza ngoma"
+  ]
+}</pre>
+                            </div>
+                        </td>
+                    </tr>
+                    
+                    
+                    <tr>
+                        <td>0050_translation_en_sw:13</td>
+                        <td>0</td>
+                        <td>1891.2495</td>
+                        <td>{
+  "response": "nyepesi",
+  "expected": "ang'aa",
+  "origin_word_details": "Can refer to intelligence or light"
+}</td>
+                    </tr>
+                    
+                    <tr>
+                        <td colspan="4" class="question-info">
+                            <div class="question-info-toggle" onclick="toggleQuestionInfo(this)">
+                                [+]
+                            </div>
+                            <div class="question-info-content hidden">
+                              <strong>Question Information:</strong>
+                              <pre>{
+  "word": "bright",
+  "sw": "ang'aa",
+  "origin_lang": "en",
+  "target_lang": "sw",
+  "origin_details": "Can refer to intelligence or light",
+  "choices": [
+    "nyepesi",
+    "laini",
+    "joto",
+    "ang'aa",
+    "kuanguka",
+    "chumvi",
+    "kuandika",
+    "mti"
+  ]
+}</pre>
+                            </div>
+                        </td>
+                    </tr>
+                    
+                    
+                    <tr>
+                        <td>0050_translation_en_sw:14</td>
+                        <td>0</td>
+                        <td>1785.351459</td>
+                        <td>{
+  "response": "mzuri",
+  "expected": "kucheza"
+}</td>
+                    </tr>
+                    
+                    <tr>
+                        <td colspan="4" class="question-info">
+                            <div class="question-info-toggle" onclick="toggleQuestionInfo(this)">
+                                [+]
+                            </div>
+                            <div class="question-info-content hidden">
+                              <strong>Question Information:</strong>
+                              <pre>{
+  "word": "to dance",
+  "sw": "kucheza",
+  "origin_lang": "en",
+  "target_lang": "sw",
+  "choices": [
+    "mzuri",
+    "kucheza",
+    "anga",
+    "mchanga",
+    "kina",
+    "ndege",
+    "kukua",
+    "kuendesha"
+  ]
+}</pre>
+                            </div>
+                        </td>
+                    </tr>
+                    
+                    
+                    <tr>
+                        <td>0050_translation_en_sw:15</td>
+                        <td>0</td>
+                        <td>2030.738916</td>
+                        <td>{
+  "response": "kucheka",
+  "expected": "kimya",
+  "origin_word_details": "Can refer to sound level or personality trait"
+}</td>
+                    </tr>
+                    
+                    <tr>
+                        <td colspan="4" class="question-info">
+                            <div class="question-info-toggle" onclick="toggleQuestionInfo(this)">
+                                [+]
+                            </div>
+                            <div class="question-info-content hidden">
+                              <strong>Question Information:</strong>
+                              <pre>{
+  "word": "quiet",
+  "sw": "kimya",
+  "origin_lang": "en",
+  "target_lang": "sw",
+  "origin_details": "Can refer to sound level or personality trait",
+  "choices": [
+    "kucheka",
+    "kimya",
+    "mchanga",
+    "kula",
+    "ndege",
+    "duara",
+    "wingu",
+    "kitabu"
+  ]
+}</pre>
+                            </div>
+                        </td>
+                    </tr>
+                    
+                    
+                    <tr>
+                        <td>0050_translation_en_sw:16</td>
+                        <td>1</td>
+                        <td>1788.5045420000001</td>
+                        <td>{}</td>
+                    </tr>
+                    
+                    <tr>
+                        <td colspan="4" class="question-info">
+                            <div class="question-info-toggle" onclick="toggleQuestionInfo(this)">
+                                [+]
+                            </div>
+                            <div class="question-info-content hidden">
+                              <strong>Question Information:</strong>
+                              <pre>{
+  "word": "tree",
+  "sw": "mti",
+  "origin_lang": "en",
+  "target_lang": "sw",
+  "choices": [
+    "mti",
+    "tabasamu",
+    "imara zaidi",
+    "upepo",
+    "chumvi",
+    "nyota",
+    "kukimbia",
+    "mvua"
+  ]
+}</pre>
+                            </div>
+                        </td>
+                    </tr>
+                    
+                    
+                    <tr>
+                        <td>0050_translation_en_sw:17</td>
+                        <td>1</td>
+                        <td>1921.7578749999998</td>
+                        <td>{}</td>
+                    </tr>
+                    
+                    <tr>
+                        <td colspan="4" class="question-info">
+                            <div class="question-info-toggle" onclick="toggleQuestionInfo(this)">
+                                [+]
+                            </div>
+                            <div class="question-info-content hidden">
+                              <strong>Question Information:</strong>
+                              <pre>{
+  "word": "to write",
+  "sw": "kuandika",
+  "origin_lang": "en",
+  "target_lang": "sw",
+  "choices": [
+    "haraka",
+    "kina",
+    "joto",
+    "kuendesha",
+    "wingu",
+    "kuandika",
+    "mvua",
+    "duara"
+  ]
+}</pre>
+                            </div>
+                        </td>
+                    </tr>
+                    
+                    
+                    <tr>
+                        <td>0050_translation_en_sw:18</td>
+                        <td>0</td>
+                        <td>1822.6991240000002</td>
+                        <td>{
+  "response": "kali",
+  "expected": "anga"
+}</td>
+                    </tr>
+                    
+                    <tr>
+                        <td colspan="4" class="question-info">
+                            <div class="question-info-toggle" onclick="toggleQuestionInfo(this)">
+                                [+]
+                            </div>
+                            <div class="question-info-content hidden">
+                              <strong>Question Information:</strong>
+                              <pre>{
+  "word": "sky",
+  "sw": "anga",
+  "origin_lang": "en",
+  "target_lang": "sw",
+  "choices": [
+    "kali",
+    "mwezi",
+    "imara zaidi",
+    "kucheza",
+    "anga",
+    "chumvi",
+    "baridi",
+    "upepo"
+  ]
+}</pre>
+                            </div>
+                        </td>
+                    </tr>
+                    
+                    
+                    <tr>
+                        <td>0050_translation_en_sw:19</td>
+                        <td>1</td>
+                        <td>1775.5676669999998</td>
+                        <td>{}</td>
+                    </tr>
+                    
+                    <tr>
+                        <td colspan="4" class="question-info">
+                            <div class="question-info-toggle" onclick="toggleQuestionInfo(this)">
+                                [+]
+                            </div>
+                            <div class="question-info-content hidden">
+                              <strong>Question Information:</strong>
+                              <pre>{
+  "word": "fresh",
+  "sw": "mpya",
+  "origin_lang": "en",
+  "target_lang": "sw",
+  "choices": [
+    "mpya",
+    "kucheka",
+    "nyasi",
+    "chumvi",
+    "kukimbia",
+    "mchanga",
+    "mlima",
+    "joto"
+  ]
+}</pre>
+                            </div>
+                        </td>
+                    </tr>
+                    
+                    
+                    <tr>
+                        <td>0050_translation_en_sw:2</td>
+                        <td>1</td>
+                        <td>3226.0622080000003</td>
+                        <td>{}</td>
+                    </tr>
+                    
+                    <tr>
+                        <td colspan="4" class="question-info">
+                            <div class="question-info-toggle" onclick="toggleQuestionInfo(this)">
+                                [+]
+                            </div>
+                            <div class="question-info-content hidden">
+                              <strong>Question Information:</strong>
+                              <pre>{
+  "word": "strongest",
+  "sw": "imara zaidi",
+  "origin_lang": "en",
+  "target_lang": "sw",
+  "choices": [
+    "anga",
+    "imara zaidi",
+    "zito",
+    "kuandika",
+    "mpya",
+    "duara",
+    "kitabu",
+    "chumvi"
+  ]
+}</pre>
+                            </div>
+                        </td>
+                    </tr>
+                    
+                    
+                    <tr>
+                        <td>0050_translation_en_sw:20</td>
+                        <td>1</td>
+                        <td>1768.3140010000002</td>
+                        <td>{}</td>
+                    </tr>
+                    
+                    <tr>
+                        <td colspan="4" class="question-info">
+                            <div class="question-info-toggle" onclick="toggleQuestionInfo(this)">
+                                [+]
+                            </div>
+                            <div class="question-info-content hidden">
+                              <strong>Question Information:</strong>
+                              <pre>{
+  "word": "friend",
+  "sw": "rafiki",
+  "origin_lang": "en",
+  "target_lang": "sw",
+  "choices": [
+    "haraka",
+    "mti",
+    "kukua",
+    "mlima",
+    "rafiki",
+    "moyo",
+    "zito",
+    "upepo"
+  ]
+}</pre>
+                            </div>
+                        </td>
+                    </tr>
+                    
+                    
+                    <tr>
+                        <td>0050_translation_en_sw:21</td>
+                        <td>0</td>
+                        <td>1926.086251</td>
+                        <td>{
+  "response": "kuimba",
+  "expected": "kukimbia"
+}</td>
+                    </tr>
+                    
+                    <tr>
+                        <td colspan="4" class="question-info">
+                            <div class="question-info-toggle" onclick="toggleQuestionInfo(this)">
+                                [+]
+                            </div>
+                            <div class="question-info-content hidden">
+                              <strong>Question Information:</strong>
+                              <pre>{
+  "word": "to run",
+  "sw": "kukimbia",
+  "origin_lang": "en",
+  "target_lang": "sw",
+  "choices": [
+    "kuimba",
+    "kukimbia",
+    "mti",
+    "mzuri",
+    "kupumua",
+    "imara zaidi",
+    "laini",
+    "anga"
+  ]
+}</pre>
+                            </div>
+                        </td>
+                    </tr>
+                    
+                    
+                    <tr>
+                        <td>0050_translation_en_sw:22</td>
+                        <td>0</td>
+                        <td>1934.817375</td>
+                        <td>{
+  "response": "kukua",
+  "expected": "duara"
+}</td>
+                    </tr>
+                    
+                    <tr>
+                        <td colspan="4" class="question-info">
+                            <div class="question-info-toggle" onclick="toggleQuestionInfo(this)">
+                                [+]
+                            </div>
+                            <div class="question-info-content hidden">
+                              <strong>Question Information:</strong>
+                              <pre>{
+  "word": "round",
+  "sw": "duara",
+  "origin_lang": "en",
+  "target_lang": "sw",
+  "choices": [
+    "kali",
+    "kukua",
+    "duara",
+    "mchanga",
+    "kuruka",
+    "tabasamu",
+    "kina",
+    "jiwe"
+  ]
+}</pre>
+                            </div>
+                        </td>
+                    </tr>
+                    
+                    
+                    <tr>
+                        <td>0050_translation_en_sw:23</td>
+                        <td>0</td>
+                        <td>1799.964167</td>
+                        <td>{
+  "response": "wind",
+  "expected": "upepo",
+  "origin_word_details": "Can be noun (moving air) or verb (to twist)"
+}</td>
+                    </tr>
+                    
+                    <tr>
+                        <td colspan="4" class="question-info">
+                            <div class="question-info-toggle" onclick="toggleQuestionInfo(this)">
+                                [+]
+                            </div>
+                            <div class="question-info-content hidden">
+                              <strong>Question Information:</strong>
+                              <pre>{
+  "word": "wind",
+  "sw": "upepo",
+  "origin_lang": "en",
+  "target_lang": "sw",
+  "origin_details": "Can be noun (moving air) or verb (to twist)",
+  "choices": [
+    "kitabu",
+    "mlima",
+    "baridi",
+    "tabasamu",
+    "upepo",
+    "kukua",
+    "laini",
+    "kuendesha"
+  ]
+}</pre>
+                            </div>
+                        </td>
+                    </tr>
+                    
+                    
+                    <tr>
+                        <td>0050_translation_en_sw:24</td>
+                        <td>0</td>
+                        <td>2224.776667</td>
+                        <td>{
+  "response": "kukimbia",
+  "expected": "joto"
+}</td>
+                    </tr>
+                    
+                    <tr>
+                        <td colspan="4" class="question-info">
+                            <div class="question-info-toggle" onclick="toggleQuestionInfo(this)">
+                                [+]
+                            </div>
+                            <div class="question-info-content hidden">
+                              <strong>Question Information:</strong>
+                              <pre>{
+  "word": "warm",
+  "sw": "joto",
+  "origin_lang": "en",
+  "target_lang": "sw",
+  "choices": [
+    "kukimbia",
+    "ndege",
+    "kuruka",
+    "laini",
+    "jiwe",
+    "joto",
+    "kina",
+    "kula"
+  ]
+}</pre>
+                            </div>
+                        </td>
+                    </tr>
+                    
+                    
+                    <tr>
+                        <td>0050_translation_en_sw:25</td>
+                        <td>0</td>
+                        <td>1855.2197499999997</td>
+                        <td>{
+  "response": "mti",
+  "expected": "jiwe"
+}</td>
+                    </tr>
+                    
+                    <tr>
+                        <td colspan="4" class="question-info">
+                            <div class="question-info-toggle" onclick="toggleQuestionInfo(this)">
+                                [+]
+                            </div>
+                            <div class="question-info-content hidden">
+                              <strong>Question Information:</strong>
+                              <pre>{
+  "word": "stone",
+  "sw": "jiwe",
+  "origin_lang": "en",
+  "target_lang": "sw",
+  "choices": [
+    "mti",
+    "laini",
+    "kali",
+    "kujificha",
+    "ua",
+    "jiwe",
+    "kucheza",
+    "wingu"
+  ]
+}</pre>
+                            </div>
+                        </td>
+                    </tr>
+                    
+                    
+                    <tr>
+                        <td>0050_translation_en_sw:26</td>
+                        <td>0</td>
+                        <td>2080.982751</td>
+                        <td>{
+  "response": "kucheka",
+  "expected": "kina",
+  "origin_word_details": "Can refer to physical depth or emotional/intellectual depth"
+}</td>
+                    </tr>
+                    
+                    <tr>
+                        <td colspan="4" class="question-info">
+                            <div class="question-info-toggle" onclick="toggleQuestionInfo(this)">
+                                [+]
+                            </div>
+                            <div class="question-info-content hidden">
+                              <strong>Question Information:</strong>
+                              <pre>{
+  "word": "deep",
+  "sw": "kina",
+  "origin_lang": "en",
+  "target_lang": "sw",
+  "origin_details": "Can refer to physical depth or emotional/intellectual depth",
+  "choices": [
+    "kucheka",
+    "tabasamu",
+    "mlima",
+    "laini",
+    "kukimbia",
+    "kuimba",
+    "kula",
+    "kina"
+  ]
+}</pre>
+                            </div>
+                        </td>
+                    </tr>
+                    
+                    
+                    <tr>
+                        <td>0050_translation_en_sw:27</td>
+                        <td>0</td>
+                        <td>2027.823125</td>
+                        <td>{
+  "response": "to swim",
+  "expected": "kuogelea"
+}</td>
+                    </tr>
+                    
+                    <tr>
+                        <td colspan="4" class="question-info">
+                            <div class="question-info-toggle" onclick="toggleQuestionInfo(this)">
+                                [+]
+                            </div>
+                            <div class="question-info-content hidden">
+                              <strong>Question Information:</strong>
+                              <pre>{
+  "word": "to swim",
+  "sw": "kuogelea",
+  "origin_lang": "en",
+  "target_lang": "sw",
+  "choices": [
+    "kitabu",
+    "kuruka",
+    "tamu",
+    "mchanga",
+    "duara",
+    "kuendesha",
+    "kuogelea",
+    "moto"
+  ]
+}</pre>
+                            </div>
+                        </td>
+                    </tr>
+                    
+                    
+                    <tr>
+                        <td>0050_translation_en_sw:28</td>
+                        <td>1</td>
+                        <td>1978.2822499999997</td>
+                        <td>{}</td>
+                    </tr>
+                    
+                    <tr>
+                        <td colspan="4" class="question-info">
+                            <div class="question-info-toggle" onclick="toggleQuestionInfo(this)">
+                                [+]
+                            </div>
+                            <div class="question-info-content hidden">
+                              <strong>Question Information:</strong>
+                              <pre>{
+  "word": "bird",
+  "sw": "ndege",
+  "origin_lang": "en",
+  "target_lang": "sw",
+  "target_details": "Can also mean 'airplane'",
+  "choices": [
+    "kucheka",
+    "kukua",
+    "chumvi",
+    "ndege",
+    "moto",
+    "kuanguka",
+    "ua",
+    "kupumua"
+  ]
+}</pre>
+                            </div>
+                        </td>
+                    </tr>
+                    
+                    
+                    <tr>
+                        <td>0050_translation_en_sw:29</td>
+                        <td>0</td>
+                        <td>2026.427042</td>
+                        <td>{
+  "response": "kuanguka",
+  "expected": "tamu",
+  "origin_word_details": "Can refer to taste or personality"
+}</td>
+                    </tr>
+                    
+                    <tr>
+                        <td colspan="4" class="question-info">
+                            <div class="question-info-toggle" onclick="toggleQuestionInfo(this)">
+                                [+]
+                            </div>
+                            <div class="question-info-content hidden">
+                              <strong>Question Information:</strong>
+                              <pre>{
+  "word": "sweet",
+  "sw": "tamu",
+  "origin_lang": "en",
+  "target_lang": "sw",
+  "origin_details": "Can refer to taste or personality",
+  "choices": [
+    "kuanguka",
+    "mwezi",
+    "chumvi",
+    "zito",
+    "tamu",
+    "kimya",
+    "maji",
+    "haraka"
+  ]
+}</pre>
+                            </div>
+                        </td>
+                    </tr>
+                    
+                    
+                    <tr>
+                        <td>0050_translation_en_sw:3</td>
+                        <td>0</td>
+                        <td>2083.063667</td>
+                        <td>{
+  "response": "mwezi",
+  "expected": "kitabu"
+}</td>
+                    </tr>
+                    
+                    <tr>
+                        <td colspan="4" class="question-info">
+                            <div class="question-info-toggle" onclick="toggleQuestionInfo(this)">
+                                [+]
+                            </div>
+                            <div class="question-info-content hidden">
+                              <strong>Question Information:</strong>
+                              <pre>{
+  "word": "book",
+  "sw": "kitabu",
+  "origin_lang": "en",
+  "target_lang": "sw",
+  "choices": [
+    "mwezi",
+    "kitabu",
+    "kimya",
+    "rafiki",
+    "kukua",
+    "zito",
+    "duara",
+    "tabasamu"
+  ]
+}</pre>
+                            </div>
+                        </td>
+                    </tr>
+                    
+                    
+                    <tr>
+                        <td>0050_translation_en_sw:30</td>
+                        <td>0</td>
+                        <td>2065.717208</td>
+                        <td>{
+  "response": "kuongela",
+  "expected": "wingu"
+}</td>
+                    </tr>
+                    
+                    <tr>
+                        <td colspan="4" class="question-info">
+                            <div class="question-info-toggle" onclick="toggleQuestionInfo(this)">
+                                [+]
+                            </div>
+                            <div class="question-info-content hidden">
+                              <strong>Question Information:</strong>
+                              <pre>{
+  "word": "cloud",
+  "sw": "wingu",
+  "origin_lang": "en",
+  "target_lang": "sw",
+  "choices": [
+    "kuogelea",
+    "nyota",
+    "kali",
+    "mzuri",
+    "wingu",
+    "rafiki",
+    "anga",
+    "mlima"
+  ]
+}</pre>
+                            </div>
+                        </td>
+                    </tr>
+                    
+                    
+                    <tr>
+                        <td>0050_translation_en_sw:31</td>
+                        <td>0</td>
+                        <td>3967.977958</td>
+                        <td>{
+  "response": "kujificha",
+  "expected": "tabasamu"
+}</td>
+                    </tr>
+                    
+                    <tr>
+                        <td colspan="4" class="question-info">
+                            <div class="question-info-toggle" onclick="toggleQuestionInfo(this)">
+                                [+]
+                            </div>
+                            <div class="question-info-content hidden">
+                              <strong>Question Information:</strong>
+                              <pre>{
+  "word": "to smile",
+  "sw": "tabasamu",
+  "origin_lang": "en",
+  "target_lang": "sw",
+  "choices": [
+    "nyasi",
+    "kujificha",
+    "kuendesha",
+    "baridi",
+    "tabasamu",
+    "jiwe",
+    "kulala",
+    "mti"
+  ]
+}</pre>
+                            </div>
+                        </td>
+                    </tr>
+                    
+                    
+                    <tr>
+                        <td>0050_translation_en_sw:32</td>
+                        <td>0</td>
+                        <td>2263.8965829999997</td>
+                        <td>{
+  "response": "kuimba",
+  "expected": "laini"
+}</td>
+                    </tr>
+                    
+                    <tr>
+                        <td colspan="4" class="question-info">
+                            <div class="question-info-toggle" onclick="toggleQuestionInfo(this)">
+                                [+]
+                            </div>
+                            <div class="question-info-content hidden">
+                              <strong>Question Information:</strong>
+                              <pre>{
+  "word": "soft",
+  "sw": "laini",
+  "origin_lang": "en",
+  "target_lang": "sw",
+  "choices": [
+    "kuandika",
+    "laini",
+    "nyota",
+    "kupumua",
+    "mti",
+    "wingu",
+    "kimya",
+    "kuimba"
+  ]
+}</pre>
+                            </div>
+                        </td>
+                    </tr>
+                    
+                    
+                    <tr>
+                        <td>0050_translation_en_sw:33</td>
+                        <td>1</td>
+                        <td>1824.134417</td>
+                        <td>{}</td>
+                    </tr>
+                    
+                    <tr>
+                        <td colspan="4" class="question-info">
+                            <div class="question-info-toggle" onclick="toggleQuestionInfo(this)">
+                                [+]
+                            </div>
+                            <div class="question-info-content hidden">
+                              <strong>Question Information:</strong>
+                              <pre>{
+  "word": "rain",
+  "sw": "mvua",
+  "origin_lang": "en",
+  "target_lang": "sw",
+  "choices": [
+    "moyo",
+    "kujificha",
+    "rafiki",
+    "kukimbia",
+    "joto",
+    "mlima",
+    "kina",
+    "mvua"
+  ]
+}</pre>
+                            </div>
+                        </td>
+                    </tr>
+                    
+                    
+                    <tr>
+                        <td>0050_translation_en_sw:34</td>
+                        <td>0</td>
+                        <td>2171.609501</td>
+                        <td>{
+  "response": "to grow",
+  "expected": "kukua"
+}</td>
+                    </tr>
+                    
+                    <tr>
+                        <td colspan="4" class="question-info">
+                            <div class="question-info-toggle" onclick="toggleQuestionInfo(this)">
+                                [+]
+                            </div>
+                            <div class="question-info-content hidden">
+                              <strong>Question Information:</strong>
+                              <pre>{
+  "word": "to grow",
+  "sw": "kukua",
+  "origin_lang": "en",
+  "target_lang": "sw",
+  "choices": [
+    "mzuri",
+    "wingu",
+    "kucheza ngoma",
+    "kali",
+    "kula",
+    "kukua",
+    "kuruka",
+    "moto"
+  ]
+}</pre>
+                            </div>
+                        </td>
+                    </tr>
+                    
+                    
+                    <tr>
+                        <td>0050_translation_en_sw:35</td>
+                        <td>1</td>
+                        <td>1893.0952069999998</td>
+                        <td>{}</td>
+                    </tr>
+                    
+                    <tr>
+                        <td colspan="4" class="question-info">
+                            <div class="question-info-toggle" onclick="toggleQuestionInfo(this)">
+                                [+]
+                            </div>
+                            <div class="question-info-content hidden">
+                              <strong>Question Information:</strong>
+                              <pre>{
+  "word": "quick",
+  "sw": "haraka",
+  "origin_lang": "en",
+  "target_lang": "sw",
+  "choices": [
+    "kuimba",
+    "mwezi",
+    "haraka",
+    "kula",
+    "mlima",
+    "mzuri",
+    "nyasi",
+    "kukimbia"
+  ]
+}</pre>
+                            </div>
+                        </td>
+                    </tr>
+                    
+                    
+                    <tr>
+                        <td>0050_translation_en_sw:36</td>
+                        <td>1</td>
+                        <td>1850.680542</td>
+                        <td>{}</td>
+                    </tr>
+                    
+                    <tr>
+                        <td colspan="4" class="question-info">
+                            <div class="question-info-toggle" onclick="toggleQuestionInfo(this)">
+                                [+]
+                            </div>
+                            <div class="question-info-content hidden">
+                              <strong>Question Information:</strong>
+                              <pre>{
+  "word": "star",
+  "sw": "nyota",
+  "origin_lang": "en",
+  "target_lang": "sw",
+  "choices": [
+    "mpya",
+    "kuanguka",
+    "nyota",
+    "mlima",
+    "mwezi",
+    "tabasamu",
+    "kali",
+    "moyo"
+  ]
+}</pre>
+                            </div>
+                        </td>
+                    </tr>
+                    
+                    
+                    <tr>
+                        <td>0050_translation_en_sw:37</td>
+                        <td>0</td>
+                        <td>2075.2001250000003</td>
+                        <td>{
+  "response": "to dance",
+  "expected": "kucheza ngoma"
+}</td>
+                    </tr>
+                    
+                    <tr>
+                        <td colspan="4" class="question-info">
+                            <div class="question-info-toggle" onclick="toggleQuestionInfo(this)">
+                                [+]
+                            </div>
+                            <div class="question-info-content hidden">
+                              <strong>Question Information:</strong>
+                              <pre>{
+  "word": "to dance",
+  "sw": "kucheza ngoma",
+  "origin_lang": "en",
+  "target_lang": "sw",
+  "choices": [
+    "mchanga",
+    "kucheka",
+    "mlima",
+    "moto",
+    "maji",
+    "kuogelea",
+    "kuandika",
+    "kucheza ngoma"
+  ]
+}</pre>
+                            </div>
+                        </td>
+                    </tr>
+                    
+                    
+                    <tr>
+                        <td>0050_translation_en_sw:38</td>
+                        <td>0</td>
+                        <td>2489.2219999999998</td>
+                        <td>{
+  "response": "tabasamu",
+  "expected": "zito"
+}</td>
+                    </tr>
+                    
+                    <tr>
+                        <td colspan="4" class="question-info">
+                            <div class="question-info-toggle" onclick="toggleQuestionInfo(this)">
+                                [+]
+                            </div>
+                            <div class="question-info-content hidden">
+                              <strong>Question Information:</strong>
+                              <pre>{
+  "word": "heavy",
+  "sw": "zito",
+  "origin_lang": "en",
+  "target_lang": "sw",
+  "choices": [
+    "tabasamu",
+    "mlima",
+    "kuruka",
+    "zito",
+    "laini",
+    "kulala",
+    "baridi",
+    "haraka"
+  ]
+}</pre>
+                            </div>
+                        </td>
+                    </tr>
+                    
+                    
+                    <tr>
+                        <td>0050_translation_en_sw:39</td>
+                        <td>1</td>
+                        <td>3634.1848760000003</td>
+                        <td>{}</td>
+                    </tr>
+                    
+                    <tr>
+                        <td colspan="4" class="question-info">
+                            <div class="question-info-toggle" onclick="toggleQuestionInfo(this)">
+                                [+]
+                            </div>
+                            <div class="question-info-content hidden">
+                              <strong>Question Information:</strong>
+                              <pre>{
+  "word": "fire",
+  "sw": "moto",
+  "origin_lang": "en",
+  "target_lang": "sw",
+  "choices": [
+    "kimya",
+    "moyo",
+    "ang'aa",
+    "moto",
+    "tamu",
+    "mzuri",
+    "zito",
+    "mvua"
+  ]
+}</pre>
+                            </div>
+                        </td>
+                    </tr>
+                    
+                    
+                    <tr>
+                        <td>0050_translation_en_sw:4</td>
+                        <td>1</td>
+                        <td>1921.255126</td>
+                        <td>{}</td>
+                    </tr>
+                    
+                    <tr>
+                        <td colspan="4" class="question-info">
+                            <div class="question-info-toggle" onclick="toggleQuestionInfo(this)">
+                                [+]
+                            </div>
+                            <div class="question-info-content hidden">
+                              <strong>Question Information:</strong>
+                              <pre>{
+  "word": "to eat",
+  "sw": "kula",
+  "origin_lang": "en",
+  "target_lang": "sw",
+  "choices": [
+    "zito",
+    "kukua",
+    "mzuri",
+    "kula",
+    "kuendesha",
+    "maji",
+    "jiwe",
+    "duara"
+  ]
+}</pre>
+                            </div>
+                        </td>
+                    </tr>
+                    
+                    
+                    <tr>
+                        <td>0050_translation_en_sw:40</td>
+                        <td>0</td>
+                        <td>2211.581959</td>
+                        <td>{
+  "response": "kucheza",
+  "expected": "kupumua"
+}</td>
+                    </tr>
+                    
+                    <tr>
+                        <td colspan="4" class="question-info">
+                            <div class="question-info-toggle" onclick="toggleQuestionInfo(this)">
+                                [+]
+                            </div>
+                            <div class="question-info-content hidden">
+                              <strong>Question Information:</strong>
+                              <pre>{
+  "word": "to breathe",
+  "sw": "kupumua",
+  "origin_lang": "en",
+  "target_lang": "sw",
+  "choices": [
+    "kina",
+    "laini",
+    "mwezi",
+    "upepo",
+    "kucheza",
+    "rafiki",
+    "kukua",
+    "kupumua"
+  ]
+}</pre>
+                            </div>
+                        </td>
+                    </tr>
+                    
+                    
+                    <tr>
+                        <td>0050_translation_en_sw:41</td>
+                        <td>0</td>
+                        <td>3480.561916</td>
+                        <td>{
+  "response": "jiwe",
+  "expected": "kali",
+  "origin_word_details": "Can refer to physical edge or intelligence"
+}</td>
+                    </tr>
+                    
+                    <tr>
+                        <td colspan="4" class="question-info">
+                            <div class="question-info-toggle" onclick="toggleQuestionInfo(this)">
+                                [+]
+                            </div>
+                            <div class="question-info-content hidden">
+                              <strong>Question Information:</strong>
+                              <pre>{
+  "word": "sharp",
+  "sw": "kali",
+  "origin_lang": "en",
+  "target_lang": "sw",
+  "origin_details": "Can refer to physical edge or intelligence",
+  "choices": [
+    "joto",
+    "jiwe",
+    "kali",
+    "mwezi",
+    "haraka",
+    "anga",
+    "kula",
+    "tabasamu"
+  ]
+}</pre>
+                            </div>
+                        </td>
+                    </tr>
+                    
+                    
+                    <tr>
+                        <td>0050_translation_en_sw:42</td>
+                        <td>1</td>
+                        <td>2012.650542</td>
+                        <td>{}</td>
+                    </tr>
+                    
+                    <tr>
+                        <td colspan="4" class="question-info">
+                            <div class="question-info-toggle" onclick="toggleQuestionInfo(this)">
+                                [+]
+                            </div>
+                            <div class="question-info-content hidden">
+                              <strong>Question Information:</strong>
+                              <pre>{
+  "word": "salt",
+  "sw": "chumvi",
+  "origin_lang": "en",
+  "target_lang": "sw",
+  "choices": [
+    "mzuri",
+    "nyota",
+    "anga",
+    "chumvi",
+    "kucheza",
+    "tabasamu",
+    "kuogelea",
+    "mti"
+  ]
+}</pre>
+                            </div>
+                        </td>
+                    </tr>
+                    
+                    
+                    <tr>
+                        <td>0050_translation_en_sw:43</td>
+                        <td>0</td>
+                        <td>1851.1339590000002</td>
+                        <td>{
+  "response": "moyo",
+  "expected": "kujificha"
+}</td>
+                    </tr>
+                    
+                    <tr>
+                        <td colspan="4" class="question-info">
+                            <div class="question-info-toggle" onclick="toggleQuestionInfo(this)">
+                                [+]
+                            </div>
+                            <div class="question-info-content hidden">
+                              <strong>Question Information:</strong>
+                              <pre>{
+  "word": "to hide",
+  "sw": "kujificha",
+  "origin_lang": "en",
+  "target_lang": "sw",
+  "choices": [
+    "moyo",
+    "kujificha",
+    "tabasamu",
+    "chumvi",
+    "kina",
+    "kulala",
+    "moto",
+    "ua"
+  ]
+}</pre>
+                            </div>
+                        </td>
+                    </tr>
+                    
+                    
+                    <tr>
+                        <td>0050_translation_en_sw:44</td>
+                        <td>0</td>
+                        <td>2073.206916</td>
+                        <td>{
+  "response": "smooth",
+  "expected": "laini"
+}</td>
+                    </tr>
+                    
+                    <tr>
+                        <td colspan="4" class="question-info">
+                            <div class="question-info-toggle" onclick="toggleQuestionInfo(this)">
+                                [+]
+                            </div>
+                            <div class="question-info-content hidden">
+                              <strong>Question Information:</strong>
+                              <pre>{
+  "word": "smooth",
+  "sw": "laini",
+  "origin_lang": "en",
+  "target_lang": "sw",
+  "choices": [
+    "ang'aa",
+    "upepo",
+    "laini",
+    "zito",
+    "chumvi",
+    "kali",
+    "mwezi",
+    "nyepesi"
+  ]
+}</pre>
+                            </div>
+                        </td>
+                    </tr>
+                    
+                    
+                    <tr>
+                        <td>0050_translation_en_sw:45</td>
+                        <td>0</td>
+                        <td>4257.105916</td>
+                        <td>{
+  "response": "duara",
+  "expected": "nyasi"
+}</td>
+                    </tr>
+                    
+                    <tr>
+                        <td colspan="4" class="question-info">
+                            <div class="question-info-toggle" onclick="toggleQuestionInfo(this)">
+                                [+]
+                            </div>
+                            <div class="question-info-content hidden">
+                              <strong>Question Information:</strong>
+                              <pre>{
+  "word": "grass",
+  "sw": "nyasi",
+  "origin_lang": "en",
+  "target_lang": "sw",
+  "choices": [
+    "duara",
+    "laini",
+    "kuogelea",
+    "kuruka",
+    "nyasi",
+    "nyepesi",
+    "laini",
+    "upepo"
+  ]
+}</pre>
+                            </div>
+                        </td>
+                    </tr>
+                    
+                    
+                    <tr>
+                        <td>0050_translation_en_sw:46</td>
+                        <td>0</td>
+                        <td>2282.855876</td>
+                        <td>{
+  "response": "kukua",
+  "expected": "kuruka"
+}</td>
+                    </tr>
+                    
+                    <tr>
+                        <td colspan="4" class="question-info">
+                            <div class="question-info-toggle" onclick="toggleQuestionInfo(this)">
+                                [+]
+                            </div>
+                            <div class="question-info-content hidden">
+                              <strong>Question Information:</strong>
+                              <pre>{
+  "word": "to fly",
+  "sw": "kuruka",
+  "origin_lang": "en",
+  "target_lang": "sw",
+  "choices": [
+    "kukua",
+    "kuanguka",
+    "kuruka",
+    "tabasamu",
+    "mpya",
+    "kulala",
+    "kucheza ngoma",
+    "moyo"
+  ]
+}</pre>
+                            </div>
+                        </td>
+                    </tr>
+                    
+                    
+                    <tr>
+                        <td>0050_translation_en_sw:47</td>
+                        <td>1</td>
+                        <td>2233.801417</td>
+                        <td>{}</td>
+                    </tr>
+                    
+                    <tr>
+                        <td colspan="4" class="question-info">
+                            <div class="question-info-toggle" onclick="toggleQuestionInfo(this)">
+                                [+]
+                            </div>
+                            <div class="question-info-content hidden">
+                              <strong>Question Information:</strong>
+                              <pre>{
+  "word": "cold",
+  "sw": "baridi",
+  "origin_lang": "en",
+  "target_lang": "sw",
+  "choices": [
+    "tabasamu",
+    "kuogelea",
+    "mzuri",
+    "mpya",
+    "jiwe",
+    "baridi",
+    "rafiki",
+    "chumvi"
+  ]
+}</pre>
+                            </div>
+                        </td>
+                    </tr>
+                    
+                    
+                    <tr>
+                        <td>0050_translation_en_sw:48</td>
+                        <td>0</td>
+                        <td>3946.085042</td>
+                        <td>{
+  "response": "kali",
+  "expected": "mchanga"
+}</td>
+                    </tr>
+                    
+                    <tr>
+                        <td colspan="4" class="question-info">
+                            <div class="question-info-toggle" onclick="toggleQuestionInfo(this)">
+                                [+]
+                            </div>
+                            <div class="question-info-content hidden">
+                              <strong>Question Information:</strong>
+                              <pre>{
+  "word": "sand",
+  "sw": "mchanga",
+  "origin_lang": "en",
+  "target_lang": "sw",
+  "choices": [
+    "kali",
+    "ua",
+    "chumvi",
+    "kukua",
+    "kula",
+    "mchanga",
+    "kucheka",
+    "kukimbia"
+  ]
+}</pre>
+                            </div>
+                        </td>
+                    </tr>
+                    
+                    
+                    <tr>
+                        <td>0050_translation_en_sw:49</td>
+                        <td>0</td>
+                        <td>2064.224583</td>
+                        <td>{
+  "response": "to fall",
+  "expected": "kuanguka"
+}</td>
+                    </tr>
+                    
+                    <tr>
+                        <td colspan="4" class="question-info">
+                            <div class="question-info-toggle" onclick="toggleQuestionInfo(this)">
+                                [+]
+                            </div>
+                            <div class="question-info-content hidden">
+                              <strong>Question Information:</strong>
+                              <pre>{
+  "word": "to fall",
+  "sw": "kuanguka",
+  "origin_lang": "en",
+  "target_lang": "sw",
+  "choices": [
+    "anga",
+    "kula",
+    "mzuri",
+    "mti",
+    "mpya",
+    "kuanguka",
+    "nyepesi",
+    "chumvi"
+  ]
+}</pre>
+                            </div>
+                        </td>
+                    </tr>
+                    
+                    
+                    <tr>
+                        <td>0050_translation_en_sw:5</td>
+                        <td>1</td>
+                        <td>1907.943708</td>
+                        <td>{}</td>
+                    </tr>
+                    
+                    <tr>
+                        <td colspan="4" class="question-info">
+                            <div class="question-info-toggle" onclick="toggleQuestionInfo(this)">
+                                [+]
+                            </div>
+                            <div class="question-info-content hidden">
+                              <strong>Question Information:</strong>
+                              <pre>{
+  "word": "beautiful",
+  "sw": "mzuri",
+  "origin_lang": "en",
+  "target_lang": "sw",
+  "choices": [
+    "imara zaidi",
+    "kukimbia",
+    "kucheza ngoma",
+    "duara",
+    "kuandika",
+    "mzuri",
+    "mvua",
+    "mwezi"
+  ]
+}</pre>
+                            </div>
+                        </td>
+                    </tr>
+                    
+                    
+                    <tr>
+                        <td>0050_translation_en_sw:50</td>
+                        <td>1</td>
+                        <td>4085.7892490000004</td>
+                        <td>{}</td>
+                    </tr>
+                    
+                    <tr>
+                        <td colspan="4" class="question-info">
+                            <div class="question-info-toggle" onclick="toggleQuestionInfo(this)">
+                                [+]
+                            </div>
+                            <div class="question-info-content hidden">
+                              <strong>Question Information:</strong>
+                              <pre>{
+  "word": "light",
+  "sw": "nyepesi",
+  "origin_lang": "en",
+  "target_lang": "sw",
+  "origin_details": "Using meaning 'not heavy' (vs. illumination)",
+  "choices": [
+    "kitabu",
+    "kula",
+    "nyepesi",
+    "kujificha",
+    "mpya",
+    "mchanga",
+    "kuimba",
+    "baridi"
+  ]
+}</pre>
+                            </div>
+                        </td>
+                    </tr>
+                    
+                    
+                    <tr>
+                        <td>0050_translation_en_sw:6</td>
+                        <td>1</td>
+                        <td>3075.414917</td>
+                        <td>{}</td>
+                    </tr>
+                    
+                    <tr>
+                        <td colspan="4" class="question-info">
+                            <div class="question-info-toggle" onclick="toggleQuestionInfo(this)">
+                                [+]
+                            </div>
+                            <div class="question-info-content hidden">
+                              <strong>Question Information:</strong>
+                              <pre>{
+  "word": "water",
+  "sw": "maji",
+  "origin_lang": "en",
+  "target_lang": "sw",
+  "choices": [
+    "mvua",
+    "wingu",
+    "laini",
+    "maji",
+    "kucheza",
+    "kukua",
+    "ang'aa",
+    "kupumua"
+  ]
+}</pre>
+                            </div>
+                        </td>
+                    </tr>
+                    
+                    
+                    <tr>
+                        <td>0050_translation_en_sw:7</td>
+                        <td>1</td>
+                        <td>1949.1787490000002</td>
+                        <td>{}</td>
+                    </tr>
+                    
+                    <tr>
+                        <td colspan="4" class="question-info">
+                            <div class="question-info-toggle" onclick="toggleQuestionInfo(this)">
+                                [+]
+                            </div>
+                            <div class="question-info-content hidden">
+                              <strong>Question Information:</strong>
+                              <pre>{
+  "word": "to sleep",
+  "sw": "kulala",
+  "origin_lang": "en",
+  "target_lang": "sw",
+  "choices": [
+    "kulala",
+    "kitabu",
+    "rafiki",
+    "anga",
+    "kujificha",
+    "kuimba",
+    "mzuri",
+    "tamu"
+  ]
+}</pre>
+                            </div>
+                        </td>
+                    </tr>
+                    
+                    
+                    <tr>
+                        <td>0050_translation_en_sw:8</td>
+                        <td>1</td>
+                        <td>1855.7053329999999</td>
+                        <td>{}</td>
+                    </tr>
+                    
+                    <tr>
+                        <td colspan="4" class="question-info">
+                            <div class="question-info-toggle" onclick="toggleQuestionInfo(this)">
+                                [+]
+                            </div>
+                            <div class="question-info-content hidden">
+                              <strong>Question Information:</strong>
+                              <pre>{
+  "word": "moon",
+  "sw": "mwezi",
+  "origin_lang": "en",
+  "target_lang": "sw",
+  "choices": [
+    "chumvi",
+    "moto",
+    "baridi",
+    "laini",
+    "moyo",
+    "kukua",
+    "mwezi",
+    "kimya"
+  ]
+}</pre>
+                            </div>
+                        </td>
+                    </tr>
+                    
+                    
+                    <tr>
+                        <td>0050_translation_en_sw:9</td>
+                        <td>0</td>
+                        <td>1921.084709</td>
+                        <td>{
+  "response": "to laugh",
+  "expected": "kucheka"
+}</td>
+                    </tr>
+                    
+                    <tr>
+                        <td colspan="4" class="question-info">
+                            <div class="question-info-toggle" onclick="toggleQuestionInfo(this)">
+                                [+]
+                            </div>
+                            <div class="question-info-content hidden">
+                              <strong>Question Information:</strong>
+                              <pre>{
+  "word": "to laugh",
+  "sw": "kucheka",
+  "origin_lang": "en",
+  "target_lang": "sw",
+  "choices": [
+    "ang'aa",
+    "kucheza ngoma",
+    "ndege",
+    "ua",
+    "kimya",
+    "kuogelea",
+    "kina",
+    "kucheka"
+  ]
+}</pre>
+                            </div>
+                        </td>
+                    </tr>
+                    
+                    
+                </tbody>
+            </table>
+        </div>
+
+        
+    </div>
+</body>
+</html>

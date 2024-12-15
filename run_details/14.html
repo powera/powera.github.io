@@ -1,0 +1,3739 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Benchmark Run Details - qwen2.5:7b:Q4_K_M on 0020_definitions</title>
+    <script>
+        function toggleQuestionInfo(toggleElement) {
+            const questionInfoContent = toggleElement.nextElementSibling;
+
+            if (questionInfoContent.classList.contains('hidden')) {
+                questionInfoContent.classList.remove('hidden');
+                toggleElement.textContent = '[X]';
+            } else {
+                questionInfoContent.classList.add('hidden');
+                toggleElement.textContent = '[+]';
+            }
+        }
+    </script>
+
+    <style>
+        /* Placeholder for future CSS */
+        body {
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 1rem;
+        }
+        .run-summary, .run-details {
+            margin-bottom: 2rem;
+        }
+        .summary-table, .details-table {
+            width: 100%;
+            border-collapse: collapse;
+        }
+        .summary-table th, .details-table th {
+            background-color: #f4f4f4;
+            text-align: left;
+            padding: 0.5rem;
+            border: 1px solid #ddd;
+        }
+        .summary-table td, .details-table td {
+            padding: 0.5rem;
+            border: 1px solid #ddd;
+        }
+        .details-table {
+            margin-top: 1rem;
+        }
+        .page-title {
+            color: #333;
+            border-bottom: 2px solid #333;
+            padding-bottom: 0.5rem;
+        }
+        .question-info {
+            background-color: #f9f9f9;
+            border: 1px solid #ddd;
+            padding: 1rem;
+            margin-top: 0.5rem;
+            position: relative;
+        }
+        .question-info-content {
+            max-height: 600px;
+            overflow-y: auto;
+            overflow-x: hidden;
+            padding-right: 15px; /* Add scrollbar space */
+        }
+        .question-info-toggle {
+            cursor: pointer;
+            user-select: none;
+            font-weight: bold;
+            color: #666;
+        }
+        .question-info-toggle:hover {
+            color: #333;
+        }
+        .question-info pre {
+            white-space: pre-wrap;
+            word-wrap: break-word;
+            background-color: #f4f4f4;
+            padding: 0.5rem;
+            border-radius: 4px;
+            margin: 0;
+        }
+        .hidden {
+            display: none;
+        }
+
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1 class="page-title">Benchmark Run Details</h1>
+        
+        <div class="run-summary">
+            <h2>Run Summary</h2>
+            <table class="summary-table">
+                <tr>
+                    <th>Model</th>
+                    <td>qwen2.5:7b:Q4_K_M</td>
+                </tr>
+                <tr>
+                    <th>Benchmark</th>
+                    <td>0020_definitions</td>
+                </tr>
+                <tr>
+                    <th>Normed Score</th>
+                    <td>99</td>
+                </tr>
+                <tr>
+                    <th>Run Timestamp</th>
+                    <td>2024-12-13 01:45:54</td>
+                </tr>
+            </table>
+        </div>
+
+        <div class="run-details">
+            <h2>Question-Level Details</h2>
+            <table class="details-table">
+                <thead>
+                    <tr>
+                        <th>Question ID</th>
+                        <th>Score</th>
+                        <th>Evaluation Time (ms)</th>
+                        <th>Debug Info</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    
+                    <tr>
+                        <td>0020:absent:90</td>
+                        <td>1</td>
+                        <td>730.748</td>
+                        <td>{}</td>
+                    </tr>
+                    
+                    <tr>
+                        <td colspan="4" class="question-info">
+                            <div class="question-info-toggle" onclick="toggleQuestionInfo(this)">
+                                [+]
+                            </div>
+                            <div class="question-info-content hidden">
+                              <strong>Question Information:</strong>
+                              <pre>{
+  "choices": [
+    "absent",
+    "energy",
+    "forest",
+    "glitter",
+    "noble",
+    "palace",
+    "skeptic",
+    "triumph",
+    "vessel",
+    "warrior"
+  ],
+  "correct": "absent",
+  "definition": "Not present in a place or situation.",
+  "question": "Which of the following ten words has this definition: Not present in a place or situation.\n\nJust give the single correct word, do not give a long explanation.\n\nThe choices are: absent, energy, forest, glitter, noble, palace, skeptic, triumph, vessel, warrior"
+}</pre>
+                            </div>
+                        </td>
+                    </tr>
+                    
+                    
+                    <tr>
+                        <td>0020:artist:81</td>
+                        <td>1</td>
+                        <td>656.83175</td>
+                        <td>{}</td>
+                    </tr>
+                    
+                    <tr>
+                        <td colspan="4" class="question-info">
+                            <div class="question-info-toggle" onclick="toggleQuestionInfo(this)">
+                                [+]
+                            </div>
+                            <div class="question-info-content hidden">
+                              <strong>Question Information:</strong>
+                              <pre>{
+  "choices": [
+    "artist",
+    "cheerful",
+    "courage",
+    "distant",
+    "hunter",
+    "loyal",
+    "mystery",
+    "peril",
+    "radiant",
+    "silence"
+  ],
+  "correct": "artist",
+  "definition": "A person who creates works of art.",
+  "question": "Which of the following ten words has this definition: A person who creates works of art.\n\nJust give the single correct word, do not give a long explanation.\n\nThe choices are: artist, cheerful, courage, distant, hunter, loyal, mystery, peril, radiant, silence"
+}</pre>
+                            </div>
+                        </td>
+                    </tr>
+                    
+                    
+                    <tr>
+                        <td>0020:artist:84</td>
+                        <td>1</td>
+                        <td>655.370792</td>
+                        <td>{}</td>
+                    </tr>
+                    
+                    <tr>
+                        <td colspan="4" class="question-info">
+                            <div class="question-info-toggle" onclick="toggleQuestionInfo(this)">
+                                [+]
+                            </div>
+                            <div class="question-info-content hidden">
+                              <strong>Question Information:</strong>
+                              <pre>{
+  "choices": [
+    "absent",
+    "artist",
+    "cloudy",
+    "memory",
+    "opal",
+    "rusty",
+    "savage",
+    "signal",
+    "skeptic",
+    "spark"
+  ],
+  "correct": "artist",
+  "definition": "A person who creates works of art.",
+  "question": "Which of the following ten words has this definition: A person who creates works of art.\n\nJust give the single correct word, do not give a long explanation.\n\nThe choices are: absent, artist, cloudy, memory, opal, rusty, savage, signal, skeptic, spark"
+}</pre>
+                            </div>
+                        </td>
+                    </tr>
+                    
+                    
+                    <tr>
+                        <td>0020:ashes:39</td>
+                        <td>1</td>
+                        <td>585.800833</td>
+                        <td>{}</td>
+                    </tr>
+                    
+                    <tr>
+                        <td colspan="4" class="question-info">
+                            <div class="question-info-toggle" onclick="toggleQuestionInfo(this)">
+                                [+]
+                            </div>
+                            <div class="question-info-content hidden">
+                              <strong>Question Information:</strong>
+                              <pre>{
+  "choices": [
+    "ashes",
+    "escape",
+    "grace",
+    "harmony",
+    "oath",
+    "solitary",
+    "splendor",
+    "swift",
+    "victory",
+    "whistle"
+  ],
+  "correct": "ashes",
+  "definition": "The powdery remains left after something has been completely burned.",
+  "question": "Which of the following ten words has this definition: The powdery remains left after something has been completely burned.\n\nJust give the single correct word, do not give a long explanation.\n\nThe choices are: ashes, escape, grace, harmony, oath, solitary, splendor, swift, victory, whistle"
+}</pre>
+                            </div>
+                        </td>
+                    </tr>
+                    
+                    
+                    <tr>
+                        <td>0020:balance:32</td>
+                        <td>1</td>
+                        <td>523.085541</td>
+                        <td>{}</td>
+                    </tr>
+                    
+                    <tr>
+                        <td colspan="4" class="question-info">
+                            <div class="question-info-toggle" onclick="toggleQuestionInfo(this)">
+                                [+]
+                            </div>
+                            <div class="question-info-content hidden">
+                              <strong>Question Information:</strong>
+                              <pre>{
+  "choices": [
+    "balance",
+    "heart",
+    "ignite",
+    "journey",
+    "magic",
+    "noble",
+    "rusty",
+    "savage",
+    "splendor",
+    "vessel"
+  ],
+  "correct": "balance",
+  "definition": "A state of equilibrium where opposing forces or influences are equal.",
+  "question": "Which of the following ten words has this definition: A state of equilibrium where opposing forces or influences are equal.\n\nJust give the single correct word, do not give a long explanation.\n\nThe choices are: balance, heart, ignite, journey, magic, noble, rusty, savage, splendor, vessel"
+}</pre>
+                            </div>
+                        </td>
+                    </tr>
+                    
+                    
+                    <tr>
+                        <td>0020:breeze:38</td>
+                        <td>1</td>
+                        <td>644.487209</td>
+                        <td>{}</td>
+                    </tr>
+                    
+                    <tr>
+                        <td colspan="4" class="question-info">
+                            <div class="question-info-toggle" onclick="toggleQuestionInfo(this)">
+                                [+]
+                            </div>
+                            <div class="question-info-content hidden">
+                              <strong>Question Information:</strong>
+                              <pre>{
+  "choices": [
+    "amber",
+    "breeze",
+    "grace",
+    "kingdom",
+    "maze",
+    "meadow",
+    "sincere",
+    "skyline",
+    "trouble",
+    "valley"
+  ],
+  "correct": "breeze",
+  "definition": "A light wind.",
+  "question": "Which of the following ten words has this definition: A light wind.\n\nJust give the single correct word, do not give a long explanation.\n\nThe choices are: amber, breeze, grace, kingdom, maze, meadow, sincere, skyline, trouble, valley"
+}</pre>
+                            </div>
+                        </td>
+                    </tr>
+                    
+                    
+                    <tr>
+                        <td>0020:bright:86</td>
+                        <td>1</td>
+                        <td>651.034833</td>
+                        <td>{}</td>
+                    </tr>
+                    
+                    <tr>
+                        <td colspan="4" class="question-info">
+                            <div class="question-info-toggle" onclick="toggleQuestionInfo(this)">
+                                [+]
+                            </div>
+                            <div class="question-info-content hidden">
+                              <strong>Question Information:</strong>
+                              <pre>{
+  "choices": [
+    "absent",
+    "adventure",
+    "bright",
+    "echo",
+    "glory",
+    "hidden",
+    "relic",
+    "savage",
+    "unique",
+    "wild"
+  ],
+  "correct": "bright",
+  "definition": "Giving off or reflecting a lot of light.",
+  "question": "Which of the following ten words has this definition: Giving off or reflecting a lot of light.\n\nJust give the single correct word, do not give a long explanation.\n\nThe choices are: absent, adventure, bright, echo, glory, hidden, relic, savage, unique, wild"
+}</pre>
+                            </div>
+                        </td>
+                    </tr>
+                    
+                    
+                    <tr>
+                        <td>0020:bronze:67</td>
+                        <td>1</td>
+                        <td>712.253833</td>
+                        <td>{}</td>
+                    </tr>
+                    
+                    <tr>
+                        <td colspan="4" class="question-info">
+                            <div class="question-info-toggle" onclick="toggleQuestionInfo(this)">
+                                [+]
+                            </div>
+                            <div class="question-info-content hidden">
+                              <strong>Question Information:</strong>
+                              <pre>{
+  "choices": [
+    "artist",
+    "bronze",
+    "delight",
+    "fable",
+    "justice",
+    "maze",
+    "mighty",
+    "sacred",
+    "unique",
+    "wild"
+  ],
+  "correct": "bronze",
+  "definition": "An alloy primarily composed of copper and tin.",
+  "question": "Which of the following ten words has this definition: An alloy primarily composed of copper and tin.\n\nJust give the single correct word, do not give a long explanation.\n\nThe choices are: artist, bronze, delight, fable, justice, maze, mighty, sacred, unique, wild"
+}</pre>
+                            </div>
+                        </td>
+                    </tr>
+                    
+                    
+                    <tr>
+                        <td>0020:calm:37</td>
+                        <td>1</td>
+                        <td>635.749417</td>
+                        <td>{}</td>
+                    </tr>
+                    
+                    <tr>
+                        <td colspan="4" class="question-info">
+                            <div class="question-info-toggle" onclick="toggleQuestionInfo(this)">
+                                [+]
+                            </div>
+                            <div class="question-info-content hidden">
+                              <strong>Question Information:</strong>
+                              <pre>{
+  "choices": [
+    "calm",
+    "energy",
+    "island",
+    "lightning",
+    "memory",
+    "puzzle",
+    "quest",
+    "splendor",
+    "universe",
+    "vessel"
+  ],
+  "correct": "calm",
+  "definition": "Free from disturbance or agitation.",
+  "question": "Which of the following ten words has this definition: Free from disturbance or agitation.\n\nJust give the single correct word, do not give a long explanation.\n\nThe choices are: calm, energy, island, lightning, memory, puzzle, quest, splendor, universe, vessel"
+}</pre>
+                            </div>
+                        </td>
+                    </tr>
+                    
+                    
+                    <tr>
+                        <td>0020:capture:68</td>
+                        <td>1</td>
+                        <td>645.282084</td>
+                        <td>{}</td>
+                    </tr>
+                    
+                    <tr>
+                        <td colspan="4" class="question-info">
+                            <div class="question-info-toggle" onclick="toggleQuestionInfo(this)">
+                                [+]
+                            </div>
+                            <div class="question-info-content hidden">
+                              <strong>Question Information:</strong>
+                              <pre>{
+  "choices": [
+    "capture",
+    "courage",
+    "danger",
+    "flame",
+    "fragile",
+    "honest",
+    "mythic",
+    "palace",
+    "passion",
+    "royalty"
+  ],
+  "correct": "capture",
+  "definition": "To seize or take possession of something, often forcefully.",
+  "question": "Which of the following ten words has this definition: To seize or take possession of something, often forcefully.\n\nJust give the single correct word, do not give a long explanation.\n\nThe choices are: capture, courage, danger, flame, fragile, honest, mythic, palace, passion, royalty"
+}</pre>
+                            </div>
+                        </td>
+                    </tr>
+                    
+                    
+                    <tr>
+                        <td>0020:capture:73</td>
+                        <td>1</td>
+                        <td>633.154708</td>
+                        <td>{}</td>
+                    </tr>
+                    
+                    <tr>
+                        <td colspan="4" class="question-info">
+                            <div class="question-info-toggle" onclick="toggleQuestionInfo(this)">
+                                [+]
+                            </div>
+                            <div class="question-info-content hidden">
+                              <strong>Question Information:</strong>
+                              <pre>{
+  "choices": [
+    "capture",
+    "envy",
+    "grave",
+    "magic",
+    "meadow",
+    "peril",
+    "pirate",
+    "precious",
+    "tactic",
+    "wisdom"
+  ],
+  "correct": "capture",
+  "definition": "To seize or take possession of something.",
+  "question": "Which of the following ten words has this definition: To seize or take possession of something.\n\nJust give the single correct word, do not give a long explanation.\n\nThe choices are: capture, envy, grave, magic, meadow, peril, pirate, precious, tactic, wisdom"
+}</pre>
+                            </div>
+                        </td>
+                    </tr>
+                    
+                    
+                    <tr>
+                        <td>0020:castle:31</td>
+                        <td>1</td>
+                        <td>533.544834</td>
+                        <td>{}</td>
+                    </tr>
+                    
+                    <tr>
+                        <td colspan="4" class="question-info">
+                            <div class="question-info-toggle" onclick="toggleQuestionInfo(this)">
+                                [+]
+                            </div>
+                            <div class="question-info-content hidden">
+                              <strong>Question Information:</strong>
+                              <pre>{
+  "choices": [
+    "castle",
+    "hidden",
+    "mighty",
+    "noble",
+    "queen",
+    "silence",
+    "soldier",
+    "spirit",
+    "splendor",
+    "strength"
+  ],
+  "correct": "castle",
+  "definition": "A fortified building typically built on a hilltop or defensive site, designed to protect its occupants from attack.",
+  "question": "Which of the following ten words has this definition: A fortified building typically built on a hilltop or defensive site, designed to protect its occupants from attack.\n\nJust give the single correct word, do not give a long explanation.\n\nThe choices are: castle, hidden, mighty, noble, queen, silence, soldier, spirit, splendor, strength"
+}</pre>
+                            </div>
+                        </td>
+                    </tr>
+                    
+                    
+                    <tr>
+                        <td>0020:chaos:83</td>
+                        <td>1</td>
+                        <td>723.890875</td>
+                        <td>{}</td>
+                    </tr>
+                    
+                    <tr>
+                        <td colspan="4" class="question-info">
+                            <div class="question-info-toggle" onclick="toggleQuestionInfo(this)">
+                                [+]
+                            </div>
+                            <div class="question-info-content hidden">
+                              <strong>Question Information:</strong>
+                              <pre>{
+  "choices": [
+    "chaos",
+    "cheerful",
+    "enemy",
+    "fable",
+    "forest",
+    "mansion",
+    "meadow",
+    "puzzle",
+    "signal",
+    "yarn"
+  ],
+  "correct": "chaos",
+  "definition": "A state of complete disorder and confusion.",
+  "question": "Which of the following ten words has this definition: A state of complete disorder and confusion.\n\nJust give the single correct word, do not give a long explanation.\n\nThe choices are: chaos, cheerful, enemy, fable, forest, mansion, meadow, puzzle, signal, yarn"
+}</pre>
+                            </div>
+                        </td>
+                    </tr>
+                    
+                    
+                    <tr>
+                        <td>0020:charm:64</td>
+                        <td>1</td>
+                        <td>625.55975</td>
+                        <td>{}</td>
+                    </tr>
+                    
+                    <tr>
+                        <td colspan="4" class="question-info">
+                            <div class="question-info-toggle" onclick="toggleQuestionInfo(this)">
+                                [+]
+                            </div>
+                            <div class="question-info-content hidden">
+                              <strong>Question Information:</strong>
+                              <pre>{
+  "choices": [
+    "charm",
+    "grace",
+    "greedy",
+    "heart",
+    "ivory",
+    "mythic",
+    "quest",
+    "respect",
+    "village",
+    "witty"
+  ],
+  "correct": "charm",
+  "definition": "A captivating quality that attracts or pleases.",
+  "question": "Which of the following ten words has this definition: A captivating quality that attracts or pleases.\n\nJust give the single correct word, do not give a long explanation.\n\nThe choices are: charm, grace, greedy, heart, ivory, mythic, quest, respect, village, witty"
+}</pre>
+                            </div>
+                        </td>
+                    </tr>
+                    
+                    
+                    <tr>
+                        <td>0020:cheerful:80</td>
+                        <td>1</td>
+                        <td>777.917291</td>
+                        <td>{}</td>
+                    </tr>
+                    
+                    <tr>
+                        <td colspan="4" class="question-info">
+                            <div class="question-info-toggle" onclick="toggleQuestionInfo(this)">
+                                [+]
+                            </div>
+                            <div class="question-info-content hidden">
+                              <strong>Question Information:</strong>
+                              <pre>{
+  "choices": [
+    "cheerful",
+    "freedom",
+    "iceberg",
+    "island",
+    "justice",
+    "precious",
+    "rebel",
+    "tower",
+    "truth",
+    "voyage"
+  ],
+  "correct": "cheerful",
+  "definition": "Feeling or expressing happiness and optimism.",
+  "question": "Which of the following ten words has this definition: Feeling or expressing happiness and optimism.\n\nJust give the single correct word, do not give a long explanation.\n\nThe choices are: cheerful, freedom, iceberg, island, justice, precious, rebel, tower, truth, voyage"
+}</pre>
+                            </div>
+                        </td>
+                    </tr>
+                    
+                    
+                    <tr>
+                        <td>0020:daring:16</td>
+                        <td>1</td>
+                        <td>688.678291</td>
+                        <td>{}</td>
+                    </tr>
+                    
+                    <tr>
+                        <td colspan="4" class="question-info">
+                            <div class="question-info-toggle" onclick="toggleQuestionInfo(this)">
+                                [+]
+                            </div>
+                            <div class="question-info-content hidden">
+                              <strong>Question Information:</strong>
+                              <pre>{
+  "choices": [
+    "capture",
+    "daring",
+    "fragile",
+    "glitter",
+    "jewel",
+    "maze",
+    "meadow",
+    "patient",
+    "shadow",
+    "solitary"
+  ],
+  "correct": "daring",
+  "definition": "Showing a willingness to take risks or engage in potentially dangerous activities.",
+  "question": "Which of the following ten words has this definition: Showing a willingness to take risks or engage in potentially dangerous activities.\n\nJust give the single correct word, do not give a long explanation.\n\nThe choices are: capture, daring, fragile, glitter, jewel, maze, meadow, patient, shadow, solitary"
+}</pre>
+                            </div>
+                        </td>
+                    </tr>
+                    
+                    
+                    <tr>
+                        <td>0020:duel:3</td>
+                        <td>1</td>
+                        <td>478.376375</td>
+                        <td>{}</td>
+                    </tr>
+                    
+                    <tr>
+                        <td colspan="4" class="question-info">
+                            <div class="question-info-toggle" onclick="toggleQuestionInfo(this)">
+                                [+]
+                            </div>
+                            <div class="question-info-content hidden">
+                              <strong>Question Information:</strong>
+                              <pre>{
+  "choices": [
+    "balance",
+    "duel",
+    "fearful",
+    "fighter",
+    "hopeful",
+    "oath",
+    "peril",
+    "thunder",
+    "warrior",
+    "youth"
+  ],
+  "correct": "duel",
+  "definition": "A formal fight between two people, usually to settle a disagreement or insult.",
+  "question": "Which of the following ten words has this definition: A formal fight between two people, usually to settle a disagreement or insult.\n\nJust give the single correct word, do not give a long explanation.\n\nThe choices are: balance, duel, fearful, fighter, hopeful, oath, peril, thunder, warrior, youth"
+}</pre>
+                            </div>
+                        </td>
+                    </tr>
+                    
+                    
+                    <tr>
+                        <td>0020:duel:34</td>
+                        <td>1</td>
+                        <td>595.358</td>
+                        <td>{}</td>
+                    </tr>
+                    
+                    <tr>
+                        <td colspan="4" class="question-info">
+                            <div class="question-info-toggle" onclick="toggleQuestionInfo(this)">
+                                [+]
+                            </div>
+                            <div class="question-info-content hidden">
+                              <strong>Question Information:</strong>
+                              <pre>{
+  "choices": [
+    "amber",
+    "duel",
+    "freedom",
+    "heart",
+    "hungry",
+    "outcast",
+    "royalty",
+    "signal",
+    "survivor",
+    "wonder"
+  ],
+  "correct": "duel",
+  "definition": "A formal contest between two individuals, typically involving weapons, to settle a dispute or personal grievance.",
+  "question": "Which of the following ten words has this definition: A formal contest between two individuals, typically involving weapons, to settle a dispute or personal grievance.\n\nJust give the single correct word, do not give a long explanation.\n\nThe choices are: amber, duel, freedom, heart, hungry, outcast, royalty, signal, survivor, wonder"
+}</pre>
+                            </div>
+                        </td>
+                    </tr>
+                    
+                    
+                    <tr>
+                        <td>0020:energy:77</td>
+                        <td>1</td>
+                        <td>674.198083</td>
+                        <td>{}</td>
+                    </tr>
+                    
+                    <tr>
+                        <td colspan="4" class="question-info">
+                            <div class="question-info-toggle" onclick="toggleQuestionInfo(this)">
+                                [+]
+                            </div>
+                            <div class="question-info-content hidden">
+                              <strong>Question Information:</strong>
+                              <pre>{
+  "choices": [
+    "balance",
+    "brother",
+    "capture",
+    "emblem",
+    "energy",
+    "fearful",
+    "mythic",
+    "quirk",
+    "shimmer",
+    "yarn"
+  ],
+  "correct": "energy",
+  "definition": "The capacity to do work or cause change.",
+  "question": "Which of the following ten words has this definition: The capacity to do work or cause change.\n\nJust give the single correct word, do not give a long explanation.\n\nThe choices are: balance, brother, capture, emblem, energy, fearful, mythic, quirk, shimmer, yarn"
+}</pre>
+                            </div>
+                        </td>
+                    </tr>
+                    
+                    
+                    <tr>
+                        <td>0020:envy:52</td>
+                        <td>1</td>
+                        <td>662.307125</td>
+                        <td>{}</td>
+                    </tr>
+                    
+                    <tr>
+                        <td colspan="4" class="question-info">
+                            <div class="question-info-toggle" onclick="toggleQuestionInfo(this)">
+                                [+]
+                            </div>
+                            <div class="question-info-content hidden">
+                              <strong>Question Information:</strong>
+                              <pre>{
+  "choices": [
+    "battle",
+    "cypress",
+    "envy",
+    "moonlit",
+    "oath",
+    "puzzle",
+    "rebel",
+    "simple",
+    "splendor",
+    "twilight"
+  ],
+  "correct": "envy",
+  "definition": "A feeling of displeasure or resentment aroused by another person\u0027s possession, achievement, or good fortune.",
+  "question": "Which of the following ten words has this definition: A feeling of displeasure or resentment aroused by another person\u0027s possession, achievement, or good fortune.\n\nJust give the single correct word, do not give a long explanation.\n\nThe choices are: battle, cypress, envy, moonlit, oath, puzzle, rebel, simple, splendor, twilight"
+}</pre>
+                            </div>
+                        </td>
+                    </tr>
+                    
+                    
+                    <tr>
+                        <td>0020:fable:20</td>
+                        <td>1</td>
+                        <td>577.220333</td>
+                        <td>{}</td>
+                    </tr>
+                    
+                    <tr>
+                        <td colspan="4" class="question-info">
+                            <div class="question-info-toggle" onclick="toggleQuestionInfo(this)">
+                                [+]
+                            </div>
+                            <div class="question-info-content hidden">
+                              <strong>Question Information:</strong>
+                              <pre>{
+  "choices": [
+    "fable",
+    "flame",
+    "iceberg",
+    "meadow",
+    "mighty",
+    "opal",
+    "realm",
+    "secret",
+    "wisdom",
+    "zeal"
+  ],
+  "correct": "fable",
+  "definition": "A short story, often featuring animals as characters, that conveys a moral lesson.",
+  "question": "Which of the following ten words has this definition: A short story, often featuring animals as characters, that conveys a moral lesson.\n\nJust give the single correct word, do not give a long explanation.\n\nThe choices are: fable, flame, iceberg, meadow, mighty, opal, realm, secret, wisdom, zeal"
+}</pre>
+                            </div>
+                        </td>
+                    </tr>
+                    
+                    
+                    <tr>
+                        <td>0020:fearful:7</td>
+                        <td>1</td>
+                        <td>480.567417</td>
+                        <td>{}</td>
+                    </tr>
+                    
+                    <tr>
+                        <td colspan="4" class="question-info">
+                            <div class="question-info-toggle" onclick="toggleQuestionInfo(this)">
+                                [+]
+                            </div>
+                            <div class="question-info-content hidden">
+                              <strong>Question Information:</strong>
+                              <pre>{
+  "choices": [
+    "envy",
+    "fearful",
+    "grace",
+    "honest",
+    "kingdom",
+    "queen",
+    "remark",
+    "roaming",
+    "survivor",
+    "valor"
+  ],
+  "correct": "fearful",
+  "definition": "Feeling or showing anxiety or apprehension about something potentially dangerous or unpleasant.",
+  "question": "Which of the following ten words has this definition: Feeling or showing anxiety or apprehension about something potentially dangerous or unpleasant.\n\nJust give the single correct word, do not give a long explanation.\n\nThe choices are: envy, fearful, grace, honest, kingdom, queen, remark, roaming, survivor, valor"
+}</pre>
+                            </div>
+                        </td>
+                    </tr>
+                    
+                    
+                    <tr>
+                        <td>0020:forest:72</td>
+                        <td>1</td>
+                        <td>639.969166</td>
+                        <td>{}</td>
+                    </tr>
+                    
+                    <tr>
+                        <td colspan="4" class="question-info">
+                            <div class="question-info-toggle" onclick="toggleQuestionInfo(this)">
+                                [+]
+                            </div>
+                            <div class="question-info-content hidden">
+                              <strong>Question Information:</strong>
+                              <pre>{
+  "choices": [
+    "danger",
+    "distant",
+    "forest",
+    "hidden",
+    "hopeful",
+    "rainbow",
+    "remark",
+    "swift",
+    "void",
+    "wisdom"
+  ],
+  "correct": "forest",
+  "definition": "A large area covered primarily by trees.",
+  "question": "Which of the following ten words has this definition: A large area covered primarily by trees.\n\nJust give the single correct word, do not give a long explanation.\n\nThe choices are: danger, distant, forest, hidden, hopeful, rainbow, remark, swift, void, wisdom"
+}</pre>
+                            </div>
+                        </td>
+                    </tr>
+                    
+                    
+                    <tr>
+                        <td>0020:frost:17</td>
+                        <td>1</td>
+                        <td>650.791125</td>
+                        <td>{}</td>
+                    </tr>
+                    
+                    <tr>
+                        <td colspan="4" class="question-info">
+                            <div class="question-info-toggle" onclick="toggleQuestionInfo(this)">
+                                [+]
+                            </div>
+                            <div class="question-info-content hidden">
+                              <strong>Question Information:</strong>
+                              <pre>{
+  "choices": [
+    "adventure",
+    "emblem",
+    "fearful",
+    "frost",
+    "glory",
+    "honest",
+    "keeper",
+    "roaming",
+    "signal",
+    "yarn"
+  ],
+  "correct": "frost",
+  "definition": "A thin coating of ice crystals that forms on surfaces when the temperature drops below freezing.",
+  "question": "Which of the following ten words has this definition: A thin coating of ice crystals that forms on surfaces when the temperature drops below freezing.\n\nJust give the single correct word, do not give a long explanation.\n\nThe choices are: adventure, emblem, fearful, frost, glory, honest, keeper, roaming, signal, yarn"
+}</pre>
+                            </div>
+                        </td>
+                    </tr>
+                    
+                    
+                    <tr>
+                        <td>0020:frost:98</td>
+                        <td>1</td>
+                        <td>727.12125</td>
+                        <td>{}</td>
+                    </tr>
+                    
+                    <tr>
+                        <td colspan="4" class="question-info">
+                            <div class="question-info-toggle" onclick="toggleQuestionInfo(this)">
+                                [+]
+                            </div>
+                            <div class="question-info-content hidden">
+                              <strong>Question Information:</strong>
+                              <pre>{
+  "choices": [
+    "ancient",
+    "artist",
+    "frost",
+    "gem",
+    "hidden",
+    "maze",
+    "quirk",
+    "rainbow",
+    "rusty",
+    "voyage"
+  ],
+  "correct": "frost",
+  "definition": "A thin layer of ice crystals that forms on surfaces when the temperature drops below freezing.",
+  "question": "Which of the following ten words has this definition: A thin layer of ice crystals that forms on surfaces when the temperature drops below freezing.\n\nJust give the single correct word, do not give a long explanation.\n\nThe choices are: ancient, artist, frost, gem, hidden, maze, quirk, rainbow, rusty, voyage"
+}</pre>
+                            </div>
+                        </td>
+                    </tr>
+                    
+                    
+                    <tr>
+                        <td>0020:gentle:25</td>
+                        <td>1</td>
+                        <td>592.856541</td>
+                        <td>{}</td>
+                    </tr>
+                    
+                    <tr>
+                        <td colspan="4" class="question-info">
+                            <div class="question-info-toggle" onclick="toggleQuestionInfo(this)">
+                                [+]
+                            </div>
+                            <div class="question-info-content hidden">
+                              <strong>Question Information:</strong>
+                              <pre>{
+  "choices": [
+    "artist",
+    "charm",
+    "cheerful",
+    "gentle",
+    "lightning",
+    "peril",
+    "power",
+    "proud",
+    "quest",
+    "survivor"
+  ],
+  "correct": "gentle",
+  "definition": "Having or showing a kind and soft nature.",
+  "question": "Which of the following ten words has this definition: Having or showing a kind and soft nature.\n\nJust give the single correct word, do not give a long explanation.\n\nThe choices are: artist, charm, cheerful, gentle, lightning, peril, power, proud, quest, survivor"
+}</pre>
+                            </div>
+                        </td>
+                    </tr>
+                    
+                    
+                    <tr>
+                        <td>0020:gentle:82</td>
+                        <td>1</td>
+                        <td>735.615417</td>
+                        <td>{}</td>
+                    </tr>
+                    
+                    <tr>
+                        <td colspan="4" class="question-info">
+                            <div class="question-info-toggle" onclick="toggleQuestionInfo(this)">
+                                [+]
+                            </div>
+                            <div class="question-info-content hidden">
+                              <strong>Question Information:</strong>
+                              <pre>{
+  "choices": [
+    "animal",
+    "courage",
+    "fragile",
+    "gentle",
+    "ignite",
+    "pirate",
+    "signal",
+    "soldier",
+    "survivor",
+    "voyage"
+  ],
+  "correct": "gentle",
+  "definition": "Characterized by kindness, softness, and a lack of harshness.",
+  "question": "Which of the following ten words has this definition: Characterized by kindness, softness, and a lack of harshness.\n\nJust give the single correct word, do not give a long explanation.\n\nThe choices are: animal, courage, fragile, gentle, ignite, pirate, signal, soldier, survivor, voyage"
+}</pre>
+                            </div>
+                        </td>
+                    </tr>
+                    
+                    
+                    <tr>
+                        <td>0020:gentle:89</td>
+                        <td>1</td>
+                        <td>725.0725</td>
+                        <td>{}</td>
+                    </tr>
+                    
+                    <tr>
+                        <td colspan="4" class="question-info">
+                            <div class="question-info-toggle" onclick="toggleQuestionInfo(this)">
+                                [+]
+                            </div>
+                            <div class="question-info-content hidden">
+                              <strong>Question Information:</strong>
+                              <pre>{
+  "choices": [
+    "cypress",
+    "dragon",
+    "gentle",
+    "glory",
+    "grave",
+    "keeper",
+    "simple",
+    "tame",
+    "whim",
+    "zeal"
+  ],
+  "correct": "gentle",
+  "definition": "Characterized by kindness, softness, and a lack of harshness or aggression.",
+  "question": "Which of the following ten words has this definition: Characterized by kindness, softness, and a lack of harshness or aggression.\n\nJust give the single correct word, do not give a long explanation.\n\nThe choices are: cypress, dragon, gentle, glory, grave, keeper, simple, tame, whim, zeal"
+}</pre>
+                            </div>
+                        </td>
+                    </tr>
+                    
+                    
+                    <tr>
+                        <td>0020:grace:96</td>
+                        <td>1</td>
+                        <td>703.239083</td>
+                        <td>{}</td>
+                    </tr>
+                    
+                    <tr>
+                        <td colspan="4" class="question-info">
+                            <div class="question-info-toggle" onclick="toggleQuestionInfo(this)">
+                                [+]
+                            </div>
+                            <div class="question-info-content hidden">
+                              <strong>Question Information:</strong>
+                              <pre>{
+  "choices": [
+    "bronze",
+    "forest",
+    "gem",
+    "grace",
+    "grave",
+    "justice",
+    "mighty",
+    "oath",
+    "oracle",
+    "passion"
+  ],
+  "correct": "grace",
+  "definition": "The quality of being polite and elegant.",
+  "question": "Which of the following ten words has this definition: The quality of being polite and elegant.\n\nJust give the single correct word, do not give a long explanation.\n\nThe choices are: bronze, forest, gem, grace, grave, justice, mighty, oath, oracle, passion"
+}</pre>
+                            </div>
+                        </td>
+                    </tr>
+                    
+                    
+                    <tr>
+                        <td>0020:grave:70</td>
+                        <td>1</td>
+                        <td>634.992958</td>
+                        <td>{}</td>
+                    </tr>
+                    
+                    <tr>
+                        <td colspan="4" class="question-info">
+                            <div class="question-info-toggle" onclick="toggleQuestionInfo(this)">
+                                [+]
+                            </div>
+                            <div class="question-info-content hidden">
+                              <strong>Question Information:</strong>
+                              <pre>{
+  "choices": [
+    "absent",
+    "bronze",
+    "grave",
+    "loyal",
+    "mansion",
+    "mischief",
+    "ocean",
+    "splendor",
+    "timid",
+    "triumph"
+  ],
+  "correct": "grave",
+  "definition": "Significantly serious or dangerous.",
+  "question": "Which of the following ten words has this definition: Significantly serious or dangerous.\n\nJust give the single correct word, do not give a long explanation.\n\nThe choices are: absent, bronze, grave, loyal, mansion, mischief, ocean, splendor, timid, triumph"
+}</pre>
+                            </div>
+                        </td>
+                    </tr>
+                    
+                    
+                    <tr>
+                        <td>0020:greedy:75</td>
+                        <td>1</td>
+                        <td>711.798042</td>
+                        <td>{}</td>
+                    </tr>
+                    
+                    <tr>
+                        <td colspan="4" class="question-info">
+                            <div class="question-info-toggle" onclick="toggleQuestionInfo(this)">
+                                [+]
+                            </div>
+                            <div class="question-info-content hidden">
+                              <strong>Question Information:</strong>
+                              <pre>{
+  "choices": [
+    "battle",
+    "castle",
+    "grave",
+    "greedy",
+    "lantern",
+    "lightning",
+    "proud",
+    "simple",
+    "soldier",
+    "swift"
+  ],
+  "correct": "greedy",
+  "definition": "Having or showing an excessive desire for something, especially wealth or power.",
+  "question": "Which of the following ten words has this definition: Having or showing an excessive desire for something, especially wealth or power.\n\nJust give the single correct word, do not give a long explanation.\n\nThe choices are: battle, castle, grave, greedy, lantern, lightning, proud, simple, soldier, swift"
+}</pre>
+                            </div>
+                        </td>
+                    </tr>
+                    
+                    
+                    <tr>
+                        <td>0020:hidden:66</td>
+                        <td>1</td>
+                        <td>639.729458</td>
+                        <td>{}</td>
+                    </tr>
+                    
+                    <tr>
+                        <td colspan="4" class="question-info">
+                            <div class="question-info-toggle" onclick="toggleQuestionInfo(this)">
+                                [+]
+                            </div>
+                            <div class="question-info-content hidden">
+                              <strong>Question Information:</strong>
+                              <pre>{
+  "choices": [
+    "adventure",
+    "family",
+    "flame",
+    "gentle",
+    "hidden",
+    "ignite",
+    "knight",
+    "rebel",
+    "strength",
+    "zeal"
+  ],
+  "correct": "hidden",
+  "definition": "Not easily seen or found",
+  "question": "Which of the following ten words has this definition: Not easily seen or found\n\nJust give the single correct word, do not give a long explanation.\n\nThe choices are: adventure, family, flame, gentle, hidden, ignite, knight, rebel, strength, zeal"
+}</pre>
+                            </div>
+                        </td>
+                    </tr>
+                    
+                    
+                    <tr>
+                        <td>0020:hidden:95</td>
+                        <td>1</td>
+                        <td>636.858333</td>
+                        <td>{}</td>
+                    </tr>
+                    
+                    <tr>
+                        <td colspan="4" class="question-info">
+                            <div class="question-info-toggle" onclick="toggleQuestionInfo(this)">
+                                [+]
+                            </div>
+                            <div class="question-info-content hidden">
+                              <strong>Question Information:</strong>
+                              <pre>{
+  "choices": [
+    "fragile",
+    "gentle",
+    "hidden",
+    "lightning",
+    "magic",
+    "mighty",
+    "opal",
+    "realm",
+    "reckless",
+    "scared"
+  ],
+  "correct": "hidden",
+  "definition": "Not easily seen or discovered.",
+  "question": "Which of the following ten words has this definition: Not easily seen or discovered.\n\nJust give the single correct word, do not give a long explanation.\n\nThe choices are: fragile, gentle, hidden, lightning, magic, mighty, opal, realm, reckless, scared"
+}</pre>
+                            </div>
+                        </td>
+                    </tr>
+                    
+                    
+                    <tr>
+                        <td>0020:iceberg:54</td>
+                        <td>1</td>
+                        <td>927.07425</td>
+                        <td>{}</td>
+                    </tr>
+                    
+                    <tr>
+                        <td colspan="4" class="question-info">
+                            <div class="question-info-toggle" onclick="toggleQuestionInfo(this)">
+                                [+]
+                            </div>
+                            <div class="question-info-content hidden">
+                              <strong>Question Information:</strong>
+                              <pre>{
+  "choices": [
+    "ashes",
+    "cypress",
+    "destiny",
+    "gem",
+    "iceberg",
+    "legacy",
+    "precious",
+    "roaming",
+    "universe",
+    "valor"
+  ],
+  "correct": "iceberg",
+  "definition": "A large mass of freshwater ice that has broken off from a glacier or ice shelf and is floating freely in open water.",
+  "question": "Which of the following ten words has this definition: A large mass of freshwater ice that has broken off from a glacier or ice shelf and is floating freely in open water.\n\nJust give the single correct word, do not give a long explanation.\n\nThe choices are: ashes, cypress, destiny, gem, iceberg, legacy, precious, roaming, universe, valor"
+}</pre>
+                            </div>
+                        </td>
+                    </tr>
+                    
+                    
+                    <tr>
+                        <td>0020:ivory:42</td>
+                        <td>1</td>
+                        <td>639.577042</td>
+                        <td>{}</td>
+                    </tr>
+                    
+                    <tr>
+                        <td colspan="4" class="question-info">
+                            <div class="question-info-toggle" onclick="toggleQuestionInfo(this)">
+                                [+]
+                            </div>
+                            <div class="question-info-content hidden">
+                              <strong>Question Information:</strong>
+                              <pre>{
+  "choices": [
+    "balance",
+    "chaos",
+    "duel",
+    "ivory",
+    "keeper",
+    "lure",
+    "quest",
+    "shimmer",
+    "sincere",
+    "zeal"
+  ],
+  "correct": "ivory",
+  "definition": "A hard, white material obtained from the tusks of elephants.",
+  "question": "Which of the following ten words has this definition: A hard, white material obtained from the tusks of elephants.\n\nJust give the single correct word, do not give a long explanation.\n\nThe choices are: balance, chaos, duel, ivory, keeper, lure, quest, shimmer, sincere, zeal"
+}</pre>
+                            </div>
+                        </td>
+                    </tr>
+                    
+                    
+                    <tr>
+                        <td>0020:jewel:65</td>
+                        <td>1</td>
+                        <td>767.165917</td>
+                        <td>{}</td>
+                    </tr>
+                    
+                    <tr>
+                        <td colspan="4" class="question-info">
+                            <div class="question-info-toggle" onclick="toggleQuestionInfo(this)">
+                                [+]
+                            </div>
+                            <div class="question-info-content hidden">
+                              <strong>Question Information:</strong>
+                              <pre>{
+  "choices": [
+    "ashes",
+    "cypress",
+    "jewel",
+    "mighty",
+    "mystery",
+    "mythic",
+    "respect",
+    "shadow",
+    "shimmer",
+    "silence"
+  ],
+  "correct": "jewel",
+  "definition": "A precious stone that is cut and polished for use in jewelry or as a decorative object.",
+  "question": "Which of the following ten words has this definition: A precious stone that is cut and polished for use in jewelry or as a decorative object.\n\nJust give the single correct word, do not give a long explanation.\n\nThe choices are: ashes, cypress, jewel, mighty, mystery, mythic, respect, shadow, shimmer, silence"
+}</pre>
+                            </div>
+                        </td>
+                    </tr>
+                    
+                    
+                    <tr>
+                        <td>0020:justice:22</td>
+                        <td>1</td>
+                        <td>513.490792</td>
+                        <td>{}</td>
+                    </tr>
+                    
+                    <tr>
+                        <td colspan="4" class="question-info">
+                            <div class="question-info-toggle" onclick="toggleQuestionInfo(this)">
+                                [+]
+                            </div>
+                            <div class="question-info-content hidden">
+                              <strong>Question Information:</strong>
+                              <pre>{
+  "choices": [
+    "distant",
+    "grace",
+    "justice",
+    "lure",
+    "mansion",
+    "mystery",
+    "scared",
+    "signal",
+    "tactic",
+    "triumph"
+  ],
+  "correct": "justice",
+  "definition": "Fairness and righteousness in the treatment of people according to their actions and circumstances.",
+  "question": "Which of the following ten words has this definition: Fairness and righteousness in the treatment of people according to their actions and circumstances.\n\nJust give the single correct word, do not give a long explanation.\n\nThe choices are: distant, grace, justice, lure, mansion, mystery, scared, signal, tactic, triumph"
+}</pre>
+                            </div>
+                        </td>
+                    </tr>
+                    
+                    
+                    <tr>
+                        <td>0020:keeper:28</td>
+                        <td>1</td>
+                        <td>560.610333</td>
+                        <td>{}</td>
+                    </tr>
+                    
+                    <tr>
+                        <td colspan="4" class="question-info">
+                            <div class="question-info-toggle" onclick="toggleQuestionInfo(this)">
+                                [+]
+                            </div>
+                            <div class="question-info-content hidden">
+                              <strong>Question Information:</strong>
+                              <pre>{
+  "choices": [
+    "bronze",
+    "fable",
+    "ignite",
+    "keeper",
+    "magic",
+    "peaceful",
+    "precious",
+    "silence",
+    "splendor",
+    "wisdom"
+  ],
+  "correct": "keeper",
+  "definition": "A person responsible for caring for or protecting something.",
+  "question": "Which of the following ten words has this definition: A person responsible for caring for or protecting something.\n\nJust give the single correct word, do not give a long explanation.\n\nThe choices are: bronze, fable, ignite, keeper, magic, peaceful, precious, silence, splendor, wisdom"
+}</pre>
+                            </div>
+                        </td>
+                    </tr>
+                    
+                    
+                    <tr>
+                        <td>0020:kingdom:92</td>
+                        <td>0</td>
+                        <td>664.66425</td>
+                        <td>{
+  "result": "realm"
+}</td>
+                    </tr>
+                    
+                    <tr>
+                        <td colspan="4" class="question-info">
+                            <div class="question-info-toggle" onclick="toggleQuestionInfo(this)">
+                                [+]
+                            </div>
+                            <div class="question-info-content hidden">
+                              <strong>Question Information:</strong>
+                              <pre>{
+  "choices": [
+    "delight",
+    "envy",
+    "hidden",
+    "kingdom",
+    "ocean",
+    "pirate",
+    "quirk",
+    "realm",
+    "rusty",
+    "wonder"
+  ],
+  "correct": "kingdom",
+  "definition": "A large political unit ruled by a single sovereign.",
+  "question": "Which of the following ten words has this definition: A large political unit ruled by a single sovereign.\n\nJust give the single correct word, do not give a long explanation.\n\nThe choices are: delight, envy, hidden, kingdom, ocean, pirate, quirk, realm, rusty, wonder"
+}</pre>
+                            </div>
+                        </td>
+                    </tr>
+                    
+                    
+                    <tr>
+                        <td>0020:knight:88</td>
+                        <td>1</td>
+                        <td>977.229167</td>
+                        <td>{}</td>
+                    </tr>
+                    
+                    <tr>
+                        <td colspan="4" class="question-info">
+                            <div class="question-info-toggle" onclick="toggleQuestionInfo(this)">
+                                [+]
+                            </div>
+                            <div class="question-info-content hidden">
+                              <strong>Question Information:</strong>
+                              <pre>{
+  "choices": [
+    "fearful",
+    "hunter",
+    "knight",
+    "maze",
+    "puzzle",
+    "respect",
+    "sapphire",
+    "savage",
+    "silence",
+    "spark"
+  ],
+  "correct": "knight",
+  "definition": "A mounted warrior who served a lord or king, often adhering to a strict code of chivalry.",
+  "question": "Which of the following ten words has this definition: A mounted warrior who served a lord or king, often adhering to a strict code of chivalry.\n\nJust give the single correct word, do not give a long explanation.\n\nThe choices are: fearful, hunter, knight, maze, puzzle, respect, sapphire, savage, silence, spark"
+}</pre>
+                            </div>
+                        </td>
+                    </tr>
+                    
+                    
+                    <tr>
+                        <td>0020:legacy:15</td>
+                        <td>1</td>
+                        <td>586.94525</td>
+                        <td>{}</td>
+                    </tr>
+                    
+                    <tr>
+                        <td colspan="4" class="question-info">
+                            <div class="question-info-toggle" onclick="toggleQuestionInfo(this)">
+                                [+]
+                            </div>
+                            <div class="question-info-content hidden">
+                              <strong>Question Information:</strong>
+                              <pre>{
+  "choices": [
+    "amber",
+    "ancient",
+    "belief",
+    "forest",
+    "knight",
+    "legacy",
+    "lightning",
+    "simple",
+    "solitary",
+    "victory"
+  ],
+  "correct": "legacy",
+  "definition": "Something transmitted from the past to the present, often intangible things like ideas or traditions.",
+  "question": "Which of the following ten words has this definition: Something transmitted from the past to the present, often intangible things like ideas or traditions.\n\nJust give the single correct word, do not give a long explanation.\n\nThe choices are: amber, ancient, belief, forest, knight, legacy, lightning, simple, solitary, victory"
+}</pre>
+                            </div>
+                        </td>
+                    </tr>
+                    
+                    
+                    <tr>
+                        <td>0020:lightning:19</td>
+                        <td>1</td>
+                        <td>579.794625</td>
+                        <td>{}</td>
+                    </tr>
+                    
+                    <tr>
+                        <td colspan="4" class="question-info">
+                            <div class="question-info-toggle" onclick="toggleQuestionInfo(this)">
+                                [+]
+                            </div>
+                            <div class="question-info-content hidden">
+                              <strong>Question Information:</strong>
+                              <pre>{
+  "choices": [
+    "balance",
+    "clever",
+    "harmony",
+    "honor",
+    "lightning",
+    "noble",
+    "outcast",
+    "river",
+    "skeptic",
+    "truth"
+  ],
+  "correct": "lightning",
+  "definition": "A sudden electrical discharge of very short duration and high voltage that occurs during thunderstorms.",
+  "question": "Which of the following ten words has this definition: A sudden electrical discharge of very short duration and high voltage that occurs during thunderstorms.\n\nJust give the single correct word, do not give a long explanation.\n\nThe choices are: balance, clever, harmony, honor, lightning, noble, outcast, river, skeptic, truth"
+}</pre>
+                            </div>
+                        </td>
+                    </tr>
+                    
+                    
+                    <tr>
+                        <td>0020:lure:99</td>
+                        <td>1</td>
+                        <td>728.259792</td>
+                        <td>{}</td>
+                    </tr>
+                    
+                    <tr>
+                        <td colspan="4" class="question-info">
+                            <div class="question-info-toggle" onclick="toggleQuestionInfo(this)">
+                                [+]
+                            </div>
+                            <div class="question-info-content hidden">
+                              <strong>Question Information:</strong>
+                              <pre>{
+  "choices": [
+    "escape",
+    "fearful",
+    "harmony",
+    "keeper",
+    "lure",
+    "phantom",
+    "rainbow",
+    "reckless",
+    "spark",
+    "witty"
+  ],
+  "correct": "lure",
+  "definition": "Something that entices or attracts someone or something.",
+  "question": "Which of the following ten words has this definition: Something that entices or attracts someone or something.\n\nJust give the single correct word, do not give a long explanation.\n\nThe choices are: escape, fearful, harmony, keeper, lure, phantom, rainbow, reckless, spark, witty"
+}</pre>
+                            </div>
+                        </td>
+                    </tr>
+                    
+                    
+                    <tr>
+                        <td>0020:mansion:23</td>
+                        <td>1</td>
+                        <td>567.205084</td>
+                        <td>{}</td>
+                    </tr>
+                    
+                    <tr>
+                        <td colspan="4" class="question-info">
+                            <div class="question-info-toggle" onclick="toggleQuestionInfo(this)">
+                                [+]
+                            </div>
+                            <div class="question-info-content hidden">
+                              <strong>Question Information:</strong>
+                              <pre>{
+  "choices": [
+    "ashes",
+    "echo",
+    "escape",
+    "ivory",
+    "magic",
+    "mansion",
+    "royalty",
+    "savage",
+    "trouble",
+    "warrior"
+  ],
+  "correct": "mansion",
+  "definition": "A large, impressive house",
+  "question": "Which of the following ten words has this definition: A large, impressive house\n\nJust give the single correct word, do not give a long explanation.\n\nThe choices are: ashes, echo, escape, ivory, magic, mansion, royalty, savage, trouble, warrior"
+}</pre>
+                            </div>
+                        </td>
+                    </tr>
+                    
+                    
+                    <tr>
+                        <td>0020:maze:62</td>
+                        <td>1</td>
+                        <td>620.840083</td>
+                        <td>{}</td>
+                    </tr>
+                    
+                    <tr>
+                        <td colspan="4" class="question-info">
+                            <div class="question-info-toggle" onclick="toggleQuestionInfo(this)">
+                                [+]
+                            </div>
+                            <div class="question-info-content hidden">
+                              <strong>Question Information:</strong>
+                              <pre>{
+  "choices": [
+    "energy",
+    "fable",
+    "gem",
+    "justice",
+    "maze",
+    "opal",
+    "peril",
+    "spark",
+    "twilight",
+    "witty"
+  ],
+  "correct": "maze",
+  "definition": "A complex network of paths or passages that are difficult to navigate.",
+  "question": "Which of the following ten words has this definition: A complex network of paths or passages that are difficult to navigate.\n\nJust give the single correct word, do not give a long explanation.\n\nThe choices are: energy, fable, gem, justice, maze, opal, peril, spark, twilight, witty"
+}</pre>
+                            </div>
+                        </td>
+                    </tr>
+                    
+                    
+                    <tr>
+                        <td>0020:meadow:76</td>
+                        <td>1</td>
+                        <td>725.198458</td>
+                        <td>{}</td>
+                    </tr>
+                    
+                    <tr>
+                        <td colspan="4" class="question-info">
+                            <div class="question-info-toggle" onclick="toggleQuestionInfo(this)">
+                                [+]
+                            </div>
+                            <div class="question-info-content hidden">
+                              <strong>Question Information:</strong>
+                              <pre>{
+  "choices": [
+    "gem",
+    "grave",
+    "island",
+    "mansion",
+    "meadow",
+    "monster",
+    "relic",
+    "sword",
+    "triumph",
+    "whisper"
+  ],
+  "correct": "meadow",
+  "definition": "A field covered with grass and wildflowers.",
+  "question": "Which of the following ten words has this definition: A field covered with grass and wildflowers.\n\nJust give the single correct word, do not give a long explanation.\n\nThe choices are: gem, grave, island, mansion, meadow, monster, relic, sword, triumph, whisper"
+}</pre>
+                            </div>
+                        </td>
+                    </tr>
+                    
+                    
+                    <tr>
+                        <td>0020:memory:60</td>
+                        <td>1</td>
+                        <td>638.383</td>
+                        <td>{}</td>
+                    </tr>
+                    
+                    <tr>
+                        <td colspan="4" class="question-info">
+                            <div class="question-info-toggle" onclick="toggleQuestionInfo(this)">
+                                [+]
+                            </div>
+                            <div class="question-info-content hidden">
+                              <strong>Question Information:</strong>
+                              <pre>{
+  "choices": [
+    "balance",
+    "echo",
+    "fable",
+    "kingdom",
+    "lure",
+    "memory",
+    "monster",
+    "passion",
+    "rebel",
+    "voyage"
+  ],
+  "correct": "memory",
+  "definition": "The ability to store and retrieve past experiences, information, and knowledge.",
+  "question": "Which of the following ten words has this definition: The ability to store and retrieve past experiences, information, and knowledge.\n\nJust give the single correct word, do not give a long explanation.\n\nThe choices are: balance, echo, fable, kingdom, lure, memory, monster, passion, rebel, voyage"
+}</pre>
+                            </div>
+                        </td>
+                    </tr>
+                    
+                    
+                    <tr>
+                        <td>0020:mighty:44</td>
+                        <td>1</td>
+                        <td>584.89725</td>
+                        <td>{}</td>
+                    </tr>
+                    
+                    <tr>
+                        <td colspan="4" class="question-info">
+                            <div class="question-info-toggle" onclick="toggleQuestionInfo(this)">
+                                [+]
+                            </div>
+                            <div class="question-info-content hidden">
+                              <strong>Question Information:</strong>
+                              <pre>{
+  "choices": [
+    "ancient",
+    "bright",
+    "honor",
+    "melody",
+    "mighty",
+    "palace",
+    "sacred",
+    "skyline",
+    "spark",
+    "yarn"
+  ],
+  "correct": "mighty",
+  "definition": "Possessing or exhibiting great strength, power, or influence.",
+  "question": "Which of the following ten words has this definition: Possessing or exhibiting great strength, power, or influence.\n\nJust give the single correct word, do not give a long explanation.\n\nThe choices are: ancient, bright, honor, melody, mighty, palace, sacred, skyline, spark, yarn"
+}</pre>
+                            </div>
+                        </td>
+                    </tr>
+                    
+                    
+                    <tr>
+                        <td>0020:mischief:27</td>
+                        <td>1</td>
+                        <td>664.414834</td>
+                        <td>{}</td>
+                    </tr>
+                    
+                    <tr>
+                        <td colspan="4" class="question-info">
+                            <div class="question-info-toggle" onclick="toggleQuestionInfo(this)">
+                                [+]
+                            </div>
+                            <div class="question-info-content hidden">
+                              <strong>Question Information:</strong>
+                              <pre>{
+  "choices": [
+    "brother",
+    "flame",
+    "hidden",
+    "ignite",
+    "lure",
+    "mischief",
+    "oracle",
+    "radiant",
+    "remark",
+    "whisper"
+  ],
+  "correct": "mischief",
+  "definition": "Playful or annoying behavior that causes slight trouble or harm.",
+  "question": "Which of the following ten words has this definition: Playful or annoying behavior that causes slight trouble or harm.\n\nJust give the single correct word, do not give a long explanation.\n\nThe choices are: brother, flame, hidden, ignite, lure, mischief, oracle, radiant, remark, whisper"
+}</pre>
+                            </div>
+                        </td>
+                    </tr>
+                    
+                    
+                    <tr>
+                        <td>0020:ocean:41</td>
+                        <td>1</td>
+                        <td>628.025958</td>
+                        <td>{}</td>
+                    </tr>
+                    
+                    <tr>
+                        <td colspan="4" class="question-info">
+                            <div class="question-info-toggle" onclick="toggleQuestionInfo(this)">
+                                [+]
+                            </div>
+                            <div class="question-info-content hidden">
+                              <strong>Question Information:</strong>
+                              <pre>{
+  "choices": [
+    "fighter",
+    "maze",
+    "ocean",
+    "passion",
+    "peaceful",
+    "queen",
+    "simple",
+    "valley",
+    "vessel",
+    "youth"
+  ],
+  "correct": "ocean",
+  "definition": "The vast, salty body of water that covers most of Earth\u0027s surface.",
+  "question": "Which of the following ten words has this definition: The vast, salty body of water that covers most of Earth\u0027s surface.\n\nJust give the single correct word, do not give a long explanation.\n\nThe choices are: fighter, maze, ocean, passion, peaceful, queen, simple, valley, vessel, youth"
+}</pre>
+                            </div>
+                        </td>
+                    </tr>
+                    
+                    
+                    <tr>
+                        <td>0020:outcast:56</td>
+                        <td>1</td>
+                        <td>694.577542</td>
+                        <td>{}</td>
+                    </tr>
+                    
+                    <tr>
+                        <td colspan="4" class="question-info">
+                            <div class="question-info-toggle" onclick="toggleQuestionInfo(this)">
+                                [+]
+                            </div>
+                            <div class="question-info-content hidden">
+                              <strong>Question Information:</strong>
+                              <pre>{
+  "choices": [
+    "gentle",
+    "grave",
+    "hidden",
+    "memory",
+    "moonlit",
+    "ocean",
+    "outcast",
+    "signal",
+    "soldier",
+    "tension"
+  ],
+  "correct": "outcast",
+  "definition": "A person who is rejected or excluded from a social group or community.",
+  "question": "Which of the following ten words has this definition: A person who is rejected or excluded from a social group or community.\n\nJust give the single correct word, do not give a long explanation.\n\nThe choices are: gentle, grave, hidden, memory, moonlit, ocean, outcast, signal, soldier, tension"
+}</pre>
+                            </div>
+                        </td>
+                    </tr>
+                    
+                    
+                    <tr>
+                        <td>0020:outcast:61</td>
+                        <td>1</td>
+                        <td>697.518458</td>
+                        <td>{}</td>
+                    </tr>
+                    
+                    <tr>
+                        <td colspan="4" class="question-info">
+                            <div class="question-info-toggle" onclick="toggleQuestionInfo(this)">
+                                [+]
+                            </div>
+                            <div class="question-info-content hidden">
+                              <strong>Question Information:</strong>
+                              <pre>{
+  "choices": [
+    "adventure",
+    "artist",
+    "frost",
+    "outcast",
+    "quirk",
+    "river",
+    "simple",
+    "tame",
+    "timid",
+    "village"
+  ],
+  "correct": "outcast",
+  "definition": "A person who is rejected or excluded from a social group.",
+  "question": "Which of the following ten words has this definition: A person who is rejected or excluded from a social group.\n\nJust give the single correct word, do not give a long explanation.\n\nThe choices are: adventure, artist, frost, outcast, quirk, river, simple, tame, timid, village"
+}</pre>
+                            </div>
+                        </td>
+                    </tr>
+                    
+                    
+                    <tr>
+                        <td>0020:promise:51</td>
+                        <td>1</td>
+                        <td>597.018708</td>
+                        <td>{}</td>
+                    </tr>
+                    
+                    <tr>
+                        <td colspan="4" class="question-info">
+                            <div class="question-info-toggle" onclick="toggleQuestionInfo(this)">
+                                [+]
+                            </div>
+                            <div class="question-info-content hidden">
+                              <strong>Question Information:</strong>
+                              <pre>{
+  "choices": [
+    "crystal",
+    "frost",
+    "noble",
+    "promise",
+    "savage",
+    "spirit",
+    "sunset",
+    "tension",
+    "trouble",
+    "unique"
+  ],
+  "correct": "promise",
+  "definition": "A statement assuring someone that one will definitely do something.",
+  "question": "Which of the following ten words has this definition: A statement assuring someone that one will definitely do something.\n\nJust give the single correct word, do not give a long explanation.\n\nThe choices are: crystal, frost, noble, promise, savage, spirit, sunset, tension, trouble, unique"
+}</pre>
+                            </div>
+                        </td>
+                    </tr>
+                    
+                    
+                    <tr>
+                        <td>0020:puzzle:58</td>
+                        <td>1</td>
+                        <td>691.78075</td>
+                        <td>{}</td>
+                    </tr>
+                    
+                    <tr>
+                        <td colspan="4" class="question-info">
+                            <div class="question-info-toggle" onclick="toggleQuestionInfo(this)">
+                                [+]
+                            </div>
+                            <div class="question-info-content hidden">
+                              <strong>Question Information:</strong>
+                              <pre>{
+  "choices": [
+    "ashes",
+    "delight",
+    "journey",
+    "memory",
+    "mischief",
+    "power",
+    "puzzle",
+    "rainbow",
+    "slumber",
+    "valor"
+  ],
+  "correct": "puzzle",
+  "definition": "A problem or question that requires thought and ingenuity to solve.",
+  "question": "Which of the following ten words has this definition: A problem or question that requires thought and ingenuity to solve.\n\nJust give the single correct word, do not give a long explanation.\n\nThe choices are: ashes, delight, journey, memory, mischief, power, puzzle, rainbow, slumber, valor"
+}</pre>
+                            </div>
+                        </td>
+                    </tr>
+                    
+                    
+                    <tr>
+                        <td>0020:queen:18</td>
+                        <td>1</td>
+                        <td>540.864208</td>
+                        <td>{}</td>
+                    </tr>
+                    
+                    <tr>
+                        <td colspan="4" class="question-info">
+                            <div class="question-info-toggle" onclick="toggleQuestionInfo(this)">
+                                [+]
+                            </div>
+                            <div class="question-info-content hidden">
+                              <strong>Question Information:</strong>
+                              <pre>{
+  "choices": [
+    "animal",
+    "jewel",
+    "phantom",
+    "proud",
+    "queen",
+    "secret",
+    "simple",
+    "slumber",
+    "stealth",
+    "universe"
+  ],
+  "correct": "queen",
+  "definition": "A female monarch who rules a kingdom or country.",
+  "question": "Which of the following ten words has this definition: A female monarch who rules a kingdom or country.\n\nJust give the single correct word, do not give a long explanation.\n\nThe choices are: animal, jewel, phantom, proud, queen, secret, simple, slumber, stealth, universe"
+}</pre>
+                            </div>
+                        </td>
+                    </tr>
+                    
+                    
+                    <tr>
+                        <td>0020:quest:43</td>
+                        <td>1</td>
+                        <td>569.282042</td>
+                        <td>{}</td>
+                    </tr>
+                    
+                    <tr>
+                        <td colspan="4" class="question-info">
+                            <div class="question-info-toggle" onclick="toggleQuestionInfo(this)">
+                                [+]
+                            </div>
+                            <div class="question-info-content hidden">
+                              <strong>Question Information:</strong>
+                              <pre>{
+  "choices": [
+    "courage",
+    "echo",
+    "family",
+    "fragile",
+    "gem",
+    "patient",
+    "quest",
+    "spark",
+    "timid",
+    "warrior"
+  ],
+  "correct": "quest",
+  "definition": "A long or arduous search for something specific.",
+  "question": "Which of the following ten words has this definition: A long or arduous search for something specific.\n\nJust give the single correct word, do not give a long explanation.\n\nThe choices are: courage, echo, family, fragile, gem, patient, quest, spark, timid, warrior"
+}</pre>
+                            </div>
+                        </td>
+                    </tr>
+                    
+                    
+                    <tr>
+                        <td>0020:rainbow:5</td>
+                        <td>1</td>
+                        <td>479.779875</td>
+                        <td>{}</td>
+                    </tr>
+                    
+                    <tr>
+                        <td colspan="4" class="question-info">
+                            <div class="question-info-toggle" onclick="toggleQuestionInfo(this)">
+                                [+]
+                            </div>
+                            <div class="question-info-content hidden">
+                              <strong>Question Information:</strong>
+                              <pre>{
+  "choices": [
+    "energy",
+    "keeper",
+    "kingdom",
+    "oath",
+    "phantom",
+    "rainbow",
+    "secret",
+    "signal",
+    "village",
+    "whisper"
+  ],
+  "correct": "rainbow",
+  "definition": "A colorful arc appearing in the sky when sunlight is refracted through water droplets.",
+  "question": "Which of the following ten words has this definition: A colorful arc appearing in the sky when sunlight is refracted through water droplets.\n\nJust give the single correct word, do not give a long explanation.\n\nThe choices are: energy, keeper, kingdom, oath, phantom, rainbow, secret, signal, village, whisper"
+}</pre>
+                            </div>
+                        </td>
+                    </tr>
+                    
+                    
+                    <tr>
+                        <td>0020:relic:6</td>
+                        <td>1</td>
+                        <td>476.14925</td>
+                        <td>{}</td>
+                    </tr>
+                    
+                    <tr>
+                        <td colspan="4" class="question-info">
+                            <div class="question-info-toggle" onclick="toggleQuestionInfo(this)">
+                                [+]
+                            </div>
+                            <div class="question-info-content hidden">
+                              <strong>Question Information:</strong>
+                              <pre>{
+  "choices": [
+    "daring",
+    "dragon",
+    "gem",
+    "hunter",
+    "legacy",
+    "mystery",
+    "ocean",
+    "relic",
+    "whim",
+    "zeal"
+  ],
+  "correct": "relic",
+  "definition": "An object from a past era that is preserved as having historical significance.",
+  "question": "Which of the following ten words has this definition: An object from a past era that is preserved as having historical significance.\n\nJust give the single correct word, do not give a long explanation.\n\nThe choices are: daring, dragon, gem, hunter, legacy, mystery, ocean, relic, whim, zeal"
+}</pre>
+                            </div>
+                        </td>
+                    </tr>
+                    
+                    
+                    <tr>
+                        <td>0020:respect:29</td>
+                        <td>1</td>
+                        <td>555.000708</td>
+                        <td>{}</td>
+                    </tr>
+                    
+                    <tr>
+                        <td colspan="4" class="question-info">
+                            <div class="question-info-toggle" onclick="toggleQuestionInfo(this)">
+                                [+]
+                            </div>
+                            <div class="question-info-content hidden">
+                              <strong>Question Information:</strong>
+                              <pre>{
+  "choices": [
+    "battle",
+    "destiny",
+    "gem",
+    "journey",
+    "rebel",
+    "respect",
+    "river",
+    "signal",
+    "solitary",
+    "sword"
+  ],
+  "correct": "respect",
+  "definition": "Treating someone or something as worthy of consideration, admiration, and courtesy.",
+  "question": "Which of the following ten words has this definition: Treating someone or something as worthy of consideration, admiration, and courtesy.\n\nJust give the single correct word, do not give a long explanation.\n\nThe choices are: battle, destiny, gem, journey, rebel, respect, river, signal, solitary, sword"
+}</pre>
+                            </div>
+                        </td>
+                    </tr>
+                    
+                    
+                    <tr>
+                        <td>0020:respect:8</td>
+                        <td>1</td>
+                        <td>429.244791</td>
+                        <td>{}</td>
+                    </tr>
+                    
+                    <tr>
+                        <td colspan="4" class="question-info">
+                            <div class="question-info-toggle" onclick="toggleQuestionInfo(this)">
+                                [+]
+                            </div>
+                            <div class="question-info-content hidden">
+                              <strong>Question Information:</strong>
+                              <pre>{
+  "choices": [
+    "artist",
+    "bright",
+    "danger",
+    "echo",
+    "glitter",
+    "harmony",
+    "knight",
+    "maze",
+    "respect",
+    "sincere"
+  ],
+  "correct": "respect",
+  "definition": "Treating someone or something with consideration and deference.",
+  "question": "Which of the following ten words has this definition: Treating someone or something with consideration and deference.\n\nJust give the single correct word, do not give a long explanation.\n\nThe choices are: artist, bright, danger, echo, glitter, harmony, knight, maze, respect, sincere"
+}</pre>
+                            </div>
+                        </td>
+                    </tr>
+                    
+                    
+                    <tr>
+                        <td>0020:sacred:36</td>
+                        <td>1</td>
+                        <td>696.98275</td>
+                        <td>{}</td>
+                    </tr>
+                    
+                    <tr>
+                        <td colspan="4" class="question-info">
+                            <div class="question-info-toggle" onclick="toggleQuestionInfo(this)">
+                                [+]
+                            </div>
+                            <div class="question-info-content hidden">
+                              <strong>Question Information:</strong>
+                              <pre>{
+  "choices": [
+    "balance",
+    "hidden",
+    "hungry",
+    "magic",
+    "palace",
+    "proud",
+    "sacred",
+    "shadow",
+    "tension",
+    "valley"
+  ],
+  "correct": "sacred",
+  "definition": "Regarded as holy, divine, or of extreme importance.",
+  "question": "Which of the following ten words has this definition: Regarded as holy, divine, or of extreme importance.\n\nJust give the single correct word, do not give a long explanation.\n\nThe choices are: balance, hidden, hungry, magic, palace, proud, sacred, shadow, tension, valley"
+}</pre>
+                            </div>
+                        </td>
+                    </tr>
+                    
+                    
+                    <tr>
+                        <td>0020:sapphire:26</td>
+                        <td>1</td>
+                        <td>600.677166</td>
+                        <td>{}</td>
+                    </tr>
+                    
+                    <tr>
+                        <td colspan="4" class="question-info">
+                            <div class="question-info-toggle" onclick="toggleQuestionInfo(this)">
+                                [+]
+                            </div>
+                            <div class="question-info-content hidden">
+                              <strong>Question Information:</strong>
+                              <pre>{
+  "choices": [
+    "chaos",
+    "gentle",
+    "harmony",
+    "hungry",
+    "iceberg",
+    "maze",
+    "quest",
+    "sapphire",
+    "spirit",
+    "valley"
+  ],
+  "correct": "sapphire",
+  "definition": "A precious gemstone that is typically blue due to trace amounts of iron.",
+  "question": "Which of the following ten words has this definition: A precious gemstone that is typically blue due to trace amounts of iron.\n\nJust give the single correct word, do not give a long explanation.\n\nThe choices are: chaos, gentle, harmony, hungry, iceberg, maze, quest, sapphire, spirit, valley"
+}</pre>
+                            </div>
+                        </td>
+                    </tr>
+                    
+                    
+                    <tr>
+                        <td>0020:savage:35</td>
+                        <td>1</td>
+                        <td>609.4655</td>
+                        <td>{}</td>
+                    </tr>
+                    
+                    <tr>
+                        <td colspan="4" class="question-info">
+                            <div class="question-info-toggle" onclick="toggleQuestionInfo(this)">
+                                [+]
+                            </div>
+                            <div class="question-info-content hidden">
+                              <strong>Question Information:</strong>
+                              <pre>{
+  "choices": [
+    "brother",
+    "capture",
+    "mystery",
+    "noble",
+    "pirate",
+    "respect",
+    "river",
+    "savage",
+    "signal",
+    "splendor"
+  ],
+  "correct": "savage",
+  "definition": "Uncivilized or brutal.",
+  "question": "Which of the following ten words has this definition: Uncivilized or brutal.\n\nJust give the single correct word, do not give a long explanation.\n\nThe choices are: brother, capture, mystery, noble, pirate, respect, river, savage, signal, splendor"
+}</pre>
+                            </div>
+                        </td>
+                    </tr>
+                    
+                    
+                    <tr>
+                        <td>0020:savage:87</td>
+                        <td>1</td>
+                        <td>720.181542</td>
+                        <td>{}</td>
+                    </tr>
+                    
+                    <tr>
+                        <td colspan="4" class="question-info">
+                            <div class="question-info-toggle" onclick="toggleQuestionInfo(this)">
+                                [+]
+                            </div>
+                            <div class="question-info-content hidden">
+                              <strong>Question Information:</strong>
+                              <pre>{
+  "choices": [
+    "amber",
+    "cloudy",
+    "danger",
+    "passion",
+    "respect",
+    "savage",
+    "shelter",
+    "simple",
+    "strength",
+    "village"
+  ],
+  "correct": "savage",
+  "definition": "Uncivilized or brutally violent",
+  "question": "Which of the following ten words has this definition: Uncivilized or brutally violent\n\nJust give the single correct word, do not give a long explanation.\n\nThe choices are: amber, cloudy, danger, passion, respect, savage, shelter, simple, strength, village"
+}</pre>
+                            </div>
+                        </td>
+                    </tr>
+                    
+                    
+                    <tr>
+                        <td>0020:scared:91</td>
+                        <td>1</td>
+                        <td>733.574041</td>
+                        <td>{}</td>
+                    </tr>
+                    
+                    <tr>
+                        <td colspan="4" class="question-info">
+                            <div class="question-info-toggle" onclick="toggleQuestionInfo(this)">
+                                [+]
+                            </div>
+                            <div class="question-info-content hidden">
+                              <strong>Question Information:</strong>
+                              <pre>{
+  "choices": [
+    "artist",
+    "ashes",
+    "cheerful",
+    "honor",
+    "legacy",
+    "mighty",
+    "radiant",
+    "rusty",
+    "scared",
+    "skeptic"
+  ],
+  "correct": "scared",
+  "definition": "Experiencing intense fear or anxiety due to a perceived threat or danger.",
+  "question": "Which of the following ten words has this definition: Experiencing intense fear or anxiety due to a perceived threat or danger.\n\nJust give the single correct word, do not give a long explanation.\n\nThe choices are: artist, ashes, cheerful, honor, legacy, mighty, radiant, rusty, scared, skeptic"
+}</pre>
+                            </div>
+                        </td>
+                    </tr>
+                    
+                    
+                    <tr>
+                        <td>0020:shadow:30</td>
+                        <td>1</td>
+                        <td>550.091833</td>
+                        <td>{}</td>
+                    </tr>
+                    
+                    <tr>
+                        <td colspan="4" class="question-info">
+                            <div class="question-info-toggle" onclick="toggleQuestionInfo(this)">
+                                [+]
+                            </div>
+                            <div class="question-info-content hidden">
+                              <strong>Question Information:</strong>
+                              <pre>{
+  "choices": [
+    "delight",
+    "duel",
+    "fearful",
+    "mystery",
+    "queen",
+    "quirk",
+    "realm",
+    "rebel",
+    "shadow",
+    "strength"
+  ],
+  "correct": "shadow",
+  "definition": "The dark area or shape produced when someone or something blocks light.",
+  "question": "Which of the following ten words has this definition: The dark area or shape produced when someone or something blocks light.\n\nJust give the single correct word, do not give a long explanation.\n\nThe choices are: delight, duel, fearful, mystery, queen, quirk, realm, rebel, shadow, strength"
+}</pre>
+                            </div>
+                        </td>
+                    </tr>
+                    
+                    
+                    <tr>
+                        <td>0020:shelter:11</td>
+                        <td>1</td>
+                        <td>489.513625</td>
+                        <td>{}</td>
+                    </tr>
+                    
+                    <tr>
+                        <td colspan="4" class="question-info">
+                            <div class="question-info-toggle" onclick="toggleQuestionInfo(this)">
+                                [+]
+                            </div>
+                            <div class="question-info-content hidden">
+                              <strong>Question Information:</strong>
+                              <pre>{
+  "choices": [
+    "belief",
+    "castle",
+    "chaos",
+    "envy",
+    "forest",
+    "hidden",
+    "sacred",
+    "shelter",
+    "tame",
+    "victory"
+  ],
+  "correct": "shelter",
+  "definition": "A place offering protection from the elements or danger.",
+  "question": "Which of the following ten words has this definition: A place offering protection from the elements or danger.\n\nJust give the single correct word, do not give a long explanation.\n\nThe choices are: belief, castle, chaos, envy, forest, hidden, sacred, shelter, tame, victory"
+}</pre>
+                            </div>
+                        </td>
+                    </tr>
+                    
+                    
+                    <tr>
+                        <td>0020:shelter:94</td>
+                        <td>1</td>
+                        <td>711.410375</td>
+                        <td>{}</td>
+                    </tr>
+                    
+                    <tr>
+                        <td colspan="4" class="question-info">
+                            <div class="question-info-toggle" onclick="toggleQuestionInfo(this)">
+                                [+]
+                            </div>
+                            <div class="question-info-content hidden">
+                              <strong>Question Information:</strong>
+                              <pre>{
+  "choices": [
+    "calm",
+    "honor",
+    "hunter",
+    "lantern",
+    "puzzle",
+    "shadow",
+    "shelter",
+    "survivor",
+    "valley",
+    "youth"
+  ],
+  "correct": "shelter",
+  "definition": "A place offering protection from the elements or danger.",
+  "question": "Which of the following ten words has this definition: A place offering protection from the elements or danger.\n\nJust give the single correct word, do not give a long explanation.\n\nThe choices are: calm, honor, hunter, lantern, puzzle, shadow, shelter, survivor, valley, youth"
+}</pre>
+                            </div>
+                        </td>
+                    </tr>
+                    
+                    
+                    <tr>
+                        <td>0020:signal:2</td>
+                        <td>1</td>
+                        <td>422.647417</td>
+                        <td>{}</td>
+                    </tr>
+                    
+                    <tr>
+                        <td colspan="4" class="question-info">
+                            <div class="question-info-toggle" onclick="toggleQuestionInfo(this)">
+                                [+]
+                            </div>
+                            <div class="question-info-content hidden">
+                              <strong>Question Information:</strong>
+                              <pre>{
+  "choices": [
+    "bright",
+    "castle",
+    "harmony",
+    "hopeful",
+    "palace",
+    "rainbow",
+    "rusty",
+    "shimmer",
+    "signal",
+    "silence"
+  ],
+  "correct": "signal",
+  "definition": "A message or indication that conveys information.",
+  "question": "Which of the following ten words has this definition: A message or indication that conveys information.\n\nJust give the single correct word, do not give a long explanation.\n\nThe choices are: bright, castle, harmony, hopeful, palace, rainbow, rusty, shimmer, signal, silence"
+}</pre>
+                            </div>
+                        </td>
+                    </tr>
+                    
+                    
+                    <tr>
+                        <td>0020:signal:21</td>
+                        <td>1</td>
+                        <td>513.987333</td>
+                        <td>{}</td>
+                    </tr>
+                    
+                    <tr>
+                        <td colspan="4" class="question-info">
+                            <div class="question-info-toggle" onclick="toggleQuestionInfo(this)">
+                                [+]
+                            </div>
+                            <div class="question-info-content hidden">
+                              <strong>Question Information:</strong>
+                              <pre>{
+  "choices": [
+    "charm",
+    "hungry",
+    "justice",
+    "mischief",
+    "signal",
+    "soldier",
+    "sunset",
+    "tension",
+    "unique",
+    "wonder"
+  ],
+  "correct": "signal",
+  "definition": "A sign or gesture that conveys a message.",
+  "question": "Which of the following ten words has this definition: A sign or gesture that conveys a message.\n\nJust give the single correct word, do not give a long explanation.\n\nThe choices are: charm, hungry, justice, mischief, signal, soldier, sunset, tension, unique, wonder"
+}</pre>
+                            </div>
+                        </td>
+                    </tr>
+                    
+                    
+                    <tr>
+                        <td>0020:slumber:53</td>
+                        <td>1</td>
+                        <td>661.62925</td>
+                        <td>{}</td>
+                    </tr>
+                    
+                    <tr>
+                        <td colspan="4" class="question-info">
+                            <div class="question-info-toggle" onclick="toggleQuestionInfo(this)">
+                                [+]
+                            </div>
+                            <div class="question-info-content hidden">
+                              <strong>Question Information:</strong>
+                              <pre>{
+  "choices": [
+    "cloudy",
+    "flame",
+    "frost",
+    "guardian",
+    "promise",
+    "remark",
+    "simple",
+    "slumber",
+    "splendor",
+    "strength"
+  ],
+  "correct": "slumber",
+  "definition": "The state of being asleep.",
+  "question": "Which of the following ten words has this definition: The state of being asleep.\n\nJust give the single correct word, do not give a long explanation.\n\nThe choices are: cloudy, flame, frost, guardian, promise, remark, simple, slumber, splendor, strength"
+}</pre>
+                            </div>
+                        </td>
+                    </tr>
+                    
+                    
+                    <tr>
+                        <td>0020:slumber:57</td>
+                        <td>1</td>
+                        <td>679.575958</td>
+                        <td>{}</td>
+                    </tr>
+                    
+                    <tr>
+                        <td colspan="4" class="question-info">
+                            <div class="question-info-toggle" onclick="toggleQuestionInfo(this)">
+                                [+]
+                            </div>
+                            <div class="question-info-content hidden">
+                              <strong>Question Information:</strong>
+                              <pre>{
+  "choices": [
+    "animal",
+    "capture",
+    "charm",
+    "harmony",
+    "honor",
+    "sincere",
+    "slumber",
+    "tension",
+    "universe",
+    "wonder"
+  ],
+  "correct": "slumber",
+  "definition": "A state of deep sleep.",
+  "question": "Which of the following ten words has this definition: A state of deep sleep.\n\nJust give the single correct word, do not give a long explanation.\n\nThe choices are: animal, capture, charm, harmony, honor, sincere, slumber, tension, universe, wonder"
+}</pre>
+                            </div>
+                        </td>
+                    </tr>
+                    
+                    
+                    <tr>
+                        <td>0020:soldier:13</td>
+                        <td>1</td>
+                        <td>520.04925</td>
+                        <td>{}</td>
+                    </tr>
+                    
+                    <tr>
+                        <td colspan="4" class="question-info">
+                            <div class="question-info-toggle" onclick="toggleQuestionInfo(this)">
+                                [+]
+                            </div>
+                            <div class="question-info-content hidden">
+                              <strong>Question Information:</strong>
+                              <pre>{
+  "choices": [
+    "adventure",
+    "honor",
+    "lightning",
+    "moonlit",
+    "pirate",
+    "promise",
+    "rescue",
+    "silence",
+    "skeptic",
+    "soldier"
+  ],
+  "correct": "soldier",
+  "definition": "A person who serves in an army or other armed force.",
+  "question": "Which of the following ten words has this definition: A person who serves in an army or other armed force.\n\nJust give the single correct word, do not give a long explanation.\n\nThe choices are: adventure, honor, lightning, moonlit, pirate, promise, rescue, silence, skeptic, soldier"
+}</pre>
+                            </div>
+                        </td>
+                    </tr>
+                    
+                    
+                    <tr>
+                        <td>0020:soldier:48</td>
+                        <td>1</td>
+                        <td>644.867417</td>
+                        <td>{}</td>
+                    </tr>
+                    
+                    <tr>
+                        <td colspan="4" class="question-info">
+                            <div class="question-info-toggle" onclick="toggleQuestionInfo(this)">
+                                [+]
+                            </div>
+                            <div class="question-info-content hidden">
+                              <strong>Question Information:</strong>
+                              <pre>{
+  "choices": [
+    "belief",
+    "charm",
+    "fragile",
+    "journey",
+    "oracle",
+    "roaming",
+    "skeptic",
+    "slumber",
+    "soldier",
+    "tactic"
+  ],
+  "correct": "soldier",
+  "definition": "A person who serves in an army.",
+  "question": "Which of the following ten words has this definition: A person who serves in an army.\n\nJust give the single correct word, do not give a long explanation.\n\nThe choices are: belief, charm, fragile, journey, oracle, roaming, skeptic, slumber, soldier, tactic"
+}</pre>
+                            </div>
+                        </td>
+                    </tr>
+                    
+                    
+                    <tr>
+                        <td>0020:splendor:74</td>
+                        <td>1</td>
+                        <td>693.191292</td>
+                        <td>{}</td>
+                    </tr>
+                    
+                    <tr>
+                        <td colspan="4" class="question-info">
+                            <div class="question-info-toggle" onclick="toggleQuestionInfo(this)">
+                                [+]
+                            </div>
+                            <div class="question-info-content hidden">
+                              <strong>Question Information:</strong>
+                              <pre>{
+  "choices": [
+    "castle",
+    "delight",
+    "envy",
+    "hidden",
+    "loyal",
+    "peaceful",
+    "respect",
+    "splendor",
+    "stealth",
+    "voyage"
+  ],
+  "correct": "splendor",
+  "definition": "Great beauty, magnificence, or brilliance.",
+  "question": "Which of the following ten words has this definition: Great beauty, magnificence, or brilliance.\n\nJust give the single correct word, do not give a long explanation.\n\nThe choices are: castle, delight, envy, hidden, loyal, peaceful, respect, splendor, stealth, voyage"
+}</pre>
+                            </div>
+                        </td>
+                    </tr>
+                    
+                    
+                    <tr>
+                        <td>0020:stealth:10</td>
+                        <td>1</td>
+                        <td>488.317417</td>
+                        <td>{}</td>
+                    </tr>
+                    
+                    <tr>
+                        <td colspan="4" class="question-info">
+                            <div class="question-info-toggle" onclick="toggleQuestionInfo(this)">
+                                [+]
+                            </div>
+                            <div class="question-info-content hidden">
+                              <strong>Question Information:</strong>
+                              <pre>{
+  "choices": [
+    "adventure",
+    "duel",
+    "envy",
+    "fearful",
+    "frost",
+    "skyline",
+    "stealth",
+    "sunset",
+    "swift",
+    "whisper"
+  ],
+  "correct": "stealth",
+  "definition": "The ability to move or operate quietly and unnoticed.",
+  "question": "Which of the following ten words has this definition: The ability to move or operate quietly and unnoticed.\n\nJust give the single correct word, do not give a long explanation.\n\nThe choices are: adventure, duel, envy, fearful, frost, skyline, stealth, sunset, swift, whisper"
+}</pre>
+                            </div>
+                        </td>
+                    </tr>
+                    
+                    
+                    <tr>
+                        <td>0020:stealth:33</td>
+                        <td>1</td>
+                        <td>581.459166</td>
+                        <td>{}</td>
+                    </tr>
+                    
+                    <tr>
+                        <td colspan="4" class="question-info">
+                            <div class="question-info-toggle" onclick="toggleQuestionInfo(this)">
+                                [+]
+                            </div>
+                            <div class="question-info-content hidden">
+                              <strong>Question Information:</strong>
+                              <pre>{
+  "choices": [
+    "adventure",
+    "brother",
+    "energy",
+    "grave",
+    "hidden",
+    "ignite",
+    "keeper",
+    "solitary",
+    "stealth",
+    "valley"
+  ],
+  "correct": "stealth",
+  "definition": "The ability to move or operate secretly and undetected.",
+  "question": "Which of the following ten words has this definition: The ability to move or operate secretly and undetected.\n\nJust give the single correct word, do not give a long explanation.\n\nThe choices are: adventure, brother, energy, grave, hidden, ignite, keeper, solitary, stealth, valley"
+}</pre>
+                            </div>
+                        </td>
+                    </tr>
+                    
+                    
+                    <tr>
+                        <td>0020:survivor:85</td>
+                        <td>1</td>
+                        <td>800.668208</td>
+                        <td>{}</td>
+                    </tr>
+                    
+                    <tr>
+                        <td colspan="4" class="question-info">
+                            <div class="question-info-toggle" onclick="toggleQuestionInfo(this)">
+                                [+]
+                            </div>
+                            <div class="question-info-content hidden">
+                              <strong>Question Information:</strong>
+                              <pre>{
+  "choices": [
+    "balance",
+    "breeze",
+    "enemy",
+    "legacy",
+    "meadow",
+    "monster",
+    "oracle",
+    "quirk",
+    "signal",
+    "survivor"
+  ],
+  "correct": "survivor",
+  "definition": "A person who continues to live or function after a challenging or dangerous event.",
+  "question": "Which of the following ten words has this definition: A person who continues to live or function after a challenging or dangerous event.\n\nJust give the single correct word, do not give a long explanation.\n\nThe choices are: balance, breeze, enemy, legacy, meadow, monster, oracle, quirk, signal, survivor"
+}</pre>
+                            </div>
+                        </td>
+                    </tr>
+                    
+                    
+                    <tr>
+                        <td>0020:sword:49</td>
+                        <td>1</td>
+                        <td>599.54</td>
+                        <td>{}</td>
+                    </tr>
+                    
+                    <tr>
+                        <td colspan="4" class="question-info">
+                            <div class="question-info-toggle" onclick="toggleQuestionInfo(this)">
+                                [+]
+                            </div>
+                            <div class="question-info-content hidden">
+                              <strong>Question Information:</strong>
+                              <pre>{
+  "choices": [
+    "ashes",
+    "bronze",
+    "fable",
+    "hunter",
+    "ivory",
+    "outcast",
+    "proud",
+    "rainbow",
+    "silence",
+    "sword"
+  ],
+  "correct": "sword",
+  "definition": "A long, bladed weapon designed for cutting or thrusting.",
+  "question": "Which of the following ten words has this definition: A long, bladed weapon designed for cutting or thrusting.\n\nJust give the single correct word, do not give a long explanation.\n\nThe choices are: ashes, bronze, fable, hunter, ivory, outcast, proud, rainbow, silence, sword"
+}</pre>
+                            </div>
+                        </td>
+                    </tr>
+                    
+                    
+                    <tr>
+                        <td>0020:sword:78</td>
+                        <td>1</td>
+                        <td>669.809541</td>
+                        <td>{}</td>
+                    </tr>
+                    
+                    <tr>
+                        <td colspan="4" class="question-info">
+                            <div class="question-info-toggle" onclick="toggleQuestionInfo(this)">
+                                [+]
+                            </div>
+                            <div class="question-info-content hidden">
+                              <strong>Question Information:</strong>
+                              <pre>{
+  "choices": [
+    "chaos",
+    "forest",
+    "hungry",
+    "jewel",
+    "legacy",
+    "mighty",
+    "peaceful",
+    "promise",
+    "sword",
+    "zeal"
+  ],
+  "correct": "sword",
+  "definition": "A long, bladed weapon designed for cutting or thrusting.",
+  "question": "Which of the following ten words has this definition: A long, bladed weapon designed for cutting or thrusting.\n\nJust give the single correct word, do not give a long explanation.\n\nThe choices are: chaos, forest, hungry, jewel, legacy, mighty, peaceful, promise, sword, zeal"
+}</pre>
+                            </div>
+                        </td>
+                    </tr>
+                    
+                    
+                    <tr>
+                        <td>0020:tactic:0</td>
+                        <td>1</td>
+                        <td>3675.608875</td>
+                        <td>{}</td>
+                    </tr>
+                    
+                    <tr>
+                        <td colspan="4" class="question-info">
+                            <div class="question-info-toggle" onclick="toggleQuestionInfo(this)">
+                                [+]
+                            </div>
+                            <div class="question-info-content hidden">
+                              <strong>Question Information:</strong>
+                              <pre>{
+  "choices": [
+    "battle",
+    "envy",
+    "magic",
+    "mighty",
+    "mythic",
+    "oracle",
+    "power",
+    "silence",
+    "tactic",
+    "universe"
+  ],
+  "correct": "tactic",
+  "definition": "A carefully planned action or strategy designed to achieve a specific goal.",
+  "question": "Which of the following ten words has this definition: A carefully planned action or strategy designed to achieve a specific goal.\n\nJust give the single correct word, do not give a long explanation.\n\nThe choices are: battle, envy, magic, mighty, mythic, oracle, power, silence, tactic, universe"
+}</pre>
+                            </div>
+                        </td>
+                    </tr>
+                    
+                    
+                    <tr>
+                        <td>0020:tactic:40</td>
+                        <td>1</td>
+                        <td>634.77075</td>
+                        <td>{}</td>
+                    </tr>
+                    
+                    <tr>
+                        <td colspan="4" class="question-info">
+                            <div class="question-info-toggle" onclick="toggleQuestionInfo(this)">
+                                [+]
+                            </div>
+                            <div class="question-info-content hidden">
+                              <strong>Question Information:</strong>
+                              <pre>{
+  "choices": [
+    "ashes",
+    "clever",
+    "enemy",
+    "honor",
+    "hunter",
+    "phantom",
+    "proud",
+    "signal",
+    "silence",
+    "tactic"
+  ],
+  "correct": "tactic",
+  "definition": "A carefully planned action or strategy used to achieve a specific goal.",
+  "question": "Which of the following ten words has this definition: A carefully planned action or strategy used to achieve a specific goal.\n\nJust give the single correct word, do not give a long explanation.\n\nThe choices are: ashes, clever, enemy, honor, hunter, phantom, proud, signal, silence, tactic"
+}</pre>
+                            </div>
+                        </td>
+                    </tr>
+                    
+                    
+                    <tr>
+                        <td>0020:tame:55</td>
+                        <td>1</td>
+                        <td>690.628208</td>
+                        <td>{}</td>
+                    </tr>
+                    
+                    <tr>
+                        <td colspan="4" class="question-info">
+                            <div class="question-info-toggle" onclick="toggleQuestionInfo(this)">
+                                [+]
+                            </div>
+                            <div class="question-info-content hidden">
+                              <strong>Question Information:</strong>
+                              <pre>{
+  "choices": [
+    "crystal",
+    "delight",
+    "escape",
+    "lure",
+    "reckless",
+    "roaming",
+    "royalty",
+    "shimmer",
+    "sword",
+    "tame"
+  ],
+  "correct": "tame",
+  "definition": "To make or become domesticated and accustomed to human control.",
+  "question": "Which of the following ten words has this definition: To make or become domesticated and accustomed to human control.\n\nJust give the single correct word, do not give a long explanation.\n\nThe choices are: crystal, delight, escape, lure, reckless, roaming, royalty, shimmer, sword, tame"
+}</pre>
+                            </div>
+                        </td>
+                    </tr>
+                    
+                    
+                    <tr>
+                        <td>0020:tame:71</td>
+                        <td>1</td>
+                        <td>701.286834</td>
+                        <td>{}</td>
+                    </tr>
+                    
+                    <tr>
+                        <td colspan="4" class="question-info">
+                            <div class="question-info-toggle" onclick="toggleQuestionInfo(this)">
+                                [+]
+                            </div>
+                            <div class="question-info-content hidden">
+                              <strong>Question Information:</strong>
+                              <pre>{
+  "choices": [
+    "danger",
+    "flame",
+    "greedy",
+    "heart",
+    "mystery",
+    "puzzle",
+    "shadow",
+    "splendor",
+    "tame",
+    "tension"
+  ],
+  "correct": "tame",
+  "definition": "To domesticate or soften a wild animal or person\u0027s behavior.",
+  "question": "Which of the following ten words has this definition: To domesticate or soften a wild animal or person\u0027s behavior.\n\nJust give the single correct word, do not give a long explanation.\n\nThe choices are: danger, flame, greedy, heart, mystery, puzzle, shadow, splendor, tame, tension"
+}</pre>
+                            </div>
+                        </td>
+                    </tr>
+                    
+                    
+                    <tr>
+                        <td>0020:thunder:79</td>
+                        <td>1</td>
+                        <td>718.311334</td>
+                        <td>{}</td>
+                    </tr>
+                    
+                    <tr>
+                        <td colspan="4" class="question-info">
+                            <div class="question-info-toggle" onclick="toggleQuestionInfo(this)">
+                                [+]
+                            </div>
+                            <div class="question-info-content hidden">
+                              <strong>Question Information:</strong>
+                              <pre>{
+  "choices": [
+    "emblem",
+    "enemy",
+    "fearful",
+    "legacy",
+    "melody",
+    "opal",
+    "peril",
+    "power",
+    "thunder",
+    "tower"
+  ],
+  "correct": "thunder",
+  "definition": "The loud rumbling sound produced by the rapid expansion of air around a lightning bolt.",
+  "question": "Which of the following ten words has this definition: The loud rumbling sound produced by the rapid expansion of air around a lightning bolt.\n\nJust give the single correct word, do not give a long explanation.\n\nThe choices are: emblem, enemy, fearful, legacy, melody, opal, peril, power, thunder, tower"
+}</pre>
+                            </div>
+                        </td>
+                    </tr>
+                    
+                    
+                    <tr>
+                        <td>0020:timid:14</td>
+                        <td>1</td>
+                        <td>558.051709</td>
+                        <td>{}</td>
+                    </tr>
+                    
+                    <tr>
+                        <td colspan="4" class="question-info">
+                            <div class="question-info-toggle" onclick="toggleQuestionInfo(this)">
+                                [+]
+                            </div>
+                            <div class="question-info-content hidden">
+                              <strong>Question Information:</strong>
+                              <pre>{
+  "choices": [
+    "fearful",
+    "loyal",
+    "oath",
+    "outcast",
+    "power",
+    "royalty",
+    "shadow",
+    "simple",
+    "timid",
+    "wild"
+  ],
+  "correct": "timid",
+  "definition": "Lacking courage or confidence.",
+  "question": "Which of the following ten words has this definition: Lacking courage or confidence.\n\nJust give the single correct word, do not give a long explanation.\n\nThe choices are: fearful, loyal, oath, outcast, power, royalty, shadow, simple, timid, wild"
+}</pre>
+                            </div>
+                        </td>
+                    </tr>
+                    
+                    
+                    <tr>
+                        <td>0020:timid:69</td>
+                        <td>1</td>
+                        <td>695.496875</td>
+                        <td>{}</td>
+                    </tr>
+                    
+                    <tr>
+                        <td colspan="4" class="question-info">
+                            <div class="question-info-toggle" onclick="toggleQuestionInfo(this)">
+                                [+]
+                            </div>
+                            <div class="question-info-content hidden">
+                              <strong>Question Information:</strong>
+                              <pre>{
+  "choices": [
+    "breeze",
+    "escape",
+    "family",
+    "justice",
+    "knight",
+    "roaming",
+    "timid",
+    "twilight",
+    "universe",
+    "youth"
+  ],
+  "correct": "timid",
+  "definition": "Characterized by a lack of courage or confidence.",
+  "question": "Which of the following ten words has this definition: Characterized by a lack of courage or confidence.\n\nJust give the single correct word, do not give a long explanation.\n\nThe choices are: breeze, escape, family, justice, knight, roaming, timid, twilight, universe, youth"
+}</pre>
+                            </div>
+                        </td>
+                    </tr>
+                    
+                    
+                    <tr>
+                        <td>0020:tower:4</td>
+                        <td>1</td>
+                        <td>426.439042</td>
+                        <td>{}</td>
+                    </tr>
+                    
+                    <tr>
+                        <td colspan="4" class="question-info">
+                            <div class="question-info-toggle" onclick="toggleQuestionInfo(this)">
+                                [+]
+                            </div>
+                            <div class="question-info-content hidden">
+                              <strong>Question Information:</strong>
+                              <pre>{
+  "choices": [
+    "ancient",
+    "capture",
+    "duel",
+    "jewel",
+    "justice",
+    "legacy",
+    "quest",
+    "sacred",
+    "tower",
+    "valley"
+  ],
+  "correct": "tower",
+  "definition": "A tall structure typically made of stone or metal that serves as a landmark, defensive fortification, or communication point.",
+  "question": "Which of the following ten words has this definition: A tall structure typically made of stone or metal that serves as a landmark, defensive fortification, or communication point.\n\nJust give the single correct word, do not give a long explanation.\n\nThe choices are: ancient, capture, duel, jewel, justice, legacy, quest, sacred, tower, valley"
+}</pre>
+                            </div>
+                        </td>
+                    </tr>
+                    
+                    
+                    <tr>
+                        <td>0020:truth:46</td>
+                        <td>1</td>
+                        <td>575.367583</td>
+                        <td>{}</td>
+                    </tr>
+                    
+                    <tr>
+                        <td colspan="4" class="question-info">
+                            <div class="question-info-toggle" onclick="toggleQuestionInfo(this)">
+                                [+]
+                            </div>
+                            <div class="question-info-content hidden">
+                              <strong>Question Information:</strong>
+                              <pre>{
+  "choices": [
+    "ashes",
+    "calm",
+    "delight",
+    "heart",
+    "hunter",
+    "melody",
+    "mystery",
+    "power",
+    "truth",
+    "zeal"
+  ],
+  "correct": "truth",
+  "definition": "The state of being in accordance with fact or reality.",
+  "question": "Which of the following ten words has this definition: The state of being in accordance with fact or reality.\n\nJust give the single correct word, do not give a long explanation.\n\nThe choices are: ashes, calm, delight, heart, hunter, melody, mystery, power, truth, zeal"
+}</pre>
+                            </div>
+                        </td>
+                    </tr>
+                    
+                    
+                    <tr>
+                        <td>0020:vessel:24</td>
+                        <td>1</td>
+                        <td>581.687625</td>
+                        <td>{}</td>
+                    </tr>
+                    
+                    <tr>
+                        <td colspan="4" class="question-info">
+                            <div class="question-info-toggle" onclick="toggleQuestionInfo(this)">
+                                [+]
+                            </div>
+                            <div class="question-info-content hidden">
+                              <strong>Question Information:</strong>
+                              <pre>{
+  "choices": [
+    "dragon",
+    "guardian",
+    "ignite",
+    "melody",
+    "monster",
+    "mythic",
+    "outcast",
+    "radiant",
+    "spark",
+    "vessel"
+  ],
+  "correct": "vessel",
+  "definition": "A container that holds or transports something.",
+  "question": "Which of the following ten words has this definition: A container that holds or transports something.\n\nJust give the single correct word, do not give a long explanation.\n\nThe choices are: dragon, guardian, ignite, melody, monster, mythic, outcast, radiant, spark, vessel"
+}</pre>
+                            </div>
+                        </td>
+                    </tr>
+                    
+                    
+                    <tr>
+                        <td>0020:vessel:9</td>
+                        <td>1</td>
+                        <td>482.711958</td>
+                        <td>{}</td>
+                    </tr>
+                    
+                    <tr>
+                        <td colspan="4" class="question-info">
+                            <div class="question-info-toggle" onclick="toggleQuestionInfo(this)">
+                                [+]
+                            </div>
+                            <div class="question-info-content hidden">
+                              <strong>Question Information:</strong>
+                              <pre>{
+  "choices": [
+    "ancient",
+    "artist",
+    "cypress",
+    "danger",
+    "legacy",
+    "proud",
+    "relic",
+    "sacred",
+    "spark",
+    "vessel"
+  ],
+  "correct": "vessel",
+  "definition": "A container designed to hold or transport something.",
+  "question": "Which of the following ten words has this definition: A container designed to hold or transport something.\n\nJust give the single correct word, do not give a long explanation.\n\nThe choices are: ancient, artist, cypress, danger, legacy, proud, relic, sacred, spark, vessel"
+}</pre>
+                            </div>
+                        </td>
+                    </tr>
+                    
+                    
+                    <tr>
+                        <td>0020:victory:50</td>
+                        <td>1</td>
+                        <td>655.952875</td>
+                        <td>{}</td>
+                    </tr>
+                    
+                    <tr>
+                        <td colspan="4" class="question-info">
+                            <div class="question-info-toggle" onclick="toggleQuestionInfo(this)">
+                                [+]
+                            </div>
+                            <div class="question-info-content hidden">
+                              <strong>Question Information:</strong>
+                              <pre>{
+  "choices": [
+    "brother",
+    "courage",
+    "destiny",
+    "magic",
+    "meadow",
+    "promise",
+    "puzzle",
+    "truth",
+    "victory",
+    "witty"
+  ],
+  "correct": "victory",
+  "definition": "The successful achievement of a desired outcome or goal.",
+  "question": "Which of the following ten words has this definition: The successful achievement of a desired outcome or goal.\n\nJust give the single correct word, do not give a long explanation.\n\nThe choices are: brother, courage, destiny, magic, meadow, promise, puzzle, truth, victory, witty"
+}</pre>
+                            </div>
+                        </td>
+                    </tr>
+                    
+                    
+                    <tr>
+                        <td>0020:voyage:1</td>
+                        <td>1</td>
+                        <td>476.53575</td>
+                        <td>{}</td>
+                    </tr>
+                    
+                    <tr>
+                        <td colspan="4" class="question-info">
+                            <div class="question-info-toggle" onclick="toggleQuestionInfo(this)">
+                                [+]
+                            </div>
+                            <div class="question-info-content hidden">
+                              <strong>Question Information:</strong>
+                              <pre>{
+  "choices": [
+    "cheerful",
+    "escape",
+    "honest",
+    "iceberg",
+    "noble",
+    "river",
+    "sacred",
+    "survivor",
+    "tower",
+    "voyage"
+  ],
+  "correct": "voyage",
+  "definition": "A long journey by sea or space.",
+  "question": "Which of the following ten words has this definition: A long journey by sea or space.\n\nJust give the single correct word, do not give a long explanation.\n\nThe choices are: cheerful, escape, honest, iceberg, noble, river, sacred, survivor, tower, voyage"
+}</pre>
+                            </div>
+                        </td>
+                    </tr>
+                    
+                    
+                    <tr>
+                        <td>0020:warrior:47</td>
+                        <td>1</td>
+                        <td>642.695875</td>
+                        <td>{}</td>
+                    </tr>
+                    
+                    <tr>
+                        <td colspan="4" class="question-info">
+                            <div class="question-info-toggle" onclick="toggleQuestionInfo(this)">
+                                [+]
+                            </div>
+                            <div class="question-info-content hidden">
+                              <strong>Question Information:</strong>
+                              <pre>{
+  "choices": [
+    "courage",
+    "loyal",
+    "monster",
+    "remark",
+    "spark",
+    "survivor",
+    "tame",
+    "tower",
+    "warrior",
+    "wisdom"
+  ],
+  "correct": "warrior",
+  "definition": "A person who is skilled and experienced in fighting.",
+  "question": "Which of the following ten words has this definition: A person who is skilled and experienced in fighting.\n\nJust give the single correct word, do not give a long explanation.\n\nThe choices are: courage, loyal, monster, remark, spark, survivor, tame, tower, warrior, wisdom"
+}</pre>
+                            </div>
+                        </td>
+                    </tr>
+                    
+                    
+                    <tr>
+                        <td>0020:warrior:93</td>
+                        <td>1</td>
+                        <td>727.548125</td>
+                        <td>{}</td>
+                    </tr>
+                    
+                    <tr>
+                        <td colspan="4" class="question-info">
+                            <div class="question-info-toggle" onclick="toggleQuestionInfo(this)">
+                                [+]
+                            </div>
+                            <div class="question-info-content hidden">
+                              <strong>Question Information:</strong>
+                              <pre>{
+  "choices": [
+    "daring",
+    "dragon",
+    "journey",
+    "loyal",
+    "secret",
+    "tension",
+    "tower",
+    "triumph",
+    "warrior",
+    "youth"
+  ],
+  "correct": "warrior",
+  "definition": "A person who engages in or is trained for combat.",
+  "question": "Which of the following ten words has this definition: A person who engages in or is trained for combat.\n\nJust give the single correct word, do not give a long explanation.\n\nThe choices are: daring, dragon, journey, loyal, secret, tension, tower, triumph, warrior, youth"
+}</pre>
+                            </div>
+                        </td>
+                    </tr>
+                    
+                    
+                    <tr>
+                        <td>0020:whim:12</td>
+                        <td>1</td>
+                        <td>489.5525</td>
+                        <td>{}</td>
+                    </tr>
+                    
+                    <tr>
+                        <td colspan="4" class="question-info">
+                            <div class="question-info-toggle" onclick="toggleQuestionInfo(this)">
+                                [+]
+                            </div>
+                            <div class="question-info-content hidden">
+                              <strong>Question Information:</strong>
+                              <pre>{
+  "choices": [
+    "absent",
+    "cypress",
+    "grave",
+    "lure",
+    "oracle",
+    "proud",
+    "scared",
+    "tactic",
+    "whim",
+    "wonder"
+  ],
+  "correct": "whim",
+  "definition": "A sudden and unaccountable desire or change of mind.",
+  "question": "Which of the following ten words has this definition: A sudden and unaccountable desire or change of mind.\n\nJust give the single correct word, do not give a long explanation.\n\nThe choices are: absent, cypress, grave, lure, oracle, proud, scared, tactic, whim, wonder"
+}</pre>
+                            </div>
+                        </td>
+                    </tr>
+                    
+                    
+                    <tr>
+                        <td>0020:wonder:63</td>
+                        <td>1</td>
+                        <td>696.814667</td>
+                        <td>{}</td>
+                    </tr>
+                    
+                    <tr>
+                        <td colspan="4" class="question-info">
+                            <div class="question-info-toggle" onclick="toggleQuestionInfo(this)">
+                                [+]
+                            </div>
+                            <div class="question-info-content hidden">
+                              <strong>Question Information:</strong>
+                              <pre>{
+  "choices": [
+    "cheerful",
+    "energy",
+    "fragile",
+    "mighty",
+    "royalty",
+    "soldier",
+    "solitary",
+    "triumph",
+    "wild",
+    "wonder"
+  ],
+  "correct": "wonder",
+  "definition": "A feeling of awe or amazement caused by something beautiful, mysterious, or impressive.",
+  "question": "Which of the following ten words has this definition: A feeling of awe or amazement caused by something beautiful, mysterious, or impressive.\n\nJust give the single correct word, do not give a long explanation.\n\nThe choices are: cheerful, energy, fragile, mighty, royalty, soldier, solitary, triumph, wild, wonder"
+}</pre>
+                            </div>
+                        </td>
+                    </tr>
+                    
+                    
+                    <tr>
+                        <td>0020:wonder:97</td>
+                        <td>1</td>
+                        <td>711.763459</td>
+                        <td>{}</td>
+                    </tr>
+                    
+                    <tr>
+                        <td colspan="4" class="question-info">
+                            <div class="question-info-toggle" onclick="toggleQuestionInfo(this)">
+                                [+]
+                            </div>
+                            <div class="question-info-content hidden">
+                              <strong>Question Information:</strong>
+                              <pre>{
+  "choices": [
+    "destiny",
+    "emblem",
+    "noble",
+    "outcast",
+    "proud",
+    "queen",
+    "river",
+    "secret",
+    "survivor",
+    "wonder"
+  ],
+  "correct": "wonder",
+  "definition": "A feeling of amazement or curiosity aroused by something extraordinary or beautiful.",
+  "question": "Which of the following ten words has this definition: A feeling of amazement or curiosity aroused by something extraordinary or beautiful.\n\nJust give the single correct word, do not give a long explanation.\n\nThe choices are: destiny, emblem, noble, outcast, proud, queen, river, secret, survivor, wonder"
+}</pre>
+                            </div>
+                        </td>
+                    </tr>
+                    
+                    
+                    <tr>
+                        <td>0020:youth:59</td>
+                        <td>1</td>
+                        <td>700.381291</td>
+                        <td>{}</td>
+                    </tr>
+                    
+                    <tr>
+                        <td colspan="4" class="question-info">
+                            <div class="question-info-toggle" onclick="toggleQuestionInfo(this)">
+                                [+]
+                            </div>
+                            <div class="question-info-content hidden">
+                              <strong>Question Information:</strong>
+                              <pre>{
+  "choices": [
+    "breeze",
+    "capture",
+    "delight",
+    "fighter",
+    "mansion",
+    "precious",
+    "savage",
+    "spark",
+    "wild",
+    "youth"
+  ],
+  "correct": "youth",
+  "definition": "The period of life characterized by being young and typically spanning from childhood to early adulthood.",
+  "question": "Which of the following ten words has this definition: The period of life characterized by being young and typically spanning from childhood to early adulthood.\n\nJust give the single correct word, do not give a long explanation.\n\nThe choices are: breeze, capture, delight, fighter, mansion, precious, savage, spark, wild, youth"
+}</pre>
+                            </div>
+                        </td>
+                    </tr>
+                    
+                    
+                    <tr>
+                        <td>0020:zeal:45</td>
+                        <td>1</td>
+                        <td>631.239958</td>
+                        <td>{}</td>
+                    </tr>
+                    
+                    <tr>
+                        <td colspan="4" class="question-info">
+                            <div class="question-info-toggle" onclick="toggleQuestionInfo(this)">
+                                [+]
+                            </div>
+                            <div class="question-info-content hidden">
+                              <strong>Question Information:</strong>
+                              <pre>{
+  "choices": [
+    "cloudy",
+    "delight",
+    "forest",
+    "kingdom",
+    "rescue",
+    "valor",
+    "void",
+    "whisper",
+    "yarn",
+    "zeal"
+  ],
+  "correct": "zeal",
+  "definition": "A feeling of great enthusiasm and passion for something.",
+  "question": "Which of the following ten words has this definition: A feeling of great enthusiasm and passion for something.\n\nJust give the single correct word, do not give a long explanation.\n\nThe choices are: cloudy, delight, forest, kingdom, rescue, valor, void, whisper, yarn, zeal"
+}</pre>
+                            </div>
+                        </td>
+                    </tr>
+                    
+                    
+                </tbody>
+            </table>
+        </div>
+
+        
+    </div>
+</body>
+</html>

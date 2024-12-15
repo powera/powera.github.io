@@ -1,0 +1,1147 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Language Model Benchmark Results</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 20px;
+            color: #333;
+        }
+        
+        table {
+            border-collapse: collapse;
+            max-width: 1200px;
+            margin: 0 auto;
+            width: 100%;
+            box-shadow: 0 1px 3px rgba(0,0,0,0.1);
+        }
+        
+        th, td {
+            border: 1px solid #e0e0e0;
+            padding: 4px;
+            text-align: center;
+        }
+        
+        th {
+            background-color: #f8f9fa;
+            font-weight: 600;
+            position: relative;
+        }
+        
+        .score {
+            width: 72px;
+            height: 72px;
+            margin: 0 auto;
+        }
+        
+        .score a {
+            height: 100%;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            line-height: normal;
+            justify-content: center;
+            text-decoration: none;
+            border-radius: 4px;
+            gap: 2px;
+        }
+        
+        .score .value {
+            font-size: 18px;
+            font-weight: bold;
+            color: white;
+            text-shadow: 1px 1px 1px rgba(0,0,0,0.5);
+            line-height: normal;
+        }
+        
+        .score .time {
+            color: black;
+            font-size: 14px;
+            background-color: white;
+            line-height: normal;
+        }
+        
+        .header-cell {
+            background-color: #f8f9fa;
+            font-weight: 600;
+            text-align: left;
+        }
+        
+        .hover-box {
+            display: none;
+            position: absolute;
+            background-color: #333;
+            color: white;
+            padding: 12px;
+            border-radius: 6px;
+            width: 250px;
+            box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+            text-align: left;
+            z-index: 100;
+            font-size: 14px;
+            line-height: 1.4;
+        }
+        
+        th:hover .hover-box,
+        td:hover .hover-box {
+            display: block;
+        }
+        
+        .benchmark-name {
+            min-width: 180px;
+        }
+        
+        .page-title {
+            text-align: center;
+            color: #333;
+            margin: 30px 0;
+            font-size: 24px;
+        }
+        
+        .last-updated {
+            text-align: center;
+            color: #666;
+            margin-bottom: 30px;
+            font-size: 14px;
+        }
+    </style>
+</head>
+<body>
+    <h1 class="page-title">Language Model Benchmark Results</h1>
+    <p class="last-updated">Last updated: </p>
+    
+    <table>
+        <tr>
+            <th></th>
+            
+            <th class="model-header">SmolLM 2
+                <div class="hover-box">
+                    <p><strong>Model:</strong> smollm2:1.7b:Q8_0</p>
+                    
+                    <p><strong>Launch Date:</strong> 2024-10-31</p>
+                    
+                    
+                    <p><strong>Size:</strong> 1800 MB</p>
+                    
+                    
+                    <p><strong>License:</strong> Apache License</p>
+                    
+                </div>
+            </th>
+            
+            <th class="model-header">Llama 3.2
+                <div class="hover-box">
+                    <p><strong>Model:</strong> llama3.2:3b:Q4_K_M</p>
+                    
+                    <p><strong>Launch Date:</strong> 2024-09-25</p>
+                    
+                    
+                    <p><strong>Size:</strong> 2000 MB</p>
+                    
+                    
+                    <p><strong>License:</strong> Llama 3.2 License</p>
+                    
+                </div>
+            </th>
+            
+            <th class="model-header">PHI 3.5
+                <div class="hover-box">
+                    <p><strong>Model:</strong> phi3.5:3.8b:Q4_0</p>
+                    
+                    <p><strong>Launch Date:</strong> 2024-08-17</p>
+                    
+                    
+                    <p><strong>Size:</strong> 2200 MB</p>
+                    
+                    
+                    <p><strong>License:</strong> MIT License</p>
+                    
+                </div>
+            </th>
+            
+            <th class="model-header">Hermes 3
+                <div class="hover-box">
+                    <p><strong>Model:</strong> hermes3:8b:Q4_0</p>
+                    
+                    <p><strong>Launch Date:</strong> 2024-07-28</p>
+                    
+                    
+                    <p><strong>Size:</strong> 4700 MB</p>
+                    
+                    
+                    <p><strong>License:</strong> Llama 3 License</p>
+                    
+                </div>
+            </th>
+            
+            <th class="model-header">QWEN 2.5
+                <div class="hover-box">
+                    <p><strong>Model:</strong> qwen2.5:7b:Q4_K_M</p>
+                    
+                    <p><strong>Launch Date:</strong> 2024-09-15</p>
+                    
+                    
+                    <p><strong>Size:</strong> 4700 MB</p>
+                    
+                    
+                    <p><strong>License:</strong> Apache License</p>
+                    
+                </div>
+            </th>
+            
+            <th class="model-header">ExaONE 3.5
+                <div class="hover-box">
+                    <p><strong>Model:</strong> exaone3.5:7.8b:Q4_K_M</p>
+                    
+                    <p><strong>Launch Date:</strong> 2024-12-10</p>
+                    
+                    
+                    <p><strong>Size:</strong> 4800 MB</p>
+                    
+                    
+                    <p><strong>License:</strong> Exaone License</p>
+                    
+                </div>
+            </th>
+            
+            <th class="model-header">Granite 3
+                <div class="hover-box">
+                    <p><strong>Model:</strong> granite3-dense:8b:Q4_K_M</p>
+                    
+                    <p><strong>Launch Date:</strong> 2024-10-21</p>
+                    
+                    
+                    <p><strong>Size:</strong> 4900 MB</p>
+                    
+                    
+                    <p><strong>License:</strong> Apache License</p>
+                    
+                </div>
+            </th>
+            
+            <th class="model-header">Tulu 3
+                <div class="hover-box">
+                    <p><strong>Model:</strong> tulu3:8b:Q4_K_M</p>
+                    
+                    <p><strong>Launch Date:</strong> 2024-11-21</p>
+                    
+                    
+                    <p><strong>Size:</strong> 4900 MB</p>
+                    
+                    
+                    <p><strong>License:</strong> Llama 3.1 License</p>
+                    
+                </div>
+            </th>
+            
+            <th class="model-header">Gemma 2
+                <div class="hover-box">
+                    <p><strong>Model:</strong> gemma2:9b:Q4_0</p>
+                    
+                    <p><strong>Launch Date:</strong> 2024-06-27</p>
+                    
+                    
+                    <p><strong>Size:</strong> 5400 MB</p>
+                    
+                    
+                    <p><strong>License:</strong> Gemma License</p>
+                    
+                </div>
+            </th>
+            
+            <th class="model-header">Mistral Nemo
+                <div class="hover-box">
+                    <p><strong>Model:</strong> mistral-nemo:12b:Q4_0</p>
+                    
+                    <p><strong>Launch Date:</strong> 2024-07-18</p>
+                    
+                    
+                    <p><strong>Size:</strong> 7100 MB</p>
+                    
+                    
+                    <p><strong>License:</strong> Apache License</p>
+                    
+                </div>
+            </th>
+            
+        </tr>
+        
+        
+        <tr>
+            <td class="header-cell benchmark-name">Spell Check / Complete Response
+                <div class="hover-box">
+                    <p><strong>Benchmark ID:</strong> 0015_spell_check</p>
+                    
+                    <p><strong>Description:</strong> Given a sentence with one misspelled word, does the result identify the misspelled word and the correct spelling, in the requested format.</p>
+                    
+                    
+                </div>
+            </td>
+            
+            <td>
+                
+                <div class="score" style="background-color: rgb(173, 81, 0)">
+                    <a href="run_details/5.html">
+                        <span class="value">38</span>
+                        <span class="time">560.3ms</span>
+                    </a>
+                </div>
+                
+            </td>
+            
+            <td>
+                
+                <div class="score" style="background-color: rgb(50, 204, 0)">
+                    <a href="run_details/13.html">
+                        <span class="value">95</span>
+                        <span class="time">789.8ms</span>
+                    </a>
+                </div>
+                
+            </td>
+            
+            <td>
+                
+                <div class="score" style="background-color: rgb(87, 167, 0)">
+                    <a href="run_details/17.html">
+                        <span class="value">78</span>
+                        <span class="time">1086.1ms</span>
+                    </a>
+                </div>
+                
+            </td>
+            
+            <td>
+                
+                <div class="score" style="background-color: rgb(74, 180, 0)">
+                    <a href="run_details/21.html">
+                        <span class="value">84</span>
+                        <span class="time">1751.6ms</span>
+                    </a>
+                </div>
+                
+            </td>
+            
+            <td>
+                
+                <div class="score" style="background-color: rgb(85, 169, 0)">
+                    <a href="run_details/15.html">
+                        <span class="value">79</span>
+                        <span class="time">1634.7ms</span>
+                    </a>
+                </div>
+                
+            </td>
+            
+            <td>
+                
+                <div class="score" style="background-color: rgb(50, 204, 0)">
+                    <a href="run_details/1.html">
+                        <span class="value">95</span>
+                        <span class="time">1794.1ms</span>
+                    </a>
+                </div>
+                
+            </td>
+            
+            <td>
+                
+                <div class="score" style="background-color: rgb(50, 204, 0)">
+                    <a href="run_details/19.html">
+                        <span class="value">95</span>
+                        <span class="time">2259.3ms</span>
+                    </a>
+                </div>
+                
+            </td>
+            
+            <td>
+                
+                <div class="score" style="background-color: rgb(48, 206, 0)">
+                    <a href="run_details/7.html">
+                        <span class="value">96</span>
+                        <span class="time">1730.3ms</span>
+                    </a>
+                </div>
+                
+            </td>
+            
+            <td>
+                
+                <div class="score" style="background-color: rgb(48, 206, 0)">
+                    <a href="run_details/9.html">
+                        <span class="value">96</span>
+                        <span class="time">2305.8ms</span>
+                    </a>
+                </div>
+                
+            </td>
+            
+            <td>
+                
+                <div class="score" style="background-color: rgb(48, 206, 0)">
+                    <a href="run_details/11.html">
+                        <span class="value">96</span>
+                        <span class="time">2554.8ms</span>
+                    </a>
+                </div>
+                
+            </td>
+            
+        </tr>
+        
+        <tr>
+            <td class="header-cell benchmark-name">Definitions
+                <div class="hover-box">
+                    <p><strong>Benchmark ID:</strong> 0020_definitions</p>
+                    
+                    <p><strong>Description:</strong> Given a one-sentence definition and ten possible words, does the model choose the correct word.</p>
+                    
+                    
+                </div>
+            </td>
+            
+            <td>
+                
+                <div class="score" style="background-color: rgb(87, 167, 0)">
+                    <a href="run_details/4.html">
+                        <span class="value">78</span>
+                        <span class="time">157.0ms</span>
+                    </a>
+                </div>
+                
+            </td>
+            
+            <td>
+                
+                <div class="score" style="background-color: rgb(42, 212, 0)">
+                    <a href="run_details/12.html">
+                        <span class="value">99</span>
+                        <span class="time">301.8ms</span>
+                    </a>
+                </div>
+                
+            </td>
+            
+            <td>
+                
+                <div class="score" style="background-color: rgb(52, 202, 0)">
+                    <a href="run_details/16.html">
+                        <span class="value">94</span>
+                        <span class="time">780.3ms</span>
+                    </a>
+                </div>
+                
+            </td>
+            
+            <td>
+                
+                <div class="score" style="background-color: rgb(44, 210, 0)">
+                    <a href="run_details/20.html">
+                        <span class="value">98</span>
+                        <span class="time">714.2ms</span>
+                    </a>
+                </div>
+                
+            </td>
+            
+            <td>
+                
+                <div class="score" style="background-color: rgb(42, 212, 0)">
+                    <a href="run_details/14.html">
+                        <span class="value">99</span>
+                        <span class="time">662.5ms</span>
+                    </a>
+                </div>
+                
+            </td>
+            
+            <td>
+                
+                <div class="score" style="background-color: rgb(0, 255, 0)">
+                    <a href="run_details/3.html">
+                        <span class="value">100</span>
+                        <span class="time">573.4ms</span>
+                    </a>
+                </div>
+                
+            </td>
+            
+            <td>
+                
+                <div class="score" style="background-color: rgb(42, 212, 0)">
+                    <a href="run_details/18.html">
+                        <span class="value">99</span>
+                        <span class="time">1046.8ms</span>
+                    </a>
+                </div>
+                
+            </td>
+            
+            <td>
+                
+                <div class="score" style="background-color: rgb(42, 212, 0)">
+                    <a href="run_details/6.html">
+                        <span class="value">99</span>
+                        <span class="time">608.6ms</span>
+                    </a>
+                </div>
+                
+            </td>
+            
+            <td>
+                
+                <div class="score" style="background-color: rgb(0, 255, 0)">
+                    <a href="run_details/8.html">
+                        <span class="value">100</span>
+                        <span class="time">934.4ms</span>
+                    </a>
+                </div>
+                
+            </td>
+            
+            <td>
+                
+                <div class="score" style="background-color: rgb(42, 212, 0)">
+                    <a href="run_details/10.html">
+                        <span class="value">99</span>
+                        <span class="time">999.2ms</span>
+                    </a>
+                </div>
+                
+            </td>
+            
+        </tr>
+        
+        <tr>
+            <td class="header-cell benchmark-name">Analyze Paragraph
+                <div class="hover-box">
+                    <p><strong>Benchmark ID:</strong> 0030_analyze_paragraph</p>
+                    
+                    <p><strong>Description:</strong> Given a paragraph and 4 possible answers for a question about that paragraph, does the model choose the correct answer.</p>
+                    
+                    
+                </div>
+            </td>
+            
+            <td>
+                
+                <div class="score" style="background-color: rgb(126, 129, 0)">
+                    <a href="run_details/23.html">
+                        <span class="value">60</span>
+                        <span class="time">4651.3ms</span>
+                    </a>
+                </div>
+                
+            </td>
+            
+            <td>
+                
+                <div class="score" style="background-color: rgb(83, 172, 0)">
+                    <a href="run_details/22.html">
+                        <span class="value">80</span>
+                        <span class="time">14371.8ms</span>
+                    </a>
+                </div>
+                
+            </td>
+            
+            <td>
+                
+            </td>
+            
+            <td>
+                
+                <div class="score" style="background-color: rgb(126, 129, 0)">
+                    <a href="run_details/47.html">
+                        <span class="value">60</span>
+                        <span class="time">16900.2ms</span>
+                    </a>
+                </div>
+                
+            </td>
+            
+            <td>
+                
+                <div class="score" style="background-color: rgb(0, 255, 0)">
+                    <a href="run_details/55.html">
+                        <span class="value">100</span>
+                        <span class="time">31290.3ms</span>
+                    </a>
+                </div>
+                
+            </td>
+            
+            <td>
+                
+                <div class="score" style="background-color: rgb(83, 172, 0)">
+                    <a href="run_details/2.html">
+                        <span class="value">80</span>
+                        <span class="time">11429.8ms</span>
+                    </a>
+                </div>
+                
+            </td>
+            
+            <td>
+                
+                <div class="score" style="background-color: rgb(104, 150, 0)">
+                    <a href="run_details/42.html">
+                        <span class="value">70</span>
+                        <span class="time">31882.3ms</span>
+                    </a>
+                </div>
+                
+            </td>
+            
+            <td>
+                
+            </td>
+            
+            <td>
+                
+                <div class="score" style="background-color: rgb(0, 255, 0)">
+                    <a href="run_details/37.html">
+                        <span class="value">100</span>
+                        <span class="time">27583.9ms</span>
+                    </a>
+                </div>
+                
+            </td>
+            
+            <td>
+                
+                <div class="score" style="background-color: rgb(104, 150, 0)">
+                    <a href="run_details/50.html">
+                        <span class="value">70</span>
+                        <span class="time">36062.9ms</span>
+                    </a>
+                </div>
+                
+            </td>
+            
+        </tr>
+        
+        <tr>
+            <td class="header-cell benchmark-name">Haystack Search
+                <div class="hover-box">
+                    <p><strong>Benchmark ID:</strong> 0035_simple_haystack</p>
+                    
+                    <p><strong>Description:</strong> Given six sentences and a question about one sentence, does the model chooset he correct answer.</p>
+                    
+                    
+                </div>
+            </td>
+            
+            <td>
+                
+            </td>
+            
+            <td>
+                
+            </td>
+            
+            <td>
+                
+            </td>
+            
+            <td>
+                
+            </td>
+            
+            <td>
+                
+            </td>
+            
+            <td>
+                
+            </td>
+            
+            <td>
+                
+            </td>
+            
+            <td>
+                
+            </td>
+            
+            <td>
+                
+            </td>
+            
+            <td>
+                
+            </td>
+            
+        </tr>
+        
+        <tr>
+            <td class="header-cell benchmark-name">Translation (EN → FR)
+                <div class="hover-box">
+                    <p><strong>Benchmark ID:</strong> 0050_translation_en_fr</p>
+                    
+                    <p><strong>Description:</strong> Tests ability to translate EN words to FR with multiple choice validation</p>
+                    
+                    
+                </div>
+            </td>
+            
+            <td>
+                
+                <div class="score" style="background-color: rgb(134, 120, 0)">
+                    <a href="run_details/60.html">
+                        <span class="value">56</span>
+                        <span class="time">665.9ms</span>
+                    </a>
+                </div>
+                
+            </td>
+            
+            <td>
+                
+                <div class="score" style="background-color: rgb(52, 202, 0)">
+                    <a href="run_details/26.html">
+                        <span class="value">94</span>
+                        <span class="time">580.8ms</span>
+                    </a>
+                </div>
+                
+            </td>
+            
+            <td>
+                
+            </td>
+            
+            <td>
+                
+                <div class="score" style="background-color: rgb(48, 206, 0)">
+                    <a href="run_details/48.html">
+                        <span class="value">96</span>
+                        <span class="time">1454.0ms</span>
+                    </a>
+                </div>
+                
+            </td>
+            
+            <td>
+                
+                <div class="score" style="background-color: rgb(57, 197, 0)">
+                    <a href="run_details/56.html">
+                        <span class="value">92</span>
+                        <span class="time">1733.5ms</span>
+                    </a>
+                </div>
+                
+            </td>
+            
+            <td>
+                
+                <div class="score" style="background-color: rgb(48, 206, 0)">
+                    <a href="run_details/33.html">
+                        <span class="value">96</span>
+                        <span class="time">1523.0ms</span>
+                    </a>
+                </div>
+                
+            </td>
+            
+            <td>
+                
+                <div class="score" style="background-color: rgb(0, 255, 0)">
+                    <a href="run_details/43.html">
+                        <span class="value">100</span>
+                        <span class="time">2499.7ms</span>
+                    </a>
+                </div>
+                
+            </td>
+            
+            <td>
+                
+                <div class="score" style="background-color: rgb(52, 202, 0)">
+                    <a href="run_details/64.html">
+                        <span class="value">94</span>
+                        <span class="time">1717.8ms</span>
+                    </a>
+                </div>
+                
+            </td>
+            
+            <td>
+                
+                <div class="score" style="background-color: rgb(0, 255, 0)">
+                    <a href="run_details/38.html">
+                        <span class="value">100</span>
+                        <span class="time">1564.0ms</span>
+                    </a>
+                </div>
+                
+            </td>
+            
+            <td>
+                
+                <div class="score" style="background-color: rgb(44, 210, 0)">
+                    <a href="run_details/51.html">
+                        <span class="value">98</span>
+                        <span class="time">3513.9ms</span>
+                    </a>
+                </div>
+                
+            </td>
+            
+        </tr>
+        
+        <tr>
+            <td class="header-cell benchmark-name">Translation (EN → ZH)
+                <div class="hover-box">
+                    <p><strong>Benchmark ID:</strong> 0050_translation_en_zh</p>
+                    
+                    <p><strong>Description:</strong> Tests ability to translate EN words to ZH with multiple choice validation</p>
+                    
+                    
+                </div>
+            </td>
+            
+            <td>
+                
+                <div class="score" style="background-color: rgb(130, 124, 0)">
+                    <a href="run_details/63.html">
+                        <span class="value">58</span>
+                        <span class="time">654.4ms</span>
+                    </a>
+                </div>
+                
+            </td>
+            
+            <td>
+                
+                <div class="score" style="background-color: rgb(61, 193, 0)">
+                    <a href="run_details/28.html">
+                        <span class="value">90</span>
+                        <span class="time">555.1ms</span>
+                    </a>
+                </div>
+                
+            </td>
+            
+            <td>
+                
+            </td>
+            
+            <td>
+                
+                <div class="score" style="background-color: rgb(48, 206, 0)">
+                    <a href="run_details/32.html">
+                        <span class="value">96</span>
+                        <span class="time">1188.5ms</span>
+                    </a>
+                </div>
+                
+            </td>
+            
+            <td>
+                
+                <div class="score" style="background-color: rgb(0, 255, 0)">
+                    <a href="run_details/59.html">
+                        <span class="value">100</span>
+                        <span class="time">1659.1ms</span>
+                    </a>
+                </div>
+                
+            </td>
+            
+            <td>
+                
+                <div class="score" style="background-color: rgb(0, 255, 0)">
+                    <a href="run_details/36.html">
+                        <span class="value">100</span>
+                        <span class="time">1750.2ms</span>
+                    </a>
+                </div>
+                
+            </td>
+            
+            <td>
+                
+                <div class="score" style="background-color: rgb(61, 193, 0)">
+                    <a href="run_details/46.html">
+                        <span class="value">90</span>
+                        <span class="time">2437.1ms</span>
+                    </a>
+                </div>
+                
+            </td>
+            
+            <td>
+                
+                <div class="score" style="background-color: rgb(44, 210, 0)">
+                    <a href="run_details/67.html">
+                        <span class="value">98</span>
+                        <span class="time">1791.6ms</span>
+                    </a>
+                </div>
+                
+            </td>
+            
+            <td>
+                
+                <div class="score" style="background-color: rgb(0, 255, 0)">
+                    <a href="run_details/41.html">
+                        <span class="value">100</span>
+                        <span class="time">1546.0ms</span>
+                    </a>
+                </div>
+                
+            </td>
+            
+            <td>
+                
+                <div class="score" style="background-color: rgb(48, 206, 0)">
+                    <a href="run_details/54.html">
+                        <span class="value">96</span>
+                        <span class="time">4548.4ms</span>
+                    </a>
+                </div>
+                
+            </td>
+            
+        </tr>
+        
+        <tr>
+            <td class="header-cell benchmark-name">Translation (EN → SW)
+                <div class="hover-box">
+                    <p><strong>Benchmark ID:</strong> 0050_translation_en_sw</p>
+                    
+                    <p><strong>Description:</strong> Tests ability to translate EN words to SW with multiple choice validation</p>
+                    
+                    
+                </div>
+            </td>
+            
+            <td>
+                
+                <div class="score" style="background-color: rgb(224, 30, 0)">
+                    <a href="run_details/62.html">
+                        <span class="value">14</span>
+                        <span class="time">645.9ms</span>
+                    </a>
+                </div>
+                
+            </td>
+            
+            <td>
+                
+                <div class="score" style="background-color: rgb(104, 150, 0)">
+                    <a href="run_details/27.html">
+                        <span class="value">70</span>
+                        <span class="time">616.8ms</span>
+                    </a>
+                </div>
+                
+            </td>
+            
+            <td>
+                
+            </td>
+            
+            <td>
+                
+                <div class="score" style="background-color: rgb(91, 163, 0)">
+                    <a href="run_details/49.html">
+                        <span class="value">76</span>
+                        <span class="time">1565.3ms</span>
+                    </a>
+                </div>
+                
+            </td>
+            
+            <td>
+                
+                <div class="score" style="background-color: rgb(151, 103, 0)">
+                    <a href="run_details/58.html">
+                        <span class="value">48</span>
+                        <span class="time">1915.8ms</span>
+                    </a>
+                </div>
+                
+            </td>
+            
+            <td>
+                
+                <div class="score" style="background-color: rgb(113, 141, 0)">
+                    <a href="run_details/35.html">
+                        <span class="value">66</span>
+                        <span class="time">1824.6ms</span>
+                    </a>
+                </div>
+                
+            </td>
+            
+            <td>
+                
+                <div class="score" style="background-color: rgb(160, 94, 0)">
+                    <a href="run_details/45.html">
+                        <span class="value">44</span>
+                        <span class="time">2300.4ms</span>
+                    </a>
+                </div>
+                
+            </td>
+            
+            <td>
+                
+                <div class="score" style="background-color: rgb(121, 133, 0)">
+                    <a href="run_details/66.html">
+                        <span class="value">62</span>
+                        <span class="time">1860.7ms</span>
+                    </a>
+                </div>
+                
+            </td>
+            
+            <td>
+                
+                <div class="score" style="background-color: rgb(0, 255, 0)">
+                    <a href="run_details/40.html">
+                        <span class="value">100</span>
+                        <span class="time">1938.9ms</span>
+                    </a>
+                </div>
+                
+            </td>
+            
+            <td>
+                
+                <div class="score" style="background-color: rgb(143, 111, 0)">
+                    <a href="run_details/53.html">
+                        <span class="value">52</span>
+                        <span class="time">4654.2ms</span>
+                    </a>
+                </div>
+                
+            </td>
+            
+        </tr>
+        
+        <tr>
+            <td class="header-cell benchmark-name">Translation (EN → KN)
+                <div class="hover-box">
+                    <p><strong>Benchmark ID:</strong> 0050_translation_en_kn</p>
+                    
+                    <p><strong>Description:</strong> Tests ability to translate EN words to KN with multiple choice validation</p>
+                    
+                    
+                </div>
+            </td>
+            
+            <td>
+                
+                <div class="score" style="background-color: rgb(233, 21, 0)">
+                    <a href="run_details/61.html">
+                        <span class="value">10</span>
+                        <span class="time">1448.8ms</span>
+                    </a>
+                </div>
+                
+            </td>
+            
+            <td>
+                
+                <div class="score" style="background-color: rgb(147, 107, 0)">
+                    <a href="run_details/30.html">
+                        <span class="value">50</span>
+                        <span class="time">1186.2ms</span>
+                    </a>
+                </div>
+                
+            </td>
+            
+            <td>
+                
+            </td>
+            
+            <td>
+                
+                <div class="score" style="background-color: rgb(57, 197, 0)">
+                    <a href="run_details/31.html">
+                        <span class="value">92</span>
+                        <span class="time">2612.4ms</span>
+                    </a>
+                </div>
+                
+            </td>
+            
+            <td>
+                
+                <div class="score" style="background-color: rgb(156, 98, 0)">
+                    <a href="run_details/57.html">
+                        <span class="value">46</span>
+                        <span class="time">3051.8ms</span>
+                    </a>
+                </div>
+                
+            </td>
+            
+            <td>
+                
+                <div class="score" style="background-color: rgb(95, 159, 0)">
+                    <a href="run_details/34.html">
+                        <span class="value">74</span>
+                        <span class="time">2454.8ms</span>
+                    </a>
+                </div>
+                
+            </td>
+            
+            <td>
+                
+                <div class="score" style="background-color: rgb(212, 43, 0)">
+                    <a href="run_details/44.html">
+                        <span class="value">20</span>
+                        <span class="time">4619.7ms</span>
+                    </a>
+                </div>
+                
+            </td>
+            
+            <td>
+                
+                <div class="score" style="background-color: rgb(113, 141, 0)">
+                    <a href="run_details/65.html">
+                        <span class="value">66</span>
+                        <span class="time">3439.5ms</span>
+                    </a>
+                </div>
+                
+            </td>
+            
+            <td>
+                
+                <div class="score" style="background-color: rgb(61, 193, 0)">
+                    <a href="run_details/39.html">
+                        <span class="value">90</span>
+                        <span class="time">2287.0ms</span>
+                    </a>
+                </div>
+                
+            </td>
+            
+            <td>
+                
+                <div class="score" style="background-color: rgb(113, 141, 0)">
+                    <a href="run_details/52.html">
+                        <span class="value">66</span>
+                        <span class="time">5421.0ms</span>
+                    </a>
+                </div>
+                
+            </td>
+            
+        </tr>
+        
+    </table>
+</body>
+</html>

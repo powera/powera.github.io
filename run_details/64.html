@@ -1,0 +1,1948 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Benchmark Run Details - tulu3:8b:Q4_K_M on 0050_translation_en_fr</title>
+    <script>
+        function toggleQuestionInfo(toggleElement) {
+            const questionInfoContent = toggleElement.nextElementSibling;
+
+            if (questionInfoContent.classList.contains('hidden')) {
+                questionInfoContent.classList.remove('hidden');
+                toggleElement.textContent = '[X]';
+            } else {
+                questionInfoContent.classList.add('hidden');
+                toggleElement.textContent = '[+]';
+            }
+        }
+    </script>
+
+    <style>
+        /* Placeholder for future CSS */
+        body {
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 1rem;
+        }
+        .run-summary, .run-details {
+            margin-bottom: 2rem;
+        }
+        .summary-table, .details-table {
+            width: 100%;
+            border-collapse: collapse;
+        }
+        .summary-table th, .details-table th {
+            background-color: #f4f4f4;
+            text-align: left;
+            padding: 0.5rem;
+            border: 1px solid #ddd;
+        }
+        .summary-table td, .details-table td {
+            padding: 0.5rem;
+            border: 1px solid #ddd;
+        }
+        .details-table {
+            margin-top: 1rem;
+        }
+        .page-title {
+            color: #333;
+            border-bottom: 2px solid #333;
+            padding-bottom: 0.5rem;
+        }
+        .question-info {
+            background-color: #f9f9f9;
+            border: 1px solid #ddd;
+            padding: 1rem;
+            margin-top: 0.5rem;
+            position: relative;
+        }
+        .question-info-content {
+            max-height: 600px;
+            overflow-y: auto;
+            overflow-x: hidden;
+            padding-right: 15px; /* Add scrollbar space */
+        }
+        .question-info-toggle {
+            cursor: pointer;
+            user-select: none;
+            font-weight: bold;
+            color: #666;
+        }
+        .question-info-toggle:hover {
+            color: #333;
+        }
+        .question-info pre {
+            white-space: pre-wrap;
+            word-wrap: break-word;
+            background-color: #f4f4f4;
+            padding: 0.5rem;
+            border-radius: 4px;
+            margin: 0;
+        }
+        .hidden {
+            display: none;
+        }
+
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1 class="page-title">Benchmark Run Details</h1>
+        
+        <div class="run-summary">
+            <h2>Run Summary</h2>
+            <table class="summary-table">
+                <tr>
+                    <th>Model</th>
+                    <td>tulu3:8b:Q4_K_M</td>
+                </tr>
+                <tr>
+                    <th>Benchmark</th>
+                    <td>0050_translation_en_fr</td>
+                </tr>
+                <tr>
+                    <th>Normed Score</th>
+                    <td>47</td>
+                </tr>
+                <tr>
+                    <th>Run Timestamp</th>
+                    <td>2024-12-15 21:59:22</td>
+                </tr>
+            </table>
+        </div>
+
+        <div class="run-details">
+            <h2>Question-Level Details</h2>
+            <table class="details-table">
+                <thead>
+                    <tr>
+                        <th>Question ID</th>
+                        <th>Score</th>
+                        <th>Evaluation Time (ms)</th>
+                        <th>Debug Info</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    
+                    <tr>
+                        <td>0050_translation_en_fr:0</td>
+                        <td>1</td>
+                        <td>2399.840583</td>
+                        <td>{}</td>
+                    </tr>
+                    
+                    <tr>
+                        <td colspan="4" class="question-info">
+                            <div class="question-info-toggle" onclick="toggleQuestionInfo(this)">
+                                [+]
+                            </div>
+                            <div class="question-info-content hidden">
+                              <strong>Question Information:</strong>
+                              <pre>{
+  "word": "flower",
+  "fr": "fleur",
+  "origin_lang": "en",
+  "target_lang": "fr",
+  "choices": [
+    "lisse",
+    "oiseau",
+    "pierre",
+    "chanter",
+    "fleur",
+    "feu",
+    "sucré",
+    "pluie"
+  ]
+}</pre>
+                            </div>
+                        </td>
+                    </tr>
+                    
+                    
+                    <tr>
+                        <td>0050_translation_en_fr:1</td>
+                        <td>1</td>
+                        <td>1780.452917</td>
+                        <td>{}</td>
+                    </tr>
+                    
+                    <tr>
+                        <td colspan="4" class="question-info">
+                            <div class="question-info-toggle" onclick="toggleQuestionInfo(this)">
+                                [+]
+                            </div>
+                            <div class="question-info-content hidden">
+                              <strong>Question Information:</strong>
+                              <pre>{
+  "word": "to drive",
+  "fr": "conduire",
+  "origin_lang": "en",
+  "target_lang": "fr",
+  "origin_details": "Specifically refers to operating a vehicle",
+  "choices": [
+    "écrire",
+    "danser",
+    "nuage",
+    "cœur",
+    "conduire",
+    "manger",
+    "danser",
+    "pierre"
+  ]
+}</pre>
+                            </div>
+                        </td>
+                    </tr>
+                    
+                    
+                    <tr>
+                        <td>0050_translation_en_fr:10</td>
+                        <td>1</td>
+                        <td>1507.686917</td>
+                        <td>{}</td>
+                    </tr>
+                    
+                    <tr>
+                        <td colspan="4" class="question-info">
+                            <div class="question-info-toggle" onclick="toggleQuestionInfo(this)">
+                                [+]
+                            </div>
+                            <div class="question-info-content hidden">
+                              <strong>Question Information:</strong>
+                              <pre>{
+  "word": "mountain",
+  "fr": "montagne",
+  "origin_lang": "en",
+  "target_lang": "fr",
+  "choices": [
+    "frais",
+    "danser",
+    "feu",
+    "danser",
+    "rire",
+    "montagne",
+    "sucré",
+    "le plus fort"
+  ]
+}</pre>
+                            </div>
+                        </td>
+                    </tr>
+                    
+                    
+                    <tr>
+                        <td>0050_translation_en_fr:11</td>
+                        <td>1</td>
+                        <td>1674.783292</td>
+                        <td>{}</td>
+                    </tr>
+                    
+                    <tr>
+                        <td colspan="4" class="question-info">
+                            <div class="question-info-toggle" onclick="toggleQuestionInfo(this)">
+                                [+]
+                            </div>
+                            <div class="question-info-content hidden">
+                              <strong>Question Information:</strong>
+                              <pre>{
+  "word": "to sing",
+  "fr": "chanter",
+  "origin_lang": "en",
+  "target_lang": "fr",
+  "choices": [
+    "profond",
+    "doux",
+    "le plus fort",
+    "chanter",
+    "montagne",
+    "lisse",
+    "herbe",
+    "rire"
+  ]
+}</pre>
+                            </div>
+                        </td>
+                    </tr>
+                    
+                    
+                    <tr>
+                        <td>0050_translation_en_fr:12</td>
+                        <td>0</td>
+                        <td>2512.970083</td>
+                        <td>{
+  "response": "céur",
+  "expected": "cœur"
+}</td>
+                    </tr>
+                    
+                    <tr>
+                        <td colspan="4" class="question-info">
+                            <div class="question-info-toggle" onclick="toggleQuestionInfo(this)">
+                                [+]
+                            </div>
+                            <div class="question-info-content hidden">
+                              <strong>Question Information:</strong>
+                              <pre>{
+  "word": "heart",
+  "fr": "cœur",
+  "origin_lang": "en",
+  "target_lang": "fr",
+  "choices": [
+    "lisse",
+    "pluie",
+    "lourd",
+    "oiseau",
+    "dormir",
+    "cœur",
+    "manger",
+    "voler"
+  ]
+}</pre>
+                            </div>
+                        </td>
+                    </tr>
+                    
+                    
+                    <tr>
+                        <td>0050_translation_en_fr:13</td>
+                        <td>1</td>
+                        <td>1869.015333</td>
+                        <td>{}</td>
+                    </tr>
+                    
+                    <tr>
+                        <td colspan="4" class="question-info">
+                            <div class="question-info-toggle" onclick="toggleQuestionInfo(this)">
+                                [+]
+                            </div>
+                            <div class="question-info-content hidden">
+                              <strong>Question Information:</strong>
+                              <pre>{
+  "word": "bright",
+  "fr": "lumineux",
+  "origin_lang": "en",
+  "target_lang": "fr",
+  "origin_details": "Can refer to intelligence or light",
+  "choices": [
+    "herbe",
+    "lourd",
+    "cacher",
+    "cœur",
+    "lumineux",
+    "rapide",
+    "arbre",
+    "chaud"
+  ]
+}</pre>
+                            </div>
+                        </td>
+                    </tr>
+                    
+                    
+                    <tr>
+                        <td>0050_translation_en_fr:14</td>
+                        <td>1</td>
+                        <td>1544.2400010000001</td>
+                        <td>{}</td>
+                    </tr>
+                    
+                    <tr>
+                        <td colspan="4" class="question-info">
+                            <div class="question-info-toggle" onclick="toggleQuestionInfo(this)">
+                                [+]
+                            </div>
+                            <div class="question-info-content hidden">
+                              <strong>Question Information:</strong>
+                              <pre>{
+  "word": "to dance",
+  "fr": "danser",
+  "origin_lang": "en",
+  "target_lang": "fr",
+  "choices": [
+    "voler",
+    "sable",
+    "conduire",
+    "courir",
+    "nuage",
+    "profond",
+    "danser",
+    "sucré"
+  ]
+}</pre>
+                            </div>
+                        </td>
+                    </tr>
+                    
+                    
+                    <tr>
+                        <td>0050_translation_en_fr:15</td>
+                        <td>1</td>
+                        <td>1621.427709</td>
+                        <td>{}</td>
+                    </tr>
+                    
+                    <tr>
+                        <td colspan="4" class="question-info">
+                            <div class="question-info-toggle" onclick="toggleQuestionInfo(this)">
+                                [+]
+                            </div>
+                            <div class="question-info-content hidden">
+                              <strong>Question Information:</strong>
+                              <pre>{
+  "word": "quiet",
+  "fr": "silencieux",
+  "origin_lang": "en",
+  "target_lang": "fr",
+  "origin_details": "Can refer to sound level or personality trait",
+  "choices": [
+    "silencieux",
+    "beau/belle",
+    "rapide",
+    "pluie",
+    "respirer",
+    "danser",
+    "sourire",
+    "lisse"
+  ]
+}</pre>
+                            </div>
+                        </td>
+                    </tr>
+                    
+                    
+                    <tr>
+                        <td>0050_translation_en_fr:16</td>
+                        <td>1</td>
+                        <td>1503.3568340000002</td>
+                        <td>{}</td>
+                    </tr>
+                    
+                    <tr>
+                        <td colspan="4" class="question-info">
+                            <div class="question-info-toggle" onclick="toggleQuestionInfo(this)">
+                                [+]
+                            </div>
+                            <div class="question-info-content hidden">
+                              <strong>Question Information:</strong>
+                              <pre>{
+  "word": "tree",
+  "fr": "arbre",
+  "origin_lang": "en",
+  "target_lang": "fr",
+  "choices": [
+    "silencieux",
+    "oiseau",
+    "beau/belle",
+    "arbre",
+    "dormir",
+    "grandir",
+    "chaud",
+    "sable"
+  ]
+}</pre>
+                            </div>
+                        </td>
+                    </tr>
+                    
+                    
+                    <tr>
+                        <td>0050_translation_en_fr:17</td>
+                        <td>1</td>
+                        <td>1479.4810420000001</td>
+                        <td>{}</td>
+                    </tr>
+                    
+                    <tr>
+                        <td colspan="4" class="question-info">
+                            <div class="question-info-toggle" onclick="toggleQuestionInfo(this)">
+                                [+]
+                            </div>
+                            <div class="question-info-content hidden">
+                              <strong>Question Information:</strong>
+                              <pre>{
+  "word": "to write",
+  "fr": "écrire",
+  "origin_lang": "en",
+  "target_lang": "fr",
+  "choices": [
+    "le plus fort",
+    "livre",
+    "sel",
+    "chaud",
+    "écrire",
+    "rapide",
+    "danser",
+    "rire"
+  ]
+}</pre>
+                            </div>
+                        </td>
+                    </tr>
+                    
+                    
+                    <tr>
+                        <td>0050_translation_en_fr:18</td>
+                        <td>1</td>
+                        <td>1833.5820410000001</td>
+                        <td>{}</td>
+                    </tr>
+                    
+                    <tr>
+                        <td colspan="4" class="question-info">
+                            <div class="question-info-toggle" onclick="toggleQuestionInfo(this)">
+                                [+]
+                            </div>
+                            <div class="question-info-content hidden">
+                              <strong>Question Information:</strong>
+                              <pre>{
+  "word": "sky",
+  "fr": "ciel",
+  "origin_lang": "en",
+  "target_lang": "fr",
+  "target_details": "Can also mean 'heaven'",
+  "choices": [
+    "courir",
+    "fleur",
+    "danser",
+    "lisse",
+    "ciel",
+    "grandir",
+    "lumineux",
+    "cacher"
+  ]
+}</pre>
+                            </div>
+                        </td>
+                    </tr>
+                    
+                    
+                    <tr>
+                        <td>0050_translation_en_fr:19</td>
+                        <td>1</td>
+                        <td>1279.027333</td>
+                        <td>{}</td>
+                    </tr>
+                    
+                    <tr>
+                        <td colspan="4" class="question-info">
+                            <div class="question-info-toggle" onclick="toggleQuestionInfo(this)">
+                                [+]
+                            </div>
+                            <div class="question-info-content hidden">
+                              <strong>Question Information:</strong>
+                              <pre>{
+  "word": "fresh",
+  "fr": "frais",
+  "origin_lang": "en",
+  "target_lang": "fr",
+  "choices": [
+    "rire",
+    "chaud",
+    "herbe",
+    "frais",
+    "léger",
+    "tomber",
+    "pointu",
+    "manger"
+  ]
+}</pre>
+                            </div>
+                        </td>
+                    </tr>
+                    
+                    
+                    <tr>
+                        <td>0050_translation_en_fr:2</td>
+                        <td>1</td>
+                        <td>2083.328043</td>
+                        <td>{}</td>
+                    </tr>
+                    
+                    <tr>
+                        <td colspan="4" class="question-info">
+                            <div class="question-info-toggle" onclick="toggleQuestionInfo(this)">
+                                [+]
+                            </div>
+                            <div class="question-info-content hidden">
+                              <strong>Question Information:</strong>
+                              <pre>{
+  "word": "strongest",
+  "fr": "le plus fort",
+  "origin_lang": "en",
+  "target_lang": "fr",
+  "choices": [
+    "rire",
+    "pluie",
+    "montagne",
+    "voler",
+    "le plus fort",
+    "rapide",
+    "herbe",
+    "lisse"
+  ]
+}</pre>
+                            </div>
+                        </td>
+                    </tr>
+                    
+                    
+                    <tr>
+                        <td>0050_translation_en_fr:20</td>
+                        <td>1</td>
+                        <td>1126.658458</td>
+                        <td>{}</td>
+                    </tr>
+                    
+                    <tr>
+                        <td colspan="4" class="question-info">
+                            <div class="question-info-toggle" onclick="toggleQuestionInfo(this)">
+                                [+]
+                            </div>
+                            <div class="question-info-content hidden">
+                              <strong>Question Information:</strong>
+                              <pre>{
+  "word": "friend",
+  "fr": "ami",
+  "origin_lang": "en",
+  "target_lang": "fr",
+  "choices": [
+    "étoile",
+    "montagne",
+    "danser",
+    "rapide",
+    "ami",
+    "chaud",
+    "nuage",
+    "manger"
+  ]
+}</pre>
+                            </div>
+                        </td>
+                    </tr>
+                    
+                    
+                    <tr>
+                        <td>0050_translation_en_fr:21</td>
+                        <td>1</td>
+                        <td>1464.4828750000001</td>
+                        <td>{}</td>
+                    </tr>
+                    
+                    <tr>
+                        <td colspan="4" class="question-info">
+                            <div class="question-info-toggle" onclick="toggleQuestionInfo(this)">
+                                [+]
+                            </div>
+                            <div class="question-info-content hidden">
+                              <strong>Question Information:</strong>
+                              <pre>{
+  "word": "to run",
+  "fr": "courir",
+  "origin_lang": "en",
+  "target_lang": "fr",
+  "choices": [
+    "courir",
+    "dormir",
+    "montagne",
+    "ciel",
+    "rire",
+    "écrire",
+    "vent",
+    "froid"
+  ]
+}</pre>
+                            </div>
+                        </td>
+                    </tr>
+                    
+                    
+                    <tr>
+                        <td>0050_translation_en_fr:22</td>
+                        <td>1</td>
+                        <td>1267.198708</td>
+                        <td>{}</td>
+                    </tr>
+                    
+                    <tr>
+                        <td colspan="4" class="question-info">
+                            <div class="question-info-toggle" onclick="toggleQuestionInfo(this)">
+                                [+]
+                            </div>
+                            <div class="question-info-content hidden">
+                              <strong>Question Information:</strong>
+                              <pre>{
+  "word": "round",
+  "fr": "rond",
+  "origin_lang": "en",
+  "target_lang": "fr",
+  "choices": [
+    "manger",
+    "livre",
+    "rapide",
+    "montagne",
+    "sable",
+    "courir",
+    "rond",
+    "respirer"
+  ]
+}</pre>
+                            </div>
+                        </td>
+                    </tr>
+                    
+                    
+                    <tr>
+                        <td>0050_translation_en_fr:23</td>
+                        <td>1</td>
+                        <td>1404.6696670000001</td>
+                        <td>{}</td>
+                    </tr>
+                    
+                    <tr>
+                        <td colspan="4" class="question-info">
+                            <div class="question-info-toggle" onclick="toggleQuestionInfo(this)">
+                                [+]
+                            </div>
+                            <div class="question-info-content hidden">
+                              <strong>Question Information:</strong>
+                              <pre>{
+  "word": "wind",
+  "fr": "vent",
+  "origin_lang": "en",
+  "target_lang": "fr",
+  "origin_details": "Can be noun (moving air) or verb (to twist)",
+  "choices": [
+    "cacher",
+    "nuage",
+    "manger",
+    "oiseau",
+    "cœur",
+    "danser",
+    "vent",
+    "danser"
+  ]
+}</pre>
+                            </div>
+                        </td>
+                    </tr>
+                    
+                    
+                    <tr>
+                        <td>0050_translation_en_fr:24</td>
+                        <td>1</td>
+                        <td>1600.926458</td>
+                        <td>{}</td>
+                    </tr>
+                    
+                    <tr>
+                        <td colspan="4" class="question-info">
+                            <div class="question-info-toggle" onclick="toggleQuestionInfo(this)">
+                                [+]
+                            </div>
+                            <div class="question-info-content hidden">
+                              <strong>Question Information:</strong>
+                              <pre>{
+  "word": "warm",
+  "fr": "chaud",
+  "origin_lang": "en",
+  "target_lang": "fr",
+  "choices": [
+    "frais",
+    "chaud",
+    "feu",
+    "dormir",
+    "lisse",
+    "livre",
+    "silencieux",
+    "fleur"
+  ]
+}</pre>
+                            </div>
+                        </td>
+                    </tr>
+                    
+                    
+                    <tr>
+                        <td>0050_translation_en_fr:25</td>
+                        <td>1</td>
+                        <td>1772.844542</td>
+                        <td>{}</td>
+                    </tr>
+                    
+                    <tr>
+                        <td colspan="4" class="question-info">
+                            <div class="question-info-toggle" onclick="toggleQuestionInfo(this)">
+                                [+]
+                            </div>
+                            <div class="question-info-content hidden">
+                              <strong>Question Information:</strong>
+                              <pre>{
+  "word": "stone",
+  "fr": "pierre",
+  "origin_lang": "en",
+  "target_lang": "fr",
+  "choices": [
+    "chanter",
+    "pluie",
+    "lune",
+    "tomber",
+    "rapide",
+    "cœur",
+    "pierre",
+    "ciel"
+  ]
+}</pre>
+                            </div>
+                        </td>
+                    </tr>
+                    
+                    
+                    <tr>
+                        <td>0050_translation_en_fr:26</td>
+                        <td>1</td>
+                        <td>1460.6383329999999</td>
+                        <td>{}</td>
+                    </tr>
+                    
+                    <tr>
+                        <td colspan="4" class="question-info">
+                            <div class="question-info-toggle" onclick="toggleQuestionInfo(this)">
+                                [+]
+                            </div>
+                            <div class="question-info-content hidden">
+                              <strong>Question Information:</strong>
+                              <pre>{
+  "word": "deep",
+  "fr": "profond",
+  "origin_lang": "en",
+  "target_lang": "fr",
+  "origin_details": "Can refer to physical depth or emotional/intellectual depth",
+  "choices": [
+    "danser",
+    "lourd",
+    "cœur",
+    "arbre",
+    "pierre",
+    "rire",
+    "profond",
+    "manger"
+  ]
+}</pre>
+                            </div>
+                        </td>
+                    </tr>
+                    
+                    
+                    <tr>
+                        <td>0050_translation_en_fr:27</td>
+                        <td>1</td>
+                        <td>1430.294208</td>
+                        <td>{}</td>
+                    </tr>
+                    
+                    <tr>
+                        <td colspan="4" class="question-info">
+                            <div class="question-info-toggle" onclick="toggleQuestionInfo(this)">
+                                [+]
+                            </div>
+                            <div class="question-info-content hidden">
+                              <strong>Question Information:</strong>
+                              <pre>{
+  "word": "to swim",
+  "fr": "nager",
+  "origin_lang": "en",
+  "target_lang": "fr",
+  "choices": [
+    "sucré",
+    "feu",
+    "montagne",
+    "lune",
+    "nager",
+    "rapide",
+    "léger",
+    "fleur"
+  ]
+}</pre>
+                            </div>
+                        </td>
+                    </tr>
+                    
+                    
+                    <tr>
+                        <td>0050_translation_en_fr:28</td>
+                        <td>1</td>
+                        <td>1463.7623330000001</td>
+                        <td>{}</td>
+                    </tr>
+                    
+                    <tr>
+                        <td colspan="4" class="question-info">
+                            <div class="question-info-toggle" onclick="toggleQuestionInfo(this)">
+                                [+]
+                            </div>
+                            <div class="question-info-content hidden">
+                              <strong>Question Information:</strong>
+                              <pre>{
+  "word": "bird",
+  "fr": "oiseau",
+  "origin_lang": "en",
+  "target_lang": "fr",
+  "choices": [
+    "respirer",
+    "sucré",
+    "ciel",
+    "rire",
+    "pierre",
+    "danser",
+    "oiseau",
+    "sel"
+  ]
+}</pre>
+                            </div>
+                        </td>
+                    </tr>
+                    
+                    
+                    <tr>
+                        <td>0050_translation_en_fr:29</td>
+                        <td>0</td>
+                        <td>1306.8614579999999</td>
+                        <td>{
+  "response": "sucre",
+  "expected": "sucré",
+  "origin_word_details": "Can refer to taste or personality"
+}</td>
+                    </tr>
+                    
+                    <tr>
+                        <td colspan="4" class="question-info">
+                            <div class="question-info-toggle" onclick="toggleQuestionInfo(this)">
+                                [+]
+                            </div>
+                            <div class="question-info-content hidden">
+                              <strong>Question Information:</strong>
+                              <pre>{
+  "word": "sweet",
+  "fr": "sucré",
+  "origin_lang": "en",
+  "target_lang": "fr",
+  "origin_details": "Can refer to taste or personality",
+  "choices": [
+    "feu",
+    "rire",
+    "écrire",
+    "nager",
+    "sucré",
+    "frais",
+    "rond",
+    "profond"
+  ]
+}</pre>
+                            </div>
+                        </td>
+                    </tr>
+                    
+                    
+                    <tr>
+                        <td>0050_translation_en_fr:3</td>
+                        <td>1</td>
+                        <td>1483.100626</td>
+                        <td>{}</td>
+                    </tr>
+                    
+                    <tr>
+                        <td colspan="4" class="question-info">
+                            <div class="question-info-toggle" onclick="toggleQuestionInfo(this)">
+                                [+]
+                            </div>
+                            <div class="question-info-content hidden">
+                              <strong>Question Information:</strong>
+                              <pre>{
+  "word": "book",
+  "fr": "livre",
+  "origin_lang": "en",
+  "target_lang": "fr",
+  "target_details": "'livre' can also mean 'pound' (weight/currency)",
+  "choices": [
+    "herbe",
+    "lune",
+    "étoile",
+    "sel",
+    "livre",
+    "rire",
+    "vent",
+    "montagne"
+  ]
+}</pre>
+                            </div>
+                        </td>
+                    </tr>
+                    
+                    
+                    <tr>
+                        <td>0050_translation_en_fr:30</td>
+                        <td>1</td>
+                        <td>1670.874417</td>
+                        <td>{}</td>
+                    </tr>
+                    
+                    <tr>
+                        <td colspan="4" class="question-info">
+                            <div class="question-info-toggle" onclick="toggleQuestionInfo(this)">
+                                [+]
+                            </div>
+                            <div class="question-info-content hidden">
+                              <strong>Question Information:</strong>
+                              <pre>{
+  "word": "cloud",
+  "fr": "nuage",
+  "origin_lang": "en",
+  "target_lang": "fr",
+  "choices": [
+    "sel",
+    "silencieux",
+    "eau",
+    "nuage",
+    "grandir",
+    "sable",
+    "froid",
+    "écrire"
+  ]
+}</pre>
+                            </div>
+                        </td>
+                    </tr>
+                    
+                    
+                    <tr>
+                        <td>0050_translation_en_fr:31</td>
+                        <td>1</td>
+                        <td>1791.386876</td>
+                        <td>{}</td>
+                    </tr>
+                    
+                    <tr>
+                        <td colspan="4" class="question-info">
+                            <div class="question-info-toggle" onclick="toggleQuestionInfo(this)">
+                                [+]
+                            </div>
+                            <div class="question-info-content hidden">
+                              <strong>Question Information:</strong>
+                              <pre>{
+  "word": "to smile",
+  "fr": "sourire",
+  "origin_lang": "en",
+  "target_lang": "fr",
+  "choices": [
+    "nuage",
+    "eau",
+    "livre",
+    "cacher",
+    "sourire",
+    "arbre",
+    "cœur",
+    "montagne"
+  ]
+}</pre>
+                            </div>
+                        </td>
+                    </tr>
+                    
+                    
+                    <tr>
+                        <td>0050_translation_en_fr:32</td>
+                        <td>1</td>
+                        <td>2133.637541</td>
+                        <td>{}</td>
+                    </tr>
+                    
+                    <tr>
+                        <td colspan="4" class="question-info">
+                            <div class="question-info-toggle" onclick="toggleQuestionInfo(this)">
+                                [+]
+                            </div>
+                            <div class="question-info-content hidden">
+                              <strong>Question Information:</strong>
+                              <pre>{
+  "word": "soft",
+  "fr": "doux",
+  "origin_lang": "en",
+  "target_lang": "fr",
+  "choices": [
+    "herbe",
+    "voler",
+    "courir",
+    "arbre",
+    "dormir",
+    "froid",
+    "doux",
+    "frais"
+  ]
+}</pre>
+                            </div>
+                        </td>
+                    </tr>
+                    
+                    
+                    <tr>
+                        <td>0050_translation_en_fr:33</td>
+                        <td>1</td>
+                        <td>1845.8817510000001</td>
+                        <td>{}</td>
+                    </tr>
+                    
+                    <tr>
+                        <td colspan="4" class="question-info">
+                            <div class="question-info-toggle" onclick="toggleQuestionInfo(this)">
+                                [+]
+                            </div>
+                            <div class="question-info-content hidden">
+                              <strong>Question Information:</strong>
+                              <pre>{
+  "word": "rain",
+  "fr": "pluie",
+  "origin_lang": "en",
+  "target_lang": "fr",
+  "choices": [
+    "étoile",
+    "lumineux",
+    "oiseau",
+    "cœur",
+    "pointu",
+    "écrire",
+    "pluie",
+    "sel"
+  ]
+}</pre>
+                            </div>
+                        </td>
+                    </tr>
+                    
+                    
+                    <tr>
+                        <td>0050_translation_en_fr:34</td>
+                        <td>1</td>
+                        <td>1523.554749</td>
+                        <td>{}</td>
+                    </tr>
+                    
+                    <tr>
+                        <td colspan="4" class="question-info">
+                            <div class="question-info-toggle" onclick="toggleQuestionInfo(this)">
+                                [+]
+                            </div>
+                            <div class="question-info-content hidden">
+                              <strong>Question Information:</strong>
+                              <pre>{
+  "word": "to grow",
+  "fr": "grandir",
+  "origin_lang": "en",
+  "target_lang": "fr",
+  "choices": [
+    "silencieux",
+    "lumineux",
+    "profond",
+    "sourire",
+    "arbre",
+    "danser",
+    "feu",
+    "grandir"
+  ]
+}</pre>
+                            </div>
+                        </td>
+                    </tr>
+                    
+                    
+                    <tr>
+                        <td>0050_translation_en_fr:35</td>
+                        <td>1</td>
+                        <td>1312.572041</td>
+                        <td>{}</td>
+                    </tr>
+                    
+                    <tr>
+                        <td colspan="4" class="question-info">
+                            <div class="question-info-toggle" onclick="toggleQuestionInfo(this)">
+                                [+]
+                            </div>
+                            <div class="question-info-content hidden">
+                              <strong>Question Information:</strong>
+                              <pre>{
+  "word": "quick",
+  "fr": "rapide",
+  "origin_lang": "en",
+  "target_lang": "fr",
+  "choices": [
+    "voler",
+    "sel",
+    "conduire",
+    "grandir",
+    "rapide",
+    "frais",
+    "profond",
+    "rond"
+  ]
+}</pre>
+                            </div>
+                        </td>
+                    </tr>
+                    
+                    
+                    <tr>
+                        <td>0050_translation_en_fr:36</td>
+                        <td>1</td>
+                        <td>1548.163542</td>
+                        <td>{}</td>
+                    </tr>
+                    
+                    <tr>
+                        <td colspan="4" class="question-info">
+                            <div class="question-info-toggle" onclick="toggleQuestionInfo(this)">
+                                [+]
+                            </div>
+                            <div class="question-info-content hidden">
+                              <strong>Question Information:</strong>
+                              <pre>{
+  "word": "star",
+  "fr": "étoile",
+  "origin_lang": "en",
+  "target_lang": "fr",
+  "choices": [
+    "étoile",
+    "le plus fort",
+    "danser",
+    "livre",
+    "lune",
+    "frais",
+    "sel",
+    "feu"
+  ]
+}</pre>
+                            </div>
+                        </td>
+                    </tr>
+                    
+                    
+                    <tr>
+                        <td>0050_translation_en_fr:37</td>
+                        <td>1</td>
+                        <td>2235.87975</td>
+                        <td>{}</td>
+                    </tr>
+                    
+                    <tr>
+                        <td colspan="4" class="question-info">
+                            <div class="question-info-toggle" onclick="toggleQuestionInfo(this)">
+                                [+]
+                            </div>
+                            <div class="question-info-content hidden">
+                              <strong>Question Information:</strong>
+                              <pre>{
+  "word": "to dance",
+  "fr": "danser",
+  "origin_lang": "en",
+  "target_lang": "fr",
+  "choices": [
+    "danser",
+    "écrire",
+    "le plus fort",
+    "profond",
+    "voler",
+    "pluie",
+    "pointu",
+    "lisse"
+  ]
+}</pre>
+                            </div>
+                        </td>
+                    </tr>
+                    
+                    
+                    <tr>
+                        <td>0050_translation_en_fr:38</td>
+                        <td>1</td>
+                        <td>2116.711958</td>
+                        <td>{}</td>
+                    </tr>
+                    
+                    <tr>
+                        <td colspan="4" class="question-info">
+                            <div class="question-info-toggle" onclick="toggleQuestionInfo(this)">
+                                [+]
+                            </div>
+                            <div class="question-info-content hidden">
+                              <strong>Question Information:</strong>
+                              <pre>{
+  "word": "heavy",
+  "fr": "lourd",
+  "origin_lang": "en",
+  "target_lang": "fr",
+  "choices": [
+    "léger",
+    "dormir",
+    "arbre",
+    "étoile",
+    "feu",
+    "lourd",
+    "silencieux",
+    "lune"
+  ]
+}</pre>
+                            </div>
+                        </td>
+                    </tr>
+                    
+                    
+                    <tr>
+                        <td>0050_translation_en_fr:39</td>
+                        <td>1</td>
+                        <td>1888.612084</td>
+                        <td>{}</td>
+                    </tr>
+                    
+                    <tr>
+                        <td colspan="4" class="question-info">
+                            <div class="question-info-toggle" onclick="toggleQuestionInfo(this)">
+                                [+]
+                            </div>
+                            <div class="question-info-content hidden">
+                              <strong>Question Information:</strong>
+                              <pre>{
+  "word": "fire",
+  "fr": "feu",
+  "origin_lang": "en",
+  "target_lang": "fr",
+  "choices": [
+    "doux",
+    "dormir",
+    "respirer",
+    "grandir",
+    "tomber",
+    "vent",
+    "arbre",
+    "feu"
+  ]
+}</pre>
+                            </div>
+                        </td>
+                    </tr>
+                    
+                    
+                    <tr>
+                        <td>0050_translation_en_fr:4</td>
+                        <td>1</td>
+                        <td>1852.748833</td>
+                        <td>{}</td>
+                    </tr>
+                    
+                    <tr>
+                        <td colspan="4" class="question-info">
+                            <div class="question-info-toggle" onclick="toggleQuestionInfo(this)">
+                                [+]
+                            </div>
+                            <div class="question-info-content hidden">
+                              <strong>Question Information:</strong>
+                              <pre>{
+  "word": "to eat",
+  "fr": "manger",
+  "origin_lang": "en",
+  "target_lang": "fr",
+  "choices": [
+    "respirer",
+    "rapide",
+    "pointu",
+    "manger",
+    "danser",
+    "dormir",
+    "lourd",
+    "rond"
+  ]
+}</pre>
+                            </div>
+                        </td>
+                    </tr>
+                    
+                    
+                    <tr>
+                        <td>0050_translation_en_fr:40</td>
+                        <td>1</td>
+                        <td>2098.531626</td>
+                        <td>{}</td>
+                    </tr>
+                    
+                    <tr>
+                        <td colspan="4" class="question-info">
+                            <div class="question-info-toggle" onclick="toggleQuestionInfo(this)">
+                                [+]
+                            </div>
+                            <div class="question-info-content hidden">
+                              <strong>Question Information:</strong>
+                              <pre>{
+  "word": "to breathe",
+  "fr": "respirer",
+  "origin_lang": "en",
+  "target_lang": "fr",
+  "choices": [
+    "voler",
+    "danser",
+    "le plus fort",
+    "écrire",
+    "chaud",
+    "respirer",
+    "nuage",
+    "fleur"
+  ]
+}</pre>
+                            </div>
+                        </td>
+                    </tr>
+                    
+                    
+                    <tr>
+                        <td>0050_translation_en_fr:41</td>
+                        <td>0</td>
+                        <td>1396.351124</td>
+                        <td>{
+  "response": "aigu",
+  "expected": "pointu",
+  "origin_word_details": "Can refer to physical edge or intelligence"
+}</td>
+                    </tr>
+                    
+                    <tr>
+                        <td colspan="4" class="question-info">
+                            <div class="question-info-toggle" onclick="toggleQuestionInfo(this)">
+                                [+]
+                            </div>
+                            <div class="question-info-content hidden">
+                              <strong>Question Information:</strong>
+                              <pre>{
+  "word": "sharp",
+  "fr": "pointu",
+  "origin_lang": "en",
+  "target_lang": "fr",
+  "origin_details": "Can refer to physical edge or intelligence",
+  "choices": [
+    "herbe",
+    "pierre",
+    "froid",
+    "nager",
+    "pointu",
+    "frais",
+    "sel",
+    "léger"
+  ]
+}</pre>
+                            </div>
+                        </td>
+                    </tr>
+                    
+                    
+                    <tr>
+                        <td>0050_translation_en_fr:42</td>
+                        <td>1</td>
+                        <td>1450.320625</td>
+                        <td>{}</td>
+                    </tr>
+                    
+                    <tr>
+                        <td colspan="4" class="question-info">
+                            <div class="question-info-toggle" onclick="toggleQuestionInfo(this)">
+                                [+]
+                            </div>
+                            <div class="question-info-content hidden">
+                              <strong>Question Information:</strong>
+                              <pre>{
+  "word": "salt",
+  "fr": "sel",
+  "origin_lang": "en",
+  "target_lang": "fr",
+  "choices": [
+    "léger",
+    "sable",
+    "sel",
+    "livre",
+    "le plus fort",
+    "cœur",
+    "pierre",
+    "écrire"
+  ]
+}</pre>
+                            </div>
+                        </td>
+                    </tr>
+                    
+                    
+                    <tr>
+                        <td>0050_translation_en_fr:43</td>
+                        <td>1</td>
+                        <td>1494.0245</td>
+                        <td>{}</td>
+                    </tr>
+                    
+                    <tr>
+                        <td colspan="4" class="question-info">
+                            <div class="question-info-toggle" onclick="toggleQuestionInfo(this)">
+                                [+]
+                            </div>
+                            <div class="question-info-content hidden">
+                              <strong>Question Information:</strong>
+                              <pre>{
+  "word": "to hide",
+  "fr": "cacher",
+  "origin_lang": "en",
+  "target_lang": "fr",
+  "choices": [
+    "rapide",
+    "beau/belle",
+    "danser",
+    "sourire",
+    "doux",
+    "montagne",
+    "cacher",
+    "oiseau"
+  ]
+}</pre>
+                            </div>
+                        </td>
+                    </tr>
+                    
+                    
+                    <tr>
+                        <td>0050_translation_en_fr:44</td>
+                        <td>1</td>
+                        <td>1498.097792</td>
+                        <td>{}</td>
+                    </tr>
+                    
+                    <tr>
+                        <td colspan="4" class="question-info">
+                            <div class="question-info-toggle" onclick="toggleQuestionInfo(this)">
+                                [+]
+                            </div>
+                            <div class="question-info-content hidden">
+                              <strong>Question Information:</strong>
+                              <pre>{
+  "word": "smooth",
+  "fr": "lisse",
+  "origin_lang": "en",
+  "target_lang": "fr",
+  "choices": [
+    "cœur",
+    "livre",
+    "rond",
+    "herbe",
+    "cacher",
+    "lumineux",
+    "courir",
+    "lisse"
+  ]
+}</pre>
+                            </div>
+                        </td>
+                    </tr>
+                    
+                    
+                    <tr>
+                        <td>0050_translation_en_fr:45</td>
+                        <td>1</td>
+                        <td>1343.315458</td>
+                        <td>{}</td>
+                    </tr>
+                    
+                    <tr>
+                        <td colspan="4" class="question-info">
+                            <div class="question-info-toggle" onclick="toggleQuestionInfo(this)">
+                                [+]
+                            </div>
+                            <div class="question-info-content hidden">
+                              <strong>Question Information:</strong>
+                              <pre>{
+  "word": "grass",
+  "fr": "herbe",
+  "origin_lang": "en",
+  "target_lang": "fr",
+  "choices": [
+    "léger",
+    "nuage",
+    "herbe",
+    "doux",
+    "montagne",
+    "sel",
+    "rond",
+    "frais"
+  ]
+}</pre>
+                            </div>
+                        </td>
+                    </tr>
+                    
+                    
+                    <tr>
+                        <td>0050_translation_en_fr:46</td>
+                        <td>1</td>
+                        <td>1927.8905410000002</td>
+                        <td>{}</td>
+                    </tr>
+                    
+                    <tr>
+                        <td colspan="4" class="question-info">
+                            <div class="question-info-toggle" onclick="toggleQuestionInfo(this)">
+                                [+]
+                            </div>
+                            <div class="question-info-content hidden">
+                              <strong>Question Information:</strong>
+                              <pre>{
+  "word": "to fly",
+  "fr": "voler",
+  "origin_lang": "en",
+  "target_lang": "fr",
+  "target_details": "Can also mean 'to steal'",
+  "choices": [
+    "voler",
+    "livre",
+    "étoile",
+    "lumineux",
+    "pluie",
+    "le plus fort",
+    "herbe",
+    "eau"
+  ]
+}</pre>
+                            </div>
+                        </td>
+                    </tr>
+                    
+                    
+                    <tr>
+                        <td>0050_translation_en_fr:47</td>
+                        <td>1</td>
+                        <td>2330.4465410000003</td>
+                        <td>{}</td>
+                    </tr>
+                    
+                    <tr>
+                        <td colspan="4" class="question-info">
+                            <div class="question-info-toggle" onclick="toggleQuestionInfo(this)">
+                                [+]
+                            </div>
+                            <div class="question-info-content hidden">
+                              <strong>Question Information:</strong>
+                              <pre>{
+  "word": "cold",
+  "fr": "froid",
+  "origin_lang": "en",
+  "target_lang": "fr",
+  "choices": [
+    "manger",
+    "lumineux",
+    "eau",
+    "froid",
+    "chaud",
+    "vent",
+    "sable",
+    "oiseau"
+  ]
+}</pre>
+                            </div>
+                        </td>
+                    </tr>
+                    
+                    
+                    <tr>
+                        <td>0050_translation_en_fr:48</td>
+                        <td>1</td>
+                        <td>1693.46225</td>
+                        <td>{}</td>
+                    </tr>
+                    
+                    <tr>
+                        <td colspan="4" class="question-info">
+                            <div class="question-info-toggle" onclick="toggleQuestionInfo(this)">
+                                [+]
+                            </div>
+                            <div class="question-info-content hidden">
+                              <strong>Question Information:</strong>
+                              <pre>{
+  "word": "sand",
+  "fr": "sable",
+  "origin_lang": "en",
+  "target_lang": "fr",
+  "choices": [
+    "rire",
+    "sable",
+    "silencieux",
+    "tomber",
+    "étoile",
+    "beau/belle",
+    "danser",
+    "sel"
+  ]
+}</pre>
+                            </div>
+                        </td>
+                    </tr>
+                    
+                    
+                    <tr>
+                        <td>0050_translation_en_fr:49</td>
+                        <td>1</td>
+                        <td>1821.548625</td>
+                        <td>{}</td>
+                    </tr>
+                    
+                    <tr>
+                        <td colspan="4" class="question-info">
+                            <div class="question-info-toggle" onclick="toggleQuestionInfo(this)">
+                                [+]
+                            </div>
+                            <div class="question-info-content hidden">
+                              <strong>Question Information:</strong>
+                              <pre>{
+  "word": "to fall",
+  "fr": "tomber",
+  "origin_lang": "en",
+  "target_lang": "fr",
+  "choices": [
+    "écrire",
+    "sourire",
+    "nager",
+    "vent",
+    "dormir",
+    "eau",
+    "danser",
+    "tomber"
+  ]
+}</pre>
+                            </div>
+                        </td>
+                    </tr>
+                    
+                    
+                    <tr>
+                        <td>0050_translation_en_fr:5</td>
+                        <td>1</td>
+                        <td>2363.792374</td>
+                        <td>{}</td>
+                    </tr>
+                    
+                    <tr>
+                        <td colspan="4" class="question-info">
+                            <div class="question-info-toggle" onclick="toggleQuestionInfo(this)">
+                                [+]
+                            </div>
+                            <div class="question-info-content hidden">
+                              <strong>Question Information:</strong>
+                              <pre>{
+  "word": "beautiful",
+  "fr": "beau/belle",
+  "origin_lang": "en",
+  "target_lang": "fr",
+  "choices": [
+    "lune",
+    "beau/belle",
+    "eau",
+    "vent",
+    "oiseau",
+    "le plus fort",
+    "sable",
+    "cœur"
+  ]
+}</pre>
+                            </div>
+                        </td>
+                    </tr>
+                    
+                    
+                    <tr>
+                        <td>0050_translation_en_fr:50</td>
+                        <td>0</td>
+                        <td>2158.366417</td>
+                        <td>{
+  "response": "lumiere",
+  "expected": "léger",
+  "origin_word_details": "Using meaning 'not heavy' (vs. illumination)"
+}</td>
+                    </tr>
+                    
+                    <tr>
+                        <td colspan="4" class="question-info">
+                            <div class="question-info-toggle" onclick="toggleQuestionInfo(this)">
+                                [+]
+                            </div>
+                            <div class="question-info-content hidden">
+                              <strong>Question Information:</strong>
+                              <pre>{
+  "word": "light",
+  "fr": "léger",
+  "origin_lang": "en",
+  "target_lang": "fr",
+  "origin_details": "Using meaning 'not heavy' (vs. illumination)",
+  "choices": [
+    "léger",
+    "écrire",
+    "montagne",
+    "cacher",
+    "froid",
+    "lourd",
+    "pierre",
+    "vent"
+  ]
+}</pre>
+                            </div>
+                        </td>
+                    </tr>
+                    
+                    
+                    <tr>
+                        <td>0050_translation_en_fr:6</td>
+                        <td>1</td>
+                        <td>2247.273333</td>
+                        <td>{}</td>
+                    </tr>
+                    
+                    <tr>
+                        <td colspan="4" class="question-info">
+                            <div class="question-info-toggle" onclick="toggleQuestionInfo(this)">
+                                [+]
+                            </div>
+                            <div class="question-info-content hidden">
+                              <strong>Question Information:</strong>
+                              <pre>{
+  "word": "water",
+  "fr": "eau",
+  "origin_lang": "en",
+  "target_lang": "fr",
+  "choices": [
+    "léger",
+    "pointu",
+    "eau",
+    "frais",
+    "silencieux",
+    "sable",
+    "lumineux",
+    "chanter"
+  ]
+}</pre>
+                            </div>
+                        </td>
+                    </tr>
+                    
+                    
+                    <tr>
+                        <td>0050_translation_en_fr:7</td>
+                        <td>1</td>
+                        <td>2116.882792</td>
+                        <td>{}</td>
+                    </tr>
+                    
+                    <tr>
+                        <td colspan="4" class="question-info">
+                            <div class="question-info-toggle" onclick="toggleQuestionInfo(this)">
+                                [+]
+                            </div>
+                            <div class="question-info-content hidden">
+                              <strong>Question Information:</strong>
+                              <pre>{
+  "word": "to sleep",
+  "fr": "dormir",
+  "origin_lang": "en",
+  "target_lang": "fr",
+  "choices": [
+    "chaud",
+    "oiseau",
+    "tomber",
+    "fleur",
+    "respirer",
+    "manger",
+    "dormir",
+    "froid"
+  ]
+}</pre>
+                            </div>
+                        </td>
+                    </tr>
+                    
+                    
+                    <tr>
+                        <td>0050_translation_en_fr:8</td>
+                        <td>1</td>
+                        <td>1510.880166</td>
+                        <td>{}</td>
+                    </tr>
+                    
+                    <tr>
+                        <td colspan="4" class="question-info">
+                            <div class="question-info-toggle" onclick="toggleQuestionInfo(this)">
+                                [+]
+                            </div>
+                            <div class="question-info-content hidden">
+                              <strong>Question Information:</strong>
+                              <pre>{
+  "word": "moon",
+  "fr": "lune",
+  "origin_lang": "en",
+  "target_lang": "fr",
+  "choices": [
+    "fleur",
+    "cacher",
+    "lourd",
+    "cœur",
+    "froid",
+    "montagne",
+    "arbre",
+    "lune"
+  ]
+}</pre>
+                            </div>
+                        </td>
+                    </tr>
+                    
+                    
+                    <tr>
+                        <td>0050_translation_en_fr:9</td>
+                        <td>1</td>
+                        <td>1363.894458</td>
+                        <td>{}</td>
+                    </tr>
+                    
+                    <tr>
+                        <td colspan="4" class="question-info">
+                            <div class="question-info-toggle" onclick="toggleQuestionInfo(this)">
+                                [+]
+                            </div>
+                            <div class="question-info-content hidden">
+                              <strong>Question Information:</strong>
+                              <pre>{
+  "word": "to laugh",
+  "fr": "rire",
+  "origin_lang": "en",
+  "target_lang": "fr",
+  "choices": [
+    "eau",
+    "livre",
+    "herbe",
+    "oiseau",
+    "courir",
+    "rire",
+    "lourd",
+    "danser"
+  ]
+}</pre>
+                            </div>
+                        </td>
+                    </tr>
+                    
+                    
+                </tbody>
+            </table>
+        </div>
+
+        
+    </div>
+</body>
+</html>

@@ -1,0 +1,441 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Benchmark Run Details - exaone3.5:7.8b:Q4_K_M on 0030_analyze_paragraph</title>
+    <script>
+        function toggleQuestionInfo(toggleElement) {
+            const questionInfoContent = toggleElement.nextElementSibling;
+
+            if (questionInfoContent.classList.contains('hidden')) {
+                questionInfoContent.classList.remove('hidden');
+                toggleElement.textContent = '[X]';
+            } else {
+                questionInfoContent.classList.add('hidden');
+                toggleElement.textContent = '[+]';
+            }
+        }
+    </script>
+
+    <style>
+        /* Placeholder for future CSS */
+        body {
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 1rem;
+        }
+        .run-summary, .run-details {
+            margin-bottom: 2rem;
+        }
+        .summary-table, .details-table {
+            width: 100%;
+            border-collapse: collapse;
+        }
+        .summary-table th, .details-table th {
+            background-color: #f4f4f4;
+            text-align: left;
+            padding: 0.5rem;
+            border: 1px solid #ddd;
+        }
+        .summary-table td, .details-table td {
+            padding: 0.5rem;
+            border: 1px solid #ddd;
+        }
+        .details-table {
+            margin-top: 1rem;
+        }
+        .page-title {
+            color: #333;
+            border-bottom: 2px solid #333;
+            padding-bottom: 0.5rem;
+        }
+        .question-info {
+            background-color: #f9f9f9;
+            border: 1px solid #ddd;
+            padding: 1rem;
+            margin-top: 0.5rem;
+            position: relative;
+        }
+        .question-info-content {
+            max-height: 600px;
+            overflow-y: auto;
+            overflow-x: hidden;
+            padding-right: 15px; /* Add scrollbar space */
+        }
+        .question-info-toggle {
+            cursor: pointer;
+            user-select: none;
+            font-weight: bold;
+            color: #666;
+        }
+        .question-info-toggle:hover {
+            color: #333;
+        }
+        .question-info pre {
+            white-space: pre-wrap;
+            word-wrap: break-word;
+            background-color: #f4f4f4;
+            padding: 0.5rem;
+            border-radius: 4px;
+            margin: 0;
+        }
+        .hidden {
+            display: none;
+        }
+
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1 class="page-title">Benchmark Run Details</h1>
+        
+        <div class="run-summary">
+            <h2>Run Summary</h2>
+            <table class="summary-table">
+                <tr>
+                    <th>Model</th>
+                    <td>exaone3.5:7.8b:Q4_K_M</td>
+                </tr>
+                <tr>
+                    <th>Benchmark</th>
+                    <td>0030_analyze_paragraph</td>
+                </tr>
+                <tr>
+                    <th>Normed Score</th>
+                    <td>8</td>
+                </tr>
+                <tr>
+                    <th>Run Timestamp</th>
+                    <td>2024-12-13 00:39:03</td>
+                </tr>
+            </table>
+        </div>
+
+        <div class="run-details">
+            <h2>Question-Level Details</h2>
+            <table class="details-table">
+                <thead>
+                    <tr>
+                        <th>Question ID</th>
+                        <th>Score</th>
+                        <th>Evaluation Time (ms)</th>
+                        <th>Debug Info</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    
+                    <tr>
+                        <td>0030:fable:1</td>
+                        <td>1</td>
+                        <td>11620.494083</td>
+                        <td>{}</td>
+                    </tr>
+                    
+                    <tr>
+                        <td colspan="4" class="question-info">
+                            <div class="question-info-toggle" onclick="toggleQuestionInfo(this)">
+                                [+]
+                            </div>
+                            <div class="question-info-content hidden">
+                              <strong>Question Information:</strong>
+                              <pre>{
+  "choices": [
+    "A",
+    "B",
+    "C",
+    "D"
+  ],
+  "gold": 0,
+  "query": "Q: A man had a donkey and a small Pomeranian dog. The donkey lived in a stable with plenty of oats and hay, but spent his days working at the mill and carrying heavy loads of wood from the forest to the farm. The Pomeranian, on the other hand, knew many tricks and was fondled by his master, who always gave him tasty treats. The donkey envied the life of the Pomeranian and one day decided to make his way into the master\u2019s house, imitating the Pomeranian\u2019s tricks as best as he could. In doing so, he broke the master\u2019s table and smashed his precious dishes to pieces. Seeing this, the servants quickly drove the donkey back into the stable, kicking and beating him with clubs all the way, nearly killing him. What is the moral of this story?\nA. To be satisfied with one\u0027s lot is better than to desire something which one is not fitted to receive.\nB. A needy thief steals more than one who enjoys plenty.\nC. Evil wishes, like chickens, come home to roost.\nD. It is easier to get into the enemy\u0027s toils than out again."
+}</pre>
+                            </div>
+                        </td>
+                    </tr>
+                    
+                    
+                    <tr>
+                        <td>0030:fable:10</td>
+                        <td>1</td>
+                        <td>9736.945041</td>
+                        <td>{}</td>
+                    </tr>
+                    
+                    <tr>
+                        <td colspan="4" class="question-info">
+                            <div class="question-info-toggle" onclick="toggleQuestionInfo(this)">
+                                [+]
+                            </div>
+                            <div class="question-info-content hidden">
+                              <strong>Question Information:</strong>
+                              <pre>{
+  "choices": [
+    "A",
+    "B",
+    "C",
+    "D"
+  ],
+  "gold": 2,
+  "query": "Q: A long time ago, all ducks and swans were able to sing beautiful songs. But, one day, they heard the neigh of a horse and fell so in love with its sound that they spent all of their time trying to imitate it. In their efforts, they eventually forgot their songs and have not managed to remember them to this day. What is the moral of this story?\nA. What memories cling around the instruments of our pleasure.\nB. Birds of a feather flock together.\nC. The desire for imaginary benefits often involves the loss of present blessings.\nD. It is too late to whet the sword when the trumpet sounds."
+}</pre>
+                            </div>
+                        </td>
+                    </tr>
+                    
+                    
+                    <tr>
+                        <td>0030:fable:2</td>
+                        <td>1</td>
+                        <td>14598.291333</td>
+                        <td>{}</td>
+                    </tr>
+                    
+                    <tr>
+                        <td colspan="4" class="question-info">
+                            <div class="question-info-toggle" onclick="toggleQuestionInfo(this)">
+                                [+]
+                            </div>
+                            <div class="question-info-content hidden">
+                              <strong>Question Information:</strong>
+                              <pre>{
+  "choices": [
+    "A",
+    "B",
+    "C",
+    "D"
+  ],
+  "gold": 2,
+  "query": "Q: A snipe had made her nest in the early spring on a recently sown wheat field. Her children have almost grown to their full size, when the owner of the field, looking over his by then ripened crop, said, \"I will ask all my friends and neighbors to help me with the harvest.\" One of the young snipes asked his mother whether they should move to a new place for safety. \"Not yet,\" she replied; \"a man who only asks his friends to help him with the harvest does not have his mind fully set to it.\" A few days the farmer noticed the wheat to be heavy with grain and proclaimed: \"Tomorrow, I will hire as many labourers as I can and harvest this wheat myself.\" Upon hearing these words, the snipe said to her children, \"It is time for us to move -  a man who no longer trusts his friends, but will reap the field himself, will go through with his plans.\" What is the moral of this story?\nA. Spare the rod and spoil the child.\nB. Yield to all and you will soon have nothing to yield.\nC. Self-help is the best help.\nD. It is thrifty to prepare today for the wants of tomorrow."
+}</pre>
+                            </div>
+                        </td>
+                    </tr>
+                    
+                    
+                    <tr>
+                        <td>0030:fable:3</td>
+                        <td>1</td>
+                        <td>10259.2435</td>
+                        <td>{}</td>
+                    </tr>
+                    
+                    <tr>
+                        <td colspan="4" class="question-info">
+                            <div class="question-info-toggle" onclick="toggleQuestionInfo(this)">
+                                [+]
+                            </div>
+                            <div class="question-info-content hidden">
+                              <strong>Question Information:</strong>
+                              <pre>{
+  "choices": [
+    "A",
+    "B",
+    "C",
+    "D"
+  ],
+  "gold": 1,
+  "query": "Q: Two toads lived as neighbors in a pond. During a particularly hot summer, the pond dried up and the toads had to find another place to live, as they liked wet places. In their search for a new home, they came across a well with plenty of water in it. Recognizing it as a nice, cool place to live in, one of the toads suggested to his companion that they jump in and make it their new home. The other one, who was older and wiser, replied: \"Wait, friend! If the well dried out like our pond did, how would we get out again?\" What is the moral of this story?\nA. The loiterer often blames delay on his more active friend.\nB. Look before you leap.\nC. He is wise who is warned by the misfortunes of others.\nD. Trust not in him that seems a saint."
+}</pre>
+                            </div>
+                        </td>
+                    </tr>
+                    
+                    
+                    <tr>
+                        <td>0030:fable:4</td>
+                        <td>1</td>
+                        <td>12478.240125</td>
+                        <td>{}</td>
+                    </tr>
+                    
+                    <tr>
+                        <td colspan="4" class="question-info">
+                            <div class="question-info-toggle" onclick="toggleQuestionInfo(this)">
+                                [+]
+                            </div>
+                            <div class="question-info-content hidden">
+                              <strong>Question Information:</strong>
+                              <pre>{
+  "choices": [
+    "A",
+    "B",
+    "C",
+    "D"
+  ],
+  "gold": 2,
+  "query": "Q: A raccoon invited a stork for dinner and, for his own amusement, served nothing but soup made of pulse, which he poured into a flat stone dish. The soup fell out of the stork\u2019s long bill, and the bird\u2019s frustration was a great source of fun for the raccoon. To return the favour, the stork invited the raccoon for lunch and placed before him a jug with a long and narrow mouth - perfectly suited for the bird\u2019s bill, but useless to the raccoon who was unable to taste the jug\u0027s contents. What is the moral of this story?\nA. Little by little does the trick.\nB. Fine clothes may disguise, but silly words will disclose a fool.\nC. Do unto others what you would have them do unto you.\nD. Fine feathers don\u0027t make fine birds."
+}</pre>
+                            </div>
+                        </td>
+                    </tr>
+                    
+                    
+                    <tr>
+                        <td>0030:fable:5</td>
+                        <td>0</td>
+                        <td>11927.514375</td>
+                        <td>{
+  "correct_answer": "A",
+  "question": "Q: The rabbits, tired of being so timid and scared all of the time, decided to collectively end their lives by jumping off a tall cliff into a deep lake below. As their large group approached the edge of the cliff, the toads living on the banks of the lake became alarmed by the sound of their feet and quickly fled to safety. Observing the flight of the toads, one of the rabbits ordered the others to stop: \"Wait, my friends! Maybe we should not go through with our plan, afer all, as there are clearly creatures who are even more easily scared than we are.\" What is the moral of this story?\nA. There is allways someone worse off than yourself.\nB. Love can tame the wildest.\nC. A false tale often betrays itself.\nD. Those who pretend to be what they are not, sooner or later, find themselves in deep water.",
+  "response": {
+    "answer": "D",
+    "commentary": "The story revolves around rabbits who initially decide to collectively commit suicide out of despair over their perceived timidity, only to reconsider their drastic plan upon noticing the fear-driven reaction of even more timid toads. This scenario best aligns with option D: \u0027Those who pretend to be what they are not, sooner or later, find themselves in deep water.\u0027 The rabbits initially act as if they are beyond help by attempting extreme measures, but their reality check upon observing the even more vulnerable toads highlights the folly of pretending their situation is uniquely dire without perspective. They realize their initial assumption about their resilience might have been flawed, leading to a potential change in their course of action. This reflects a lesson about the consequences of overestimating one\u0027s predicament without considering broader contexts."
+  }
+}</td>
+                    </tr>
+                    
+                    <tr>
+                        <td colspan="4" class="question-info">
+                            <div class="question-info-toggle" onclick="toggleQuestionInfo(this)">
+                                [+]
+                            </div>
+                            <div class="question-info-content hidden">
+                              <strong>Question Information:</strong>
+                              <pre>{
+  "choices": [
+    "A",
+    "B",
+    "C",
+    "D"
+  ],
+  "gold": 0,
+  "query": "Q: The rabbits, tired of being so timid and scared all of the time, decided to collectively end their lives by jumping off a tall cliff into a deep lake below. As their large group approached the edge of the cliff, the toads living on the banks of the lake became alarmed by the sound of their feet and quickly fled to safety. Observing the flight of the toads, one of the rabbits ordered the others to stop: \"Wait, my friends! Maybe we should not go through with our plan, afer all, as there are clearly creatures who are even more easily scared than we are.\" What is the moral of this story?\nA. There is allways someone worse off than yourself.\nB. Love can tame the wildest.\nC. A false tale often betrays itself.\nD. Those who pretend to be what they are not, sooner or later, find themselves in deep water."
+}</pre>
+                            </div>
+                        </td>
+                    </tr>
+                    
+                    
+                    <tr>
+                        <td>0030:fable:6</td>
+                        <td>1</td>
+                        <td>11449.891292</td>
+                        <td>{}</td>
+                    </tr>
+                    
+                    <tr>
+                        <td colspan="4" class="question-info">
+                            <div class="question-info-toggle" onclick="toggleQuestionInfo(this)">
+                                [+]
+                            </div>
+                            <div class="question-info-content hidden">
+                              <strong>Question Information:</strong>
+                              <pre>{
+  "choices": [
+    "A",
+    "B",
+    "C",
+    "D"
+  ],
+  "gold": 1,
+  "query": "Q: \"Papa,\" said the small toad to the larger one sitting by the side of a pond, \"Yesterday, I came across a huge monster! It was the size of a mountain, had giant horns and a long tail, as well as hoofs that were split in two.\" \"Don\u2019t be alarmed, child\", replied the older toad, \"that was just an oxen. There are many of those around the farms. It\u2019s not nearly as big as you say, either. Indeed, I could make myself just as big as him. Let me show you.\" Having said that, he inhaled a lot of air and blew himself out. \"Was he as big as I am now?\", he asked his son. \"No, he was much bigger than that!\" replied the smaller toad. The father drew in even more air, and asked again if the oxen had been as big as he now was. \"Even bigger than this, father!\" was the reply. So the toad took one last deep breath and burst with a loud pop. What is the moral of this story?\nA. Some men can blow hot and blow cold with the same breath.\nB. Self-conceit may lead to self-destruction.\nC. If words suffice not, blows must follow.\nD. Quality is better than quantity."
+}</pre>
+                            </div>
+                        </td>
+                    </tr>
+                    
+                    
+                    <tr>
+                        <td>0030:fable:7</td>
+                        <td>1</td>
+                        <td>9539.232291</td>
+                        <td>{}</td>
+                    </tr>
+                    
+                    <tr>
+                        <td colspan="4" class="question-info">
+                            <div class="question-info-toggle" onclick="toggleQuestionInfo(this)">
+                                [+]
+                            </div>
+                            <div class="question-info-content hidden">
+                              <strong>Question Information:</strong>
+                              <pre>{
+  "choices": [
+    "A",
+    "B",
+    "C",
+    "D"
+  ],
+  "gold": 1,
+  "query": "Q: A birdcatcher didn\u2019t have much success that day and was about to have a small dinner of herbs and vegetables, when a friend came to visit. Since his traps were empty, he decided to kill a partridge that he used as a decoy. The bird begged him to spare her, saying that he wouldn\u2019t be able to catch birds in the future without her help, nor fall asleep to her relaxing chirps. The birdcatcher saw reason in her words and instead decided to butcher a young rooster whom he kept in his yard. The rooster, too, pleaded with his owner, saying that without his crawling, the birdcatcher wouldn\u2019t know  when to collect his traps, nor would he be able to rise early in the morning. Having heard him out, the birdcatcher finally said: \"Your words make sense. However, my friend and I are hungry and must have our meal.\" What is the moral of this story?\nA. Do not count your chickens before they are hatched.\nB. Necessity knows no law.\nC. Necessity is the mother of invention.\nD. Better no rule than cruel rule."
+}</pre>
+                            </div>
+                        </td>
+                    </tr>
+                    
+                    
+                    <tr>
+                        <td>0030:fable:8</td>
+                        <td>1</td>
+                        <td>10319.090292</td>
+                        <td>{}</td>
+                    </tr>
+                    
+                    <tr>
+                        <td colspan="4" class="question-info">
+                            <div class="question-info-toggle" onclick="toggleQuestionInfo(this)">
+                                [+]
+                            </div>
+                            <div class="question-info-content hidden">
+                              <strong>Question Information:</strong>
+                              <pre>{
+  "choices": [
+    "A",
+    "B",
+    "C",
+    "D"
+  ],
+  "gold": 3,
+  "query": "Q: One time, the sun and the wind were debating which one of them was the strongest. As they quarreled, they saw a traveller come down a road and the sun suggested that whoever manages to make the traveller take off his cloak would be considered the strongest of them both. The wind started by blowing as hard as he could, but that only made the traveller wrap his cloak tighter around his shoulders, until the wind finally gave up. The sun, in turn, shone warm rays of light upon the traveller. Feeling hot, he soon took of his cloak to feel more comfortable, thus handing the victory to the sun. What is the moral of this story?\nA. Fine clothes may disguise, but silly words will disclose a fool.\nB. Whatever you do, do with all your might.\nC. Straws show how the wind blows.\nD. Kindness effects more than severity."
+}</pre>
+                            </div>
+                        </td>
+                    </tr>
+                    
+                    
+                    <tr>
+                        <td>0030:fable:9</td>
+                        <td>0</td>
+                        <td>12369.177208</td>
+                        <td>{
+  "correct_answer": "B",
+  "question": "Q: A coyote had one day found a sheepskin and decided to disguise himself to get easier access to the shepherd\u2019s flock. Covered by the skin, he grazed together with the sheep and snuck into their enclosure in the evening, which was locked and secured by the shepherd. Just as the coyote was preparing to dine on the defenseless creatures, the shepherd returned to obtain some meat for the next day and, confusing the coyote for a sheep, slaughtered him there and then. What is the moral of this story?\nA. Fine clothes may disguise, but silly words will disclose a fool.\nB. Those who seek harm will find it.\nC. A liar deceives no one but himself.\nD. A false tale often betrays itself.",
+  "response": {
+    "answer": "D",
+    "commentary": "The chosen answer, D, \u0027A false tale often betrays itself,\u0027 aligns best with the moral of the story because the coyote\u0027s attempt at deception through disguising himself with a sheepskin ultimately led to his downfall. Despite successfully blending in with the flock for a period, his disguise failed when confronted with the real threat posed by the shepherd\u0027s discerning action based on behavior rather than appearance alone. This emphasizes that no matter how well a lie or deception might seem to succeed initially, underlying inconsistencies or truthfulness will eventually reveal the deception. The other options do not capture the essence of deception failing due to inherent flaws in its execution as precisely as option D does."
+  }
+}</td>
+                    </tr>
+                    
+                    <tr>
+                        <td colspan="4" class="question-info">
+                            <div class="question-info-toggle" onclick="toggleQuestionInfo(this)">
+                                [+]
+                            </div>
+                            <div class="question-info-content hidden">
+                              <strong>Question Information:</strong>
+                              <pre>{
+  "choices": [
+    "A",
+    "B",
+    "C",
+    "D"
+  ],
+  "gold": 1,
+  "query": "Q: A coyote had one day found a sheepskin and decided to disguise himself to get easier access to the shepherd\u2019s flock. Covered by the skin, he grazed together with the sheep and snuck into their enclosure in the evening, which was locked and secured by the shepherd. Just as the coyote was preparing to dine on the defenseless creatures, the shepherd returned to obtain some meat for the next day and, confusing the coyote for a sheep, slaughtered him there and then. What is the moral of this story?\nA. Fine clothes may disguise, but silly words will disclose a fool.\nB. Those who seek harm will find it.\nC. A liar deceives no one but himself.\nD. A false tale often betrays itself."
+}</pre>
+                            </div>
+                        </td>
+                    </tr>
+                    
+                    
+                </tbody>
+            </table>
+        </div>
+
+        
+    </div>
+</body>
+</html>

@@ -1,0 +1,1951 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Benchmark Run Details - gemma2:9b:Q4_0 on 0050_translation_en_kn</title>
+    <script>
+        function toggleQuestionInfo(toggleElement) {
+            const questionInfoContent = toggleElement.nextElementSibling;
+
+            if (questionInfoContent.classList.contains('hidden')) {
+                questionInfoContent.classList.remove('hidden');
+                toggleElement.textContent = '[X]';
+            } else {
+                questionInfoContent.classList.add('hidden');
+                toggleElement.textContent = '[+]';
+            }
+        }
+    </script>
+
+    <style>
+        /* Placeholder for future CSS */
+        body {
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 1rem;
+        }
+        .run-summary, .run-details {
+            margin-bottom: 2rem;
+        }
+        .summary-table, .details-table {
+            width: 100%;
+            border-collapse: collapse;
+        }
+        .summary-table th, .details-table th {
+            background-color: #f4f4f4;
+            text-align: left;
+            padding: 0.5rem;
+            border: 1px solid #ddd;
+        }
+        .summary-table td, .details-table td {
+            padding: 0.5rem;
+            border: 1px solid #ddd;
+        }
+        .details-table {
+            margin-top: 1rem;
+        }
+        .page-title {
+            color: #333;
+            border-bottom: 2px solid #333;
+            padding-bottom: 0.5rem;
+        }
+        .question-info {
+            background-color: #f9f9f9;
+            border: 1px solid #ddd;
+            padding: 1rem;
+            margin-top: 0.5rem;
+            position: relative;
+        }
+        .question-info-content {
+            max-height: 600px;
+            overflow-y: auto;
+            overflow-x: hidden;
+            padding-right: 15px; /* Add scrollbar space */
+        }
+        .question-info-toggle {
+            cursor: pointer;
+            user-select: none;
+            font-weight: bold;
+            color: #666;
+        }
+        .question-info-toggle:hover {
+            color: #333;
+        }
+        .question-info pre {
+            white-space: pre-wrap;
+            word-wrap: break-word;
+            background-color: #f4f4f4;
+            padding: 0.5rem;
+            border-radius: 4px;
+            margin: 0;
+        }
+        .hidden {
+            display: none;
+        }
+
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1 class="page-title">Benchmark Run Details</h1>
+        
+        <div class="run-summary">
+            <h2>Run Summary</h2>
+            <table class="summary-table">
+                <tr>
+                    <th>Model</th>
+                    <td>gemma2:9b:Q4_0</td>
+                </tr>
+                <tr>
+                    <th>Benchmark</th>
+                    <td>0050_translation_en_kn</td>
+                </tr>
+                <tr>
+                    <th>Normed Score</th>
+                    <td>45</td>
+                </tr>
+                <tr>
+                    <th>Run Timestamp</th>
+                    <td>2024-12-15 20:52:55</td>
+                </tr>
+            </table>
+        </div>
+
+        <div class="run-details">
+            <h2>Question-Level Details</h2>
+            <table class="details-table">
+                <thead>
+                    <tr>
+                        <th>Question ID</th>
+                        <th>Score</th>
+                        <th>Evaluation Time (ms)</th>
+                        <th>Debug Info</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    
+                    <tr>
+                        <td>0050_translation_en_kn:0</td>
+                        <td>1</td>
+                        <td>2709.193667</td>
+                        <td>{}</td>
+                    </tr>
+                    
+                    <tr>
+                        <td colspan="4" class="question-info">
+                            <div class="question-info-toggle" onclick="toggleQuestionInfo(this)">
+                                [+]
+                            </div>
+                            <div class="question-info-content hidden">
+                              <strong>Question Information:</strong>
+                              <pre>{
+  "word": "flower",
+  "kn": "ಹೂವು",
+  "origin_lang": "en",
+  "target_lang": "kn",
+  "choices": [
+    "ಉಸಿರಾಡು",
+    "ಅಡಗು",
+    "ನೀರು",
+    "ಹೂವು",
+    "ತಾಜಾ",
+    "ಮೌನವಾದ",
+    "ಭಾರವಾದ",
+    "ಓಡು"
+  ]
+}</pre>
+                            </div>
+                        </td>
+                    </tr>
+                    
+                    
+                    <tr>
+                        <td>0050_translation_en_kn:1</td>
+                        <td>1</td>
+                        <td>2483.0976250000003</td>
+                        <td>{}</td>
+                    </tr>
+                    
+                    <tr>
+                        <td colspan="4" class="question-info">
+                            <div class="question-info-toggle" onclick="toggleQuestionInfo(this)">
+                                [+]
+                            </div>
+                            <div class="question-info-content hidden">
+                              <strong>Question Information:</strong>
+                              <pre>{
+  "word": "to drive",
+  "kn": "ಚಾಲಿಸು",
+  "origin_lang": "en",
+  "target_lang": "kn",
+  "origin_details": "Specifically refers to operating a vehicle",
+  "choices": [
+    "ಮೌನವಾದ",
+    "ಚಾಲಿಸು",
+    "ಹಾಡು",
+    "ಸಿಹಿಯಾದ",
+    "ಕಲ್ಲು",
+    "ತಿನ್ನು",
+    "ಸ್ನೇಹಿತ",
+    "ಮೋಡ"
+  ]
+}</pre>
+                            </div>
+                        </td>
+                    </tr>
+                    
+                    
+                    <tr>
+                        <td>0050_translation_en_kn:10</td>
+                        <td>1</td>
+                        <td>2219.1962080000003</td>
+                        <td>{}</td>
+                    </tr>
+                    
+                    <tr>
+                        <td colspan="4" class="question-info">
+                            <div class="question-info-toggle" onclick="toggleQuestionInfo(this)">
+                                [+]
+                            </div>
+                            <div class="question-info-content hidden">
+                              <strong>Question Information:</strong>
+                              <pre>{
+  "word": "mountain",
+  "kn": "ಪರ್ವತ",
+  "origin_lang": "en",
+  "target_lang": "kn",
+  "choices": [
+    "ನೀರು",
+    "ಹಾಡು",
+    "ನಗು",
+    "ಪರ್ವತ",
+    "ಪಕ್ಷಿ",
+    "ಹರಿತವಾದ",
+    "ಪ್ರಕಾಶಮಾನವಾದ",
+    "ಹೂವು"
+  ]
+}</pre>
+                            </div>
+                        </td>
+                    </tr>
+                    
+                    
+                    <tr>
+                        <td>0050_translation_en_kn:11</td>
+                        <td>1</td>
+                        <td>2152.311459</td>
+                        <td>{}</td>
+                    </tr>
+                    
+                    <tr>
+                        <td colspan="4" class="question-info">
+                            <div class="question-info-toggle" onclick="toggleQuestionInfo(this)">
+                                [+]
+                            </div>
+                            <div class="question-info-content hidden">
+                              <strong>Question Information:</strong>
+                              <pre>{
+  "word": "to sing",
+  "kn": "ಹಾಡು",
+  "origin_lang": "en",
+  "target_lang": "kn",
+  "choices": [
+    "ಮೌನವಾದ",
+    "ಬೆಂಕಿ",
+    "ಚಾಲಿಸು",
+    "ನೃತ್ಯ ಮಾಡು",
+    "ಹೂವು",
+    "ಈಜು",
+    "ಹಾಡು",
+    "ಸಿಹಿಯಾದ"
+  ]
+}</pre>
+                            </div>
+                        </td>
+                    </tr>
+                    
+                    
+                    <tr>
+                        <td>0050_translation_en_kn:12</td>
+                        <td>1</td>
+                        <td>2208.2094580000003</td>
+                        <td>{}</td>
+                    </tr>
+                    
+                    <tr>
+                        <td colspan="4" class="question-info">
+                            <div class="question-info-toggle" onclick="toggleQuestionInfo(this)">
+                                [+]
+                            </div>
+                            <div class="question-info-content hidden">
+                              <strong>Question Information:</strong>
+                              <pre>{
+  "word": "heart",
+  "kn": "ಹೃದಯ",
+  "origin_lang": "en",
+  "target_lang": "kn",
+  "choices": [
+    "ಮೌನವಾದ",
+    "ನಗು",
+    "ಮೋಡ",
+    "ಉಪ್ಪು",
+    "ಹರಿತವಾದ",
+    "ತಿನ್ನು",
+    "ಹೃದಯ",
+    "ಅತ್ಯಂತ ಬಲವಾದ"
+  ]
+}</pre>
+                            </div>
+                        </td>
+                    </tr>
+                    
+                    
+                    <tr>
+                        <td>0050_translation_en_kn:13</td>
+                        <td>0</td>
+                        <td>2261.675458</td>
+                        <td>{
+  "response": "प्रकाशमान",
+  "expected": "ಪ್ರಕಾಶಮಾನವಾದ",
+  "origin_word_details": "Can refer to intelligence or light"
+}</td>
+                    </tr>
+                    
+                    <tr>
+                        <td colspan="4" class="question-info">
+                            <div class="question-info-toggle" onclick="toggleQuestionInfo(this)">
+                                [+]
+                            </div>
+                            <div class="question-info-content hidden">
+                              <strong>Question Information:</strong>
+                              <pre>{
+  "word": "bright",
+  "kn": "ಪ್ರಕಾಶಮಾನವಾದ",
+  "origin_lang": "en",
+  "target_lang": "kn",
+  "origin_details": "Can refer to intelligence or light",
+  "choices": [
+    "ಪ್ರಕಾಶಮಾನವಾದ",
+    "ಮೋಡ",
+    "ನೀರು",
+    "ತಂಪಾದ",
+    "ಆಕಾಶ",
+    "ನಯವಾದ",
+    "ಪಕ್ಷಿ",
+    "ಸಿಹಿಯಾದ"
+  ]
+}</pre>
+                            </div>
+                        </td>
+                    </tr>
+                    
+                    
+                    <tr>
+                        <td>0050_translation_en_kn:14</td>
+                        <td>0</td>
+                        <td>2133.828501</td>
+                        <td>{
+  "response": "ನೃತ್ಯ",
+  "expected": "ನೃತ್ಯ ಮಾಡು"
+}</td>
+                    </tr>
+                    
+                    <tr>
+                        <td colspan="4" class="question-info">
+                            <div class="question-info-toggle" onclick="toggleQuestionInfo(this)">
+                                [+]
+                            </div>
+                            <div class="question-info-content hidden">
+                              <strong>Question Information:</strong>
+                              <pre>{
+  "word": "to dance",
+  "kn": "ನೃತ್ಯ ಮಾಡು",
+  "origin_lang": "en",
+  "target_lang": "kn",
+  "choices": [
+    "ಹಾರು",
+    "ಮರ",
+    "ಉಸಿರಾಡು",
+    "ನೃತ್ಯ ಮಾಡು",
+    "ಅಡಗು",
+    "ದುಂಡಾದ",
+    "ಉಪ್ಪು",
+    "ತಾಜಾ"
+  ]
+}</pre>
+                            </div>
+                        </td>
+                    </tr>
+                    
+                    
+                    <tr>
+                        <td>0050_translation_en_kn:15</td>
+                        <td>1</td>
+                        <td>2358.962833</td>
+                        <td>{}</td>
+                    </tr>
+                    
+                    <tr>
+                        <td colspan="4" class="question-info">
+                            <div class="question-info-toggle" onclick="toggleQuestionInfo(this)">
+                                [+]
+                            </div>
+                            <div class="question-info-content hidden">
+                              <strong>Question Information:</strong>
+                              <pre>{
+  "word": "quiet",
+  "kn": "ಮೌನವಾದ",
+  "origin_lang": "en",
+  "target_lang": "kn",
+  "origin_details": "Can refer to sound level or personality trait",
+  "choices": [
+    "ಪ್ರಕಾಶಮಾನವಾದ",
+    "ಅಡಗು",
+    "ಸ್ನೇಹಿತ",
+    "ಮರ",
+    "ಬೆಚ್ಚಗಿನ",
+    "ಮೌನವಾದ",
+    "ಅತ್ಯಂತ ಬಲವಾದ",
+    "ನಗು"
+  ]
+}</pre>
+                            </div>
+                        </td>
+                    </tr>
+                    
+                    
+                    <tr>
+                        <td>0050_translation_en_kn:16</td>
+                        <td>1</td>
+                        <td>1983.1294579999999</td>
+                        <td>{}</td>
+                    </tr>
+                    
+                    <tr>
+                        <td colspan="4" class="question-info">
+                            <div class="question-info-toggle" onclick="toggleQuestionInfo(this)">
+                                [+]
+                            </div>
+                            <div class="question-info-content hidden">
+                              <strong>Question Information:</strong>
+                              <pre>{
+  "word": "tree",
+  "kn": "ಮರ",
+  "origin_lang": "en",
+  "target_lang": "kn",
+  "choices": [
+    "ಹೃದಯ",
+    "ಹೂವು",
+    "ಮರ",
+    "ನಗು",
+    "ಚಂದ್ರ",
+    "ಮಳೆ",
+    "ಭಾರವಾದ",
+    "ನೃತ್ಯ ಮಾಡು"
+  ]
+}</pre>
+                            </div>
+                        </td>
+                    </tr>
+                    
+                    
+                    <tr>
+                        <td>0050_translation_en_kn:17</td>
+                        <td>1</td>
+                        <td>2049.739583</td>
+                        <td>{}</td>
+                    </tr>
+                    
+                    <tr>
+                        <td colspan="4" class="question-info">
+                            <div class="question-info-toggle" onclick="toggleQuestionInfo(this)">
+                                [+]
+                            </div>
+                            <div class="question-info-content hidden">
+                              <strong>Question Information:</strong>
+                              <pre>{
+  "word": "to write",
+  "kn": "ಬರೆ",
+  "origin_lang": "en",
+  "target_lang": "kn",
+  "choices": [
+    "ಈಜು",
+    "ನಕ್ಷತ್ರ",
+    "ಉಪ್ಪು",
+    "ಸಿಹಿಯಾದ",
+    "ಬೆಂಕಿ",
+    "ಬರೆ",
+    "ನೃತ್ಯ ಮಾಡು",
+    "ಬೆಚ್ಚಗಿನ"
+  ]
+}</pre>
+                            </div>
+                        </td>
+                    </tr>
+                    
+                    
+                    <tr>
+                        <td>0050_translation_en_kn:18</td>
+                        <td>1</td>
+                        <td>2253.7493329999998</td>
+                        <td>{}</td>
+                    </tr>
+                    
+                    <tr>
+                        <td colspan="4" class="question-info">
+                            <div class="question-info-toggle" onclick="toggleQuestionInfo(this)">
+                                [+]
+                            </div>
+                            <div class="question-info-content hidden">
+                              <strong>Question Information:</strong>
+                              <pre>{
+  "word": "sky",
+  "kn": "ಆಕಾಶ",
+  "origin_lang": "en",
+  "target_lang": "kn",
+  "choices": [
+    "ಮೌನವಾದ",
+    "ಬೆಳೆ",
+    "ಹಾರು",
+    "ಈಜು",
+    "ಹಾಡು",
+    "ಓಡು",
+    "ಸುಂದರವಾದ",
+    "ಆಕಾಶ"
+  ]
+}</pre>
+                            </div>
+                        </td>
+                    </tr>
+                    
+                    
+                    <tr>
+                        <td>0050_translation_en_kn:19</td>
+                        <td>1</td>
+                        <td>2204.206875</td>
+                        <td>{}</td>
+                    </tr>
+                    
+                    <tr>
+                        <td colspan="4" class="question-info">
+                            <div class="question-info-toggle" onclick="toggleQuestionInfo(this)">
+                                [+]
+                            </div>
+                            <div class="question-info-content hidden">
+                              <strong>Question Information:</strong>
+                              <pre>{
+  "word": "fresh",
+  "kn": "ತಾಜಾ",
+  "origin_lang": "en",
+  "target_lang": "kn",
+  "choices": [
+    "ನಗು",
+    "ತಿನ್ನು",
+    "ಬೀಳು",
+    "ಆಳವಾದ",
+    "ಹಾರು",
+    "ಪರ್ವತ",
+    "ಹೂವು",
+    "ತಾಜಾ"
+  ]
+}</pre>
+                            </div>
+                        </td>
+                    </tr>
+                    
+                    
+                    <tr>
+                        <td>0050_translation_en_kn:2</td>
+                        <td>1</td>
+                        <td>3258.25075</td>
+                        <td>{}</td>
+                    </tr>
+                    
+                    <tr>
+                        <td colspan="4" class="question-info">
+                            <div class="question-info-toggle" onclick="toggleQuestionInfo(this)">
+                                [+]
+                            </div>
+                            <div class="question-info-content hidden">
+                              <strong>Question Information:</strong>
+                              <pre>{
+  "word": "strongest",
+  "kn": "ಅತ್ಯಂತ ಬಲವಾದ",
+  "origin_lang": "en",
+  "target_lang": "kn",
+  "choices": [
+    "ಬೆಳೆ",
+    "ನಯವಾದ",
+    "ನಗು",
+    "ಬೆಚ್ಚಗಿನ",
+    "ಹುಲ್ಲು",
+    "ಪಕ್ಷಿ",
+    "ಅತ್ಯಂತ ಬಲವಾದ",
+    "ಬರೆ"
+  ]
+}</pre>
+                            </div>
+                        </td>
+                    </tr>
+                    
+                    
+                    <tr>
+                        <td>0050_translation_en_kn:20</td>
+                        <td>1</td>
+                        <td>2523.611334</td>
+                        <td>{}</td>
+                    </tr>
+                    
+                    <tr>
+                        <td colspan="4" class="question-info">
+                            <div class="question-info-toggle" onclick="toggleQuestionInfo(this)">
+                                [+]
+                            </div>
+                            <div class="question-info-content hidden">
+                              <strong>Question Information:</strong>
+                              <pre>{
+  "word": "friend",
+  "kn": "ಸ್ನೇಹಿತ",
+  "origin_lang": "en",
+  "target_lang": "kn",
+  "choices": [
+    "ನೃತ್ಯ ಮಾಡು",
+    "ತಿನ್ನು",
+    "ಮಳೆ",
+    "ಸಿಹಿಯಾದ",
+    "ಆಕಾಶ",
+    "ಮೋಡ",
+    "ಸ್ನೇಹಿತ",
+    "ಹರಿತವಾದ"
+  ]
+}</pre>
+                            </div>
+                        </td>
+                    </tr>
+                    
+                    
+                    <tr>
+                        <td>0050_translation_en_kn:21</td>
+                        <td>1</td>
+                        <td>2058.833167</td>
+                        <td>{}</td>
+                    </tr>
+                    
+                    <tr>
+                        <td colspan="4" class="question-info">
+                            <div class="question-info-toggle" onclick="toggleQuestionInfo(this)">
+                                [+]
+                            </div>
+                            <div class="question-info-content hidden">
+                              <strong>Question Information:</strong>
+                              <pre>{
+  "word": "to run",
+  "kn": "ಓಡು",
+  "origin_lang": "en",
+  "target_lang": "kn",
+  "choices": [
+    "ಮರಳು",
+    "ಓಡು",
+    "ನಕ್ಷತ್ರ",
+    "ನಿದ್ರಿಸು",
+    "ಮೃದುವಾದ",
+    "ಹಾಡು",
+    "ಬೆಂಕಿ",
+    "ಈಜು"
+  ]
+}</pre>
+                            </div>
+                        </td>
+                    </tr>
+                    
+                    
+                    <tr>
+                        <td>0050_translation_en_kn:22</td>
+                        <td>1</td>
+                        <td>2007.584375</td>
+                        <td>{}</td>
+                    </tr>
+                    
+                    <tr>
+                        <td colspan="4" class="question-info">
+                            <div class="question-info-toggle" onclick="toggleQuestionInfo(this)">
+                                [+]
+                            </div>
+                            <div class="question-info-content hidden">
+                              <strong>Question Information:</strong>
+                              <pre>{
+  "word": "round",
+  "kn": "ದುಂಡಾದ",
+  "origin_lang": "en",
+  "target_lang": "kn",
+  "choices": [
+    "ಹರಿತವಾದ",
+    "ಬರೆ",
+    "ಹಗುರವಾದ",
+    "ಓಡು",
+    "ಉಸಿರಾಡು",
+    "ದುಂಡಾದ",
+    "ಮರಳು",
+    "ನಗು"
+  ]
+}</pre>
+                            </div>
+                        </td>
+                    </tr>
+                    
+                    
+                    <tr>
+                        <td>0050_translation_en_kn:23</td>
+                        <td>1</td>
+                        <td>2200.087708</td>
+                        <td>{}</td>
+                    </tr>
+                    
+                    <tr>
+                        <td colspan="4" class="question-info">
+                            <div class="question-info-toggle" onclick="toggleQuestionInfo(this)">
+                                [+]
+                            </div>
+                            <div class="question-info-content hidden">
+                              <strong>Question Information:</strong>
+                              <pre>{
+  "word": "wind",
+  "kn": "ಗಾಳಿ",
+  "origin_lang": "en",
+  "target_lang": "kn",
+  "origin_details": "Can be noun (moving air) or verb (to twist)",
+  "choices": [
+    "ನಕ್ಷತ್ರ",
+    "ಹುಲ್ಲು",
+    "ಗಾಳಿ",
+    "ಸಿಹಿಯಾದ",
+    "ಬೆಂಕಿ",
+    "ಬೀಳು",
+    "ಹಗುರವಾದ",
+    "ಹಾಡು"
+  ]
+}</pre>
+                            </div>
+                        </td>
+                    </tr>
+                    
+                    
+                    <tr>
+                        <td>0050_translation_en_kn:24</td>
+                        <td>1</td>
+                        <td>2696.070125</td>
+                        <td>{}</td>
+                    </tr>
+                    
+                    <tr>
+                        <td colspan="4" class="question-info">
+                            <div class="question-info-toggle" onclick="toggleQuestionInfo(this)">
+                                [+]
+                            </div>
+                            <div class="question-info-content hidden">
+                              <strong>Question Information:</strong>
+                              <pre>{
+  "word": "warm",
+  "kn": "ಬೆಚ್ಚಗಿನ",
+  "origin_lang": "en",
+  "target_lang": "kn",
+  "choices": [
+    "ಆಕಾಶ",
+    "ವೇಗವಾದ",
+    "ಮರಳು",
+    "ಬೆಚ್ಚಗಿನ",
+    "ಕಲ್ಲು",
+    "ದುಂಡಾದ",
+    "ಸ್ನೇಹಿತ",
+    "ನೃತ್ಯ ಮಾಡು"
+  ]
+}</pre>
+                            </div>
+                        </td>
+                    </tr>
+                    
+                    
+                    <tr>
+                        <td>0050_translation_en_kn:25</td>
+                        <td>1</td>
+                        <td>2152.6800839999996</td>
+                        <td>{}</td>
+                    </tr>
+                    
+                    <tr>
+                        <td colspan="4" class="question-info">
+                            <div class="question-info-toggle" onclick="toggleQuestionInfo(this)">
+                                [+]
+                            </div>
+                            <div class="question-info-content hidden">
+                              <strong>Question Information:</strong>
+                              <pre>{
+  "word": "stone",
+  "kn": "ಕಲ್ಲು",
+  "origin_lang": "en",
+  "target_lang": "kn",
+  "choices": [
+    "ಹಾಡು",
+    "ಕಲ್ಲು",
+    "ಚಂದ್ರ",
+    "ನಗು",
+    "ಆಕಾಶ",
+    "ಸ್ನೇಹಿತ",
+    "ನಯವಾದ",
+    "ತಾಜಾ"
+  ]
+}</pre>
+                            </div>
+                        </td>
+                    </tr>
+                    
+                    
+                    <tr>
+                        <td>0050_translation_en_kn:26</td>
+                        <td>1</td>
+                        <td>2048.865001</td>
+                        <td>{}</td>
+                    </tr>
+                    
+                    <tr>
+                        <td colspan="4" class="question-info">
+                            <div class="question-info-toggle" onclick="toggleQuestionInfo(this)">
+                                [+]
+                            </div>
+                            <div class="question-info-content hidden">
+                              <strong>Question Information:</strong>
+                              <pre>{
+  "word": "deep",
+  "kn": "ಆಳವಾದ",
+  "origin_lang": "en",
+  "target_lang": "kn",
+  "origin_details": "Can refer to physical depth or emotional/intellectual depth",
+  "choices": [
+    "ಉಸಿರಾಡು",
+    "ಸಿಹಿಯಾದ",
+    "ಕಲ್ಲು",
+    "ಬರೆ",
+    "ಆಳವಾದ",
+    "ಮರ",
+    "ನಕ್ಷತ್ರ",
+    "ತಿನ್ನು"
+  ]
+}</pre>
+                            </div>
+                        </td>
+                    </tr>
+                    
+                    
+                    <tr>
+                        <td>0050_translation_en_kn:27</td>
+                        <td>1</td>
+                        <td>2063.7709999999997</td>
+                        <td>{}</td>
+                    </tr>
+                    
+                    <tr>
+                        <td colspan="4" class="question-info">
+                            <div class="question-info-toggle" onclick="toggleQuestionInfo(this)">
+                                [+]
+                            </div>
+                            <div class="question-info-content hidden">
+                              <strong>Question Information:</strong>
+                              <pre>{
+  "word": "to swim",
+  "kn": "ಈಜು",
+  "origin_lang": "en",
+  "target_lang": "kn",
+  "choices": [
+    "ಈಜು",
+    "ಚಂದ್ರ",
+    "ನಕ್ಷತ್ರ",
+    "ಬೀಳು",
+    "ಮೋಡ",
+    "ಮೌನವಾದ",
+    "ಸ್ನೇಹಿತ",
+    "ನೀರು"
+  ]
+}</pre>
+                            </div>
+                        </td>
+                    </tr>
+                    
+                    
+                    <tr>
+                        <td>0050_translation_en_kn:28</td>
+                        <td>1</td>
+                        <td>2386.979334</td>
+                        <td>{}</td>
+                    </tr>
+                    
+                    <tr>
+                        <td colspan="4" class="question-info">
+                            <div class="question-info-toggle" onclick="toggleQuestionInfo(this)">
+                                [+]
+                            </div>
+                            <div class="question-info-content hidden">
+                              <strong>Question Information:</strong>
+                              <pre>{
+  "word": "bird",
+  "kn": "ಪಕ್ಷಿ",
+  "origin_lang": "en",
+  "target_lang": "kn",
+  "choices": [
+    "ಮೌನವಾದ",
+    "ನಿದ್ರಿಸು",
+    "ಮರಳು",
+    "ಚಾಲಿಸು",
+    "ಅಡಗು",
+    "ಪಕ್ಷಿ",
+    "ಮಳೆ",
+    "ಭಾರವಾದ"
+  ]
+}</pre>
+                            </div>
+                        </td>
+                    </tr>
+                    
+                    
+                    <tr>
+                        <td>0050_translation_en_kn:29</td>
+                        <td>1</td>
+                        <td>2662.895542</td>
+                        <td>{}</td>
+                    </tr>
+                    
+                    <tr>
+                        <td colspan="4" class="question-info">
+                            <div class="question-info-toggle" onclick="toggleQuestionInfo(this)">
+                                [+]
+                            </div>
+                            <div class="question-info-content hidden">
+                              <strong>Question Information:</strong>
+                              <pre>{
+  "word": "sweet",
+  "kn": "ಸಿಹಿಯಾದ",
+  "origin_lang": "en",
+  "target_lang": "kn",
+  "origin_details": "Can refer to taste or personality",
+  "choices": [
+    "ಮೌನವಾದ",
+    "ಓಡು",
+    "ಹೃದಯ",
+    "ನಗು",
+    "ಕಲ್ಲು",
+    "ಸಿಹಿಯಾದ",
+    "ಪುಸ್ತಕ",
+    "ಅಡಗು"
+  ]
+}</pre>
+                            </div>
+                        </td>
+                    </tr>
+                    
+                    
+                    <tr>
+                        <td>0050_translation_en_kn:3</td>
+                        <td>1</td>
+                        <td>2607.85975</td>
+                        <td>{}</td>
+                    </tr>
+                    
+                    <tr>
+                        <td colspan="4" class="question-info">
+                            <div class="question-info-toggle" onclick="toggleQuestionInfo(this)">
+                                [+]
+                            </div>
+                            <div class="question-info-content hidden">
+                              <strong>Question Information:</strong>
+                              <pre>{
+  "word": "book",
+  "kn": "ಪುಸ್ತಕ",
+  "origin_lang": "en",
+  "target_lang": "kn",
+  "choices": [
+    "ನೀರು",
+    "ಹಾರು",
+    "ಮಳೆ",
+    "ನೃತ್ಯ ಮಾಡು",
+    "ನಿದ್ರಿಸು",
+    "ಪುಸ್ತಕ",
+    "ಗಾಳಿ",
+    "ತಿನ್ನು"
+  ]
+}</pre>
+                            </div>
+                        </td>
+                    </tr>
+                    
+                    
+                    <tr>
+                        <td>0050_translation_en_kn:30</td>
+                        <td>1</td>
+                        <td>2135.141584</td>
+                        <td>{}</td>
+                    </tr>
+                    
+                    <tr>
+                        <td colspan="4" class="question-info">
+                            <div class="question-info-toggle" onclick="toggleQuestionInfo(this)">
+                                [+]
+                            </div>
+                            <div class="question-info-content hidden">
+                              <strong>Question Information:</strong>
+                              <pre>{
+  "word": "cloud",
+  "kn": "ಮೋಡ",
+  "origin_lang": "en",
+  "target_lang": "kn",
+  "choices": [
+    "ಅತ್ಯಂತ ಬಲವಾದ",
+    "ಚಾಲಿಸು",
+    "ವೇಗವಾದ",
+    "ಹೃದಯ",
+    "ಸ್ನೇಹಿತ",
+    "ದುಂಡಾದ",
+    "ಮೋಡ",
+    "ನೃತ್ಯ ಮಾಡು"
+  ]
+}</pre>
+                            </div>
+                        </td>
+                    </tr>
+                    
+                    
+                    <tr>
+                        <td>0050_translation_en_kn:31</td>
+                        <td>1</td>
+                        <td>1999.807625</td>
+                        <td>{}</td>
+                    </tr>
+                    
+                    <tr>
+                        <td colspan="4" class="question-info">
+                            <div class="question-info-toggle" onclick="toggleQuestionInfo(this)">
+                                [+]
+                            </div>
+                            <div class="question-info-content hidden">
+                              <strong>Question Information:</strong>
+                              <pre>{
+  "word": "to smile",
+  "kn": "ನಗು",
+  "origin_lang": "en",
+  "target_lang": "kn",
+  "choices": [
+    "ಹುಲ್ಲು",
+    "ಮರಳು",
+    "ಹೂವು",
+    "ಪಕ್ಷಿ",
+    "ಮರ",
+    "ನಗು",
+    "ಆಳವಾದ",
+    "ನಯವಾದ"
+  ]
+}</pre>
+                            </div>
+                        </td>
+                    </tr>
+                    
+                    
+                    <tr>
+                        <td>0050_translation_en_kn:32</td>
+                        <td>1</td>
+                        <td>2283.410292</td>
+                        <td>{}</td>
+                    </tr>
+                    
+                    <tr>
+                        <td colspan="4" class="question-info">
+                            <div class="question-info-toggle" onclick="toggleQuestionInfo(this)">
+                                [+]
+                            </div>
+                            <div class="question-info-content hidden">
+                              <strong>Question Information:</strong>
+                              <pre>{
+  "word": "soft",
+  "kn": "ಮೃದುವಾದ",
+  "origin_lang": "en",
+  "target_lang": "kn",
+  "choices": [
+    "ಸ್ನೇಹಿತ",
+    "ಚಾಲಿಸು",
+    "ಆಕಾಶ",
+    "ಪರ್ವತ",
+    "ನಗು",
+    "ನೀರು",
+    "ಆಳವಾದ",
+    "ಮೃದುವಾದ"
+  ]
+}</pre>
+                            </div>
+                        </td>
+                    </tr>
+                    
+                    
+                    <tr>
+                        <td>0050_translation_en_kn:33</td>
+                        <td>1</td>
+                        <td>2122.787874</td>
+                        <td>{}</td>
+                    </tr>
+                    
+                    <tr>
+                        <td colspan="4" class="question-info">
+                            <div class="question-info-toggle" onclick="toggleQuestionInfo(this)">
+                                [+]
+                            </div>
+                            <div class="question-info-content hidden">
+                              <strong>Question Information:</strong>
+                              <pre>{
+  "word": "rain",
+  "kn": "ಮಳೆ",
+  "origin_lang": "en",
+  "target_lang": "kn",
+  "choices": [
+    "ಮೋಡ",
+    "ಮರಳು",
+    "ಮಳೆ",
+    "ಬೆಚ್ಚಗಿನ",
+    "ಉಸಿರಾಡು",
+    "ಓಡು",
+    "ಸ್ನೇಹಿತ",
+    "ಮರ"
+  ]
+}</pre>
+                            </div>
+                        </td>
+                    </tr>
+                    
+                    
+                    <tr>
+                        <td>0050_translation_en_kn:34</td>
+                        <td>1</td>
+                        <td>2445.656083</td>
+                        <td>{}</td>
+                    </tr>
+                    
+                    <tr>
+                        <td colspan="4" class="question-info">
+                            <div class="question-info-toggle" onclick="toggleQuestionInfo(this)">
+                                [+]
+                            </div>
+                            <div class="question-info-content hidden">
+                              <strong>Question Information:</strong>
+                              <pre>{
+  "word": "to grow",
+  "kn": "ಬೆಳೆ",
+  "origin_lang": "en",
+  "target_lang": "kn",
+  "choices": [
+    "ಆಳವಾದ",
+    "ಈಜು",
+    "ತಾಜಾ",
+    "ನೀರು",
+    "ಪಕ್ಷಿ",
+    "ಬೆಂಕಿ",
+    "ಬೆಳೆ",
+    "ನಯವಾದ"
+  ]
+}</pre>
+                            </div>
+                        </td>
+                    </tr>
+                    
+                    
+                    <tr>
+                        <td>0050_translation_en_kn:35</td>
+                        <td>0</td>
+                        <td>2356.245374</td>
+                        <td>{
+  "response": "वेगವಾದ",
+  "expected": "ವೇಗವಾದ"
+}</td>
+                    </tr>
+                    
+                    <tr>
+                        <td colspan="4" class="question-info">
+                            <div class="question-info-toggle" onclick="toggleQuestionInfo(this)">
+                                [+]
+                            </div>
+                            <div class="question-info-content hidden">
+                              <strong>Question Information:</strong>
+                              <pre>{
+  "word": "quick",
+  "kn": "ವೇಗವಾದ",
+  "origin_lang": "en",
+  "target_lang": "kn",
+  "choices": [
+    "ವೇಗವಾದ",
+    "ಬರೆ",
+    "ಉಸಿರಾಡು",
+    "ನೀರು",
+    "ಮೃದುವಾದ",
+    "ಬೆಂಕಿ",
+    "ಚಾಲಿಸು",
+    "ತಾಜಾ"
+  ]
+}</pre>
+                            </div>
+                        </td>
+                    </tr>
+                    
+                    
+                    <tr>
+                        <td>0050_translation_en_kn:36</td>
+                        <td>1</td>
+                        <td>2719.239583</td>
+                        <td>{}</td>
+                    </tr>
+                    
+                    <tr>
+                        <td colspan="4" class="question-info">
+                            <div class="question-info-toggle" onclick="toggleQuestionInfo(this)">
+                                [+]
+                            </div>
+                            <div class="question-info-content hidden">
+                              <strong>Question Information:</strong>
+                              <pre>{
+  "word": "star",
+  "kn": "ನಕ್ಷತ್ರ",
+  "origin_lang": "en",
+  "target_lang": "kn",
+  "choices": [
+    "ನಿದ್ರಿಸು",
+    "ಉಪ್ಪು",
+    "ಮೃದುವಾದ",
+    "ಹೃದಯ",
+    "ಚಾಲಿಸು",
+    "ಬೆಳೆ",
+    "ನಕ್ಷತ್ರ",
+    "ಮರ"
+  ]
+}</pre>
+                            </div>
+                        </td>
+                    </tr>
+                    
+                    
+                    <tr>
+                        <td>0050_translation_en_kn:37</td>
+                        <td>1</td>
+                        <td>2750.461708</td>
+                        <td>{}</td>
+                    </tr>
+                    
+                    <tr>
+                        <td colspan="4" class="question-info">
+                            <div class="question-info-toggle" onclick="toggleQuestionInfo(this)">
+                                [+]
+                            </div>
+                            <div class="question-info-content hidden">
+                              <strong>Question Information:</strong>
+                              <pre>{
+  "word": "to dance",
+  "kn": "ನೃತ್ಯ ಮಾಡು",
+  "origin_lang": "en",
+  "target_lang": "kn",
+  "choices": [
+    "ದುಂಡಾದ",
+    "ನೃತ್ಯ ಮಾಡು",
+    "ತಂಪಾದ",
+    "ಅಡಗು",
+    "ಮೋಡ",
+    "ನಕ್ಷತ್ರ",
+    "ಚಂದ್ರ",
+    "ವೇಗವಾದ"
+  ]
+}</pre>
+                            </div>
+                        </td>
+                    </tr>
+                    
+                    
+                    <tr>
+                        <td>0050_translation_en_kn:38</td>
+                        <td>1</td>
+                        <td>2250.102625</td>
+                        <td>{}</td>
+                    </tr>
+                    
+                    <tr>
+                        <td colspan="4" class="question-info">
+                            <div class="question-info-toggle" onclick="toggleQuestionInfo(this)">
+                                [+]
+                            </div>
+                            <div class="question-info-content hidden">
+                              <strong>Question Information:</strong>
+                              <pre>{
+  "word": "heavy",
+  "kn": "ಭಾರವಾದ",
+  "origin_lang": "en",
+  "target_lang": "kn",
+  "choices": [
+    "ಭಾರವಾದ",
+    "ಉಸಿರಾಡು",
+    "ಹುಲ್ಲು",
+    "ಬೀಳು",
+    "ಸುಂದರವಾದ",
+    "ನಕ್ಷತ್ರ",
+    "ಚಾಲಿಸು",
+    "ಹಗುರವಾದ"
+  ]
+}</pre>
+                            </div>
+                        </td>
+                    </tr>
+                    
+                    
+                    <tr>
+                        <td>0050_translation_en_kn:39</td>
+                        <td>1</td>
+                        <td>2277.040708</td>
+                        <td>{}</td>
+                    </tr>
+                    
+                    <tr>
+                        <td colspan="4" class="question-info">
+                            <div class="question-info-toggle" onclick="toggleQuestionInfo(this)">
+                                [+]
+                            </div>
+                            <div class="question-info-content hidden">
+                              <strong>Question Information:</strong>
+                              <pre>{
+  "word": "fire",
+  "kn": "ಬೆಂಕಿ",
+  "origin_lang": "en",
+  "target_lang": "kn",
+  "choices": [
+    "ಬೆಂಕಿ",
+    "ಮರಳು",
+    "ಅಡಗು",
+    "ತಂಪಾದ",
+    "ಮೋಡ",
+    "ನೃತ್ಯ ಮಾಡು",
+    "ಮೃದುವಾದ",
+    "ಚಾಲಿಸು"
+  ]
+}</pre>
+                            </div>
+                        </td>
+                    </tr>
+                    
+                    
+                    <tr>
+                        <td>0050_translation_en_kn:4</td>
+                        <td>1</td>
+                        <td>1900.076707</td>
+                        <td>{}</td>
+                    </tr>
+                    
+                    <tr>
+                        <td colspan="4" class="question-info">
+                            <div class="question-info-toggle" onclick="toggleQuestionInfo(this)">
+                                [+]
+                            </div>
+                            <div class="question-info-content hidden">
+                              <strong>Question Information:</strong>
+                              <pre>{
+  "word": "to eat",
+  "kn": "ತಿನ್ನು",
+  "origin_lang": "en",
+  "target_lang": "kn",
+  "choices": [
+    "ಹುಲ್ಲು",
+    "ಆಕಾಶ",
+    "ತಿನ್ನು",
+    "ನಗು",
+    "ಮಳೆ",
+    "ಹಾಡು",
+    "ತಾಜಾ",
+    "ಸಿಹಿಯಾದ"
+  ]
+}</pre>
+                            </div>
+                        </td>
+                    </tr>
+                    
+                    
+                    <tr>
+                        <td>0050_translation_en_kn:40</td>
+                        <td>1</td>
+                        <td>2689.7541250000004</td>
+                        <td>{}</td>
+                    </tr>
+                    
+                    <tr>
+                        <td colspan="4" class="question-info">
+                            <div class="question-info-toggle" onclick="toggleQuestionInfo(this)">
+                                [+]
+                            </div>
+                            <div class="question-info-content hidden">
+                              <strong>Question Information:</strong>
+                              <pre>{
+  "word": "to breathe",
+  "kn": "ಉಸಿರಾಡು",
+  "origin_lang": "en",
+  "target_lang": "kn",
+  "choices": [
+    "ಸಿಹಿಯಾದ",
+    "ಮರ",
+    "ನಕ್ಷತ್ರ",
+    "ಉಸಿರಾಡು",
+    "ಹಗುರವಾದ",
+    "ಆಳವಾದ",
+    "ಹಾರು",
+    "ಬೀಳು"
+  ]
+}</pre>
+                            </div>
+                        </td>
+                    </tr>
+                    
+                    
+                    <tr>
+                        <td>0050_translation_en_kn:41</td>
+                        <td>0</td>
+                        <td>2342.411124</td>
+                        <td>{
+  "response": "ಕಠಿನ",
+  "expected": "ಹರಿತವಾದ",
+  "origin_word_details": "Can refer to physical edge or intelligence"
+}</td>
+                    </tr>
+                    
+                    <tr>
+                        <td colspan="4" class="question-info">
+                            <div class="question-info-toggle" onclick="toggleQuestionInfo(this)">
+                                [+]
+                            </div>
+                            <div class="question-info-content hidden">
+                              <strong>Question Information:</strong>
+                              <pre>{
+  "word": "sharp",
+  "kn": "ಹರಿತವಾದ",
+  "origin_lang": "en",
+  "target_lang": "kn",
+  "origin_details": "Can refer to physical edge or intelligence",
+  "choices": [
+    "ತಂಪಾದ",
+    "ನೀರು",
+    "ಹರಿತವಾದ",
+    "ತಿನ್ನು",
+    "ಹಾಡು",
+    "ಹೂವು",
+    "ನಗು",
+    "ಮೋಡ"
+  ]
+}</pre>
+                            </div>
+                        </td>
+                    </tr>
+                    
+                    
+                    <tr>
+                        <td>0050_translation_en_kn:42</td>
+                        <td>1</td>
+                        <td>2325.102667</td>
+                        <td>{}</td>
+                    </tr>
+                    
+                    <tr>
+                        <td colspan="4" class="question-info">
+                            <div class="question-info-toggle" onclick="toggleQuestionInfo(this)">
+                                [+]
+                            </div>
+                            <div class="question-info-content hidden">
+                              <strong>Question Information:</strong>
+                              <pre>{
+  "word": "salt",
+  "kn": "ಉಪ್ಪು",
+  "origin_lang": "en",
+  "target_lang": "kn",
+  "choices": [
+    "ಉಪ್ಪು",
+    "ಸಿಹಿಯಾದ",
+    "ತಾಜಾ",
+    "ಚಾಲಿಸು",
+    "ಪುಸ್ತಕ",
+    "ಪಕ್ಷಿ",
+    "ಮೋಡ",
+    "ಹೃದಯ"
+  ]
+}</pre>
+                            </div>
+                        </td>
+                    </tr>
+                    
+                    
+                    <tr>
+                        <td>0050_translation_en_kn:43</td>
+                        <td>1</td>
+                        <td>2449.8825420000003</td>
+                        <td>{}</td>
+                    </tr>
+                    
+                    <tr>
+                        <td colspan="4" class="question-info">
+                            <div class="question-info-toggle" onclick="toggleQuestionInfo(this)">
+                                [+]
+                            </div>
+                            <div class="question-info-content hidden">
+                              <strong>Question Information:</strong>
+                              <pre>{
+  "word": "to hide",
+  "kn": "ಅಡಗು",
+  "origin_lang": "en",
+  "target_lang": "kn",
+  "choices": [
+    "ನಯವಾದ",
+    "ಕಲ್ಲು",
+    "ತಿನ್ನು",
+    "ಮೃದುವಾದ",
+    "ಗಾಳಿ",
+    "ಓಡು",
+    "ಅಡಗು",
+    "ತಂಪಾದ"
+  ]
+}</pre>
+                            </div>
+                        </td>
+                    </tr>
+                    
+                    
+                    <tr>
+                        <td>0050_translation_en_kn:44</td>
+                        <td>1</td>
+                        <td>2247.543126</td>
+                        <td>{}</td>
+                    </tr>
+                    
+                    <tr>
+                        <td colspan="4" class="question-info">
+                            <div class="question-info-toggle" onclick="toggleQuestionInfo(this)">
+                                [+]
+                            </div>
+                            <div class="question-info-content hidden">
+                              <strong>Question Information:</strong>
+                              <pre>{
+  "word": "smooth",
+  "kn": "ನಯವಾದ",
+  "origin_lang": "en",
+  "target_lang": "kn",
+  "choices": [
+    "ಆಳವಾದ",
+    "ನಯವಾದ",
+    "ಹಗುರವಾದ",
+    "ಮಳೆ",
+    "ಗಾಳಿ",
+    "ತಂಪಾದ",
+    "ಉಸಿರಾಡು",
+    "ಹೃದಯ"
+  ]
+}</pre>
+                            </div>
+                        </td>
+                    </tr>
+                    
+                    
+                    <tr>
+                        <td>0050_translation_en_kn:45</td>
+                        <td>1</td>
+                        <td>2131.259459</td>
+                        <td>{}</td>
+                    </tr>
+                    
+                    <tr>
+                        <td colspan="4" class="question-info">
+                            <div class="question-info-toggle" onclick="toggleQuestionInfo(this)">
+                                [+]
+                            </div>
+                            <div class="question-info-content hidden">
+                              <strong>Question Information:</strong>
+                              <pre>{
+  "word": "grass",
+  "kn": "ಹುಲ್ಲು",
+  "origin_lang": "en",
+  "target_lang": "kn",
+  "choices": [
+    "ತಾಜಾ",
+    "ಪಕ್ಷಿ",
+    "ಉಸಿರಾಡು",
+    "ಸುಂದರವಾದ",
+    "ಪರ್ವತ",
+    "ಹುಲ್ಲು",
+    "ಓಡು",
+    "ಉಪ್ಪು"
+  ]
+}</pre>
+                            </div>
+                        </td>
+                    </tr>
+                    
+                    
+                    <tr>
+                        <td>0050_translation_en_kn:46</td>
+                        <td>1</td>
+                        <td>2051.565709</td>
+                        <td>{}</td>
+                    </tr>
+                    
+                    <tr>
+                        <td colspan="4" class="question-info">
+                            <div class="question-info-toggle" onclick="toggleQuestionInfo(this)">
+                                [+]
+                            </div>
+                            <div class="question-info-content hidden">
+                              <strong>Question Information:</strong>
+                              <pre>{
+  "word": "to fly",
+  "kn": "ಹಾರು",
+  "origin_lang": "en",
+  "target_lang": "kn",
+  "choices": [
+    "ಪ್ರಕಾಶಮಾನವಾದ",
+    "ಮಳೆ",
+    "ನಗು",
+    "ನೃತ್ಯ ಮಾಡು",
+    "ಪರ್ವತ",
+    "ಪಕ್ಷಿ",
+    "ಹಾರು",
+    "ಬೆಚ್ಚಗಿನ"
+  ]
+}</pre>
+                            </div>
+                        </td>
+                    </tr>
+                    
+                    
+                    <tr>
+                        <td>0050_translation_en_kn:47</td>
+                        <td>1</td>
+                        <td>2192.469959</td>
+                        <td>{}</td>
+                    </tr>
+                    
+                    <tr>
+                        <td colspan="4" class="question-info">
+                            <div class="question-info-toggle" onclick="toggleQuestionInfo(this)">
+                                [+]
+                            </div>
+                            <div class="question-info-content hidden">
+                              <strong>Question Information:</strong>
+                              <pre>{
+  "word": "cold",
+  "kn": "ತಂಪಾದ",
+  "origin_lang": "en",
+  "target_lang": "kn",
+  "choices": [
+    "ಸ್ನೇಹಿತ",
+    "ತಂಪಾದ",
+    "ಗಾಳಿ",
+    "ಕಲ್ಲು",
+    "ನಿದ್ರಿಸು",
+    "ಆಳವಾದ",
+    "ದುಂಡಾದ",
+    "ನೃತ್ಯ ಮಾಡು"
+  ]
+}</pre>
+                            </div>
+                        </td>
+                    </tr>
+                    
+                    
+                    <tr>
+                        <td>0050_translation_en_kn:48</td>
+                        <td>1</td>
+                        <td>2443.299041</td>
+                        <td>{}</td>
+                    </tr>
+                    
+                    <tr>
+                        <td colspan="4" class="question-info">
+                            <div class="question-info-toggle" onclick="toggleQuestionInfo(this)">
+                                [+]
+                            </div>
+                            <div class="question-info-content hidden">
+                              <strong>Question Information:</strong>
+                              <pre>{
+  "word": "sand",
+  "kn": "ಮರಳು",
+  "origin_lang": "en",
+  "target_lang": "kn",
+  "choices": [
+    "ಚಂದ್ರ",
+    "ನಕ್ಷತ್ರ",
+    "ನಿದ್ರಿಸು",
+    "ಬೀಳು",
+    "ಆಳವಾದ",
+    "ವೇಗವಾದ",
+    "ಮರಳು",
+    "ಹೃದಯ"
+  ]
+}</pre>
+                            </div>
+                        </td>
+                    </tr>
+                    
+                    
+                    <tr>
+                        <td>0050_translation_en_kn:49</td>
+                        <td>1</td>
+                        <td>2253.398541</td>
+                        <td>{}</td>
+                    </tr>
+                    
+                    <tr>
+                        <td colspan="4" class="question-info">
+                            <div class="question-info-toggle" onclick="toggleQuestionInfo(this)">
+                                [+]
+                            </div>
+                            <div class="question-info-content hidden">
+                              <strong>Question Information:</strong>
+                              <pre>{
+  "word": "to fall",
+  "kn": "ಬೀಳು",
+  "origin_lang": "en",
+  "target_lang": "kn",
+  "choices": [
+    "ಹೂವು",
+    "ನಯವಾದ",
+    "ಬೆಚ್ಚಗಿನ",
+    "ಹರಿತವಾದ",
+    "ಬರೆ",
+    "ಹುಲ್ಲು",
+    "ಆಳವಾದ",
+    "ಬೀಳು"
+  ]
+}</pre>
+                            </div>
+                        </td>
+                    </tr>
+                    
+                    
+                    <tr>
+                        <td>0050_translation_en_kn:5</td>
+                        <td>0</td>
+                        <td>1805.917166</td>
+                        <td>{
+  "response": "सुंदर",
+  "expected": "ಸುಂದರವಾದ"
+}</td>
+                    </tr>
+                    
+                    <tr>
+                        <td colspan="4" class="question-info">
+                            <div class="question-info-toggle" onclick="toggleQuestionInfo(this)">
+                                [+]
+                            </div>
+                            <div class="question-info-content hidden">
+                              <strong>Question Information:</strong>
+                              <pre>{
+  "word": "beautiful",
+  "kn": "ಸುಂದರವಾದ",
+  "origin_lang": "en",
+  "target_lang": "kn",
+  "choices": [
+    "ಸುಂದರವಾದ",
+    "ಪುಸ್ತಕ",
+    "ಹರಿತವಾದ",
+    "ಓಡು",
+    "ತಿನ್ನು",
+    "ಆಕಾಶ",
+    "ನೀರು",
+    "ಮಳೆ"
+  ]
+}</pre>
+                            </div>
+                        </td>
+                    </tr>
+                    
+                    
+                    <tr>
+                        <td>0050_translation_en_kn:50</td>
+                        <td>0</td>
+                        <td>2177.7938759999997</td>
+                        <td>{
+  "response": "ಬೆಳೆ",
+  "expected": "ಹಗುರವಾದ",
+  "origin_word_details": "Using meaning 'not heavy' (vs. illumination)"
+}</td>
+                    </tr>
+                    
+                    <tr>
+                        <td colspan="4" class="question-info">
+                            <div class="question-info-toggle" onclick="toggleQuestionInfo(this)">
+                                [+]
+                            </div>
+                            <div class="question-info-content hidden">
+                              <strong>Question Information:</strong>
+                              <pre>{
+  "word": "light",
+  "kn": "ಹಗುರವಾದ",
+  "origin_lang": "en",
+  "target_lang": "kn",
+  "origin_details": "Using meaning 'not heavy' (vs. illumination)",
+  "choices": [
+    "ಹೃದಯ",
+    "ಹಗುರವಾದ",
+    "ಬೆಳೆ",
+    "ಮೃದುವಾದ",
+    "ಕಲ್ಲು",
+    "ಪರ್ವತ",
+    "ತಂಪಾದ",
+    "ನೃತ್ಯ ಮಾಡು"
+  ]
+}</pre>
+                            </div>
+                        </td>
+                    </tr>
+                    
+                    
+                    <tr>
+                        <td>0050_translation_en_kn:6</td>
+                        <td>1</td>
+                        <td>2055.868583</td>
+                        <td>{}</td>
+                    </tr>
+                    
+                    <tr>
+                        <td colspan="4" class="question-info">
+                            <div class="question-info-toggle" onclick="toggleQuestionInfo(this)">
+                                [+]
+                            </div>
+                            <div class="question-info-content hidden">
+                              <strong>Question Information:</strong>
+                              <pre>{
+  "word": "water",
+  "kn": "ನೀರು",
+  "origin_lang": "en",
+  "target_lang": "kn",
+  "choices": [
+    "ನೃತ್ಯ ಮಾಡು",
+    "ಹಗುರವಾದ",
+    "ವೇಗವಾದ",
+    "ಮರ",
+    "ಚಾಲಿಸು",
+    "ಭಾರವಾದ",
+    "ನೀರು",
+    "ಗಾಳಿ"
+  ]
+}</pre>
+                            </div>
+                        </td>
+                    </tr>
+                    
+                    
+                    <tr>
+                        <td>0050_translation_en_kn:7</td>
+                        <td>1</td>
+                        <td>2376.716417</td>
+                        <td>{}</td>
+                    </tr>
+                    
+                    <tr>
+                        <td colspan="4" class="question-info">
+                            <div class="question-info-toggle" onclick="toggleQuestionInfo(this)">
+                                [+]
+                            </div>
+                            <div class="question-info-content hidden">
+                              <strong>Question Information:</strong>
+                              <pre>{
+  "word": "to sleep",
+  "kn": "ನಿದ್ರಿಸು",
+  "origin_lang": "en",
+  "target_lang": "kn",
+  "choices": [
+    "ನಗು",
+    "ನಿದ್ರಿಸು",
+    "ಈಜು",
+    "ಮರಳು",
+    "ಕಲ್ಲು",
+    "ಹಾರು",
+    "ನೃತ್ಯ ಮಾಡು",
+    "ಬರೆ"
+  ]
+}</pre>
+                            </div>
+                        </td>
+                    </tr>
+                    
+                    
+                    <tr>
+                        <td>0050_translation_en_kn:8</td>
+                        <td>1</td>
+                        <td>2126.4375410000002</td>
+                        <td>{}</td>
+                    </tr>
+                    
+                    <tr>
+                        <td colspan="4" class="question-info">
+                            <div class="question-info-toggle" onclick="toggleQuestionInfo(this)">
+                                [+]
+                            </div>
+                            <div class="question-info-content hidden">
+                              <strong>Question Information:</strong>
+                              <pre>{
+  "word": "moon",
+  "kn": "ಚಂದ್ರ",
+  "origin_lang": "en",
+  "target_lang": "kn",
+  "choices": [
+    "ಗಾಳಿ",
+    "ಭಾರವಾದ",
+    "ಆಕಾಶ",
+    "ಅಡಗು",
+    "ಚಂದ್ರ",
+    "ಮರಳು",
+    "ಬೆಚ್ಚಗಿನ",
+    "ಬೀಳು"
+  ]
+}</pre>
+                            </div>
+                        </td>
+                    </tr>
+                    
+                    
+                    <tr>
+                        <td>0050_translation_en_kn:9</td>
+                        <td>1</td>
+                        <td>2042.316626</td>
+                        <td>{}</td>
+                    </tr>
+                    
+                    <tr>
+                        <td colspan="4" class="question-info">
+                            <div class="question-info-toggle" onclick="toggleQuestionInfo(this)">
+                                [+]
+                            </div>
+                            <div class="question-info-content hidden">
+                              <strong>Question Information:</strong>
+                              <pre>{
+  "word": "to laugh",
+  "kn": "ನಗು",
+  "origin_lang": "en",
+  "target_lang": "kn",
+  "choices": [
+    "ನೃತ್ಯ ಮಾಡು",
+    "ನಕ್ಷತ್ರ",
+    "ಈಜು",
+    "ನಗು",
+    "ತಾಜಾ",
+    "ನಿದ್ರಿಸು",
+    "ಉಸಿರಾಡು",
+    "ಕಲ್ಲು"
+  ]
+}</pre>
+                            </div>
+                        </td>
+                    </tr>
+                    
+                    
+                </tbody>
+            </table>
+        </div>
+
+        
+    </div>
+</body>
+</html>

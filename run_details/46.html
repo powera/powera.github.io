@@ -1,0 +1,1956 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Benchmark Run Details - granite3-dense:8b:Q4_K_M on 0050_translation_en_zh</title>
+    <script>
+        function toggleQuestionInfo(toggleElement) {
+            const questionInfoContent = toggleElement.nextElementSibling;
+
+            if (questionInfoContent.classList.contains('hidden')) {
+                questionInfoContent.classList.remove('hidden');
+                toggleElement.textContent = '[X]';
+            } else {
+                questionInfoContent.classList.add('hidden');
+                toggleElement.textContent = '[+]';
+            }
+        }
+    </script>
+
+    <style>
+        /* Placeholder for future CSS */
+        body {
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 1rem;
+        }
+        .run-summary, .run-details {
+            margin-bottom: 2rem;
+        }
+        .summary-table, .details-table {
+            width: 100%;
+            border-collapse: collapse;
+        }
+        .summary-table th, .details-table th {
+            background-color: #f4f4f4;
+            text-align: left;
+            padding: 0.5rem;
+            border: 1px solid #ddd;
+        }
+        .summary-table td, .details-table td {
+            padding: 0.5rem;
+            border: 1px solid #ddd;
+        }
+        .details-table {
+            margin-top: 1rem;
+        }
+        .page-title {
+            color: #333;
+            border-bottom: 2px solid #333;
+            padding-bottom: 0.5rem;
+        }
+        .question-info {
+            background-color: #f9f9f9;
+            border: 1px solid #ddd;
+            padding: 1rem;
+            margin-top: 0.5rem;
+            position: relative;
+        }
+        .question-info-content {
+            max-height: 600px;
+            overflow-y: auto;
+            overflow-x: hidden;
+            padding-right: 15px; /* Add scrollbar space */
+        }
+        .question-info-toggle {
+            cursor: pointer;
+            user-select: none;
+            font-weight: bold;
+            color: #666;
+        }
+        .question-info-toggle:hover {
+            color: #333;
+        }
+        .question-info pre {
+            white-space: pre-wrap;
+            word-wrap: break-word;
+            background-color: #f4f4f4;
+            padding: 0.5rem;
+            border-radius: 4px;
+            margin: 0;
+        }
+        .hidden {
+            display: none;
+        }
+
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1 class="page-title">Benchmark Run Details</h1>
+        
+        <div class="run-summary">
+            <h2>Run Summary</h2>
+            <table class="summary-table">
+                <tr>
+                    <th>Model</th>
+                    <td>granite3-dense:8b:Q4_K_M</td>
+                </tr>
+                <tr>
+                    <th>Benchmark</th>
+                    <td>0050_translation_en_zh</td>
+                </tr>
+                <tr>
+                    <th>Normed Score</th>
+                    <td>45</td>
+                </tr>
+                <tr>
+                    <th>Run Timestamp</th>
+                    <td>2024-12-15 21:12:26</td>
+                </tr>
+            </table>
+        </div>
+
+        <div class="run-details">
+            <h2>Question-Level Details</h2>
+            <table class="details-table">
+                <thead>
+                    <tr>
+                        <th>Question ID</th>
+                        <th>Score</th>
+                        <th>Evaluation Time (ms)</th>
+                        <th>Debug Info</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    
+                    <tr>
+                        <td>0050_translation_en_zh:0</td>
+                        <td>1</td>
+                        <td>2549.165209</td>
+                        <td>{}</td>
+                    </tr>
+                    
+                    <tr>
+                        <td colspan="4" class="question-info">
+                            <div class="question-info-toggle" onclick="toggleQuestionInfo(this)">
+                                [+]
+                            </div>
+                            <div class="question-info-content hidden">
+                              <strong>Question Information:</strong>
+                              <pre>{
+  "word": "flower",
+  "zh": "花",
+  "origin_lang": "en",
+  "target_lang": "zh",
+  "target_details": "Can also mean 'to spend (money)' in different context",
+  "choices": [
+    "鸟",
+    "花",
+    "躲藏",
+    "云",
+    "树",
+    "美丽",
+    "甜",
+    "跳舞"
+  ]
+}</pre>
+                            </div>
+                        </td>
+                    </tr>
+                    
+                    
+                    <tr>
+                        <td>0050_translation_en_zh:1</td>
+                        <td>1</td>
+                        <td>11046.848333</td>
+                        <td>{}</td>
+                    </tr>
+                    
+                    <tr>
+                        <td colspan="4" class="question-info">
+                            <div class="question-info-toggle" onclick="toggleQuestionInfo(this)">
+                                [+]
+                            </div>
+                            <div class="question-info-content hidden">
+                              <strong>Question Information:</strong>
+                              <pre>{
+  "word": "to drive",
+  "zh": "开车",
+  "origin_lang": "en",
+  "target_lang": "zh",
+  "origin_details": "Specifically refers to operating a vehicle",
+  "choices": [
+    "明亮",
+    "呼吸",
+    "冷",
+    "开车",
+    "锋利",
+    "笑",
+    "温暖",
+    "雨"
+  ]
+}</pre>
+                            </div>
+                        </td>
+                    </tr>
+                    
+                    
+                    <tr>
+                        <td>0050_translation_en_zh:10</td>
+                        <td>1</td>
+                        <td>2301.2144590000003</td>
+                        <td>{}</td>
+                    </tr>
+                    
+                    <tr>
+                        <td colspan="4" class="question-info">
+                            <div class="question-info-toggle" onclick="toggleQuestionInfo(this)">
+                                [+]
+                            </div>
+                            <div class="question-info-content hidden">
+                              <strong>Question Information:</strong>
+                              <pre>{
+  "word": "mountain",
+  "zh": "山",
+  "origin_lang": "en",
+  "target_lang": "zh",
+  "choices": [
+    "星星",
+    "睡觉",
+    "深",
+    "呼吸",
+    "明亮",
+    "山",
+    "新鲜",
+    "安静"
+  ]
+}</pre>
+                            </div>
+                        </td>
+                    </tr>
+                    
+                    
+                    <tr>
+                        <td>0050_translation_en_zh:11</td>
+                        <td>1</td>
+                        <td>1634.564999</td>
+                        <td>{}</td>
+                    </tr>
+                    
+                    <tr>
+                        <td colspan="4" class="question-info">
+                            <div class="question-info-toggle" onclick="toggleQuestionInfo(this)">
+                                [+]
+                            </div>
+                            <div class="question-info-content hidden">
+                              <strong>Question Information:</strong>
+                              <pre>{
+  "word": "to sing",
+  "zh": "唱歌",
+  "origin_lang": "en",
+  "target_lang": "zh",
+  "choices": [
+    "跳舞",
+    "轻",
+    "云",
+    "新鲜",
+    "唱歌",
+    "开车",
+    "软",
+    "山"
+  ]
+}</pre>
+                            </div>
+                        </td>
+                    </tr>
+                    
+                    
+                    <tr>
+                        <td>0050_translation_en_zh:12</td>
+                        <td>1</td>
+                        <td>1794.207668</td>
+                        <td>{}</td>
+                    </tr>
+                    
+                    <tr>
+                        <td colspan="4" class="question-info">
+                            <div class="question-info-toggle" onclick="toggleQuestionInfo(this)">
+                                [+]
+                            </div>
+                            <div class="question-info-content hidden">
+                              <strong>Question Information:</strong>
+                              <pre>{
+  "word": "heart",
+  "zh": "心",
+  "origin_lang": "en",
+  "target_lang": "zh",
+  "target_details": "Also used in many compounds for emotional/mental states",
+  "choices": [
+    "心",
+    "软",
+    "安静",
+    "睡觉",
+    "月亮",
+    "温暖",
+    "水",
+    "树"
+  ]
+}</pre>
+                            </div>
+                        </td>
+                    </tr>
+                    
+                    
+                    <tr>
+                        <td>0050_translation_en_zh:13</td>
+                        <td>1</td>
+                        <td>1755.3426240000001</td>
+                        <td>{}</td>
+                    </tr>
+                    
+                    <tr>
+                        <td colspan="4" class="question-info">
+                            <div class="question-info-toggle" onclick="toggleQuestionInfo(this)">
+                                [+]
+                            </div>
+                            <div class="question-info-content hidden">
+                              <strong>Question Information:</strong>
+                              <pre>{
+  "word": "bright",
+  "zh": "明亮",
+  "origin_lang": "en",
+  "target_lang": "zh",
+  "origin_details": "Can refer to intelligence or light",
+  "target_details": "Can refer to intelligence or light",
+  "choices": [
+    "吃",
+    "雨",
+    "星星",
+    "明亮",
+    "成长",
+    "光滑",
+    "天空",
+    "最强"
+  ]
+}</pre>
+                            </div>
+                        </td>
+                    </tr>
+                    
+                    
+                    <tr>
+                        <td>0050_translation_en_zh:14</td>
+                        <td>1</td>
+                        <td>3183.412501</td>
+                        <td>{}</td>
+                    </tr>
+                    
+                    <tr>
+                        <td colspan="4" class="question-info">
+                            <div class="question-info-toggle" onclick="toggleQuestionInfo(this)">
+                                [+]
+                            </div>
+                            <div class="question-info-content hidden">
+                              <strong>Question Information:</strong>
+                              <pre>{
+  "word": "to dance",
+  "zh": "跳舞",
+  "origin_lang": "en",
+  "target_lang": "zh",
+  "choices": [
+    "唱歌",
+    "睡觉",
+    "轻",
+    "心",
+    "跳舞",
+    "快",
+    "天空",
+    "跑"
+  ]
+}</pre>
+                            </div>
+                        </td>
+                    </tr>
+                    
+                    
+                    <tr>
+                        <td>0050_translation_en_zh:15</td>
+                        <td>1</td>
+                        <td>1738.148542</td>
+                        <td>{}</td>
+                    </tr>
+                    
+                    <tr>
+                        <td colspan="4" class="question-info">
+                            <div class="question-info-toggle" onclick="toggleQuestionInfo(this)">
+                                [+]
+                            </div>
+                            <div class="question-info-content hidden">
+                              <strong>Question Information:</strong>
+                              <pre>{
+  "word": "quiet",
+  "zh": "安静",
+  "origin_lang": "en",
+  "target_lang": "zh",
+  "origin_details": "Can refer to sound level or personality trait",
+  "choices": [
+    "树",
+    "唱歌",
+    "游泳",
+    "安静",
+    "圆",
+    "飞",
+    "天空",
+    "躲藏"
+  ]
+}</pre>
+                            </div>
+                        </td>
+                    </tr>
+                    
+                    
+                    <tr>
+                        <td>0050_translation_en_zh:16</td>
+                        <td>1</td>
+                        <td>1758.3985</td>
+                        <td>{}</td>
+                    </tr>
+                    
+                    <tr>
+                        <td colspan="4" class="question-info">
+                            <div class="question-info-toggle" onclick="toggleQuestionInfo(this)">
+                                [+]
+                            </div>
+                            <div class="question-info-content hidden">
+                              <strong>Question Information:</strong>
+                              <pre>{
+  "word": "tree",
+  "zh": "树",
+  "origin_lang": "en",
+  "target_lang": "zh",
+  "choices": [
+    "石头",
+    "躲藏",
+    "冷",
+    "水",
+    "锋利",
+    "树",
+    "安静",
+    "吃"
+  ]
+}</pre>
+                            </div>
+                        </td>
+                    </tr>
+                    
+                    
+                    <tr>
+                        <td>0050_translation_en_zh:17</td>
+                        <td>1</td>
+                        <td>1511.152333</td>
+                        <td>{}</td>
+                    </tr>
+                    
+                    <tr>
+                        <td colspan="4" class="question-info">
+                            <div class="question-info-toggle" onclick="toggleQuestionInfo(this)">
+                                [+]
+                            </div>
+                            <div class="question-info-content hidden">
+                              <strong>Question Information:</strong>
+                              <pre>{
+  "word": "to write",
+  "zh": "写",
+  "origin_lang": "en",
+  "target_lang": "zh",
+  "choices": [
+    "草",
+    "轻",
+    "安静",
+    "沙",
+    "写",
+    "朋友",
+    "水",
+    "甜"
+  ]
+}</pre>
+                            </div>
+                        </td>
+                    </tr>
+                    
+                    
+                    <tr>
+                        <td>0050_translation_en_zh:18</td>
+                        <td>1</td>
+                        <td>1645.6867510000002</td>
+                        <td>{}</td>
+                    </tr>
+                    
+                    <tr>
+                        <td colspan="4" class="question-info">
+                            <div class="question-info-toggle" onclick="toggleQuestionInfo(this)">
+                                [+]
+                            </div>
+                            <div class="question-info-content hidden">
+                              <strong>Question Information:</strong>
+                              <pre>{
+  "word": "sky",
+  "zh": "天空",
+  "origin_lang": "en",
+  "target_lang": "zh",
+  "choices": [
+    "最强",
+    "游泳",
+    "草",
+    "唱歌",
+    "躲藏",
+    "光滑",
+    "快",
+    "天空"
+  ]
+}</pre>
+                            </div>
+                        </td>
+                    </tr>
+                    
+                    
+                    <tr>
+                        <td>0050_translation_en_zh:19</td>
+                        <td>1</td>
+                        <td>1786.6643749999998</td>
+                        <td>{}</td>
+                    </tr>
+                    
+                    <tr>
+                        <td colspan="4" class="question-info">
+                            <div class="question-info-toggle" onclick="toggleQuestionInfo(this)">
+                                [+]
+                            </div>
+                            <div class="question-info-content hidden">
+                              <strong>Question Information:</strong>
+                              <pre>{
+  "word": "fresh",
+  "zh": "新鲜",
+  "origin_lang": "en",
+  "target_lang": "zh",
+  "choices": [
+    "风",
+    "跑",
+    "跳舞",
+    "软",
+    "新鲜",
+    "重",
+    "轻",
+    "睡觉"
+  ]
+}</pre>
+                            </div>
+                        </td>
+                    </tr>
+                    
+                    
+                    <tr>
+                        <td>0050_translation_en_zh:2</td>
+                        <td>1</td>
+                        <td>1617.7718340000001</td>
+                        <td>{}</td>
+                    </tr>
+                    
+                    <tr>
+                        <td colspan="4" class="question-info">
+                            <div class="question-info-toggle" onclick="toggleQuestionInfo(this)">
+                                [+]
+                            </div>
+                            <div class="question-info-content hidden">
+                              <strong>Question Information:</strong>
+                              <pre>{
+  "word": "strongest",
+  "zh": "最强",
+  "origin_lang": "en",
+  "target_lang": "zh",
+  "choices": [
+    "安静",
+    "轻",
+    "深",
+    "美丽",
+    "新鲜",
+    "温暖",
+    "草",
+    "最强"
+  ]
+}</pre>
+                            </div>
+                        </td>
+                    </tr>
+                    
+                    
+                    <tr>
+                        <td>0050_translation_en_zh:20</td>
+                        <td>1</td>
+                        <td>3060.581416</td>
+                        <td>{}</td>
+                    </tr>
+                    
+                    <tr>
+                        <td colspan="4" class="question-info">
+                            <div class="question-info-toggle" onclick="toggleQuestionInfo(this)">
+                                [+]
+                            </div>
+                            <div class="question-info-content hidden">
+                              <strong>Question Information:</strong>
+                              <pre>{
+  "word": "friend",
+  "zh": "朋友",
+  "origin_lang": "en",
+  "target_lang": "zh",
+  "choices": [
+    "朋友",
+    "鸟",
+    "软",
+    "冷",
+    "雨",
+    "甜",
+    "石头",
+    "开车"
+  ]
+}</pre>
+                            </div>
+                        </td>
+                    </tr>
+                    
+                    
+                    <tr>
+                        <td>0050_translation_en_zh:21</td>
+                        <td>1</td>
+                        <td>1794.771</td>
+                        <td>{}</td>
+                    </tr>
+                    
+                    <tr>
+                        <td colspan="4" class="question-info">
+                            <div class="question-info-toggle" onclick="toggleQuestionInfo(this)">
+                                [+]
+                            </div>
+                            <div class="question-info-content hidden">
+                              <strong>Question Information:</strong>
+                              <pre>{
+  "word": "to run",
+  "zh": "跑",
+  "origin_lang": "en",
+  "target_lang": "zh",
+  "choices": [
+    "跑",
+    "安静",
+    "飞",
+    "风",
+    "雨",
+    "心",
+    "睡觉",
+    "树"
+  ]
+}</pre>
+                            </div>
+                        </td>
+                    </tr>
+                    
+                    
+                    <tr>
+                        <td>0050_translation_en_zh:22</td>
+                        <td>1</td>
+                        <td>2591.0823339999997</td>
+                        <td>{}</td>
+                    </tr>
+                    
+                    <tr>
+                        <td colspan="4" class="question-info">
+                            <div class="question-info-toggle" onclick="toggleQuestionInfo(this)">
+                                [+]
+                            </div>
+                            <div class="question-info-content hidden">
+                              <strong>Question Information:</strong>
+                              <pre>{
+  "word": "round",
+  "zh": "圆",
+  "origin_lang": "en",
+  "target_lang": "zh",
+  "choices": [
+    "花",
+    "圆",
+    "明亮",
+    "风",
+    "火",
+    "轻",
+    "星星",
+    "吃"
+  ]
+}</pre>
+                            </div>
+                        </td>
+                    </tr>
+                    
+                    
+                    <tr>
+                        <td>0050_translation_en_zh:23</td>
+                        <td>1</td>
+                        <td>1808.850583</td>
+                        <td>{}</td>
+                    </tr>
+                    
+                    <tr>
+                        <td colspan="4" class="question-info">
+                            <div class="question-info-toggle" onclick="toggleQuestionInfo(this)">
+                                [+]
+                            </div>
+                            <div class="question-info-content hidden">
+                              <strong>Question Information:</strong>
+                              <pre>{
+  "word": "wind",
+  "zh": "风",
+  "origin_lang": "en",
+  "target_lang": "zh",
+  "origin_details": "Can be noun (moving air) or verb (to twist)",
+  "choices": [
+    "石头",
+    "跳舞",
+    "开车",
+    "云",
+    "温暖",
+    "风",
+    "躲藏",
+    "朋友"
+  ]
+}</pre>
+                            </div>
+                        </td>
+                    </tr>
+                    
+                    
+                    <tr>
+                        <td>0050_translation_en_zh:24</td>
+                        <td>1</td>
+                        <td>2071.9101250000003</td>
+                        <td>{}</td>
+                    </tr>
+                    
+                    <tr>
+                        <td colspan="4" class="question-info">
+                            <div class="question-info-toggle" onclick="toggleQuestionInfo(this)">
+                                [+]
+                            </div>
+                            <div class="question-info-content hidden">
+                              <strong>Question Information:</strong>
+                              <pre>{
+  "word": "warm",
+  "zh": "温暖",
+  "origin_lang": "en",
+  "target_lang": "zh",
+  "choices": [
+    "落下",
+    "石头",
+    "书",
+    "重",
+    "盐",
+    "温暖",
+    "心",
+    "星星"
+  ]
+}</pre>
+                            </div>
+                        </td>
+                    </tr>
+                    
+                    
+                    <tr>
+                        <td>0050_translation_en_zh:25</td>
+                        <td>1</td>
+                        <td>1825.308542</td>
+                        <td>{}</td>
+                    </tr>
+                    
+                    <tr>
+                        <td colspan="4" class="question-info">
+                            <div class="question-info-toggle" onclick="toggleQuestionInfo(this)">
+                                [+]
+                            </div>
+                            <div class="question-info-content hidden">
+                              <strong>Question Information:</strong>
+                              <pre>{
+  "word": "stone",
+  "zh": "石头",
+  "origin_lang": "en",
+  "target_lang": "zh",
+  "choices": [
+    "石头",
+    "飞",
+    "雨",
+    "跳舞",
+    "星星",
+    "跑",
+    "草",
+    "笑"
+  ]
+}</pre>
+                            </div>
+                        </td>
+                    </tr>
+                    
+                    
+                    <tr>
+                        <td>0050_translation_en_zh:26</td>
+                        <td>1</td>
+                        <td>1629.314832</td>
+                        <td>{}</td>
+                    </tr>
+                    
+                    <tr>
+                        <td colspan="4" class="question-info">
+                            <div class="question-info-toggle" onclick="toggleQuestionInfo(this)">
+                                [+]
+                            </div>
+                            <div class="question-info-content hidden">
+                              <strong>Question Information:</strong>
+                              <pre>{
+  "word": "deep",
+  "zh": "深",
+  "origin_lang": "en",
+  "target_lang": "zh",
+  "origin_details": "Can refer to physical depth or emotional/intellectual depth",
+  "target_details": "Can refer to physical depth or emotional/intellectual depth",
+  "choices": [
+    "星星",
+    "圆",
+    "朋友",
+    "美丽",
+    "深",
+    "雨",
+    "温暖",
+    "月亮"
+  ]
+}</pre>
+                            </div>
+                        </td>
+                    </tr>
+                    
+                    
+                    <tr>
+                        <td>0050_translation_en_zh:27</td>
+                        <td>1</td>
+                        <td>2529.953999</td>
+                        <td>{}</td>
+                    </tr>
+                    
+                    <tr>
+                        <td colspan="4" class="question-info">
+                            <div class="question-info-toggle" onclick="toggleQuestionInfo(this)">
+                                [+]
+                            </div>
+                            <div class="question-info-content hidden">
+                              <strong>Question Information:</strong>
+                              <pre>{
+  "word": "to swim",
+  "zh": "游泳",
+  "origin_lang": "en",
+  "target_lang": "zh",
+  "choices": [
+    "树",
+    "水",
+    "火",
+    "明亮",
+    "飞",
+    "成长",
+    "游泳",
+    "美丽"
+  ]
+}</pre>
+                            </div>
+                        </td>
+                    </tr>
+                    
+                    
+                    <tr>
+                        <td>0050_translation_en_zh:28</td>
+                        <td>0</td>
+                        <td>2967.266834</td>
+                        <td>{
+  "response": "轻",
+  "expected": "鸟"
+}</td>
+                    </tr>
+                    
+                    <tr>
+                        <td colspan="4" class="question-info">
+                            <div class="question-info-toggle" onclick="toggleQuestionInfo(this)">
+                                [+]
+                            </div>
+                            <div class="question-info-content hidden">
+                              <strong>Question Information:</strong>
+                              <pre>{
+  "word": "bird",
+  "zh": "鸟",
+  "origin_lang": "en",
+  "target_lang": "zh",
+  "choices": [
+    "轻",
+    "鸟",
+    "盐",
+    "快",
+    "明亮",
+    "躲藏",
+    "成长",
+    "深"
+  ]
+}</pre>
+                            </div>
+                        </td>
+                    </tr>
+                    
+                    
+                    <tr>
+                        <td>0050_translation_en_zh:29</td>
+                        <td>1</td>
+                        <td>1908.6049159999998</td>
+                        <td>{}</td>
+                    </tr>
+                    
+                    <tr>
+                        <td colspan="4" class="question-info">
+                            <div class="question-info-toggle" onclick="toggleQuestionInfo(this)">
+                                [+]
+                            </div>
+                            <div class="question-info-content hidden">
+                              <strong>Question Information:</strong>
+                              <pre>{
+  "word": "sweet",
+  "zh": "甜",
+  "origin_lang": "en",
+  "target_lang": "zh",
+  "origin_details": "Can refer to taste or personality",
+  "choices": [
+    "笑",
+    "软",
+    "跑",
+    "最强",
+    "风",
+    "微笑",
+    "快",
+    "甜"
+  ]
+}</pre>
+                            </div>
+                        </td>
+                    </tr>
+                    
+                    
+                    <tr>
+                        <td>0050_translation_en_zh:3</td>
+                        <td>1</td>
+                        <td>2135.3588339999997</td>
+                        <td>{}</td>
+                    </tr>
+                    
+                    <tr>
+                        <td colspan="4" class="question-info">
+                            <div class="question-info-toggle" onclick="toggleQuestionInfo(this)">
+                                [+]
+                            </div>
+                            <div class="question-info-content hidden">
+                              <strong>Question Information:</strong>
+                              <pre>{
+  "word": "book",
+  "zh": "书",
+  "origin_lang": "en",
+  "target_lang": "zh",
+  "choices": [
+    "明亮",
+    "安静",
+    "书",
+    "跳舞",
+    "成长",
+    "开车",
+    "锋利",
+    "树"
+  ]
+}</pre>
+                            </div>
+                        </td>
+                    </tr>
+                    
+                    
+                    <tr>
+                        <td>0050_translation_en_zh:30</td>
+                        <td>1</td>
+                        <td>1700.550542</td>
+                        <td>{}</td>
+                    </tr>
+                    
+                    <tr>
+                        <td colspan="4" class="question-info">
+                            <div class="question-info-toggle" onclick="toggleQuestionInfo(this)">
+                                [+]
+                            </div>
+                            <div class="question-info-content hidden">
+                              <strong>Question Information:</strong>
+                              <pre>{
+  "word": "cloud",
+  "zh": "云",
+  "origin_lang": "en",
+  "target_lang": "zh",
+  "choices": [
+    "深",
+    "圆",
+    "鸟",
+    "云",
+    "树",
+    "月亮",
+    "飞",
+    "沙"
+  ]
+}</pre>
+                            </div>
+                        </td>
+                    </tr>
+                    
+                    
+                    <tr>
+                        <td>0050_translation_en_zh:31</td>
+                        <td>1</td>
+                        <td>2764.816624</td>
+                        <td>{}</td>
+                    </tr>
+                    
+                    <tr>
+                        <td colspan="4" class="question-info">
+                            <div class="question-info-toggle" onclick="toggleQuestionInfo(this)">
+                                [+]
+                            </div>
+                            <div class="question-info-content hidden">
+                              <strong>Question Information:</strong>
+                              <pre>{
+  "word": "to smile",
+  "zh": "微笑",
+  "origin_lang": "en",
+  "target_lang": "zh",
+  "choices": [
+    "微笑",
+    "山",
+    "云",
+    "花",
+    "快",
+    "水",
+    "星星",
+    "最强"
+  ]
+}</pre>
+                            </div>
+                        </td>
+                    </tr>
+                    
+                    
+                    <tr>
+                        <td>0050_translation_en_zh:32</td>
+                        <td>1</td>
+                        <td>1860.481375</td>
+                        <td>{}</td>
+                    </tr>
+                    
+                    <tr>
+                        <td colspan="4" class="question-info">
+                            <div class="question-info-toggle" onclick="toggleQuestionInfo(this)">
+                                [+]
+                            </div>
+                            <div class="question-info-content hidden">
+                              <strong>Question Information:</strong>
+                              <pre>{
+  "word": "soft",
+  "zh": "软",
+  "origin_lang": "en",
+  "target_lang": "zh",
+  "choices": [
+    "甜",
+    "成长",
+    "圆",
+    "明亮",
+    "软",
+    "草",
+    "冷",
+    "呼吸"
+  ]
+}</pre>
+                            </div>
+                        </td>
+                    </tr>
+                    
+                    
+                    <tr>
+                        <td>0050_translation_en_zh:33</td>
+                        <td>0</td>
+                        <td>1779.375624</td>
+                        <td>{
+  "response": "rain",
+  "expected": "雨"
+}</td>
+                    </tr>
+                    
+                    <tr>
+                        <td colspan="4" class="question-info">
+                            <div class="question-info-toggle" onclick="toggleQuestionInfo(this)">
+                                [+]
+                            </div>
+                            <div class="question-info-content hidden">
+                              <strong>Question Information:</strong>
+                              <pre>{
+  "word": "rain",
+  "zh": "雨",
+  "origin_lang": "en",
+  "target_lang": "zh",
+  "choices": [
+    "躲藏",
+    "安静",
+    "美丽",
+    "雨",
+    "轻",
+    "光滑",
+    "锋利",
+    "水"
+  ]
+}</pre>
+                            </div>
+                        </td>
+                    </tr>
+                    
+                    
+                    <tr>
+                        <td>0050_translation_en_zh:34</td>
+                        <td>1</td>
+                        <td>1932.2085</td>
+                        <td>{}</td>
+                    </tr>
+                    
+                    <tr>
+                        <td colspan="4" class="question-info">
+                            <div class="question-info-toggle" onclick="toggleQuestionInfo(this)">
+                                [+]
+                            </div>
+                            <div class="question-info-content hidden">
+                              <strong>Question Information:</strong>
+                              <pre>{
+  "word": "to grow",
+  "zh": "成长",
+  "origin_lang": "en",
+  "target_lang": "zh",
+  "choices": [
+    "躲藏",
+    "石头",
+    "微笑",
+    "云",
+    "游泳",
+    "火",
+    "成长",
+    "星星"
+  ]
+}</pre>
+                            </div>
+                        </td>
+                    </tr>
+                    
+                    
+                    <tr>
+                        <td>0050_translation_en_zh:35</td>
+                        <td>1</td>
+                        <td>9587.635792000001</td>
+                        <td>{}</td>
+                    </tr>
+                    
+                    <tr>
+                        <td colspan="4" class="question-info">
+                            <div class="question-info-toggle" onclick="toggleQuestionInfo(this)">
+                                [+]
+                            </div>
+                            <div class="question-info-content hidden">
+                              <strong>Question Information:</strong>
+                              <pre>{
+  "word": "quick",
+  "zh": "快",
+  "origin_lang": "en",
+  "target_lang": "zh",
+  "choices": [
+    "明亮",
+    "盐",
+    "轻",
+    "月亮",
+    "笑",
+    "成长",
+    "深",
+    "快"
+  ]
+}</pre>
+                            </div>
+                        </td>
+                    </tr>
+                    
+                    
+                    <tr>
+                        <td>0050_translation_en_zh:36</td>
+                        <td>1</td>
+                        <td>3385.570167</td>
+                        <td>{}</td>
+                    </tr>
+                    
+                    <tr>
+                        <td colspan="4" class="question-info">
+                            <div class="question-info-toggle" onclick="toggleQuestionInfo(this)">
+                                [+]
+                            </div>
+                            <div class="question-info-content hidden">
+                              <strong>Question Information:</strong>
+                              <pre>{
+  "word": "star",
+  "zh": "星星",
+  "origin_lang": "en",
+  "target_lang": "zh",
+  "choices": [
+    "心",
+    "雨",
+    "美丽",
+    "草",
+    "石头",
+    "甜",
+    "星星",
+    "唱歌"
+  ]
+}</pre>
+                            </div>
+                        </td>
+                    </tr>
+                    
+                    
+                    <tr>
+                        <td>0050_translation_en_zh:37</td>
+                        <td>1</td>
+                        <td>2370.237917</td>
+                        <td>{}</td>
+                    </tr>
+                    
+                    <tr>
+                        <td colspan="4" class="question-info">
+                            <div class="question-info-toggle" onclick="toggleQuestionInfo(this)">
+                                [+]
+                            </div>
+                            <div class="question-info-content hidden">
+                              <strong>Question Information:</strong>
+                              <pre>{
+  "word": "to dance",
+  "zh": "跳舞",
+  "origin_lang": "en",
+  "target_lang": "zh",
+  "choices": [
+    "雨",
+    "温暖",
+    "草",
+    "云",
+    "跳舞",
+    "水",
+    "软",
+    "吃"
+  ]
+}</pre>
+                            </div>
+                        </td>
+                    </tr>
+                    
+                    
+                    <tr>
+                        <td>0050_translation_en_zh:38</td>
+                        <td>1</td>
+                        <td>2229.824708</td>
+                        <td>{}</td>
+                    </tr>
+                    
+                    <tr>
+                        <td colspan="4" class="question-info">
+                            <div class="question-info-toggle" onclick="toggleQuestionInfo(this)">
+                                [+]
+                            </div>
+                            <div class="question-info-content hidden">
+                              <strong>Question Information:</strong>
+                              <pre>{
+  "word": "heavy",
+  "zh": "重",
+  "origin_lang": "en",
+  "target_lang": "zh",
+  "target_details": "Can also mean 'important'",
+  "choices": [
+    "轻",
+    "光滑",
+    "山",
+    "重",
+    "笑",
+    "睡觉",
+    "云",
+    "心"
+  ]
+}</pre>
+                            </div>
+                        </td>
+                    </tr>
+                    
+                    
+                    <tr>
+                        <td>0050_translation_en_zh:39</td>
+                        <td>0</td>
+                        <td>1916.0072499999999</td>
+                        <td>{
+  "response": "fire",
+  "expected": "火"
+}</td>
+                    </tr>
+                    
+                    <tr>
+                        <td colspan="4" class="question-info">
+                            <div class="question-info-toggle" onclick="toggleQuestionInfo(this)">
+                                [+]
+                            </div>
+                            <div class="question-info-content hidden">
+                              <strong>Question Information:</strong>
+                              <pre>{
+  "word": "fire",
+  "zh": "火",
+  "origin_lang": "en",
+  "target_lang": "zh",
+  "choices": [
+    "星星",
+    "最强",
+    "天空",
+    "火",
+    "游泳",
+    "写",
+    "飞",
+    "重"
+  ]
+}</pre>
+                            </div>
+                        </td>
+                    </tr>
+                    
+                    
+                    <tr>
+                        <td>0050_translation_en_zh:4</td>
+                        <td>1</td>
+                        <td>2046.136167</td>
+                        <td>{}</td>
+                    </tr>
+                    
+                    <tr>
+                        <td colspan="4" class="question-info">
+                            <div class="question-info-toggle" onclick="toggleQuestionInfo(this)">
+                                [+]
+                            </div>
+                            <div class="question-info-content hidden">
+                              <strong>Question Information:</strong>
+                              <pre>{
+  "word": "to eat",
+  "zh": "吃",
+  "origin_lang": "en",
+  "target_lang": "zh",
+  "choices": [
+    "吃",
+    "写",
+    "软",
+    "美丽",
+    "呼吸",
+    "圆",
+    "盐",
+    "落下"
+  ]
+}</pre>
+                            </div>
+                        </td>
+                    </tr>
+                    
+                    
+                    <tr>
+                        <td>0050_translation_en_zh:40</td>
+                        <td>1</td>
+                        <td>2282.931333</td>
+                        <td>{}</td>
+                    </tr>
+                    
+                    <tr>
+                        <td colspan="4" class="question-info">
+                            <div class="question-info-toggle" onclick="toggleQuestionInfo(this)">
+                                [+]
+                            </div>
+                            <div class="question-info-content hidden">
+                              <strong>Question Information:</strong>
+                              <pre>{
+  "word": "to breathe",
+  "zh": "呼吸",
+  "origin_lang": "en",
+  "target_lang": "zh",
+  "choices": [
+    "光滑",
+    "深",
+    "冷",
+    "唱歌",
+    "写",
+    "吃",
+    "跳舞",
+    "呼吸"
+  ]
+}</pre>
+                            </div>
+                        </td>
+                    </tr>
+                    
+                    
+                    <tr>
+                        <td>0050_translation_en_zh:41</td>
+                        <td>1</td>
+                        <td>2146.572041</td>
+                        <td>{}</td>
+                    </tr>
+                    
+                    <tr>
+                        <td colspan="4" class="question-info">
+                            <div class="question-info-toggle" onclick="toggleQuestionInfo(this)">
+                                [+]
+                            </div>
+                            <div class="question-info-content hidden">
+                              <strong>Question Information:</strong>
+                              <pre>{
+  "word": "sharp",
+  "zh": "锋利",
+  "origin_lang": "en",
+  "target_lang": "zh",
+  "origin_details": "Can refer to physical edge or intelligence",
+  "target_details": "Can refer to physical edge or intelligence",
+  "choices": [
+    "新鲜",
+    "跳舞",
+    "吃",
+    "甜",
+    "锋利",
+    "躲藏",
+    "软",
+    "心"
+  ]
+}</pre>
+                            </div>
+                        </td>
+                    </tr>
+                    
+                    
+                    <tr>
+                        <td>0050_translation_en_zh:42</td>
+                        <td>1</td>
+                        <td>1978.108833</td>
+                        <td>{}</td>
+                    </tr>
+                    
+                    <tr>
+                        <td colspan="4" class="question-info">
+                            <div class="question-info-toggle" onclick="toggleQuestionInfo(this)">
+                                [+]
+                            </div>
+                            <div class="question-info-content hidden">
+                              <strong>Question Information:</strong>
+                              <pre>{
+  "word": "salt",
+  "zh": "盐",
+  "origin_lang": "en",
+  "target_lang": "zh",
+  "choices": [
+    "盐",
+    "草",
+    "水",
+    "成长",
+    "轻",
+    "心",
+    "天空",
+    "快"
+  ]
+}</pre>
+                            </div>
+                        </td>
+                    </tr>
+                    
+                    
+                    <tr>
+                        <td>0050_translation_en_zh:43</td>
+                        <td>1</td>
+                        <td>2268.661208</td>
+                        <td>{}</td>
+                    </tr>
+                    
+                    <tr>
+                        <td colspan="4" class="question-info">
+                            <div class="question-info-toggle" onclick="toggleQuestionInfo(this)">
+                                [+]
+                            </div>
+                            <div class="question-info-content hidden">
+                              <strong>Question Information:</strong>
+                              <pre>{
+  "word": "to hide",
+  "zh": "躲藏",
+  "origin_lang": "en",
+  "target_lang": "zh",
+  "choices": [
+    "石头",
+    "雨",
+    "新鲜",
+    "最强",
+    "躲藏",
+    "天空",
+    "鸟",
+    "甜"
+  ]
+}</pre>
+                            </div>
+                        </td>
+                    </tr>
+                    
+                    
+                    <tr>
+                        <td>0050_translation_en_zh:44</td>
+                        <td>1</td>
+                        <td>2663.313916</td>
+                        <td>{}</td>
+                    </tr>
+                    
+                    <tr>
+                        <td colspan="4" class="question-info">
+                            <div class="question-info-toggle" onclick="toggleQuestionInfo(this)">
+                                [+]
+                            </div>
+                            <div class="question-info-content hidden">
+                              <strong>Question Information:</strong>
+                              <pre>{
+  "word": "smooth",
+  "zh": "光滑",
+  "origin_lang": "en",
+  "target_lang": "zh",
+  "choices": [
+    "水",
+    "朋友",
+    "光滑",
+    "山",
+    "跳舞",
+    "鸟",
+    "唱歌",
+    "开车"
+  ]
+}</pre>
+                            </div>
+                        </td>
+                    </tr>
+                    
+                    
+                    <tr>
+                        <td>0050_translation_en_zh:45</td>
+                        <td>1</td>
+                        <td>2043.5575000000001</td>
+                        <td>{}</td>
+                    </tr>
+                    
+                    <tr>
+                        <td colspan="4" class="question-info">
+                            <div class="question-info-toggle" onclick="toggleQuestionInfo(this)">
+                                [+]
+                            </div>
+                            <div class="question-info-content hidden">
+                              <strong>Question Information:</strong>
+                              <pre>{
+  "word": "grass",
+  "zh": "草",
+  "origin_lang": "en",
+  "target_lang": "zh",
+  "choices": [
+    "云",
+    "石头",
+    "飞",
+    "锋利",
+    "花",
+    "跳舞",
+    "最强",
+    "草"
+  ]
+}</pre>
+                            </div>
+                        </td>
+                    </tr>
+                    
+                    
+                    <tr>
+                        <td>0050_translation_en_zh:46</td>
+                        <td>0</td>
+                        <td>1888.99675</td>
+                        <td>{
+  "response": "fly",
+  "expected": "飞"
+}</td>
+                    </tr>
+                    
+                    <tr>
+                        <td colspan="4" class="question-info">
+                            <div class="question-info-toggle" onclick="toggleQuestionInfo(this)">
+                                [+]
+                            </div>
+                            <div class="question-info-content hidden">
+                              <strong>Question Information:</strong>
+                              <pre>{
+  "word": "to fly",
+  "zh": "飞",
+  "origin_lang": "en",
+  "target_lang": "zh",
+  "choices": [
+    "月亮",
+    "雨",
+    "飞",
+    "风",
+    "沙",
+    "游泳",
+    "锋利",
+    "躲藏"
+  ]
+}</pre>
+                            </div>
+                        </td>
+                    </tr>
+                    
+                    
+                    <tr>
+                        <td>0050_translation_en_zh:47</td>
+                        <td>0</td>
+                        <td>1947.710333</td>
+                        <td>{
+  "response": "cold",
+  "expected": "冷"
+}</td>
+                    </tr>
+                    
+                    <tr>
+                        <td colspan="4" class="question-info">
+                            <div class="question-info-toggle" onclick="toggleQuestionInfo(this)">
+                                [+]
+                            </div>
+                            <div class="question-info-content hidden">
+                              <strong>Question Information:</strong>
+                              <pre>{
+  "word": "cold",
+  "zh": "冷",
+  "origin_lang": "en",
+  "target_lang": "zh",
+  "choices": [
+    "快",
+    "花",
+    "飞",
+    "草",
+    "冷",
+    "美丽",
+    "雨",
+    "山"
+  ]
+}</pre>
+                            </div>
+                        </td>
+                    </tr>
+                    
+                    
+                    <tr>
+                        <td>0050_translation_en_zh:48</td>
+                        <td>0</td>
+                        <td>1958.809917</td>
+                        <td>{
+  "response": "sand",
+  "expected": "沙"
+}</td>
+                    </tr>
+                    
+                    <tr>
+                        <td colspan="4" class="question-info">
+                            <div class="question-info-toggle" onclick="toggleQuestionInfo(this)">
+                                [+]
+                            </div>
+                            <div class="question-info-content hidden">
+                              <strong>Question Information:</strong>
+                              <pre>{
+  "word": "sand",
+  "zh": "沙",
+  "origin_lang": "en",
+  "target_lang": "zh",
+  "choices": [
+    "沙",
+    "轻",
+    "飞",
+    "安静",
+    "写",
+    "游泳",
+    "月亮",
+    "山"
+  ]
+}</pre>
+                            </div>
+                        </td>
+                    </tr>
+                    
+                    
+                    <tr>
+                        <td>0050_translation_en_zh:49</td>
+                        <td>1</td>
+                        <td>2280.2585</td>
+                        <td>{}</td>
+                    </tr>
+                    
+                    <tr>
+                        <td colspan="4" class="question-info">
+                            <div class="question-info-toggle" onclick="toggleQuestionInfo(this)">
+                                [+]
+                            </div>
+                            <div class="question-info-content hidden">
+                              <strong>Question Information:</strong>
+                              <pre>{
+  "word": "to fall",
+  "zh": "落下",
+  "origin_lang": "en",
+  "target_lang": "zh",
+  "choices": [
+    "朋友",
+    "呼吸",
+    "光滑",
+    "山",
+    "落下",
+    "冷",
+    "开车",
+    "星星"
+  ]
+}</pre>
+                            </div>
+                        </td>
+                    </tr>
+                    
+                    
+                    <tr>
+                        <td>0050_translation_en_zh:5</td>
+                        <td>1</td>
+                        <td>1923.448542</td>
+                        <td>{}</td>
+                    </tr>
+                    
+                    <tr>
+                        <td colspan="4" class="question-info">
+                            <div class="question-info-toggle" onclick="toggleQuestionInfo(this)">
+                                [+]
+                            </div>
+                            <div class="question-info-content hidden">
+                              <strong>Question Information:</strong>
+                              <pre>{
+  "word": "beautiful",
+  "zh": "美丽",
+  "origin_lang": "en",
+  "target_lang": "zh",
+  "choices": [
+    "吃",
+    "美丽",
+    "光滑",
+    "沙",
+    "快",
+    "软",
+    "最强",
+    "写"
+  ]
+}</pre>
+                            </div>
+                        </td>
+                    </tr>
+                    
+                    
+                    <tr>
+                        <td>0050_translation_en_zh:50</td>
+                        <td>1</td>
+                        <td>1875.051916</td>
+                        <td>{}</td>
+                    </tr>
+                    
+                    <tr>
+                        <td colspan="4" class="question-info">
+                            <div class="question-info-toggle" onclick="toggleQuestionInfo(this)">
+                                [+]
+                            </div>
+                            <div class="question-info-content hidden">
+                              <strong>Question Information:</strong>
+                              <pre>{
+  "word": "light",
+  "zh": "轻",
+  "origin_lang": "en",
+  "target_lang": "zh",
+  "origin_details": "Using meaning 'not heavy' (vs. illumination)",
+  "target_details": "Can also mean 'trivial' or 'casual'",
+  "choices": [
+    "重",
+    "锋利",
+    "吃",
+    "唱歌",
+    "山",
+    "轻",
+    "树",
+    "软"
+  ]
+}</pre>
+                            </div>
+                        </td>
+                    </tr>
+                    
+                    
+                    <tr>
+                        <td>0050_translation_en_zh:6</td>
+                        <td>1</td>
+                        <td>2267.9855829999997</td>
+                        <td>{}</td>
+                    </tr>
+                    
+                    <tr>
+                        <td colspan="4" class="question-info">
+                            <div class="question-info-toggle" onclick="toggleQuestionInfo(this)">
+                                [+]
+                            </div>
+                            <div class="question-info-content hidden">
+                              <strong>Question Information:</strong>
+                              <pre>{
+  "word": "water",
+  "zh": "水",
+  "origin_lang": "en",
+  "target_lang": "zh",
+  "choices": [
+    "写",
+    "游泳",
+    "风",
+    "花",
+    "火",
+    "唱歌",
+    "水",
+    "天空"
+  ]
+}</pre>
+                            </div>
+                        </td>
+                    </tr>
+                    
+                    
+                    <tr>
+                        <td>0050_translation_en_zh:7</td>
+                        <td>1</td>
+                        <td>1809.8579590000002</td>
+                        <td>{}</td>
+                    </tr>
+                    
+                    <tr>
+                        <td colspan="4" class="question-info">
+                            <div class="question-info-toggle" onclick="toggleQuestionInfo(this)">
+                                [+]
+                            </div>
+                            <div class="question-info-content hidden">
+                              <strong>Question Information:</strong>
+                              <pre>{
+  "word": "to sleep",
+  "zh": "睡觉",
+  "origin_lang": "en",
+  "target_lang": "zh",
+  "choices": [
+    "落下",
+    "安静",
+    "软",
+    "圆",
+    "火",
+    "睡觉",
+    "草",
+    "轻"
+  ]
+}</pre>
+                            </div>
+                        </td>
+                    </tr>
+                    
+                    
+                    <tr>
+                        <td>0050_translation_en_zh:8</td>
+                        <td>1</td>
+                        <td>2623.4622499999996</td>
+                        <td>{}</td>
+                    </tr>
+                    
+                    <tr>
+                        <td colspan="4" class="question-info">
+                            <div class="question-info-toggle" onclick="toggleQuestionInfo(this)">
+                                [+]
+                            </div>
+                            <div class="question-info-content hidden">
+                              <strong>Question Information:</strong>
+                              <pre>{
+  "word": "moon",
+  "zh": "月亮",
+  "origin_lang": "en",
+  "target_lang": "zh",
+  "target_details": "月 alone can mean 'month'",
+  "choices": [
+    "躲藏",
+    "最强",
+    "圆",
+    "睡觉",
+    "树",
+    "新鲜",
+    "月亮",
+    "火"
+  ]
+}</pre>
+                            </div>
+                        </td>
+                    </tr>
+                    
+                    
+                    <tr>
+                        <td>0050_translation_en_zh:9</td>
+                        <td>1</td>
+                        <td>2115.566417</td>
+                        <td>{}</td>
+                    </tr>
+                    
+                    <tr>
+                        <td colspan="4" class="question-info">
+                            <div class="question-info-toggle" onclick="toggleQuestionInfo(this)">
+                                [+]
+                            </div>
+                            <div class="question-info-content hidden">
+                              <strong>Question Information:</strong>
+                              <pre>{
+  "word": "to laugh",
+  "zh": "笑",
+  "origin_lang": "en",
+  "target_lang": "zh",
+  "choices": [
+    "轻",
+    "星星",
+    "锋利",
+    "笑",
+    "新鲜",
+    "睡觉",
+    "光滑",
+    "盐"
+  ]
+}</pre>
+                            </div>
+                        </td>
+                    </tr>
+                    
+                    
+                </tbody>
+            </table>
+        </div>
+
+        
+    </div>
+</body>
+</html>
